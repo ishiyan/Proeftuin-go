@@ -1,0 +1,9 @@
+# Serve the files in the "starting-files" folder
+
+## To get your images to serve, use only this:
+
+```go
+    fs := http.FileServer(http.Dir("public"))
+```
+
+Hint: look to see what type FileServer returns, then think it through.

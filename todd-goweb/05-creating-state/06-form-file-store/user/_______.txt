@@ -1,0 +1,119 @@
+form
+https://forms.office.com/Pages/DesignPage.aspx#FormId=nKeZuuhuoEGdeKUD8EWjg2lfhAsj0-tHozFWd2cxa5VUMkpRNDRDMkEyMlFUNVgwV0NYQlBETkZSTy4u
+link
+https://forms.office.com/Pages/ResponsePage.aspx?id=nKeZuuhuoEGdeKUD8EWjg2lfhAsj0-tHozFWd2cxa5VUMkpRNDRDMkEyMlFUNVgwV0NYQlBETkZSTy4u
+
+Hi Ivan, when you submit this form, the owner will be able to see your name and email address.
+1. Hoe beoordeel je mijn bijdrage aan de Agile transformatie en Devops?
+2. Hoe beoordeel mij als team player en collegialiteit?
+3. Heb ik voldoende oog voor 'the big picture' en strategie van het bedrijf.
+4. Hoe beoordeel je mij op de kernwaarde 'trust'?
+5. Hoe beoordeel je mij op de kernwaarde 'be a genius'?
+6. Hoe beoordeel je mij op de kernwaarde 'empower and guide'?
+7. Hoe beoordeel je mij op de kernwaarde 'be engaged'?
+8. Zijn mijn specificaties(feature files) werkbaar voor jou?
+9. Hoe ben ik als gesprekspartner voor de business?
+10. Waar vind je dat ik goed in ben?
+Enter your answer
+11. Waar zou ik effectiever in kunnen zijn?
+Enter your answer
+
+Dear all,
+
+Performance of the PO is partly measured by having this form send to you as you are working with me. Could you please fill in the form? This form will be shared with me and the manager and will be used to improve performance. If a question is not applicable to you then please do not answer.
+
+https://forms.office.com/Pages/ResponsePage.aspx?id=nKeZuuhuoEGdeKUD8EWjg-8IPHSe3ZdEkFDQSHBmGrFUNTJFVVZQVUVUWlY4TUJJQ0NGOVRGSUw2Mi4u
+
+Kind regards,
+
+
+sharepoint team aam + team investing (bam)
+https://psharepoint.binckbank.nv/sites/RetailProductDevelopment/dep/rs/ts/_layouts/15/start.aspx#/SitePages/Home.aspx
+https://psharepoint.binckbank.nv/sites/RetailProductDevelopment/dep/rs/tbm/_layouts/15/start.aspx#/
+
+aset management git server
+http://tfs.binckbank.nv:8080/tfs/Binck/AssetManagement/_admin
+http://tfs.binckbank.nv:8080/tfs/Binck/AssetManagement/_git/Binck.AspNetCore.Bam.Hosting.Abstractions
+http://tfs.binckbank.nv:8080/tfs/Binck/AssetManagement/_dashboards
+control panel binck
+http://tfs.binckbank.nv:8080/tfs/Binck/_admin
+
+T8: 900338296
+BAM NL: 900340983,            rekeningnummer 900340983 https://web.t8.binck.nl/account/logon, select GlobalAssetManagement - Binck.nl in dropdown
+BAM NL: TOPLIN11863700, rekeningnummer 00341114   https://web.t8.binck.nl/account/logon, select GlobalAssetManagement - Binck.nl in dropdown
+
+BAM NL:               # 900338296 id 1013086 login 900338296 pwd toplinealex https://web.t8.binck.nl/account/logon, select GlobalAssetManagement - Binck.nl in dropdown
+                                                                             https://web.t8.binck.nl/logon/
+                                                                             https://web.a1.binck.nl/logon/
+
+BAM BE joint account: # 1017439b id1017947 login TOPLIN11550900 pwd toplinealex https://web.t8.binck.nl/account/logon, select GlobalAssetManagement - Binck.be in dropdown
+                                                                               https://web.a1.binck.be/logon/
+
+ALEX VB:              # 783913001 id 319417 login TOPLIN11161700 pwd toplinealex https://web.t8.binck.nl/account/logon, select Vermogensbeheer - Alex in dropdown
+                                                                                 https://klant.t8.alex.nl/logon
+                                                                                 https://klant.a1.alex.nl/logon
+
+Rekeningnummer: 900345799
+Wachtwoord: Bamnlpilot1 Konijnpilot1
+
+[‎13-‎3-‎2018 13:51]  Liviu Boboia:  
+localhost:3000/account/openapilogon 
+ 
+ 
+[‎13-‎3-‎2018 14:22]  Liviu Boboia:  
+http://localhost:3000/binck_sso/logon
+ 
+code: "b7a090a1-6113-4f0b-9974-043761154da1" 
+state: "1234xyz"
+ 
+ 
+C:\tfs\work\Development\PSLTopline8\Delivery\Build\Scripts
+
+citrix login
+http://citrix.binckbank.nv/Citrix/Prod65/auth/login.aspx?CTX_FromLoggedoutPage=1
+
+sprint 1725
+http://tfs:8080/tfs/Binck/Topline/Team%20Investing/_backlogs/TaskBoard/Sprint%201725?_a=requirements
+
+teamcity login
+https://build.binckbank.nv/login.html                                 
+http://build.binckbank.nv:8080/project.html?projectId=T8&tab=projectOverview
+
+t8 website debug logon
+https://web.t8.binck.nl/account/logon
+
+build definitions
+http://tfs.binckbank.nv:8080/tfs/Binck/ToplineGit/_build?_a=completed&definitionId=88
+
+sonar cube
+http://sonar.support.k8ss.otas.nv/sonar/
+
+?Versioning in Git & TFSBuild
+https://psharepoint.binckbank.nv/sites/RetailProductDevelopment/sd/_layouts/15/start.aspx#/SitePages/Versioning%20in%20GIT%20and%20TFSBuild.aspx
+
+daily invite?
+https://meet.lync.com/binckonline/abergmeijer/Z7SFGHRV
+
+topline code
+http://tfs.binckbank.nv:8080/tfs/binck/Topline/_versionControl?path=%24%2FTopline%2FDevelopment%2FPSLIntegration%2FCSharp%2FLibrary&_a=contents
+
+topline git code
+http://tfs.binckbank.nv:8080/tfs/Binck/ToplineGit/_git/binck-library-config
+
+artifactory
+https://artifactory.binckbank.nv/artifactory/webapp/#/artifacts/browse/tree/General/binck-development-nuget
+
+online swagger editor
+http://editor.swagger.io/#/
+
+t8 rabbit
+http://t8appc00mq01:15672/#/queues
+http://t8appc01btx01:15672/#/queues
+
+http://localhost:12348/swagger/#/
+
+https://github.com/RSuter/NSwag/tree/master/src
+https://github.com/DotNetCross
+https://stackoverflow.com/questions/45100923/generate-yaml-swagger-using-swashbuckle
+http://www.real-statistics.com/time-series-analysis/autoregressive-processes/augmented-dickey-fuller-test/
+http://www.real-statistics.com/time-series-analysis/stochastic-processes/dickey-fuller-test/
