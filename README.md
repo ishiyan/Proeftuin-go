@@ -1,2 +1,2 @@
 # Proeftuin-go
-Proeftuin 
+Proeftuin
