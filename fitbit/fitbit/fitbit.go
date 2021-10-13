@@ -1,216 +1,187 @@
 package fitbit
 
 import (
-	"bytes"
-	"encoding/base64"
-	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"strconv"
 	"strings"
-	"text/template"
+	"sync"
 	"time"
+
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/fitbit"
 )
 
-type API struct {
-	ClientID, ClientSecret, RedirectURI, AuthorizeURI, Scopes string
-	Auth                                                      FitbitAuth
+const (
+	base10 = 10
+)
+
+// FitBit represents a FitBit OAuth2 session.
+type FitBit struct {
+	mu         sync.RWMutex
+	oauthConfg *oauth2.Config
+	httpClient *http.Client
+	ratelimit  Ratelimit
 }
 
-type FitbitAuth struct {
-	AccessToken  string `json:"access_token"`
-	RefreshToken string `json:"refresh_token"`
-	UserID       string `json:"user_id"`
-	TokenType    string `json:"token_type"`
-	Scope        string `json:"scope"`
+// Ratelimit includes the rate limit information provided on every request.
+type Ratelimit struct {
+	RateLimitAvailable int
+	RateLimitUsed      int
+	RateLimitReset     time.Time
 }
 
-type ActivitySteps struct {
-	Steps []DataPoint `json:"activities-steps"`
-}
+// New creates a new FitBit OAuth2 session.
+func New(clientID, clientSecret, redirectURL string, scopes []string) (*FitBit, error) {
+	f := &FitBit{
+		oauthConfg: &oauth2.Config{
+			RedirectURL:  redirectURL,
+			ClientID:     clientID,
+			ClientSecret: clientSecret,
+			Scopes:       scopes,
+			Endpoint:     fitbit.Endpoint,
+		},
+	}
 
-type DataPoint struct {
-	Time  string `json:"dateTime"`
-	Value string `json:"value"`
-}
-
-type HeartDataPoint struct {
-	Date  string         `json:"dateTime"`
-	Value HeartDataValue `json:"value"`
-}
-
-type HeartDataValue struct {
-	RestingHeartRate int `json:"restingHeartRate"`
-}
-
-type ActivityHeart struct {
-	HeartData []HeartDataPoint `json:"activities-heart"`
-}
-
-type HeartateIntradayPoint struct {
-	Time  string `json:"time"`
-	Value int    `json:"value"`
-}
-
-type HeartIntraday struct {
-	Dataset         []HeartateIntradayPoint `json:"dataset"`
-	DatasetInterval int                     `json:"DatasetInterval"`
-	DatasetType     string                  `json:"datasetType"`
-}
-type ActivityHeartSeries struct {
-	HeartData     []HeartDataPoint `json:"activities-heart"`
-	HeartIntraday HeartIntraday    `json:"activities-heart-intraday"`
-}
-
-type NormalisedHeartPoint struct {
-	Timestamp time.Time
-	Value     int
-}
-
-func New(clientID, clientSecret, redirectURI string) API {
-	authorizeTmpl := "response_type=code&client_id={{.ClientID}}&redirect_uri={{.RedirectURI}}&scope={{.Scopes}}&expires_in=604800"
-
-	tmpl, err := template.New("test").Parse(authorizeTmpl)
+	client, err := getClient(f.oauthConfg)
 	if err != nil {
-		panic(err)
+		return nil, fmt.Errorf("cannot construct fitbit session: %w", err)
 	}
 
-	api := API{}
-	api.ClientID = clientID
-	api.ClientSecret = clientSecret
-	api.RedirectURI = redirectURI
-	api.Scopes = "activity heartrate location nutrition profile settings sleep social weight"
+	f.httpClient = client
 
-	var authorizeBuf bytes.Buffer
+	return f, nil
+}
 
-	err = tmpl.Execute(&authorizeBuf, api)
+// GetRatelimit returns the current rate limit information.
+// Only available after a request to the API endpoint.
+func (f *FitBit) Ratelimit() Ratelimit {
+	f.mu.RLock()
+	defer f.mu.RUnlock()
+
+	return f.ratelimit
+}
+
+// setCustomHeader sets custom request headers.
+func setCustomHeader(req *http.Request) {
+	req.Header.Set("User-Agent", "fitbit")
+	req.Header.Set("Accept-Language", "de_DE")
+	req.Header.Set("Accept-Locale", "de_DE")
+}
+
+// getRateLimit extracts rate limit data from the header of the response.
+func (f *FitBit) getRateLimit(resp *http.Response) {
+	f.mu.Lock()
+	defer f.mu.Unlock()
+
+	rateLimitData := resp.Header.Get("fitbit-rate-limit-remaining")
+	if rateLimitData != "" {
+		f.ratelimit.RateLimitUsed, _ = strconv.Atoi(rateLimitData)
+	}
+
+	rateLimitData = resp.Header.Get("fitbit-rate-limit-limit")
+	if rateLimitData != "" {
+		f.ratelimit.RateLimitAvailable, _ = strconv.Atoi(rateLimitData)
+	}
+
+	rateLimitData = resp.Header.Get("fitbit-rate-limit-reset")
+	if rateLimitData != "" {
+		remSec, _ := strconv.Atoi(rateLimitData)
+		f.ratelimit.RateLimitReset = time.Now().Add(time.Second * time.Duration(remSec))
+	}
+}
+
+// makeGETRequest makes a new GET request to a given URL using the OAuth2-enabled HTTP client.
+func (f *FitBit) makeGETRequest(targetURL string) ([]byte, error) {
+	req, err := http.NewRequest("GET", targetURL, nil)
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 
-	api.AuthorizeURI = "https://www.fitbit.com/oauth2/authorize?" + url.PathEscape(authorizeBuf.String())
+	setCustomHeader(req)
 
-	return api
-}
+	resp, err := f.httpClient.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
 
-func (api *API) EncodeBasicAuth() string {
-	authstring := api.ClientID + ":" + api.ClientSecret
-	return base64.StdEncoding.EncodeToString([]byte(authstring))
-}
+	f.getRateLimit(resp)
 
-func (api *API) GetProfile() string {
-	req, _ := http.NewRequest("GET", "https://api.fitbit.com/1/user/-/profile.json", nil)
-	req.Header.Set("Authorization", "Bearer "+api.Auth.AccessToken)
-	res, _ := http.DefaultClient.Do(req)
-	profiledata, _ := ioutil.ReadAll(res.Body)
-	res.Body.Close()
-
-	return string(profiledata)
-}
-
-func (api *API) GetActivitySteps() ActivitySteps {
-	req, _ := http.NewRequest("GET", "https://api.fitbit.com/1/user/-/activities/steps/date/today/1y.json", nil)
-	req.Header.Set("Authorization", "Bearer "+api.Auth.AccessToken)
-	res, _ := http.DefaultClient.Do(req)
-
-	var activitySteps ActivitySteps
-
-	decoder := json.NewDecoder(res.Body)
-
-	decerr := decoder.Decode(&activitySteps)
-	if decerr != nil {
-		panic(decerr)
+	contents, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
 	}
 
-	res.Body.Close()
-
-	return activitySteps
+	return contents, nil
 }
 
-func (api *API) GetRestingHeartrate() ActivityHeart {
-	req, _ := http.NewRequest("GET", "https://api.fitbit.com/1/user/-/activities/heart/date/today/1y.json", nil)
-	req.Header.Set("Authorization", "Bearer "+api.Auth.AccessToken)
-	res, _ := http.DefaultClient.Do(req)
-
-	var activityHeart ActivityHeart
-
-	decoder := json.NewDecoder(res.Body)
-
-	decerr := decoder.Decode(&activityHeart)
-	if decerr != nil {
-		panic(decerr)
-	}
-
-	res.Body.Close()
-
-	return activityHeart
-}
-
-func (series *ActivityHeartSeries) GetNormalisedSeries(timezone string) []NormalisedHeartPoint {
-	loc, _ := time.LoadLocation(timezone)
-
-	var points []NormalisedHeartPoint
-
-	format := "2006-01-02 15:04:05"
-	for _, datapoint := range series.HeartIntraday.Dataset {
-		timestamp, e := time.ParseInLocation(format, series.HeartData[0].Date+" "+datapoint.Time, loc)
-		if e != nil {
-			panic(e)
-		}
-
-		points = append(points, NormalisedHeartPoint{Timestamp: timestamp, Value: datapoint.Value})
-	}
-
-	return points
-}
-
-func (api *API) GetHeartrateTimeSeries(date string) ActivityHeartSeries {
-	req, _ := http.NewRequest("GET", "https://api.fitbit.com/1/user/-/activities/heart/date/"+date+"/1d/1sec.json", nil)
-	req.Header.Set("Authorization", "Bearer "+api.Auth.AccessToken)
-	res, _ := http.DefaultClient.Do(req)
-
-	var series ActivityHeartSeries
-
-	dec := json.NewDecoder(res.Body)
-
-	decerr := dec.Decode(&series)
-	if decerr != nil {
-		panic(decerr)
-	}
-
-	return series
-}
-
-func (api *API) LoadAccessToken(code string) {
+// makePOSTRequest makes a new POST request to a given URL using the OAuth2-enabled HTTP client.
+func (f *FitBit) makePOSTRequest(targetURL string, param map[string]string) ([]byte, error) {
 	form := url.Values{}
-	form.Add("clientId", api.ClientID)
-	form.Add("grant_type", "authorization_code")
-	form.Add("redirect_uri", api.RedirectURI)
-	form.Add("code", code)
-
-	req, err := http.NewRequest("POST", "https://api.fitbit.com/oauth2/token", strings.NewReader(form.Encode()))
-	if err != nil {
-		panic(err)
+	for name, value := range param {
+		form.Add(name, value)
 	}
 
+	req, err := http.NewRequest("POST", targetURL, strings.NewReader(form.Encode()))
+	if err != nil {
+		return nil, err
+	}
+
+	setCustomHeader(req)
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Authorization", "Basic "+api.EncodeBasicAuth())
 
-	res, err := http.DefaultClient.Do(req)
+	resp, err := f.httpClient.Do(req)
 	if err != nil {
-		panic(err)
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	f.getRateLimit(resp)
+
+	contents, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
 	}
 
-	decoder := json.NewDecoder(res.Body)
+	return contents, nil
+}
 
-	var auth FitbitAuth
-
-	decerr := decoder.Decode(&auth)
-	if decerr != nil {
-		panic(decerr)
+// makeDELETERequest makes a new DELETE request to a given URL using the OAuth2-enabled HTTP client.
+func (f *FitBit) makeDELETERequest(targetURL string) ([]byte, error) {
+	req, err := http.NewRequest("DELETE", targetURL, nil)
+	if err != nil {
+		return nil, err
 	}
 
-	res.Body.Close()
+	setCustomHeader(req)
 
-	api.Auth = auth
+	resp, err := f.httpClient.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	f.getRateLimit(resp)
+
+	contents, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	return contents, nil
+}
+
+// convertToRequestID converts user ID to a request ID.
+// The userID 0 is a current logged in user.
+func convertToRequestID(userID uint64) string {
+	// Default "-" is the current logged in user.
+	requestID := "-"
+	if userID > 0 {
+		requestID = strconv.FormatUint(userID, base10)
+	}
+
+	return requestID
 }
