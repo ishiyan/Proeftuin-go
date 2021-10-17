@@ -65,23 +65,24 @@ type Profile struct {
 	} `json:"user"`
 }
 
-// Profile returns the current user profile if 0 is used or the profile of a friend with matching ID.
-func (f *FitBit) Profile(userID uint64) (Profile, []byte, error) {
-	contents, err := f.makeGETRequest("https://api.fitbit.com/1/user/" + convertToRequestID(userID) + "/profile.json")
-	if err != nil {
-		return Profile{}, []byte{}, err
-	}
+// ProfileJSON returns the user profile as a raw JSON.
+// The currently loggen-in user profile if 0.
+func (f *Fitbit) ProfileJSON(userID uint64) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/" + convertToRequestID(userID) + "/profile.json")
+}
 
+// Profile converts the raw JSON to the Profile type.
+func (f *Fitbit) Profile(jsn []byte) (Profile, error) {
 	profile := Profile{}
-	if err := json.Unmarshal(contents, &profile); err != nil {
-		return Profile{}, contents, err
+	if err := json.Unmarshal(jsn, &profile); err != nil {
+		return profile, err
 	}
 
-	return profile, contents, nil
+	return profile, nil
 }
 
 // SetProfile updates the profile information of a user. ID 0 is a current user.
-func (f *FitBit) SetProfile(userID uint64, params map[string]string) (Profile, error) {
+func (f *Fitbit) SetProfile(userID uint64, params map[string]string) (Profile, error) {
 	contents, err := f.makePOSTRequest("https://api.fitbit.com/1/user/"+convertToRequestID(userID)+"/profile.json", params)
 	if err != nil {
 		return Profile{}, err

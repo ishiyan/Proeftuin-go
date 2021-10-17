@@ -18,8 +18,8 @@ const (
 	base10 = 10
 )
 
-// FitBit represents a FitBit OAuth2 session.
-type FitBit struct {
+// Fitbit represents a Fitbit OAuth2 session.
+type Fitbit struct {
 	mu         sync.RWMutex
 	oauthConfg *oauth2.Config
 	httpClient *http.Client
@@ -34,8 +34,8 @@ type Ratelimit struct {
 }
 
 // New creates a new FitBit OAuth2 session.
-func New(clientID, clientSecret, redirectURL string, scopes []string) (*FitBit, error) {
-	f := &FitBit{
+func New(clientID, clientSecret, redirectURL string, scopes []string) (*Fitbit, error) {
+	f := &Fitbit{
 		oauthConfg: &oauth2.Config{
 			RedirectURL:  redirectURL,
 			ClientID:     clientID,
@@ -57,7 +57,7 @@ func New(clientID, clientSecret, redirectURL string, scopes []string) (*FitBit, 
 
 // GetRatelimit returns the current rate limit information.
 // Only available after a request to the API endpoint.
-func (f *FitBit) Ratelimit() Ratelimit {
+func (f *Fitbit) Ratelimit() Ratelimit {
 	f.mu.RLock()
 	defer f.mu.RUnlock()
 
@@ -72,7 +72,7 @@ func setCustomHeader(req *http.Request) {
 }
 
 // getRateLimit extracts rate limit data from the header of the response.
-func (f *FitBit) getRateLimit(resp *http.Response) {
+func (f *Fitbit) getRateLimit(resp *http.Response) {
 	f.mu.Lock()
 	defer f.mu.Unlock()
 
@@ -94,7 +94,7 @@ func (f *FitBit) getRateLimit(resp *http.Response) {
 }
 
 // makeGETRequest makes a new GET request to a given URL using the OAuth2-enabled HTTP client.
-func (f *FitBit) makeGETRequest(targetURL string) ([]byte, error) {
+func (f *Fitbit) makeGETRequest(targetURL string) ([]byte, error) {
 	req, err := http.NewRequest("GET", targetURL, nil)
 	if err != nil {
 		return nil, err
@@ -119,7 +119,7 @@ func (f *FitBit) makeGETRequest(targetURL string) ([]byte, error) {
 }
 
 // makePOSTRequest makes a new POST request to a given URL using the OAuth2-enabled HTTP client.
-func (f *FitBit) makePOSTRequest(targetURL string, param map[string]string) ([]byte, error) {
+func (f *Fitbit) makePOSTRequest(targetURL string, param map[string]string) ([]byte, error) {
 	form := url.Values{}
 	for name, value := range param {
 		form.Add(name, value)
@@ -150,7 +150,7 @@ func (f *FitBit) makePOSTRequest(targetURL string, param map[string]string) ([]b
 }
 
 // makeDELETERequest makes a new DELETE request to a given URL using the OAuth2-enabled HTTP client.
-func (f *FitBit) makeDELETERequest(targetURL string) ([]byte, error) {
+func (f *Fitbit) makeDELETERequest(targetURL string) ([]byte, error) {
 	req, err := http.NewRequest("DELETE", targetURL, nil)
 	if err != nil {
 		return nil, err

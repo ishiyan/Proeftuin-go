@@ -37,17 +37,18 @@ type Badge struct {
 	Unit                    string        `json:"unit,omitempty"`
 }
 
-// Badges returns a list of user badges.
-func (f *FitBit) Badges(userID uint64) (BadgeList, []byte, error) {
-	contents, err := f.makeGETRequest("https://api.fitbit.com/1/user/" + convertToRequestID(userID) + "/badges.json")
-	if err != nil {
-		return BadgeList{}, []byte{}, err
-	}
+// BadgesJSON returns a list of user badges as a raw JSON.
+// The currently loggen-in user profile if 0.
+func (f *Fitbit) BadgesJSON(userID uint64) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/" + convertToRequestID(userID) + "/badges.json")
+}
 
+// Badges converts the raw JSON to the BadgeList type.
+func (f *Fitbit) Badges(jsn []byte) (BadgeList, error) {
 	badgeList := BadgeList{}
-	if err := json.Unmarshal(contents, &badgeList); err != nil {
-		return BadgeList{}, contents, err
+	if err := json.Unmarshal(jsn, &badgeList); err != nil {
+		return BadgeList{}, err
 	}
 
-	return badgeList, contents, nil
+	return badgeList, nil
 }

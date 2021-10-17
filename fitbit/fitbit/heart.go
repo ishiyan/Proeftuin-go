@@ -6,25 +6,12 @@ import (
 
 // HeartDay contains a summary of heartrates for a given date range.
 type HeartDay struct {
-	ActivitiesHeart []struct {
-		DateTime string `json:"dateTime"`
-		Value    struct {
-			CustomHeartRateZones []interface{}   `json:"customHeartRateZones,omitempty"`
-			HeartRateZones       []HeartRateZone `json:"heartRateZones"`
-			RestingHeartRate     int             `json:"restingHeartRate"`
-		} `json:"value"`
-	} `json:"activities-heart"`
-	ActivitiesHeartIntraday ActivitiesHeartIntraday `json:"activities-heart-intraday,omitempty"`
+	ActivitiesHeart []ActivitiesHeart `json:"activities-heart"`
 }
 
-// HeartIntraday with slightly different structure to HeartDay.
+// HeartIntraday contains the Heart Rate sensor measures in 'Beats per minute'.
 type HeartIntraday struct {
-	ActivitiesHeart []struct {
-		CustomHeartRateZones []interface{}   `json:"customHeartRateZones"`
-		DateTime             string          `json:"dateTime"`
-		HeartRateZones       []HeartRateZone `json:"heartRateZones"`
-		Value                string          `json:"value"`
-	} `json:"activities-heart"`
+	ActivitiesHeart         []ActivitiesHeart       `json:"activities-heart,omitempty"`
 	ActivitiesHeartIntraday ActivitiesHeartIntraday `json:"activities-heart-intraday,omitempty"`
 }
 
@@ -37,6 +24,16 @@ type HeartRateZone struct {
 	Name        string  `json:"name"`
 }
 
+// ActivitiesHeart dayly data.
+type ActivitiesHeart struct {
+	DateTime string `json:"dateTime"`
+	Value    struct {
+		CustomHeartRateZones []interface{}   `json:"customHeartRateZones,omitempty"`
+		HeartRateZones       []HeartRateZone `json:"heartRateZones"`
+		RestingHeartRate     int             `json:"restingHeartRate"`
+	} `json:"value"`
+}
+
 // ActivitiesHeartIntraday intraday data.
 type ActivitiesHeartIntraday struct {
 	Dataset []struct {
@@ -47,102 +44,49 @@ type ActivitiesHeartIntraday struct {
 	DatasetType     string `json:"datasetType"`
 }
 
-// HeartLogByDay returns the heart log by a given date.
-// The date must be in the format "yyyy-MM-dd" or "today".
-func (f *FitBit) HeartLogByDay(day string) (HeartDay, []byte, error) {
-	// If not day is given assume today.
-	if day == "" {
-		day = "today"
-	}
+// HeartDayJSON returns the heart log by a given date as a raw JSON.
+// The date must be in the format "yyyy-MM-dd".
+func (f *Fitbit) HeartDayJSON(day string) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + day + "/1d.json")
+}
 
-	contents, err := f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + day + "/1d.json")
-	if err != nil {
-		return HeartDay{}, contents, err
-	}
+// HeartLogPeriodJSON returns the heart log of a given time range by date as a raw JSON.
+// Dates must be in the format "yyyy-MM-dd".
+func (f *Fitbit) HeartLogPeriodJSON(startDay, endDay string) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + startDay + "/" + endDay + ".json")
+}
 
+// HeartDay converts the raw JSON to the HeartDay type.
+func (f *Fitbit) HeartDay(jsn []byte) (HeartDay, error) {
 	heart := HeartDay{}
-	if err := json.Unmarshal(contents, &heart); err != nil {
-		return HeartDay{}, contents, err
+	if err := json.Unmarshal(jsn, &heart); err != nil {
+		return HeartDay{}, err
 	}
 
-	return heart, contents, nil
+	return heart, nil
 }
 
-// HeartIntradayPeriod returns the heart log by a given date in the given resolution.
-// Day must be in the format "yyyy-MM-dd" or "today".
+// HeartIntradayJSON returns the heart log by a given date in the given resolution as a raw JSON.
+// Day must be in the format "yyyy-MM-dd".
+// Resolution (detail-level) must be "1min" or "1sec".
+func (f *Fitbit) HeartIntradayJSON(day, resolution string) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + day + "/1d/" + resolution + ".json")
+}
+
+// HeartIntradayPeriodJSON returns the heart log for a given date, resolution and the time range as a raw JSON.
+// Day must be in the format "yyyy-MM-dd".
 // Resolution (detail-level) can be "1min" or "1sec".
-func (f *FitBit) HeartIntraday(day, resolution string) (HeartIntraday, []byte, error) {
-	// If not day is given assume today.
-	if day == "" {
-		day = "today"
-	}
-
-	// default to 1sec if resolution dos not match to 1min.
-	if resolution != "1min" {
-		resolution = "1sec"
-	}
-
-	contents, err := f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + day + "/1d/" + resolution + ".json")
-	if err != nil {
-		return HeartIntraday{}, contents, err
-	}
-
-	heartintra := HeartIntraday{}
-	if err := json.Unmarshal(contents, &heartintra); err != nil {
-		return HeartIntraday{}, contents, err
-	}
-
-	return heartintra, contents, nil
+// TimeFrom and timeTo are inclusive and are in the format "00:00" for hour:minute.
+func (f *Fitbit) HeartIntradayPeriodJSON(day, resolution, timeFrom, timeTo string) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + day + "/1d/" + resolution + "/time/" + timeFrom + "/" + timeTo + ".json")
 }
 
-// HeartIntradayPeriod returns the heart log by a given date in the given resolution.
-// Day must be in the format "yyyy-MM-dd" or "today".
-// Resolution (detail-level) can be "1min" or "1sec".
-// TimeFrom and timeTo are in the format "00:00" for hour:minute.
-func (f *FitBit) HeartIntradayPeriod(day, resolution, timeFrom, timeTo string) (HeartIntraday, []byte, error) {
-	// If not day is given assume today.
-	if day == "" {
-		day = "today"
+// HeartIntraday converts the raw JSON to the HeartIntraday type.
+func (f *Fitbit) HeartIntraday(jsn []byte) (HeartIntraday, error) {
+	heartIntra := HeartIntraday{}
+	if err := json.Unmarshal(jsn, &heartIntra); err != nil {
+		return HeartIntraday{}, err
 	}
 
-	if timeFrom == "" {
-		timeFrom = "00:00"
-	}
-
-	if timeTo == "" {
-		timeTo = "23:59"
-	}
-
-	// default to 1sec if resolution dos not match to 1min.
-	if resolution != "1min" {
-		resolution = "1sec"
-	}
-
-	contents, err := f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + day + "/1d/" + resolution + "/time/" + timeFrom + "/" + timeTo + ".json")
-	if err != nil {
-		return HeartIntraday{}, contents, err
-	}
-
-	heartintra := HeartIntraday{}
-	if err := json.Unmarshal(contents, &heartintra); err != nil {
-		return HeartIntraday{}, contents, err
-	}
-
-	return heartintra, contents, nil
-}
-
-// HeartLogByDateRange returns the calories log of a given time range by date
-// date must be in the format yyyy-MM-dd.
-func (f *FitBit) HeartLogByDateRange(startDay, endDay string) (HeartDay, []byte, error) {
-	contents, err := f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/heart/date/" + startDay + "/" + endDay + ".json")
-	if err != nil {
-		return HeartDay{}, contents, err
-	}
-
-	heart := HeartDay{}
-	if err := json.Unmarshal(contents, &heart); err != nil {
-		return HeartDay{}, contents, err
-	}
-
-	return heart, contents, nil
+	return heartIntra, nil
 }

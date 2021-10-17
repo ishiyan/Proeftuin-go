@@ -1,0 +1,7 @@
+{
+    "clientID":"23BKXX",
+    "clientSecret":"03e904359d3e6cb2c3cb0666074a453c",
+    "redirectURL":"http://localhost:41259",
+    "archiveDir":"./archive/",
+    "lookbackDate":"2021-09-27"
+}
