@@ -120,79 +120,15 @@ func lookback(conf *config, fb *fitbit.Fitbit, f func(*fitbit.Fitbit, string, st
 func archive(fb *fitbit.Fitbit, date, path string) error {
 	const failed = "failed"
 
-	var data = []struct {
-		name string
-		body []byte
-	}{
-		{"profile.json", nil},
-		{"badges.json", nil},
-		{"hr-1sec.json", nil},
-		{"hr-1min.json", nil},
-		{"hr-1day.json", nil},
-		{"sleep-goal.json", nil},
-		{"sleep.json", nil},
-		{"devices.json", nil},
-	}
+	fmt.Printf("Retrieving '%s' ...", date)
 
-	fmt.Printf("Retrieving '%s'", date)
-
-	b, err := fb.ProfileJSON(0)
+	data, err := collect(fb, date)
 	if err != nil {
-		return fmt.Errorf("cannot get profile %s: %w", date, err)
+		fmt.Println(failed)
+		return err
 	}
 
-	data[0].body = b
-
-	b, err = fb.BadgesJSON(0)
-	if err != nil {
-		return fmt.Errorf("cannot get badges %s: %w", date, err)
-	}
-
-	data[1].body = b
-
-	b, err = fb.HeartIntradayJSON(date, "1sec")
-	if err != nil {
-		return fmt.Errorf("cannot get 1-sec heart rate %s: %w", date, err)
-	}
-
-	data[2].body = b
-
-	b, err = fb.HeartIntradayJSON(date, "1min")
-	if err != nil {
-		return fmt.Errorf("cannot get 1-min heart rate %s: %w", date, err)
-	}
-
-	data[3].body = b
-
-	b, err = fb.HeartDayJSON(date)
-	if err != nil {
-		return fmt.Errorf("cannot get 1-day heart rate %s: %w", date, err)
-	}
-
-	data[4].body = b
-
-	b, err = fb.SleepGoalJSON()
-	if err != nil {
-		return fmt.Errorf("cannot get sleep goal %s: %w", date, err)
-	}
-
-	data[5].body = b
-
-	b, err = fb.SleepDayJSON(date)
-	if err != nil {
-		return fmt.Errorf("cannot get sleep day %s: %w", date, err)
-	}
-
-	data[6].body = b
-
-	b, err = fb.DevicesJSON(0)
-	if err != nil {
-		return fmt.Errorf("cannot get devices %s: %w", date, err)
-	}
-
-	data[7].body = b
-
-	fmt.Print("\nZipping ... ")
+	fmt.Print("done\nZipping ... ")
 
 	z, err := os.Create(path)
 	if err != nil {
@@ -223,4 +159,83 @@ func archive(fb *fitbit.Fitbit, date, path string) error {
 	fmt.Println("done")
 
 	return nil
+}
+
+type entry struct {
+	name string
+	body []byte
+}
+
+func collect(fb *fitbit.Fitbit, date string) ([]entry, error) {
+	const cannotGet = "cannot get %s %s: %w"
+
+	entries := []entry{
+		{"profile.json", nil},
+		{"badges.json", nil},
+		{"hr-1sec.json", nil},    // heartrate/1sec.json
+		{"hr-1min.json", nil},    // heartrate/1min.json
+		{"hr-1day.json", nil},    // heartrate/1day.json
+		{"sleep-goal.json", nil}, // sleep/goal.json
+		{"sleep-day.json", nil},  // sleep/day.json
+		{"devices.json", nil},
+		{"activities-summary.json", nil}, // activities/summary.json
+	}
+
+	b, err := fb.ProfileJSON(0)
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "profile", date, err)
+	}
+
+	entries[0].body = b
+
+	b, err = fb.BadgesJSON(0)
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "badges", date, err)
+	}
+
+	entries[1].body = b
+
+	b, err = fb.HeartIntradayJSON(date, "1sec")
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "1-sec heart rate", date, err)
+	}
+
+	entries[2].body = b
+
+	b, err = fb.HeartIntradayJSON(date, "1min")
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "1-min heart rate", date, err)
+	}
+
+	entries[3].body = b
+
+	b, err = fb.HeartDayJSON(date)
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "1-day heart rate", date, err)
+	}
+
+	entries[4].body = b
+
+	b, err = fb.SleepGoalJSON()
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "sleep goal", date, err)
+	}
+
+	entries[5].body = b
+
+	b, err = fb.SleepDayJSON(date)
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "sleep day", date, err)
+	}
+
+	entries[6].body = b
+
+	b, err = fb.DevicesJSON(0)
+	if err != nil {
+		return entries, fmt.Errorf(cannotGet, "devices", date, err)
+	}
+
+	entries[7].body = b
+
+	return entries, nil
 }

@@ -2,35 +2,11 @@ package fitbit
 
 import (
 	"encoding/json"
+	"fitbit/fitbit/activities"
 	"time"
 )
 
 // https://dev.fitbit.com/build/reference/web-api/activity/
-
-const (
-	ActivitiesCalories             = "activities/calories"
-	ActivitiesCaloriesBMR          = "activities/caloriesBMR"
-	ActivitiesSteps                = "activities/steps"
-	ActivitiesDistance             = "activities/distance"
-	ActivitiesFloors               = "activities/floors"
-	ActivitiesElevation            = "activities/elevation"
-	ActivitiesMinutesSedentary     = "activities/minutesSedentary"
-	ActivitiesMinutesLightlyActive = "activities/minutesLightlyActive"
-	ActivitiesMinutesFairlyActive  = "activities/minutesFairlyActive"
-	ActivitiesMinutesVeryActive    = "activities/minutesVeryActive"
-	ActivitiesMctivityCalories     = "activities/activityCalories"
-
-	ActivitiesTrackerCalories             = "activities/tracker/calories"
-	ActivitiesTrackerSteps                = "activities/tracker/steps"
-	ActivitiesTrackerDistance             = "activities/tracker/distance"
-	ActivitiesTrackerFloors               = "activities/tracker/floors"
-	ActivitiesTrackerElevation            = "activities/tracker/elevation"
-	ActivitiesTrackerMinutesSedentary     = "activities/tracker/minutesSedentary"
-	ActivitiesTrackerMinutesLightlyActive = "activities/tracker/minutesLightlyActive"
-	ActivitiesTrackerMinutesFairlyActive  = "activities/tracker/minutesFairlyActive"
-	ActivitiesTrackerMinutesVeryActive    = "activities/tracker/minutesVeryActive"
-	ActivitiesTrackerActivityCalories     = "activities/tracker/activityCalories"
-)
 
 // ActivitiesDaySummary contains a summary of activities of a requested day.
 type ActivitiesDaySummary struct {
@@ -91,24 +67,61 @@ type ActivitiesDaySummary struct {
 	} `json:"summary"`
 }
 
-// ActivitiesValue contains a single record of an activity value.
-type ActivitiesValue struct {
+// ActivitiesDailyValue contains a single record of a daily activity value.
+type ActivitiesDailyValue struct {
 	DateTime string `json:"dateTime"`
 	Value    string `json:"value"`
 }
 
-// ActivitiesDay contains user activity logs, only one dataset is used and the other ones are empty.
+// ActivitiesDay contains user daily activity logs.
+// Only one dataset is used and the other ones are empty.
 type ActivitiesDay struct {
-	ActivitiesTrackerSteps                []ActivitiesValue `json:"activities-tracker-steps,omitempty"`
-	ActivitiesTrackerCalories             []ActivitiesValue `json:"activities-tracker-calories,omitempty"`
-	ActivitiesTrackerDistance             []ActivitiesValue `json:"activities-tracker-distance,omitempty"`
-	ActivitiesTrackerFloors               []ActivitiesValue `json:"activities-tracker-floors,omitempty"`
-	ActivitiesTrackerElevation            []ActivitiesValue `json:"activities-tracker-elevation,omitempty"`
-	ActivitiesTrackerMinutesSedentary     []ActivitiesValue `json:"activities-tracker-minutesSedentary,omitempty"`
-	ActivitiesTrackerMinutesLightlyActive []ActivitiesValue `json:"activities-tracker-minutesLightlyActive,omitempty"`
-	ActivitiesTrackerMinutesFairlyActive  []ActivitiesValue `json:"activities-tracker-minutesFairlyActive,omitempty"`
-	ActivitiesTrackerMinutesVeryActive    []ActivitiesValue `json:"activities-tracker-minutesVeryActive,omitempty"`
-	ActivitiesTrackerActivityCalories     []ActivitiesValue `json:"activities-tracker-activityCalories,omitempty"`
+	Steps                []ActivitiesDailyValue `json:"activities-steps,omitempty"`
+	Calories             []ActivitiesDailyValue `json:"activities-calories,omitempty"`
+	Distance             []ActivitiesDailyValue `json:"activities-distance,omitempty"`
+	Floors               []ActivitiesDailyValue `json:"activities-floors,omitempty"`
+	Elevation            []ActivitiesDailyValue `json:"activities-elevation,omitempty"`
+	MinutesSedentary     []ActivitiesDailyValue `json:"activities-minutesSedentary,omitempty"`
+	MinutesLightlyActive []ActivitiesDailyValue `json:"activities-minutesLightlyActive,omitempty"`
+	MinutesFairlyActive  []ActivitiesDailyValue `json:"activities-minutesFairlyActive,omitempty"`
+	MinutesVeryActive    []ActivitiesDailyValue `json:"activities-minutesVeryActive,omitempty"`
+	ActivityCalories     []ActivitiesDailyValue `json:"activities-activityCalories,omitempty"`
+
+	TrackerSteps                []ActivitiesDailyValue `json:"activities-tracker-steps,omitempty"`
+	TrackerCalories             []ActivitiesDailyValue `json:"activities-tracker-calories,omitempty"`
+	TrackerDistance             []ActivitiesDailyValue `json:"activities-tracker-distance,omitempty"`
+	TrackerFloors               []ActivitiesDailyValue `json:"activities-tracker-floors,omitempty"`
+	TrackerElevation            []ActivitiesDailyValue `json:"activities-tracker-elevation,omitempty"`
+	TrackerMinutesSedentary     []ActivitiesDailyValue `json:"activities-tracker-minutesSedentary,omitempty"`
+	TrackerMinutesLightlyActive []ActivitiesDailyValue `json:"activities-tracker-minutesLightlyActive,omitempty"`
+	TrackerMinutesFairlyActive  []ActivitiesDailyValue `json:"activities-tracker-minutesFairlyActive,omitempty"`
+	TrackerMinutesVeryActive    []ActivitiesDailyValue `json:"activities-tracker-minutesVeryActive,omitempty"`
+	TrackerActivityCalories     []ActivitiesDailyValue `json:"activities-tracker-activityCalories,omitempty"`
+}
+
+// ActivitiesDailyValue contains a single record of an intra-day activity value.
+type ActivitiesIntradayValue struct {
+	Dataset []struct {
+		Time  string  `json:"time"`
+		Value float64 `json:"value"`
+	} `json:"dataset,omitempty"`
+	DatasetInterval int    `json:"datasetInterval,omitempty"`
+	DatasetType     string `json:"datasetType,omitempty"`
+}
+
+// ActivitiesIntraday contains user intraday activity logs.
+// Only one resource pair is used and the other ones are empty.
+type ActivitiesIntraday struct {
+	CaloriesDaily  []ActivitiesDailyValue  `json:"activities-calories,omitempty"`
+	Calories       ActivitiesIntradayValue `json:"activities-calories-intraday,omitempty"`
+	StepsDaily     []ActivitiesDailyValue  `json:"activities-steps,omitempty"`
+	Steps          ActivitiesIntradayValue `json:"activities-steps-intraday,omitempty"`
+	DistanceDaily  []ActivitiesDailyValue  `json:"activities-distance,omitempty"`
+	Distance       ActivitiesIntradayValue `json:"activities-distance-intraday,omitempty"`
+	FloorsDaily    []ActivitiesDailyValue  `json:"activities-floors,omitempty"`
+	Floors         ActivitiesIntradayValue `json:"activities-floors-intraday,omitempty"`
+	ElevationDaily []ActivitiesDailyValue  `json:"activities-elevation,omitempty"`
+	Elevation      ActivitiesIntradayValue `json:"activities-elevation-intraday,omitempty"`
 }
 
 // ActivitiesDaySummaryJSON returns a summary of activities of a requested day as a raw JSON.
@@ -129,6 +142,33 @@ func (f *Fitbit) ActivitiesDaySummary(jsn []byte) (ActivitiesDaySummary, error) 
 
 // ActivitiesDayJSON returns a time series of activities of a requested day as a raw JSON.
 // Date must be in the format "yyyy-MM-dd".
-func (f *Fitbit) ActivitiesDayJSON(day string) ([]byte, error) {
-	return f.makeGETRequest("https://api.fitbit.com/1/user/-/activities/date/" + day + ".json")
+func (f *Fitbit) ActivitiesDayJSON(day string, resourcePath activities.Daily) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/-/" + string(resourcePath) + "/date/" + day + "/1d.json")
+}
+
+// ActivitiesDay converts the raw JSON to the ActivitiesDay type.
+func (f *Fitbit) ActivitiesDay(jsn []byte) (ActivitiesDay, error) {
+	act := ActivitiesDay{}
+	if err := json.Unmarshal(jsn, &act); err != nil {
+		return act, err
+	}
+
+	return act, nil
+}
+
+// ActivitiesIntradayJSON returns a time series of activities of a requested day as a raw JSON.
+// Date must be in the format "yyyy-MM-dd".
+// Resolution is either "1min" or "15min".
+func (f *Fitbit) ActivitiesIntradayJSON(day string, resourcePath activities.Intra, resolution string) ([]byte, error) {
+	return f.makeGETRequest("https://api.fitbit.com/1/user/-/" + string(resourcePath) + "/date/" + day + "/1d/" + resolution + ".json")
+}
+
+// ActivitiesIntraday converts the raw JSON to the ActivitiesIntraday type.
+func (f *Fitbit) ActivitiesIntraday(jsn []byte) (ActivitiesIntraday, error) {
+	act := ActivitiesIntraday{}
+	if err := json.Unmarshal(jsn, &act); err != nil {
+		return act, err
+	}
+
+	return act, nil
 }
