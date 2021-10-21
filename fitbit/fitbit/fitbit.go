@@ -21,6 +21,7 @@ const (
 // Fitbit represents a Fitbit OAuth2 session.
 type Fitbit struct {
 	mu         sync.RWMutex
+	called     bool
 	oauthConfg *oauth2.Config
 	httpClient *http.Client
 	ratelimit  Ratelimit
@@ -28,9 +29,9 @@ type Fitbit struct {
 
 // Ratelimit includes the rate limit information provided on every request.
 type Ratelimit struct {
-	RateLimitAvailable int
-	RateLimitUsed      int
-	RateLimitReset     time.Time
+	Limit     int
+	Remaining int
+	Reset     time.Time
 }
 
 // New creates a new FitBit OAuth2 session.
@@ -67,8 +68,6 @@ func (f *Fitbit) Ratelimit() Ratelimit {
 // setCustomHeader sets custom request headers.
 func setCustomHeader(req *http.Request) {
 	req.Header.Set("User-Agent", "fitbit")
-	req.Header.Set("Accept-Language", "de_DE")
-	req.Header.Set("Accept-Locale", "de_DE")
 }
 
 // getRateLimit extracts rate limit data from the header of the response.
@@ -76,25 +75,30 @@ func (f *Fitbit) getRateLimit(resp *http.Response) {
 	f.mu.Lock()
 	defer f.mu.Unlock()
 
-	rateLimitData := resp.Header.Get("fitbit-rate-limit-remaining")
-	if rateLimitData != "" {
-		f.ratelimit.RateLimitUsed, _ = strconv.Atoi(rateLimitData)
+	data := resp.Header.Get("fitbit-rate-limit-remaining")
+	if data != "" {
+		f.ratelimit.Remaining, _ = strconv.Atoi(data)
+		f.called = true
 	}
 
-	rateLimitData = resp.Header.Get("fitbit-rate-limit-limit")
-	if rateLimitData != "" {
-		f.ratelimit.RateLimitAvailable, _ = strconv.Atoi(rateLimitData)
+	data = resp.Header.Get("fitbit-rate-limit-limit")
+	if data != "" {
+		f.ratelimit.Limit, _ = strconv.Atoi(data)
 	}
 
-	rateLimitData = resp.Header.Get("fitbit-rate-limit-reset")
-	if rateLimitData != "" {
-		remSec, _ := strconv.Atoi(rateLimitData)
-		f.ratelimit.RateLimitReset = time.Now().Add(time.Second * time.Duration(remSec))
+	data = resp.Header.Get("fitbit-rate-limit-reset")
+	if data != "" {
+		remSec, _ := strconv.Atoi(data)
+		f.ratelimit.Reset = time.Now().Add(time.Second * time.Duration(remSec))
 	}
 }
 
 // makeGETRequest makes a new GET request to a given URL using the OAuth2-enabled HTTP client.
 func (f *Fitbit) makeGETRequest(targetURL string) ([]byte, error) {
+	if err := f.checkRateLimit(); err != nil {
+		return nil, err
+	}
+
 	req, err := http.NewRequest("GET", targetURL, nil)
 	if err != nil {
 		return nil, err
@@ -120,6 +124,10 @@ func (f *Fitbit) makeGETRequest(targetURL string) ([]byte, error) {
 
 // makePOSTRequest makes a new POST request to a given URL using the OAuth2-enabled HTTP client.
 func (f *Fitbit) makePOSTRequest(targetURL string, param map[string]string) ([]byte, error) {
+	if err := f.checkRateLimit(); err != nil {
+		return nil, err
+	}
+
 	form := url.Values{}
 	for name, value := range param {
 		form.Add(name, value)
@@ -151,6 +159,10 @@ func (f *Fitbit) makePOSTRequest(targetURL string, param map[string]string) ([]b
 
 // makeDELETERequest makes a new DELETE request to a given URL using the OAuth2-enabled HTTP client.
 func (f *Fitbit) makeDELETERequest(targetURL string) ([]byte, error) {
+	if err := f.checkRateLimit(); err != nil {
+		return nil, err
+	}
+
 	req, err := http.NewRequest("DELETE", targetURL, nil)
 	if err != nil {
 		return nil, err
@@ -184,4 +196,14 @@ func convertToRequestID(userID uint64) string {
 	}
 
 	return requestID
+}
+
+func (f *Fitbit) checkRateLimit() error {
+	const rateLimitFmt = "rate limit remaining: %d of %d, please re-try after '%v'"
+
+	if f.called && f.ratelimit.Remaining < 1 {
+		return fmt.Errorf(rateLimitFmt, f.ratelimit.Remaining, f.ratelimit.Limit, f.ratelimit.Reset)
+	}
+
+	return nil
 }
