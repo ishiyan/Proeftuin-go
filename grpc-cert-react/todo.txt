@@ -1,4 +1,2 @@
-https://shibumi.dev/posts/go-embed-and-angular/
-https://stackoverflow.com/questions/66600155/is-it-possible-to-embed-angular-inside-golang-application
 https://itnext.io/embedding-a-web-application-in-a-golang-binary-f9733b25bbf7
 https://programmingpercy.tech/blog/using-grpc-tls-go-react-no-reverse-proxy/

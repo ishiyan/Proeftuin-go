@@ -1,4 +1,4 @@
-module proeftuin/static-binary-with-all-resources-embedded
+module proeftuin/embed/static-binary-with-all-resources-embedded
 
 go 1.16
 
