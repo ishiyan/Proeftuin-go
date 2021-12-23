@@ -1,2 +1,13 @@
 https://itnext.io/embedding-a-web-application-in-a-golang-binary-f9733b25bbf7
 https://programmingpercy.tech/blog/using-grpc-tls-go-react-no-reverse-proxy/
+
+https://github.com/AnthonyGiretti/angular8-grpc-aspnetcore3-1-demo
+https://anthonygiretti.com/2020/03/29/grpc-asp-net-core-3-1-how-to-create-a-grpc-web-client-examples-with-angular-8-and-httpclient/
+https://blog.vitas.nl/using_grpc_web_with_.net_core_and_angular.html
+https://github.com/improbable-eng/grpc-web
+https://github.com/tpps88206/michael-angular-go-grpc-example
+
+signalR
+https://www.thetechplatform.com/post/real-time-streaming-with-signalr-and-angular
+https://dev.to/danielkun/go-asynchronous-and-safe-real-time-broadcasting-using-channels-and-websockets-4g5d
+https://itnext.io/streaming-data-with-grpc-2eb983fdee11
