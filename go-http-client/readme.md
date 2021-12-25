@@ -1,5 +1,8 @@
 # How to develop a productive HTTP client in Go
 
+[course]()
+[github](github.com/federicoleon/go-httpclient)
+
 ## Working on the core
 
 ### Introduction to Go modules
