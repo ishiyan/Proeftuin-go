@@ -1,20 +1,17 @@
 package main
 
 import (
-	"encoding/csv"
 	"encoding/json"
 	"fmt"
+	"ms/ms"
 	"os"
 	"strings"
 	"time"
+
+	mscsv "ms/csv"
 )
 
 const configFileName = "ms.json"
-
-type point struct {
-	date  time.Time
-	value float64
-}
 
 type index struct {
 	Mnemonic                string `json:"mnemonic"`
@@ -47,8 +44,12 @@ func main() {
 	}
 
 	for _, index := range cfg.Indices {
-		fmt.Println(index)
+		if err = index.updateSeries(cfg.Repository); err != nil {
+			fmt.Printf("%s: %s\n", index.Mnemonic, err)
+		}
 	}
+
+	fmt.Println("done")
 }
 
 func readConfig(fileName string) (*config, error) {
@@ -74,55 +75,44 @@ func readConfig(fileName string) (*config, error) {
 	return &conf, nil
 }
 
-func ensureRepositoryExists(repository string) {
-	if _, err := os.Stat(repository); os.IsNotExist(err) {
-		if err = os.MkdirAll(repository, os.ModePerm); err != nil {
-			panic(fmt.Sprintf("cannot create repository directory '%s': %s", repository, err))
+func (i *index) updateSeries(repository string) error {
+	s1, err := mscsv.ReadSeries(repository, i.Mnemonic)
+	if err != nil {
+		return fmt.Errorf("cannot read csv file: %w", err)
+	}
+
+	date := time.Date(1900, 1, 1, 0, 0, 0, 0, &time.Location{})
+	if len(s1) > 0 {
+		date = s1[len(s1)-1].Date.Add(24 * time.Hour)
+	}
+
+	s2, err := i.downloadSeries(date)
+	if err != nil {
+		return err
+	}
+
+	if len(s2) > 0 {
+		s1 = append(s1, s2...) // s2[1:len(s2)]...
+		if err = mscsv.WriteSeries(repository, i.Mnemonic, s1); err != nil {
+			return fmt.Errorf("cannot write csv file: %w", err)
 		}
 	}
+
+	return nil
 }
 
-func (i *index) readSeries(repository string) (string, string) {
-	var f *os.File
-	var err error
-
-	filePath := repository + strings.ToLower(i.Mnemonic) + ".csv"
-
-	if _, err = os.Stat(filePath); os.IsNotExist(err) {
-		if f, err = os.Create(filePath); err != nil {
-			panic(fmt.Sprintf("cannot create file '%s': %s", filePath, err))
-		} else {
-			f.Close()
-			return "", ""
+func (i *index) downloadSeries(startDate time.Time) ([]mscsv.Point, error) {
+	if msts, err := ms.Download(i.MorningstarID, i.BaseCurrency, startDate); err != nil {
+		return nil, fmt.Errorf("cannot donload: %w", err)
+	} else {
+		series := make([]mscsv.Point, 0)
+		for _, p := range msts.TimeSeries.Security[0].HistoryDetail {
+			series = append(series, mscsv.Point{
+				Date:  p.EndDate.Time,
+				Value: float64(p.Value),
+			})
 		}
+
+		return series, nil
 	}
-
-	if f, err = os.Open(filePath); err != nil {
-		panic(fmt.Sprintf("cannot open file '%s': %s", filePath, err))
-	}
-	defer f.Close()
-
-	csvReader := csv.NewReader(f)
-	csvReader.Comment = '#'
-	csvReader.Comma = ';'
-
-	//if f, err := os.ReadFile() {}
-	return "", ""
 }
-
-/*
-// DevicesJSON returns a list of user devices as a raw JSON.
-func (f *Index) Download(code string) ([]byte, error) {
-	return f.makeGETRequest("https://api.fitbit.com/1/user/" + convertToRequestID(userID) + "/devices.json")
-}
-
-// Devices converts the raw JSON to the Device slice type.
-func (f *Fitbit) Devices(jsn []byte) ([]Device, error) {
-	device := []Device{}
-	if err := json.Unmarshal(jsn, &device); err != nil {
-		return device, err
-	}
-
-	return device, nil
-}
-*/

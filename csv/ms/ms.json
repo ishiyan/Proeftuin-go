@@ -4,7 +4,7 @@
     "indices": [
         {
             "mnemonic": "MSGTMETU",
-            "mmsid": "F000010CAB",
+            "msid": "F000010CAB",
             "name": "Morningstar Global Target Market Exposure GR USD",
             "series": "Morningstar Equity TME",
             "currency": "USD",
@@ -21,7 +21,7 @@
         },
         {
             "mnemonic": "MSGTMETE",
-            "mmsid": "F000010CAN",
+            "msid": "F000010CAN",
             "name": "Morningstar Global Target Market Exposure GR EUR",
             "series": "Morningstar Equity TME",
             "currency": "EUR",
@@ -38,7 +38,7 @@
         },
         {
             "mnemonic": "MSGTMEPU",
-            "mmsid": "F000010CAE",
+            "msid": "F000010CAE",
             "name": "Morningstar Global Target Market Exposure PR USD",
             "series": "Morningstar Equity TME",
             "currency": "USD",
@@ -55,7 +55,7 @@
         },
         {
             "mnemonic": "MSGTMEPE",
-            "mmsid": "F000010CAP",
+            "msid": "F000010CAP",
             "name": "Morningstar Global Target Market Exposure PR EUR",
             "series": "Morningstar Equity TME",
             "currency": "EUR",
@@ -72,7 +72,7 @@
         },
         {
             "mnemonic": "MSGTMENU",
-            "mmsid": "F000010CAC",
+            "msid": "F000010CAC",
             "name": "Morningstar Global Target Market Exposure NR USD",
             "series": "Morningstar Equity TME",
             "currency": "USD",
@@ -89,7 +89,7 @@
         },
         {
             "mnemonic": "MSGTMENE",
-            "mmsid": "F000010CAO",
+            "msid": "F000010CAO",
             "name": "Morningstar Global Target Market Exposure NR EUR",
             "series": "Morningstar Equity TME",
             "currency": "EUR",
