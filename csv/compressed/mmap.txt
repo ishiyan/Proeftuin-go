@@ -1,0 +1,191 @@
+mmapfilescanner.go
+textfilescanner.go
+textfileWriter.go
+textfilewriterbzip2.go
+textfilewritergzip.go
+textfilewriterxzip.go
+xzipmmapfilescanner.go
+xziptextfilescanner.go
+
+textfilescanner.go     TextFileScanner
+textfilescannermmap.go TextFileScannerMmap
+xzfilescanner.go     XzFileScanner
+xzfilescannermmap.go XzFileScannerMmap
+
+textfileWriter.go  TextFileWriter
+xzfileWriter.go  XzFileWriter
+gzfileWriter.go  GzFileWriter
+bz2fileWriter.go  Bz2FileWriter
+
+
+xz
+https://github.com/ulikunitz/xz
+bzip2
+https://github.com/larzconwell/bzip2
+
+
+https://nakabonne.dev/posts/write-tsdb-from-scratch/
+
+https://github.com/prometheus/prometheus/blob/main/tsdb/fileutil/mmap.go
+https://ghvsted.com/blog/exploring-mmap-in-go/
+https://pkg.go.dev/github.com/edsrzf/mmap-go#example-Map
+https://github.com/buildbarn/bb-storage/blob/c346ca331930f1bc5e4f9bde75de96ee3e6c8a9c/pkg/blockdevice/memory_mapped_block_device_unix.go#L46-L55
+https://gist.github.com/ericjster/eea32820660e26b16174fadd4034dd9d
+https://github.com/alexeymaximov?tab=repositories
+https://golang.hotexamples.com/examples/syscall/-/Mmap/golang-mmap-function-examples.html
+https://pkg.go.dev/golang.org/x/exp/mmap
+https://brunocalza.me/discovering-and-exploring-mmap-using-go/
+
+
+SIMD
+https://github.com/mmcloughlin/avo
+https://www.youtube.com/watch?v=WaD8sNqroAw
+
+mmap+csv
+https://github.com/rovaughn/fastcsv
+
+
+https://stackoverflow.com/questions/24673335/how-do-i-read-a-gzipped-csv-file
+func reader(filename string, c chan string) {
+    fi, err := os.Open(filename)
+    var r *bufio.Reader
+    if err != nil {
+        fmt.Println("%q",err)
+        os.Exit(1)
+    }
+
+    fz, err := g.NewReader(fi)
+
+    if err != nil {
+        r = bufio.NewReader(fi)
+    }else {
+        r = bufio.NewReader(fz)
+    }
+
+
+    for {
+        line, err := r.ReadString('\n')
+        if err != nil {
+            fmt.Println("done reading file")
+            c <- "done"
+            break
+        }else{
+            c <- fmt.Sprintf("%q",strings.Fields(line))
+        }
+    }
+} 
+-----------------
+package main
+
+import (
+    "compress/gzip"
+    "encoding/csv"
+    "fmt"
+    "log"
+    "os"
+)
+
+func main() {
+    f, err := os.Open("data.csv.gz")
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer f.Close()
+    gr, err := gzip.NewReader(f)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer gr.Close()
+
+    cr := csv.NewReader(gr)
+    rec, err := cr.Read()
+    if err != nil {
+        log.Fatal(err)
+    }
+    for _, v := range rec {
+        fmt.Println(v)
+    }
+}
+https://gist.github.com/krostar/c797e908873da5076ec6a81e2e64ffb2
+--- csv_gzip.go
+package main
+
+import (
+	"compress/gzip"
+	"encoding/csv"
+	"fmt"
+	"io"
+)
+
+type csvGzipWriter struct {
+	writer io.Writer
+}
+
+func newCSVGZIPWriter(writer io.Writer) *csvGzipWriter {
+	return &csvGzipWriter{writer: writer}
+}
+
+func (cz *csvGzipWriter) WriteAll(record [][]string) error {
+	csvReader, csvWriter := io.Pipe()
+
+	cw := csv.NewWriter(csvWriter)
+	gw := gzip.NewWriter(cz.writer)
+	cerr := make(chan error)
+
+	go func() {
+		if _, err := io.Copy(gw, csvReader); err != nil {
+			cerr <- fmt.Errorf("unable to copy csv reader to gzip writer: %w", err)
+			return
+		}
+		if err := gw.Close(); err != nil {
+			cerr <- fmt.Errorf("unable to close gzip writer: %w", err)
+			return
+		}
+		cerr <- nil
+	}()
+
+	if err := cw.WriteAll(record); err != nil {
+		return fmt.Errorf("unable to write csv record: %w", err)
+	}
+	if err := csvWriter.Close(); err != nil {
+		return fmt.Errorf("unable to close csv reader: %w", err)
+	}
+
+	return <-cerr
+}
+--- main.go
+package main
+
+import (
+	"bytes"
+	"fmt"
+)
+
+func main() {
+	var buf bytes.Buffer
+
+	compressedCSV := newCSVGZIPWriter(&buf)
+	data := [][]string{{"hello"}, {"world"}}
+
+	if err := compressedCSV.WriteAll(data); err != nil {
+		panic(fmt.Errorf("unable to write gzip'd csv: %w", err))
+	}
+
+	fmt.Printf("csv gzip'd = %q\n", buf.String())
+}
+https://github.com/thesheff17/csv_splitter
+https://github.com/klauspost/pgzip
+https://www.dotnetperls.com/file-go
+
+https://mchirico.github.io/python/2022/10/24/bytesBuffer.html
+func main() {
+        var buffer bytes.Buffer
+        buffer.WriteString("Hello")
+        buffer.WriteString(" ")
+        buffer.WriteString("World")
+        fmt.Println(buffer.String())
+        // Note: We don't clear buffer
+        fmt.Println("We didn't clear buffer. Len: ",buffer.Len()) 
+    }
+
+https://github.com/mchirico/date
