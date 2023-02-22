@@ -1,0 +1,14 @@
+{
+    "repository": "./nasdaq/",
+    "symbols": [
+        {
+            "mnemonic": "TSLA",
+            "name": "Tesla, Inc. Common Stock",
+            "currency": "USD",
+            "stockType": "CommonStock",
+            "exchange": "NASDAQ-GS",
+            "isListed": true,
+            "isNasdaq100": true
+       }
+    ]
+}
