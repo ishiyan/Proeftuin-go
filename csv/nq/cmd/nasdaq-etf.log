@@ -1,0 +1,9 @@
+=======================================
+2023-02-26_15-36-58
+=======================================
+reading nasdaq-etf.json
+obtained access cookie: 506A7A5AEFD51569B1440611139438E5~000000000000000000000000000000~YAAQNPBuaDS44ouGAQAAvOInjhIEqUWxLL3bwzRzo4cRJamS6ZuTCDIsXcVnc+0LL7by8n/E9zzo7LQt5nTUfy8pjbeMBzalGDPo0cWLYjsUPhM5YImNE3PNE+qgGPAzfdyxKzSYsKQ+SlWWC7atAi33Gc18FMsLwFKdiqfJAQQcbtKPGBS6mfoxcId1WyXBi3TqWULWYS1z+TJ++fu10wEXq3Oasexh8w+/YGv91kGA2p+QgeW9xGADMj8PqeqIGYk+Kim1agrMmasSB8sC/h+gWKaMmbt28q3P8HXbZWzOpBf9DkeBCLBjg9GUt3N+fSKPHl1HmWqbx2Z89hz9x4tluGjLx7fw/qf4uQcQBcnXSX2LC427CsBH5UdCQVNh53Q6TFP8HhIGNEd5SgFy0vKSQfkYAUGrM6Fzvcx8W98=
+retrieved 2964 symbols
+cannot do request, retries (5 of 5): Get "https://api.nasdaq.com/api/quote/KSTR/info?assetclass=etf": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+DTEC: unknown mic for exchange: 'Index', setting to XXXX
+finished: 2023-02-26_16-26-51

@@ -1,0 +1,22 @@
+{
+    "symbols": [
+    {
+      "mnemonic": "PRN",
+      "name": "Invesco DWA Industrials Momentum ETF",
+      "company": "",
+      "companyUrl": "",
+      "description": "",
+      "currency": "USD",
+      "mic": "XNGM",
+      "exchange": "NASDAQ-GM",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "",
+      "assetClass": "ETF",
+      "industry": "",
+      "sector": "",
+      "region": "",
+      "expenseRatio": "0.60%"
+    }
+  ]
+}
