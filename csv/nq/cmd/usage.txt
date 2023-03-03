@@ -38,3 +38,29 @@ rename nasdaq-downloads nasdaq-downloads-stock-nyse
 
 nqrt.exe -symbols=nasdaq-etf.json >>nasdaq-etf.log
 rename nasdaq-downloads nasdaq-downloads-etf
+
+example batch
+-------------
+@echo off
+
+call timeout -t 8100
+
+call nqrt.exe -symbols=nasdaq-stock-nasdaq.json >>nasdaq-stock-nasdaq.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-stock-nasdaq
+)
+
+call nqrt.exe -symbols=nasdaq-stock-amex.json >>nasdaq-stock-amex.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-stock-amex
+)
+
+call nqrt.exe -symbols=nasdaq-stock-nyse.json >>nasdaq-stock-nyse.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-stock-nyse
+)
+
+call nqrt.exe -symbols=nasdaq-etf.json >>nasdaq-etf.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-etf
+)

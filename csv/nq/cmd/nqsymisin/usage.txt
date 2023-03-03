@@ -1,0 +1,32 @@
+Execute the following URL in a web browser. Open developers tools before executing.
+
+https://www.nyse.com/quote/XNGS:NVDA
+
+In the network tab there should be two 'fsml?requestType=...' requests.
+Copy url of one with 'dataset=MQ_Fundamentals' and replace the URL prefix in the GetSymbol function in `nyse.go`.
+Truncate the URL by removing everything after '#3D' ('NVDA' and futhrer).
+
+Original URL:
+https://data2-widgets.dataservices.theice.com/fsml?requestType=content&username=nysecomwebsite&key=oHhwWp17SzK9d77UJcnVMG6YGEAxxpjGr7K6x5VF48gmm8VMhYItfTYw%2FjtC1pWsKWOhDAZdafL%2FVTfPQ5yx5ocBqPNnUePAGeEOe2TEEZI%3D&cbid=7010&dataset=MQ_Fundamentals&fsmlParams=key%3DNVDA&json=true&callback=__gwt_jsonp__.P2.onSuccess
+Truncated URL:
+https://data2-widgets.dataservices.theice.com/fsml?requestType=content&username=nysecomwebsite&key=oHhwWp17SzK9d77UJcnVMG6YGEAxxpjGr7K6x5VF48gmm8VMhYItfTYw%2FjtC1pWsKWOhDAZdafL%2FVTfPQ5yx5ocBqPNnUePAGeEOe2TEEZI%3D&cbid=7010&dataset=MQ_Fundamentals&fsmlParams=key%3D
+
+Rebuild this program:
+go build npmsymisin.go
+
+have ready the following JSON files:
+
+nasdaq-stock-nasdaq.json
+nasdaq-stock-amex.json
+nasdaq-stock-nyse.json
+nasdaq-etf.json
+
+Execute:
+
+nqsymisin.exe -category=stock-nasdaq >>nasdaq-stock-nasdaq.isin-sedol.log
+nqsymisin.exe -category=stock-amex >>nasdaq-stock-amex.isin-sedol.log
+nqsymisin.exe -category=stock-nyse >>nasdaq-stock-nyse.isin-sedol.log
+nqsymisin.exe -category=etf >>nasdaq-etf.isin-sedol.log
+
+If you see the error accessing 'theice.com', refresh the 'https://www.nyse.com/quote/XNGS:NVDA' in web browser again,
+copy request URL prefix and re-build the executable.

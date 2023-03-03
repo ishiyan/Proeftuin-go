@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"nq/nasdaq"
@@ -13,6 +14,12 @@ import (
 type symbols struct {
 	Updated string                `json:"updated"`
 	Symbols []nasdaq.NasdaqSymbol `json:"symbols"`
+}
+
+type isinSedolSymbol struct {
+	Mnemonic string `json:"mnemonic"`
+	ISIN     string `json:"ISIN"`
+	SEDOL    string `json:"SEDOL"`
 }
 
 func main() {
@@ -104,6 +111,50 @@ func main() {
 	for k, v := range ndx100Map {
 		fmt.Printf("(%d) '%v'\n", v, k)
 	}
+
+	isins, err := readIsinSedol(*symbolsPtr)
+	if err != nil {
+		fmt.Printf("Cannot read isin-sedol file: %s", err)
+	}
+
+	bothList := make([]isinSedolSymbol, 0)
+	isinOnlyList := make([]isinSedolSymbol, 0)
+	sedolOnlyList := make([]isinSedolSymbol, 0)
+	bothEmptyList := make([]isinSedolSymbol, 0)
+
+	const empty = ""
+	for _, i := range isins {
+		if i.ISIN == empty {
+			if i.SEDOL == empty {
+				bothEmptyList = append(bothEmptyList, i)
+			} else {
+				sedolOnlyList = append(sedolOnlyList, i)
+			}
+		} else {
+			if i.SEDOL == empty {
+				isinOnlyList = append(isinOnlyList, i)
+			} else {
+				bothList = append(bothList, i)
+			}
+		}
+	}
+
+	fmt.Printf("\n\nno ISIN, no SEDOL: %d\n", len(bothEmptyList))
+	for _, v := range bothEmptyList {
+		fmt.Printf("%s, ", v.Mnemonic)
+	}
+
+	fmt.Printf("\n\nno SEDOL: %d\n", len(isinOnlyList))
+	for _, v := range isinOnlyList {
+		fmt.Printf("%s, ", v.Mnemonic)
+	}
+
+	fmt.Printf("\n\nno ISIN: %d\n", len(sedolOnlyList))
+	for _, v := range sedolOnlyList {
+		fmt.Printf("%s, ", v.Mnemonic)
+	}
+
+	fmt.Printf("\n\nboth ISIN and SEDOL: %d\n", len(bothList))
 }
 
 func readSymbols(fileName string) (*symbols, error) {
@@ -123,4 +174,24 @@ func readSymbols(fileName string) (*symbols, error) {
 	}
 
 	return &s, nil
+}
+
+func readIsinSedol(fileName string) ([]isinSedolSymbol, error) {
+	s := make([]isinSedolSymbol, 0)
+
+	fileName = strings.ReplaceAll(fileName, ".json", ".isin-sedol.json")
+	f, err := os.Open(fileName)
+	if err != nil {
+		return s, fmt.Errorf("cannot open '%s' file: %w", fileName, err)
+	}
+	defer f.Close()
+
+	decoder := json.NewDecoder(f)
+
+	err = decoder.Decode(&s)
+	if err != nil {
+		return s, fmt.Errorf("cannot decode '%s' file: %w", fileName, err)
+	}
+
+	return s, nil
 }

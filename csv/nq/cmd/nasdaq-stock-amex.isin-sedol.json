@@ -1,0 +1,1477 @@
+[
+  {
+    "mnemonic": "LNG",
+    "ISIN": "US16411R2085",
+    "SEDOL": "2654364"
+  },
+  {
+    "mnemonic": "IMO",
+    "ISIN": "CA4530384086",
+    "SEDOL": "2454252"
+  },
+  {
+    "mnemonic": "CQP",
+    "ISIN": "US16411Q1013",
+    "SEDOL": "B1VNH36"
+  },
+  {
+    "mnemonic": "SIM",
+    "ISIN": "US4004911065",
+    "SEDOL": "2394336"
+  },
+  {
+    "mnemonic": "SEB",
+    "ISIN": "US8115431079",
+    "SEDOL": "2786687"
+  },
+  {
+    "mnemonic": "BTG",
+    "ISIN": "CA11777Q2099",
+    "SEDOL": "B2PDX08"
+  },
+  {
+    "mnemonic": "UTG",
+    "ISIN": "US7561581015",
+    "SEDOL": "2396525"
+  },
+  {
+    "mnemonic": "GSAT",
+    "ISIN": "US3789734080",
+    "SEDOL": "B1GHPM8"
+  },
+  {
+    "mnemonic": "PRK",
+    "ISIN": "US7006581075",
+    "SEDOL": "2673251"
+  },
+  {
+    "mnemonic": "NG",
+    "ISIN": "CA66987E2069",
+    "SEDOL": "2206903"
+  },
+  {
+    "mnemonic": "CLM",
+    "ISIN": "US21924B3024",
+    "SEDOL": "BTLJSX7"
+  },
+  {
+    "mnemonic": "IE",
+    "ISIN": "US46578C1080",
+    "SEDOL": "BPF0KH6"
+  },
+  {
+    "mnemonic": "UEC",
+    "ISIN": "US9168961038",
+    "SEDOL": "B0VLLY2"
+  },
+  {
+    "mnemonic": "ORLA",
+    "ISIN": "CA68634K1066",
+    "SEDOL": "BYZGY75"
+  },
+  {
+    "mnemonic": "MAG",
+    "ISIN": "CA55903Q1046",
+    "SEDOL": "B01CJZ2"
+  },
+  {
+    "mnemonic": "EVV",
+    "ISIN": "US27828H1059",
+    "SEDOL": "2689247"
+  },
+  {
+    "mnemonic": "TMP",
+    "ISIN": "US8901101092",
+    "SEDOL": "2888613"
+  },
+  {
+    "mnemonic": "EQX",
+    "ISIN": "CA29446Y5020",
+    "SEDOL": "BKLNP24"
+  },
+  {
+    "mnemonic": "UUUU",
+    "ISIN": "CA2926717083",
+    "SEDOL": "BFV4XW8"
+  },
+  {
+    "mnemonic": "DNN",
+    "ISIN": "CA2483561072",
+    "SEDOL": "B0122F3"
+  },
+  {
+    "mnemonic": "CET",
+    "ISIN": "US1551231020",
+    "SEDOL": "2184203"
+  },
+  {
+    "mnemonic": "CCF",
+    "ISIN": "US16150R1041",
+    "SEDOL": "2212289"
+  },
+  {
+    "mnemonic": "TELL",
+    "ISIN": "US87968A1043",
+    "SEDOL": "BD3DWD3"
+  },
+  {
+    "mnemonic": "NHC",
+    "ISIN": "US6359061008",
+    "SEDOL": "2139731"
+  },
+  {
+    "mnemonic": "SILV",
+    "ISIN": "CA8283631015",
+    "SEDOL": "BYV13G6"
+  },
+  {
+    "mnemonic": "CRF",
+    "ISIN": "US21924U3005",
+    "SEDOL": "BTLJSY8"
+  },
+  {
+    "mnemonic": "EIM",
+    "ISIN": "US27827X1019",
+    "SEDOL": "2979119"
+  },
+  {
+    "mnemonic": "SLI",
+    "ISIN": "CA8536061010",
+    "SEDOL": "BF0QWN9"
+  },
+  {
+    "mnemonic": "LEU",
+    "ISIN": "US15643U1043",
+    "SEDOL": "BQXKDH6"
+  },
+  {
+    "mnemonic": "FAX",
+    "ISIN": "US0030091070",
+    "SEDOL": "2339304"
+  },
+  {
+    "mnemonic": "REPX",
+    "ISIN": "US76665T1025",
+    "SEDOL": "BNW2543"
+  },
+  {
+    "mnemonic": "OBE",
+    "ISIN": "CA6744822033",
+    "SEDOL": "BJV30B1"
+  },
+  {
+    "mnemonic": "NGD",
+    "ISIN": "CA6445351068",
+    "SEDOL": "B043N83"
+  },
+  {
+    "mnemonic": "NFGC",
+    "ISIN": "CA64440N1033",
+    "SEDOL": "BL98380"
+  },
+  {
+    "mnemonic": "IAUX",
+    "ISIN": "CA44955L1067",
+    "SEDOL": "BLGXBS4"
+  },
+  {
+    "mnemonic": "GGN",
+    "ISIN": "US36465A1097",
+    "SEDOL": "B755DH6"
+  },
+  {
+    "mnemonic": "SVM",
+    "ISIN": "CA82835P1036",
+    "SEDOL": "B01DQT8"
+  },
+  {
+    "mnemonic": "SENS",
+    "ISIN": "US81727U1051",
+    "SEDOL": "BYQNYR5"
+  },
+  {
+    "mnemonic": "TGB",
+    "ISIN": "CA8765111064",
+    "SEDOL": "2592066"
+  },
+  {
+    "mnemonic": "LXFR",
+    "ISIN": "GB00BNK03D49",
+    "SEDOL": "BF5GRT5"
+  },
+  {
+    "mnemonic": "BHB",
+    "ISIN": "US0668491006",
+    "SEDOL": "2618111"
+  },
+  {
+    "mnemonic": "NML",
+    "ISIN": "US64129H1041",
+    "SEDOL": "B8HK1P0"
+  },
+  {
+    "mnemonic": "EAD",
+    "ISIN": "US94987B1052",
+    "SEDOL": "2430069"
+  },
+  {
+    "mnemonic": "NEWP",
+    "ISIN": "CA64782A1075",
+    "SEDOL": "BMX73Y6"
+  },
+  {
+    "mnemonic": "VKI",
+    "ISIN": "US46132E1038",
+    "SEDOL": "2616591"
+  },
+  {
+    "mnemonic": "REI",
+    "ISIN": "US76680V1089",
+    "SEDOL": "B1TGYD6"
+  },
+  {
+    "mnemonic": "ADEX",
+    "ISIN": "US0070241023",
+    "SEDOL": "BNM3R73"
+  },
+  {
+    "mnemonic": "OZ",
+    "ISIN": "US0806941029",
+    "SEDOL": "BLH25N3"
+  },
+  {
+    "mnemonic": "IPVF",
+    "ISIN": "US46064R1068",
+    "SEDOL": "BMF1KY5"
+  },
+  {
+    "mnemonic": "LPTV",
+    "ISIN": "US54352F2065",
+    "SEDOL": "BQ0J9M3"
+  },
+  {
+    "mnemonic": "GROY",
+    "ISIN": "CA38071H1064",
+    "SEDOL": "BMFJJ42"
+  },
+  {
+    "mnemonic": "HZON",
+    "ISIN": "KYG460441069",
+    "SEDOL": "BMH5RH7"
+  },
+  {
+    "mnemonic": "GTE",
+    "ISIN": "US38500T1016",
+    "SEDOL": "B09R9V5"
+  },
+  {
+    "mnemonic": "WRAC",
+    "ISIN": "US96951B1026",
+    "SEDOL": "BMG8VB9"
+  },
+  {
+    "mnemonic": "EP",
+    "ISIN": "US2920343033",
+    "SEDOL": "BPJPN12"
+  },
+  {
+    "mnemonic": "EU",
+    "ISIN": "CA29259W7008",
+    "SEDOL": "BN48970"
+  },
+  {
+    "mnemonic": "RLGT",
+    "ISIN": "US75025X1000",
+    "SEDOL": "B065G33"
+  },
+  {
+    "mnemonic": "ERC",
+    "ISIN": "US94987D1019",
+    "SEDOL": "2831361"
+  },
+  {
+    "mnemonic": "FEN",
+    "ISIN": "US33738G1040",
+    "SEDOL": "B7GVQZ2"
+  },
+  {
+    "mnemonic": "BITE",
+    "ISIN": "US09175K1051",
+    "SEDOL": "BMDJYH2"
+  },
+  {
+    "mnemonic": "NEN",
+    "ISIN": "US6442061049",
+    "SEDOL": "2555508"
+  },
+  {
+    "mnemonic": "EVI",
+    "ISIN": "US26929N1028",
+    "SEDOL": "BGSPSG0"
+  },
+  {
+    "mnemonic": "AEF",
+    "ISIN": "US00301W1053",
+    "SEDOL": "2193566"
+  },
+  {
+    "mnemonic": "FSP",
+    "ISIN": "US35471R1068",
+    "SEDOL": "B02T2D1"
+  },
+  {
+    "mnemonic": "FTF",
+    "ISIN": "US35472T1016",
+    "SEDOL": "2353995"
+  },
+  {
+    "mnemonic": "PLM",
+    "ISIN": "CA7319164090",
+    "SEDOL": "BLBP6S0"
+  },
+  {
+    "mnemonic": "URG",
+    "ISIN": "CA91688R1082",
+    "SEDOL": "B0WW4L2"
+  },
+  {
+    "mnemonic": "ATNM",
+    "ISIN": "US00507W2061",
+    "SEDOL": "BLFH013"
+  },
+  {
+    "mnemonic": "CIX",
+    "ISIN": "US20563P1012",
+    "SEDOL": "2201908"
+  },
+  {
+    "mnemonic": "ZOM",
+    "ISIN": "CA98980M1095",
+    "SEDOL": "BMWVPN2"
+  },
+  {
+    "mnemonic": "BRBS",
+    "ISIN": "US0958251052",
+    "SEDOL": "2920805"
+  },
+  {
+    "mnemonic": "VZLA",
+    "ISIN": "CA92859G2027",
+    "SEDOL": "BM9BB59"
+  },
+  {
+    "mnemonic": "WRN",
+    "ISIN": "CA95805V1085",
+    "SEDOL": "B6Q64B2"
+  },
+  {
+    "mnemonic": "CMCL",
+    "ISIN": "JE00BF0XVB15",
+    "SEDOL": "BF0XVC2"
+  },
+  {
+    "mnemonic": "VFL",
+    "ISIN": "US24610T1088",
+    "SEDOL": "2617873"
+  },
+  {
+    "mnemonic": "EPM",
+    "ISIN": "US30049A1079",
+    "SEDOL": "2367781"
+  },
+  {
+    "mnemonic": "EVM",
+    "ISIN": "US27828A1007",
+    "SEDOL": "2979090"
+  },
+  {
+    "mnemonic": "GLO",
+    "ISIN": "US18914E1064",
+    "SEDOL": "B121546"
+  },
+  {
+    "mnemonic": "EVBN",
+    "ISIN": "US29911Q2084",
+    "SEDOL": "2552565"
+  },
+  {
+    "mnemonic": "EMX",
+    "ISIN": "CA26873J1075",
+    "SEDOL": "BDG0K15"
+  },
+  {
+    "mnemonic": "DC",
+    "ISIN": "US46655E1001",
+    "SEDOL": "BMFTC10"
+  },
+  {
+    "mnemonic": "GENC",
+    "ISIN": "US3686781085",
+    "SEDOL": "2575045"
+  },
+  {
+    "mnemonic": "NBH",
+    "ISIN": "US64124P1012",
+    "SEDOL": "2001346"
+  },
+  {
+    "mnemonic": "ELA",
+    "ISIN": "US29402E1029",
+    "SEDOL": "BK8WN64"
+  },
+  {
+    "mnemonic": "DHY",
+    "ISIN": "US22544F1030",
+    "SEDOL": "2286239"
+  },
+  {
+    "mnemonic": "INFU",
+    "ISIN": "US45685K1025",
+    "SEDOL": "B17FVR8"
+  },
+  {
+    "mnemonic": "MTA",
+    "ISIN": "CA59124U6051",
+    "SEDOL": "BL0N0S3"
+  },
+  {
+    "mnemonic": "ASXC",
+    "ISIN": "US04367G1031",
+    "SEDOL": "BNVQ2J0"
+  },
+  {
+    "mnemonic": "STXS",
+    "ISIN": "US85916J4094",
+    "SEDOL": "B8J3C43"
+  },
+  {
+    "mnemonic": "GLTA",
+    "ISIN": "KYG3R23A1081",
+    "SEDOL": "BNM2TN0"
+  },
+  {
+    "mnemonic": "LCTX",
+    "ISIN": "US53566P1093",
+    "SEDOL": "BJMSX83"
+  },
+  {
+    "mnemonic": "ELLO",
+    "ISIN": "IL0010826357",
+    "SEDOL": "2637310"
+  },
+  {
+    "mnemonic": "CTGO",
+    "ISIN": "US21077F1003",
+    "SEDOL": "B3ZY290"
+  },
+  {
+    "mnemonic": "ENX",
+    "ISIN": "US27827Y1091",
+    "SEDOL": "2979120"
+  },
+  {
+    "mnemonic": "INTT",
+    "ISIN": "US4611471008",
+    "SEDOL": "2019736"
+  },
+  {
+    "mnemonic": "NHS",
+    "ISIN": "US64128C1062",
+    "SEDOL": "2928360"
+  },
+  {
+    "mnemonic": "GLDG",
+    "ISIN": "CA38149E1016",
+    "SEDOL": "BYZLHL5"
+  },
+  {
+    "mnemonic": "NRO",
+    "ISIN": "US64190A1034",
+    "SEDOL": "2081285"
+  },
+  {
+    "mnemonic": "BATL",
+    "ISIN": "US07134L1070",
+    "SEDOL": "BL1KDQ2"
+  },
+  {
+    "mnemonic": "BURU",
+    "ISIN": "US67021W1036",
+    "SEDOL": "BMFXJ66"
+  },
+  {
+    "mnemonic": "SACH",
+    "ISIN": "US78590A1097",
+    "SEDOL": "BD365C2"
+  },
+  {
+    "mnemonic": "CMT",
+    "ISIN": "US2186831002",
+    "SEDOL": "2761123"
+  },
+  {
+    "mnemonic": "ADRT",
+    "ISIN": "US05150A1043",
+    "SEDOL": "BMF8JK5"
+  },
+  {
+    "mnemonic": "AREN",
+    "ISIN": "US0400441095",
+    "SEDOL": "BLBQL66"
+  },
+  {
+    "mnemonic": "CIK",
+    "ISIN": "US2249161066",
+    "SEDOL": "2340588"
+  },
+  {
+    "mnemonic": "BGI",
+    "ISIN": "CA09088U1093",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AE",
+    "ISIN": "US0063513081",
+    "SEDOL": "2007526"
+  },
+  {
+    "mnemonic": "PLG",
+    "ISIN": "CA72765Q8829",
+    "SEDOL": "BGSJ2P9"
+  },
+  {
+    "mnemonic": "MHH",
+    "ISIN": "US57633B1008",
+    "SEDOL": "B3D3125"
+  },
+  {
+    "mnemonic": "KULR",
+    "ISIN": "US50125G1094",
+    "SEDOL": "BG88XJ7"
+  },
+  {
+    "mnemonic": "DMF",
+    "ISIN": "US05589T1043",
+    "SEDOL": "BJLPCF5"
+  },
+  {
+    "mnemonic": "MNK",
+    "ISIN": "IE000O3L0NQ3",
+    "SEDOL": "BMHZW16"
+  },
+  {
+    "mnemonic": "NAK",
+    "ISIN": "CA66510M2040",
+    "SEDOL": "B014QY6"
+  },
+  {
+    "mnemonic": "ECF",
+    "ISIN": "US2890741067",
+    "SEDOL": "2312242"
+  },
+  {
+    "mnemonic": "GLQ",
+    "ISIN": "US18914C1009",
+    "SEDOL": "B07SFD4"
+  },
+  {
+    "mnemonic": "CVM",
+    "ISIN": "US1508376076",
+    "SEDOL": "BDFZC26"
+  },
+  {
+    "mnemonic": "GAU",
+    "ISIN": "CA36352H1001",
+    "SEDOL": "BLF8072"
+  },
+  {
+    "mnemonic": "IAF",
+    "ISIN": "US0030111035",
+    "SEDOL": "2339296"
+  },
+  {
+    "mnemonic": "ELMD",
+    "ISIN": "US2854091087",
+    "SEDOL": "B3WLLH5"
+  },
+  {
+    "mnemonic": "TRX",
+    "ISIN": "CA87283P1099",
+    "SEDOL": "BM9PKQ5"
+  },
+  {
+    "mnemonic": "GNS",
+    "ISIN": "SGXZ34583559",
+    "SEDOL": "BPQYCS2"
+  },
+  {
+    "mnemonic": "VNRX",
+    "ISIN": "US9286611077",
+    "SEDOL": "B71LH98"
+  },
+  {
+    "mnemonic": "BCV",
+    "ISIN": "US0596951063",
+    "SEDOL": "2074069"
+  },
+  {
+    "mnemonic": "MTNB",
+    "ISIN": "US5768101058",
+    "SEDOL": "BN65XQ6"
+  },
+  {
+    "mnemonic": "THM",
+    "ISIN": "CA46050R1029",
+    "SEDOL": "B5ZYX57"
+  },
+  {
+    "mnemonic": "FLAG",
+    "ISIN": "US3207031010",
+    "SEDOL": "BMHV5Y8"
+  },
+  {
+    "mnemonic": "SATX",
+    "ISIN": "IL0011898850",
+    "SEDOL": "BNG5RT7"
+  },
+  {
+    "mnemonic": "CATX",
+    "ISIN": "US46489V1044",
+    "SEDOL": "B0H9B51"
+  },
+  {
+    "mnemonic": "ERH",
+    "ISIN": "US94987E1091",
+    "SEDOL": "B00ZGG2"
+  },
+  {
+    "mnemonic": "DIT",
+    "ISIN": "US02341Q2057",
+    "SEDOL": "B0146X5"
+  },
+  {
+    "mnemonic": "ISDR",
+    "ISIN": "US46520M2044",
+    "SEDOL": "B4603H9"
+  },
+  {
+    "mnemonic": "CYBN",
+    "ISIN": "CA23256X1006",
+    "SEDOL": "BKVF7B3"
+  },
+  {
+    "mnemonic": "USAS",
+    "ISIN": "CA03062D1006",
+    "SEDOL": "BK7CQM2"
+  },
+  {
+    "mnemonic": "MIMO",
+    "ISIN": "US00951K1043",
+    "SEDOL": "BLCH7K4"
+  },
+  {
+    "mnemonic": "PLX",
+    "ISIN": "US74365A3095",
+    "SEDOL": "BJ9RYW4"
+  },
+  {
+    "mnemonic": "ARMP",
+    "ISIN": "US04216R1023",
+    "SEDOL": "BH3T9X8"
+  },
+  {
+    "mnemonic": "XTNT",
+    "ISIN": "US98420P3082",
+    "SEDOL": "BYWFGK2"
+  },
+  {
+    "mnemonic": "GLU",
+    "ISIN": "US36242L1052",
+    "SEDOL": "B018V43"
+  },
+  {
+    "mnemonic": "DLA",
+    "ISIN": "US2473681037",
+    "SEDOL": "2603247"
+  },
+  {
+    "mnemonic": "HNW",
+    "ISIN": "US7236531015",
+    "SEDOL": "B1XYCH6"
+  },
+  {
+    "mnemonic": "SKYH",
+    "ISIN": "US83085C1071",
+    "SEDOL": "BPNXSS4"
+  },
+  {
+    "mnemonic": "HPX",
+    "ISIN": "KYG322191001",
+    "SEDOL": "BMHKYR1"
+  },
+  {
+    "mnemonic": "FURY",
+    "ISIN": "CA36117T1003",
+    "SEDOL": "BMQBPQ1"
+  },
+  {
+    "mnemonic": "ACU",
+    "ISIN": "US0048161048",
+    "SEDOL": "2006329"
+  },
+  {
+    "mnemonic": "FRD",
+    "ISIN": "US3584351056",
+    "SEDOL": "2352420"
+  },
+  {
+    "mnemonic": "PED",
+    "ISIN": "US70532Y3036",
+    "SEDOL": "BD9PWL1"
+  },
+  {
+    "mnemonic": "TMQ",
+    "ISIN": "CA89621C1059",
+    "SEDOL": "BD89HT7"
+  },
+  {
+    "mnemonic": "EMAN",
+    "ISIN": "US29076N2062",
+    "SEDOL": "B1GHPH3"
+  },
+  {
+    "mnemonic": "BHM",
+    "ISIN": "US09631H1005",
+    "SEDOL": "BN4F8R4"
+  },
+  {
+    "mnemonic": "ASM",
+    "ISIN": "CA0539061030",
+    "SEDOL": "B05P311"
+  },
+  {
+    "mnemonic": "GORO",
+    "ISIN": "US38068T1051",
+    "SEDOL": "B1DZ912"
+  },
+  {
+    "mnemonic": "GLV",
+    "ISIN": "US18913Y1038",
+    "SEDOL": "B020VN7"
+  },
+  {
+    "mnemonic": "VHAQ",
+    "ISIN": "US92853V1061",
+    "SEDOL": "BL53S95"
+  },
+  {
+    "mnemonic": "AAMC",
+    "ISIN": "VI02153X1080",
+    "SEDOL": "B7GYFQ5"
+  },
+  {
+    "mnemonic": "POL",
+    "ISIN": "US28252C1099",
+    "SEDOL": "BKP3C18"
+  },
+  {
+    "mnemonic": "CEV",
+    "ISIN": "US27826F1012",
+    "SEDOL": "2389235"
+  },
+  {
+    "mnemonic": "IDR",
+    "ISIN": "US6458272050",
+    "SEDOL": "BMB5CZ6"
+  },
+  {
+    "mnemonic": "RVP",
+    "ISIN": "US76129W1053",
+    "SEDOL": "2754888"
+  },
+  {
+    "mnemonic": "FCO",
+    "ISIN": "US0030131090",
+    "SEDOL": "2350060"
+  },
+  {
+    "mnemonic": "VGZ",
+    "ISIN": "CA9279263037",
+    "SEDOL": "B1XFD43"
+  },
+  {
+    "mnemonic": "MGLD",
+    "ISIN": "US57403M1045",
+    "SEDOL": "BNC3CN4"
+  },
+  {
+    "mnemonic": "INDO",
+    "ISIN": "KYG4760X1025",
+    "SEDOL": "BK79QV2"
+  },
+  {
+    "mnemonic": "NBW",
+    "ISIN": "US64123C1018",
+    "SEDOL": "2001313"
+  },
+  {
+    "mnemonic": "DPSI",
+    "ISIN": "US24345A5074",
+    "SEDOL": "BP6KZY7"
+  },
+  {
+    "mnemonic": "BKTI",
+    "ISIN": "US05587G1040",
+    "SEDOL": "BHS7T37"
+  },
+  {
+    "mnemonic": "KNW",
+    "ISIN": "US4992381032",
+    "SEDOL": "BF50RP3"
+  },
+  {
+    "mnemonic": "GRFX",
+    "ISIN": "US38867H1041",
+    "SEDOL": "BNXM9G2"
+  },
+  {
+    "mnemonic": "NTIP",
+    "ISIN": "US64121N1090",
+    "SEDOL": "2316200"
+  },
+  {
+    "mnemonic": "SNMP",
+    "ISIN": "US30053M1045",
+    "SEDOL": "BM9XPF3"
+  },
+  {
+    "mnemonic": "APT",
+    "ISIN": "US0207721095",
+    "SEDOL": "2042163"
+  },
+  {
+    "mnemonic": "SBEV",
+    "ISIN": "US84862C2035",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BDL",
+    "ISIN": "US3385171059",
+    "SEDOL": "2342562"
+  },
+  {
+    "mnemonic": "ESP",
+    "ISIN": "US2966501049",
+    "SEDOL": "2321679"
+  },
+  {
+    "mnemonic": "MAIA",
+    "ISIN": "US5526411021",
+    "SEDOL": "BMF1MR2"
+  },
+  {
+    "mnemonic": "STRW",
+    "ISIN": "US8631821019",
+    "SEDOL": "BPLV664"
+  },
+  {
+    "mnemonic": "IOR",
+    "ISIN": "US4529261087",
+    "SEDOL": "2449764"
+  },
+  {
+    "mnemonic": "CVU",
+    "ISIN": "US1259193084",
+    "SEDOL": "2431318"
+  },
+  {
+    "mnemonic": "XPL",
+    "ISIN": "US8342EP1070",
+    "SEDOL": "B021PD8"
+  },
+  {
+    "mnemonic": "NBO",
+    "ISIN": "US64124K1025",
+    "SEDOL": "2001409"
+  },
+  {
+    "mnemonic": "MPU",
+    "ISIN": "US0077371096",
+    "SEDOL": "2291158"
+  },
+  {
+    "mnemonic": "FGH",
+    "ISIN": "US3024621068",
+    "SEDOL": "BM92099"
+  },
+  {
+    "mnemonic": "AULT",
+    "ISIN": "US09175M1018",
+    "SEDOL": "BMZQFD4"
+  },
+  {
+    "mnemonic": "JOB",
+    "ISIN": "US36165A1025",
+    "SEDOL": "BD95VY7"
+  },
+  {
+    "mnemonic": "WWR",
+    "ISIN": "US9616842061",
+    "SEDOL": "BJHG304"
+  },
+  {
+    "mnemonic": "INUV",
+    "ISIN": "US46122W2044",
+    "SEDOL": "2238047"
+  },
+  {
+    "mnemonic": "CTM",
+    "ISIN": "US14838T2042",
+    "SEDOL": "BP828G4"
+  },
+  {
+    "mnemonic": "ITRG",
+    "ISIN": "CA45826T3010",
+    "SEDOL": "BMVXZV7"
+  },
+  {
+    "mnemonic": "MLSS",
+    "ISIN": "US59935P2092",
+    "SEDOL": "2323352"
+  },
+  {
+    "mnemonic": "ZDGE",
+    "ISIN": "US98923T1043",
+    "SEDOL": "BYQQ3Q6"
+  },
+  {
+    "mnemonic": "UAMY",
+    "ISIN": "US9115491030",
+    "SEDOL": "2910668"
+  },
+  {
+    "mnemonic": "BMTX",
+    "ISIN": "US05591L1070",
+    "SEDOL": "BN7J798"
+  },
+  {
+    "mnemonic": "WTT",
+    "ISIN": "US9765241081",
+    "SEDOL": "2973627"
+  },
+  {
+    "mnemonic": "AINC",
+    "ISIN": "US0441041078",
+    "SEDOL": "BSJRS58"
+  },
+  {
+    "mnemonic": "PLAG",
+    "ISIN": "US72703U1025",
+    "SEDOL": "BGK72S4"
+  },
+  {
+    "mnemonic": "FSI",
+    "ISIN": "CA33938T1049",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UAVS",
+    "ISIN": "US00848K1016",
+    "SEDOL": "BD9MJ11"
+  },
+  {
+    "mnemonic": "AUMN",
+    "ISIN": "US3811191069",
+    "SEDOL": "B3K9319"
+  },
+  {
+    "mnemonic": "HUSA",
+    "ISIN": "US44183U2096",
+    "SEDOL": "BMXBN71"
+  },
+  {
+    "mnemonic": "CCEL",
+    "ISIN": "US2288951088",
+    "SEDOL": "2238326"
+  },
+  {
+    "mnemonic": "GRF",
+    "ISIN": "US2694511005",
+    "SEDOL": "2618810"
+  },
+  {
+    "mnemonic": "TPHS",
+    "ISIN": "US89656D1019",
+    "SEDOL": "B8946X3"
+  },
+  {
+    "mnemonic": "DSS",
+    "ISIN": "US26253C1027",
+    "SEDOL": "BP818R2"
+  },
+  {
+    "mnemonic": "OPTT",
+    "ISIN": "US6748705067",
+    "SEDOL": "BHS7YD2"
+  },
+  {
+    "mnemonic": "CEI",
+    "ISIN": "US13200M6075",
+    "SEDOL": "BM920Y4"
+  },
+  {
+    "mnemonic": "PTN",
+    "ISIN": "US6960775020",
+    "SEDOL": "BNDY300"
+  },
+  {
+    "mnemonic": "SDPI",
+    "ISIN": "US8681531070",
+    "SEDOL": "BMJJVQ4"
+  },
+  {
+    "mnemonic": "AAU",
+    "ISIN": "CA0202833053",
+    "SEDOL": "BYQX5P0"
+  },
+  {
+    "mnemonic": "MPTI",
+    "ISIN": "US55380K1097",
+    "SEDOL": "BMQ67R1"
+  },
+  {
+    "mnemonic": "TKAT",
+    "ISIN": "US87407Q2075",
+    "SEDOL": "BYXXF97"
+  },
+  {
+    "mnemonic": "CVR",
+    "ISIN": "US1680881026",
+    "SEDOL": "2104461"
+  },
+  {
+    "mnemonic": "WLMS",
+    "ISIN": "US96951A1043",
+    "SEDOL": "BG7PR53"
+  },
+  {
+    "mnemonic": "MXC",
+    "ISIN": "US5927701012",
+    "SEDOL": "2435428"
+  },
+  {
+    "mnemonic": "SVT",
+    "ISIN": "US8177321002",
+    "SEDOL": "2797861"
+  },
+  {
+    "mnemonic": "LODE",
+    "ISIN": "US2057503003",
+    "SEDOL": "BKVK2S0"
+  },
+  {
+    "mnemonic": "BRN",
+    "ISIN": "US0682211000",
+    "SEDOL": "2081508"
+  },
+  {
+    "mnemonic": "LGL",
+    "ISIN": "US50186A1088",
+    "SEDOL": "2539728"
+  },
+  {
+    "mnemonic": "NHWK",
+    "ISIN": "US42237K4094",
+    "SEDOL": "BN4GB34"
+  },
+  {
+    "mnemonic": "AGE",
+    "ISIN": "US00848H1086",
+    "SEDOL": "BHM13H7"
+  },
+  {
+    "mnemonic": "SIF",
+    "ISIN": "US8265461033",
+    "SEDOL": "2807500"
+  },
+  {
+    "mnemonic": "AMS",
+    "ISIN": "US0295951059",
+    "SEDOL": "2029359"
+  },
+  {
+    "mnemonic": "AIM",
+    "ISIN": "US00901B1052",
+    "SEDOL": "BKM8GV4"
+  },
+  {
+    "mnemonic": "BTTR",
+    "ISIN": "US08771Y3036",
+    "SEDOL": "BLB1741"
+  },
+  {
+    "mnemonic": "IGC",
+    "ISIN": "US45408X3089",
+    "SEDOL": "B8P3GF6"
+  },
+  {
+    "mnemonic": "CKX",
+    "ISIN": "US12562N1046",
+    "SEDOL": "2215921"
+  },
+  {
+    "mnemonic": "TRT",
+    "ISIN": "US8967122057",
+    "SEDOL": "2905125"
+  },
+  {
+    "mnemonic": "WYY",
+    "ISIN": "US9675902095",
+    "SEDOL": "BLNBRP0"
+  },
+  {
+    "mnemonic": "YCBD",
+    "ISIN": "US12482W1018",
+    "SEDOL": "BJHG360"
+  },
+  {
+    "mnemonic": "KIQ",
+    "ISIN": "CA48826D2014",
+    "SEDOL": "B3BHVB8"
+  },
+  {
+    "mnemonic": "AIRI",
+    "ISIN": "US00912N4034",
+    "SEDOL": "BP9S4V8"
+  },
+  {
+    "mnemonic": "ID",
+    "ISIN": "US7021411027",
+    "SEDOL": "BLDDY33"
+  },
+  {
+    "mnemonic": "FOXO",
+    "ISIN": "US3514711072",
+    "SEDOL": "BQ9BFX3"
+  },
+  {
+    "mnemonic": "COHN",
+    "ISIN": "US19249M1027",
+    "SEDOL": "BYZ2138"
+  },
+  {
+    "mnemonic": "PW",
+    "ISIN": "US73933H1014",
+    "SEDOL": "B77D1Y1"
+  },
+  {
+    "mnemonic": "TOVX",
+    "ISIN": "US87164U4094",
+    "SEDOL": "BMG7NZ4"
+  },
+  {
+    "mnemonic": "IBIO",
+    "ISIN": "US4510336096",
+    "SEDOL": "BNM6T98"
+  },
+  {
+    "mnemonic": "IHT",
+    "ISIN": "US4579191085",
+    "SEDOL": "2727965"
+  },
+  {
+    "mnemonic": "NNVC",
+    "ISIN": "US6300873022",
+    "SEDOL": "BKM3D96"
+  },
+  {
+    "mnemonic": "PZG",
+    "ISIN": "US69924M1099",
+    "SEDOL": "BWTXL22"
+  },
+  {
+    "mnemonic": "MITQ",
+    "ISIN": "US62464R1095",
+    "SEDOL": "BK63SH5"
+  },
+  {
+    "mnemonic": "IDW",
+    "ISIN": "US44951N1063",
+    "SEDOL": "BZ567G2"
+  },
+  {
+    "mnemonic": "IMH",
+    "ISIN": "US45254P5089",
+    "SEDOL": "2447412"
+  },
+  {
+    "mnemonic": "VINE",
+    "ISIN": "US35804X1019",
+    "SEDOL": "BM8JCF1"
+  },
+  {
+    "mnemonic": "MYO",
+    "ISIN": "US62857J2015",
+    "SEDOL": "BKRMRM9"
+  },
+  {
+    "mnemonic": "MSN",
+    "ISIN": "US2910872033",
+    "SEDOL": "2311380"
+  },
+  {
+    "mnemonic": "RCG",
+    "ISIN": "US7597201059",
+    "SEDOL": "B73P4R5"
+  },
+  {
+    "mnemonic": "AUST",
+    "ISIN": "CA05223F1062",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PHGE",
+    "ISIN": "US09090D1037",
+    "SEDOL": "BKSSZJ9"
+  },
+  {
+    "mnemonic": "AWX",
+    "ISIN": "US05343P1093",
+    "SEDOL": "2255198"
+  },
+  {
+    "mnemonic": "NAVB",
+    "ISIN": "US63937X2027",
+    "SEDOL": "BJHDL45"
+  },
+  {
+    "mnemonic": "LSF",
+    "ISIN": "US50736T1025",
+    "SEDOL": "BN2BDY6"
+  },
+  {
+    "mnemonic": "OGEN",
+    "ISIN": "US6840235005",
+    "SEDOL": "BMDLXR1"
+  },
+  {
+    "mnemonic": "AMBO",
+    "ISIN": "US02322P2002",
+    "SEDOL": "BYNQP52"
+  },
+  {
+    "mnemonic": "CANF",
+    "ISIN": "US13471N3008",
+    "SEDOL": "BMTWHW1"
+  },
+  {
+    "mnemonic": "SSY",
+    "ISIN": "US86737U1025",
+    "SEDOL": "2880222"
+  },
+  {
+    "mnemonic": "RMED",
+    "ISIN": "US74933X3026",
+    "SEDOL": "BQ0QX88"
+  },
+  {
+    "mnemonic": "TMBR",
+    "ISIN": "US8870802084",
+    "SEDOL": "BMGHPS1"
+  },
+  {
+    "mnemonic": "ENSV",
+    "ISIN": "US29358Y2019",
+    "SEDOL": "BN0TDZ3"
+  },
+  {
+    "mnemonic": "EFSH",
+    "ISIN": "US28252B8046",
+    "SEDOL": "BN7R7X6"
+  },
+  {
+    "mnemonic": "RHE",
+    "ISIN": "US75903M3097",
+    "SEDOL": "BG861L9"
+  },
+  {
+    "mnemonic": "ITP",
+    "ISIN": "US46527C2098",
+    "SEDOL": "BPG3Z80"
+  },
+  {
+    "mnemonic": "GBR",
+    "ISIN": "US6436111065",
+    "SEDOL": "2824822"
+  },
+  {
+    "mnemonic": "UUU",
+    "ISIN": "US9138213023",
+    "SEDOL": "2202291"
+  },
+  {
+    "mnemonic": "CPHI",
+    "ISIN": "US16941T1043",
+    "SEDOL": "2214810"
+  },
+  {
+    "mnemonic": "AMPE",
+    "ISIN": "US03209T2087",
+    "SEDOL": "BQXQD18"
+  },
+  {
+    "mnemonic": "NBY",
+    "ISIN": "US66987P3001",
+    "SEDOL": "BP9PSM8"
+  },
+  {
+    "mnemonic": "UFAB",
+    "ISIN": "US90915J1034",
+    "SEDOL": "BYR5997"
+  },
+  {
+    "mnemonic": "DXF",
+    "ISIN": "US26605Q1067",
+    "SEDOL": "BFLX4R7"
+  },
+  {
+    "mnemonic": "AULT^D",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BCV^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ECF^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GGN^B",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLU^B",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "HWM^",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "INLX",
+    "ISIN": "US45825X2045",
+    "SEDOL": "BL98SY1"
+  },
+  {
+    "mnemonic": "PCG^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^B",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^C",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^D",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^E",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^G",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^H",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^I",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PLYM^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PW^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "RHE^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SACC",
+    "ISIN": "US78590A3077",
+    "SEDOL": "BKDLT79"
+  },
+  {
+    "mnemonic": "SACH^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SCCB",
+    "ISIN": "US78590A2087",
+    "SEDOL": "BK60HC4"
+  },
+  {
+    "mnemonic": "SCCC",
+    "ISIN": "US78590A4067",
+    "SEDOL": "BL53RV0"
+  },
+  {
+    "mnemonic": "SCCD",
+    "ISIN": "US78590A6047",
+    "SEDOL": "BNYL4G3"
+  },
+  {
+    "mnemonic": "SCCE",
+    "ISIN": "US78590A7037",
+    "SEDOL": "BNC3B71"
+  },
+  {
+    "mnemonic": "SCCF",
+    "ISIN": "US78590A8027",
+    "SEDOL": "BPQDWT0"
+  },
+  {
+    "mnemonic": "SCCG",
+    "ISIN": "US78590A8779",
+    "SEDOL": "BMYSHQ8"
+  },
+  {
+    "mnemonic": "TELZ",
+    "ISIN": "US87968A2033",
+    "SEDOL": "BPLQR33"
+  },
+  {
+    "mnemonic": "YCBD^A",
+    "ISIN": "",
+    "SEDOL": ""
+  }
+]

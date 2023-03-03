@@ -160,6 +160,18 @@ region (stocks):
 expense ratio (etf):
 (295) ''
 
+
+no ISIN, no SEDOL: 19
+AULT^D, BCV^A, ECF^A, GGN^B, GLU^B, HWM^, PCG^A, PCG^B, PCG^C, PCG^D, PCG^E, PCG^G, PCG^H, PCG^I, PLYM^A, PW^A, RHE^A, SACH^A, YCBD^A, 
+
+no SEDOL: 4
+BGI, SBEV, FSI, AUST, 
+
+no ISIN: 0
+
+
+both ISIN and SEDOL: 272
+
 is listed nasdaq (stocks):
 (295) 'false'
 

@@ -209,3 +209,15 @@ is listed nasdaq (stocks):
 
 is nasdaq 100 (stocks):
 (2964) 'false'
+
+
+no ISIN, no SEDOL: 5
+SDGA, ACWF, CSH, MID, NFTZ, 
+
+no SEDOL: 5
+FAZ, AAAU, GCC, HIBS, TZA, 
+
+no ISIN: 0
+
+
+both ISIN and SEDOL: 2954
