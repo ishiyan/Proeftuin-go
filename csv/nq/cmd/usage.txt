@@ -1,4 +1,22 @@
 
+https://www.nasdaq.com/market-activity/stock-market-holiday-schedule
+2023 U.S. Stock Market Holiday Schedule
+---------------------------------------
+Holiday                     2023                Status
+New Year's Day              January 2, 2023     Closed
+Martin Luther King, Jr. Day January 16, 2023    Closed
+Presidents Day              February 20, 2023   Closed
+Good Friday                 April 7, 2023       Closed
+Memorial Day                May 29, 2023        Closed
+Juneteenth Holiday          June 19, 2023       Closed
+Early Close                 July 3, 2023        1:00 p.m.
+Independence Day            July 4, 2023        Closed
+Labor Day                   September 4, 2023   Closed
+Thanksgiving Day            November 23, 2023   Closed
+Early Close                 November 24, 2023   1:00 p.m.
+Christmas Day               December 25, 2023   Closed
+
+
 before retrieving symbols, check these in browser and ensure there's no paging
 ------------------------------------------------------------------------------
 etf
