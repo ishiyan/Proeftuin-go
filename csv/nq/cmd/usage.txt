@@ -16,6 +16,12 @@ Thanksgiving Day            November 23, 2023   Closed
 Early Close                 November 24, 2023   1:00 p.m.
 Christmas Day               December 25, 2023   Closed
 
+Zomertijden
+Sun, Mar 26, 2023 2:00 AM - Sun, Oct 29, 2023 3:00 AM
+US summertime
+Start DST: Sunday, 12 March 2023 — 1 hour forward
+End DST:   Sunday, 5 November 2023 — 1 hour backward
+
 
 before retrieving symbols, check these in browser and ensure there's no paging
 ------------------------------------------------------------------------------
