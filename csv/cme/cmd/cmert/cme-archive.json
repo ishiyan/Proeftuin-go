@@ -1,0 +1,79 @@
+{
+    "symbols": [
+    {
+      "future": "ES",
+      "mnemonic": "ESM24",
+      "name": "E-mini S&P 500 Futures",
+      "code": "133",
+      "contractMonth": "JUN 2024",
+      "contractCode": "M4",
+      "currency": "USD",
+      "mic": "XCME",
+      "monthShortcut": "JUN-24",
+      "firstTradeDate": "2023-03-18",
+      "lastTradeDate": "2024-06-21",
+      "settlementDate": "2024-06-21",
+      "rolloverDate": "2024-06-14"
+    },
+    {
+      "future": "ES",
+      "mnemonic": "ESH24",
+      "name": "E-mini S&P 500 Futures",
+      "code": "133",
+      "contractMonth": "MAR 2024",
+      "contractCode": "H4",
+      "currency": "USD",
+      "mic": "XCME",
+      "monthShortcut": "MAR-24",
+      "firstTradeDate": "2022-12-17",
+      "lastTradeDate": "2024-03-15",
+      "settlementDate": "2024-03-15",
+      "rolloverDate": "2024-03-11"
+    },
+    {
+      "future": "ES",
+      "mnemonic": "ESZ23",
+      "name": "E-mini S&P 500 Futures",
+      "code": "133",
+      "contractMonth": "DEC 2023",
+      "contractCode": "Z3",
+      "currency": "USD",
+      "mic": "XCME",
+      "monthShortcut": "DEC-23",
+      "firstTradeDate": "2022-09-13",
+      "lastTradeDate": "2023-12-15",
+      "settlementDate": "2023-12-15",
+      "rolloverDate": "2023-12-11"
+    },
+    {
+      "future": "ES",
+      "mnemonic": "ESU23",
+      "name": "E-mini S&P 500 Futures",
+      "code": "133",
+      "contractMonth": "SEP 2023",
+      "contractCode": "U3",
+      "currency": "USD",
+      "mic": "XCME",
+      "monthShortcut": "SEP-23",
+      "firstTradeDate": "2022-06-18",
+      "lastTradeDate": "2023-09-15",
+      "settlementDate": "2023-09-15",
+      "rolloverDate": "2023-09-11"
+    },
+    {
+      "future": "ES",
+      "mnemonic": "ESM23",
+      "name": "E-mini S&P 500 Futures",
+      "code": "133",
+      "contractMonth": "JUN 2023",
+      "contractCode": "M3",
+      "currency": "USD",
+      "mic": "XCME",
+      "monthShortcut": "JUN-23",
+      "firstTradeDate": "2022-03-17",
+      "lastTradeDate": "2023-06-16",
+      "settlementDate": "2023-06-16",
+      "rolloverDate": "2023-06-12"
+    }
+  ]
+}

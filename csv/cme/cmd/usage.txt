@@ -1,0 +1,90 @@
+
+https://www.nasdaq.com/market-activity/stock-market-holiday-schedule
+2023 U.S. Stock Market Holiday Schedule
+---------------------------------------
+Holiday                     2023                Status
+New Year's Day              January 2, 2023     Closed
+Martin Luther King, Jr. Day January 16, 2023    Closed
+Presidents Day              February 20, 2023   Closed
+Good Friday                 April 7, 2023       Closed
+Memorial Day                May 29, 2023        Closed
+Juneteenth Holiday          June 19, 2023       Closed
+Early Close                 July 3, 2023        1:00 p.m.
+Independence Day            July 4, 2023        Closed
+Labor Day                   September 4, 2023   Closed
+Thanksgiving Day            November 23, 2023   Closed
+Early Close                 November 24, 2023   1:00 p.m.
+Christmas Day               December 25, 2023   Closed
+
+Zomertijden
+Sun, Mar 26, 2023 2:00 AM - Sun, Oct 29, 2023 3:00 AM
+US summertime
+Start DST: Sunday, 12 March 2023 — 1 hour forward
+End DST:   Sunday, 5 November 2023 — 1 hour backward
+
+
+before retrieving symbols, check these in browser and ensure there's no paging
+------------------------------------------------------------------------------
+etf
+https://api.nasdaq.com/api/screener/etf?tableonly=true&limit=999999&offset=0&download=true
+stock
+https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=999999&offset=0&download=false
+
+download stock symbols for individual exchanges
+-----------------------------------------------
+nqsym.exe -category=stock-nasdaq >>nasdaq-stock-nasdaq.log
+nqsym.exe -category=stock-amex >>nasdaq-stock-amex.log
+nqsym.exe -category=stock-nyse >>nasdaq-stock-nyse.log
+
+nqsymstat.exe -symbols=nasdaq-stock-nasdaq.json >nasdaq-stock-nasdaq.stat
+nqsymstat.exe -symbols=nasdaq-stock-amex.json >nasdaq-stock-amex.stat
+nqsymstat.exe -symbols=nasdaq-stock-nyse.json >nasdaq-stock-nyse.stat
+
+download stock symbols for all stocks
+-------------------------------------
+nqsym.exe -category=stock >>nasdaq-stock.log
+
+download stock symbols for all etf
+----------------------------------
+nqsym.exe -category=etf >>nasdaq-etf.log
+nqsymstat.exe -symbols=nasdaq-etf.json >nasdaq-etf.stat
+
+download trade history at the end of the day
+--------------------------------------------
+nqrt.exe -symbols=nasdaq-stock-nasdaq.json >>nasdaq-stock-nasdaq.log
+rename nasdaq-downloads nasdaq-downloads-stock-nasdaq
+
+nqrt.exe -symbols=nasdaq-stock-amex.json >>nasdaq-stock-amex.log
+rename nasdaq-downloads nasdaq-downloads-stock-amex
+
+nqrt.exe -symbols=nasdaq-stock-nyse.json >>nasdaq-stock-nyse.log
+rename nasdaq-downloads nasdaq-downloads-stock-nyse
+
+nqrt.exe -symbols=nasdaq-etf.json >>nasdaq-etf.log
+rename nasdaq-downloads nasdaq-downloads-etf
+
+example batch
+-------------
+@echo off
+
+call timeout -t 8100
+
+call nqrt.exe -symbols=nasdaq-stock-nasdaq.json >>nasdaq-stock-nasdaq.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-stock-nasdaq
+)
+
+call nqrt.exe -symbols=nasdaq-stock-amex.json >>nasdaq-stock-amex.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-stock-amex
+)
+
+call nqrt.exe -symbols=nasdaq-stock-nyse.json >>nasdaq-stock-nyse.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-stock-nyse
+)
+
+call nqrt.exe -symbols=nasdaq-etf.json >>nasdaq-etf.log
+if exist nasdaq-downloads (
+ren nasdaq-downloads nasdaq-downloads-etf
+)
