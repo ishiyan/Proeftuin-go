@@ -227,13 +227,13 @@ repeat:
 }
 
 func sessionDate() (time.Time, error) {
-	today := time.Now()
-	loc, err := time.LoadLocation("EST")
+	today := time.Now().Add(time.Hour * -6)
+	/*loc, err := time.LoadLocation("EST")
 	if err != nil {
 		return today, fmt.Errorf("cannot load EST timezone: %w", err)
 	}
 
-	today = today.In(loc)
+	today = today.In(loc)*/
 	dow := today.Weekday()
 	if dow == time.Saturday {
 		return today.AddDate(0, 0, -1), nil

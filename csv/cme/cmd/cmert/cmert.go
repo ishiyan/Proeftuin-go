@@ -106,20 +106,20 @@ func readSymbols(fileName string) (*symbols, error) {
 }
 
 func sessionDate() (time.Time, error) {
-	today := time.Now()
-	loc, err := time.LoadLocation("EST")
+	today := time.Now().Add(time.Hour * -7)
+	/*loc, err := time.LoadLocation("EST")
 	if err != nil {
 		return today, fmt.Errorf("cannot load EST timezone: %w", err)
 	}
 
-	today = today.In(loc)
+	today = today.In(loc)*/
 	dow := today.Weekday()
 	if dow == time.Sunday {
 		return today.AddDate(0, 0, -1), nil
 	} else if dow == time.Monday {
 		return today.AddDate(0, 0, -2), nil
 	} else {
-		return today.AddDate(0, 0, -1), nil
+		return today/*.AddDate(0, 0, -1)*/, nil
 	}
 }
 
