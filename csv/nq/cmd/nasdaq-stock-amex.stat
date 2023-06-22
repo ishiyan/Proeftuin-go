@@ -177,3 +177,187 @@ is listed nasdaq (stocks):
 
 is nasdaq 100 (stocks):
 (295) 'false'
+=======================================
+2023-06-22_15-49-34
+=======================================
+
+file: nasdaq-stock-amex.json
+
+mic:
+(303) 'AMXO'
+
+exchange:
+(303) 'AMEX'
+
+stock type (stocks):
+(2) 'Ordinary Share'
+(1) '7.125% Notes due 2024 Exchange Traded Debt (Baby Bond)'
+(13) 'Class A Common Stock'
+(1) 'Common Shares (Canada)'
+(1) 'Class A Common stock'
+(1) 'The Gabelli Gold, Natural Resources and Income Trust Common Shares of Beneficial Interest'
+(1) 'Neuberger Berman Real Estate Securities Income Fund, Inc.'
+(2) 'American Depositary Shares'
+(1) '8.00% Notes due 2027 Exchange Traded Debt (Baby Bond)'
+(1) '7.125% Notes due 2027 Exchange Traded Debt (Baby Bond)'
+(1) '6.00% Notes due 2027 Exchange Traded Debt (Baby Bond)'
+(2) 'Common Shares of Beneficial Interest, $.01 par value'
+(1) 'Clough Global Equity Fund Common Shares of Beneficial Interest'
+(25) 'Common Shares'
+(3) 'Common Stock Real Estate Investment Trust'
+(1) 'Common Shares of Beneficial Ownership'
+(1) 'Ordinary Shares Common Shares'
+(1) 'American depositary shares, each representing 60 Class A ordinary shares'
+(1) 'Class B Common Stock'
+(1) 'Common Stock, no par value'
+(15) 'Ordinary Shares'
+(1) '6.875% Notes due 2024 Exchange Traded Debt (Baby Bond)'
+(6) 'Class A Ordinary Shares'
+(1) 'Ordinary Shares (Canada)'
+(1) ''
+(1) 'Class A Common Voting Shares'
+(1) '8.25% Senior Notes due 2028 Exchange Traded Debt (Baby Bond)'
+(1) 'Common Stock Common Shares'
+(16) 'Preferred Stock'
+(1) 'Common Units'
+(1) 'Common shares (Canada) Common Shares'
+(1) 'American Depositary Shares, each American Depositary Share representing 20 Ordinary Shares'
+(1) 'Ordinary Shares New (Canada)'
+(1) '7.75% Notes due 2025 Exchange Traded Debt (Baby Bond)'
+(1) '6.00% Notes due 2026 Exchange Traded Debt (Baby Bond)'
+(1) 'Com'
+(1) 'Class A Depositary Receipts Evidencing Units of Limited Partnership'
+(1) 'American Depository Shares, each representing two Class A ordinary shares'
+(1) 'Mutual Fund'
+(173) 'Common Stock'
+(7) 'Common Shares of Beneficial Interest'
+(1) 'Class A Units'
+(3) 'Shares of Beneficial Interest'
+(1) 'Common Shares, without par value'
+(2) 'Common'
+(1) 'Commom Stock'
+(1) 'Sponsored ADR (Israel)'
+
+asset class:
+(303) 'STOCKS'
+
+industry (stocks):
+(1) 'Auto Parts:O.E.M.'
+(1) 'Trusts, Except Educational, Religious, and Charitable'
+(2) 'Diversified Commercial Services'
+(1) 'Managed Health Care'
+(1) 'Finance: Consumer Services'
+(5) 'Military/Government/Technical'
+(3) 'EDP Services'
+(2) 'Containers/Packaging'
+(1) 'Plastic Products'
+(1) 'Commercial Banks'
+(1) 'Multi-Sector Companies'
+(1) 'Office Equipment/Supplies/Services'
+(1) 'Farming/Seeds/Milling'
+(4) 'Other Metals and Minerals'
+(2) 'Consumer Specialties'
+(1) 'Metal Fabrications'
+(2) 'Oil/Gas Transmission'
+(2) 'Oil Refining/Marketing'
+(3) 'Professional Services'
+(2) 'Electrical Products'
+(2) 'Packaged Foods'
+(1) 'Aerospace'
+(2) 'Biotechnology: Electromedical & Electrotherapeutic Apparatus'
+(3) 'Real Estate'
+(3) 'Educational Services'
+(1) 'Miscellaneous manufacturing industries'
+(1) 'Railroads'
+(28) 'Precious Metals'
+(13) 'Industrial Machinery/Components'
+(1) 'Construction/Ag Equipment/Trucks'
+(1) 'Other Specialty Stores'
+(1) 'Oilfield Services/Equipment'
+(1) 'Biotechnology: In Vitro & In Vivo Diagnostic Substances'
+(10) 'Blank Checks'
+(1) 'Restaurants'
+(1) 'Home Furnishings'
+(6) 'Medical/Dental Instruments'
+(1) 'Integrated oil Companies'
+(29) 'N/A'
+(2) 'Mining & Quarrying of Nonmetallic Minerals (No Fuels)'
+(3) 'Beverages (Production/Distribution)'
+(1) 'Building operators'
+(21) 'Biotechnology: Pharmaceutical Preparations'
+(1) 'Semiconductors'
+(1) 'Publishing'
+(2) 'Retail: Computer Software & Peripheral Equipment'
+(1) 'Electronic Components'
+(4) 'Investment Managers'
+(5) 'Investment Bankers/Brokers/Service'
+(2) 'Environmental Services'
+(2) 'Industrial Specialties'
+(1) 'Food Distributors'
+(1) 'Medical Specialities'
+(2) 'Radio And Television Broadcasting And Communications Equipment'
+(2) 'Hospital/Nursing Management'
+(1) 'Finance Companies'
+(17) 'Oil & Gas Production'
+(2) 'Electric Utilities: Central'
+(1) 'Apparel'
+(1) 'Advertising'
+(5) 'Major Banks'
+(14) 'Real Estate Investment Trusts'
+(4) 'Major Chemicals'
+(2) 'Steel/Iron Ore'
+(1) 'Transportation Services'
+(1) 'Consumer Electronics/Appliances'
+(1) 'Other Consumer Services'
+(1) 'Broadcasting'
+(2) 'Computer Software: Prepackaged Software'
+(1) 'Package Goods/Cosmetics'
+(1) 'Rental/Leasing Companies'
+(33) 'Finance/Investors Services'
+(4) 'Telecommunications Equipment'
+(7) 'Metal Mining'
+(1) 'Building Products'
+(9) 'Biotechnology: Biological Products (No Diagnostic Substances)'
+
+sector: (stocks)
+(63) 'Finance'
+(27) 'Industrials'
+(39) 'Basic Materials'
+(31) 'Consumer Discretionary'
+(29) 'N/A'
+(2) 'Telecommunications'
+(17) 'Technology'
+(20) 'Energy'
+(45) 'Health Care'
+(7) 'Consumer Staples'
+(2) 'Miscellaneous'
+(5) 'Utilities'
+(16) 'Real Estate'
+
+region (stocks):
+(193) 'North America'
+(99) ''
+(1) 'Europe'
+(3) 'Middle East'
+(7) 'Asia'
+
+expense ratio (etf):
+(303) ''
+
+is listed nasdaq (stocks):
+(303) 'false'
+
+is nasdaq 100 (stocks):
+(303) 'false'
+
+
+no ISIN, no SEDOL: 16
+AULT^D, BCV^A, ECF^A, GGN^B, GLU^B, HWM^, PCG^A, PCG^B, PCG^C, PCG^D, PCG^G, PCG^H, PCG^I, PLYM^A, SACH^A, YCBD^A, 
+
+no SEDOL: 1
+SBEV, 
+
+no ISIN: 0
+
+
+both ISIN and SEDOL: 286

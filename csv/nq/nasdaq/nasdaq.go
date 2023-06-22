@@ -235,18 +235,24 @@ func sessionDate() (time.Time, error) {
 
 	today = today.In(loc)*/
 	dow := today.Weekday()
-	if dow == time.Saturday {
+	/*if dow == time.Tuesday {
+		return today.AddDate(0, 0, -1), nil
+	} else if dow == time.Wednesday {
+		return today.AddDate(0, 0, -2), nil
+	} else if dow == time.Thursday {
+		return today.AddDate(0, 0, -3), nil
+	} else*/ if dow == time.Saturday {
 		return today.AddDate(0, 0, -1), nil
 	} else if dow == time.Sunday {
 		return today.AddDate(0, 0, -2), nil
 	} else {
-		if today.Hour() < 9 || (today.Hour() == 9 && today.Minute() <= 25) {
+		/*if today.Hour() < 9 || (today.Hour() == 9 && today.Minute() <= 25) {
 			return today.AddDate(0, 0, -1), nil
 		}
 
 		if today.Hour() < 15 || (today.Hour() == 15 && today.Minute() <= 35) {
 			return today, fmt.Errorf("time now should be outside 09:25 till 15:35 EST: %v", today)
-		}
+		}*/
 
 		return today, nil
 	}

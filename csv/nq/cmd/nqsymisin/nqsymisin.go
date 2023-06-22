@@ -77,6 +77,12 @@ func main() {
 		})
 	}
 
+	suffix := "." + t
+	err = os.Rename(isinSedolFileName, isinSedolFileName+suffix)
+	if err != nil {
+		panic(fmt.Sprintf("Cannot rename original JSON file: %s", err))
+	}
+
 	f, err := os.OpenFile(isinSedolFileName, os.O_CREATE, os.ModePerm)
 	if err != nil {
 		panic(fmt.Sprintf("cannot create new JSON file: %s", err))

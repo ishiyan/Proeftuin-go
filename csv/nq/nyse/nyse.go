@@ -172,7 +172,7 @@ func unmarshalContent(jsn []byte) (*NyseContent, error) {
 	}
 */
 func GetSymbol(symbol string) (*NyseSymbol, error) /*(*NyseContent, error)*/ {
-	const urlPrefix = "https://data2-widgets.dataservices.theice.com/fsml?requestType=content&username=nysecomwebsite&key=oHhwWp17SzK9d77UJcnVMG6YGEAxxpjGr7K6x5VF48gmm8VMhYItfTYw%2FjtC1pWsKWOhDAZdafL%2FVTfPQ5yx5hgr%2FsUG8MiD%2BfRBLLZR2ms%3D&cbid=7010&dataset=MQ_Fundamentals&fsmlParams=key%3D"
+	const urlPrefix = "https://data2-widgets.dataservices.theice.com/fsml?requestType=content&username=nysecomwebsite&key=oHhwWp17SzK9d77UJcnVMG6YGEAxxpjGr7K6x5VF48gmm8VMhYItfTYw%2FjtC1pWsKWOhDAZdafL%2FVTfPQ5yx5rkEJHxLla2TYEUDVYWpRCU%3D&cbid=7010&dataset=MQ_Fundamentals&fsmlParams=key%3D"
 	const urlSuffix = "&json=true"
 	url := urlPrefix + symbol + urlSuffix
 	fmt.Println(url)
