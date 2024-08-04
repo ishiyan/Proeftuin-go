@@ -146,7 +146,8 @@ func ResetCookie() {
 }
 
 func getCookie() error {
-	req, err := http.NewRequest("GET", "https://www.nasdaq.com/market-activity/stocks/adbe", nil)
+	//req, err := http.NewRequest("GET", "https://www.nasdaq.com/market-activity/stocks/adbe", nil)
+	req, err := http.NewRequest("GET", "https://api.nasdaq.com/api/quote/aapl/realtime-trades", nil)
 	if err != nil {
 		cookieValue = empty
 		return fmt.Errorf("cannot create request: %w", err)
@@ -163,6 +164,7 @@ func getCookie() error {
 	defer resp.Body.Close()
 
 	for _, q := range resp.Cookies() {
+		fmt.Println("response cookie: " + q.Name + " value: " + q.Value)
 		if q.Name == cookieName {
 			cookieValue = q.Value
 			fmt.Println("obtained access cookie: " + cookieValue)
@@ -177,11 +179,12 @@ func getCookie() error {
 
 func get(targetURL string) ([]byte, error) {
 repeat:
-	if cookieValue == empty {
-		if err := getCookie(); err != nil {
-			return nil, fmt.Errorf("cannot obtain access cookie: %w", err)
-		}
-	}
+	//if cookieValue == empty {
+	//	_ = getCookie()
+	//	//if err := getCookie(); err != nil {
+	//	//	return nil, fmt.Errorf("cannot obtain access cookie: %w", err)
+	//	//}
+	//}
 
 	req, err := http.NewRequest("GET", targetURL, nil)
 	if err != nil {
@@ -189,8 +192,9 @@ repeat:
 	}
 
 	req.Header.Set("User-Agent", userAgent)
-	req.AddCookie(&http.Cookie{Name: cookieName, Value: cookieValue})
-
+	//if cookieValue != empty {
+	//	req.AddCookie(&http.Cookie{Name: cookieName, Value: cookieValue})
+	//}
 	httpClient := http.Client{Timeout: time.Duration(60) * time.Second}
 
 	var resp *http.Response

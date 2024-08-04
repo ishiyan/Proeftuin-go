@@ -1,0 +1,20 @@
+=======================================
+2023-02-26_15-36-58
+=======================================
+reading nasdaq-etf.json
+obtained access cookie: 506A7A5AEFD51569B1440611139438E5~000000000000000000000000000000~YAAQNPBuaDS44ouGAQAAvOInjhIEqUWxLL3bwzRzo4cRJamS6ZuTCDIsXcVnc+0LL7by8n/E9zzo7LQt5nTUfy8pjbeMBzalGDPo0cWLYjsUPhM5YImNE3PNE+qgGPAzfdyxKzSYsKQ+SlWWC7atAi33Gc18FMsLwFKdiqfJAQQcbtKPGBS6mfoxcId1WyXBi3TqWULWYS1z+TJ++fu10wEXq3Oasexh8w+/YGv91kGA2p+QgeW9xGADMj8PqeqIGYk+Kim1agrMmasSB8sC/h+gWKaMmbt28q3P8HXbZWzOpBf9DkeBCLBjg9GUt3N+fSKPHl1HmWqbx2Z89hz9x4tluGjLx7fw/qf4uQcQBcnXSX2LC427CsBH5UdCQVNh53Q6TFP8HhIGNEd5SgFy0vKSQfkYAUGrM6Fzvcx8W98=
+retrieved 2964 symbols
+cannot do request, retries (5 of 5): Get "https://api.nasdaq.com/api/quote/KSTR/info?assetclass=etf": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+DTEC: unknown mic for exchange: 'Index', setting to XXXX
+finished: 2023-02-26_16-26-51
+=======================================
+2023-06-22_14-05-14
+=======================================
+reading nasdaq-etf.json
+obtained access cookie: 80D9BA2F75431242FC651621B60CBF9C~000000000000000000000000000000~YAAQDRndWPrQh9yIAQAAqQMA4xTRalFacTosc3ij/a741OLgKxCAXCFWHX56JlBHlod+9YQQ/vOQFlvjh79odvzLWKTFZqX1sI33O6kyR4b3D3tUdDV8VIiUwHw/1afBu/c93XKMFJuHFod7gipwPwqfAlfJU3xA4TNfyKq7kAmbxLwQcv22av4UpbwqcKRQsUuOb6j1ZcXB/sj1aNaDz8sjbVWa0jnjEBU4c2wNH+9612VhSSDTysNAP2V0mwXQjfQ+mOVZfxjKpE/S3fB9z/mSa+b40SnuZig3qeZfjdiwsssw+hs/bkVGYXLxTLFngR5j9UJtICMINwkWFMW6Ke+P/PnoaXZY7jcs0aletbkxCV+5KAwbbjni6eSMbHXuPkw7P6+SxNjR6SAkzJKMnSQeO4h9i2f3oR36a7IwAoM=
+retrieved 2873 symbols
+cannot do request, retries (5 of 5): Get "https://api.nasdaq.com/api/quote/PY/info?assetclass=etf": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+cannot do request, retries (4 of 5): Get "https://api.nasdaq.com/api/quote/PY/info?assetclass=etf": read tcp [2a02:a453:8e60:1:8ac8:3fd0:b97a:959d]:53426->[2a02:26f0:fe00:380::1b46]:443: wsarecv: An existing connection was forcibly closed by the remote host.
+DTEC: unknown mic for exchange: 'Index', setting to XXXX
+cannot do request, retries (5 of 5): Get "https://api.nasdaq.com/api/quote/DXD/info?assetclass=etf": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+finished: 2023-06-22_15-08-00
