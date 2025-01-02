@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<instruments>
+  <instrument foundInSearch="true" mic="XMSM" isin="IE0003290289" symbol="EG7" name="FBD HOLDINGS PLC" type="stock" file="xmsm/stock/EG7.h5:/XMSM_EG7_IE0003290289" description="" mep="DUB" vendor="Euronext">
+    <stock cfi="ESVUFR" compartment="B" tradingMode="fixing" currency="EUR" shares="34,862,464">
+      <icb icb1="8000" icb2="8500" icb3="8530" icb4="8532" />
+    </stock>
+  </instrument>
+  <instrument foundInSearch="false" mic="XPAR" isin="NL0010489522" symbol="null" name="CONSTELLIUM PROM" type="stock" file="xpar/stock/null.h5:/XPAR_null_NL0010489522" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUFB" compartment="B" tradingMode="continuous" currency="EUR" shares="104,062,866">
+      <icb icb1="1000" icb2="1700" icb3="1750" icb4="1753" />
+    </stock>
+  </instrument>
+  <!-- 20190724_213937 -->
+  <instrument foundInSearch="true" mic="ALXP" isin="IT0005380438" symbol="ALKER" name="MEDIA MAKER" type="stock" file="alxp/stock/ALKER.h5:/ALXP_ALKER_IT0005380438" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUF" compartment="" tradingMode="continuous" currency="EUR" shares="2,000,000">
+      <icb icb1="5000" icb2="5500" icb3="5550" icb4="" />
+    </stock>
+  </instrument>
+  <!-- 20190725_215334 -->
+  <instrument foundInSearch="true" mic="XMLI" isin="FR0013406881" symbol="MLCMG" name="GRECEMAR" type="stock" file="xmli/stock/MLCMG.h5:/XMLI_MLCMG_FR0013406881" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUFN" compartment="" tradingMode="double call auction" currency="EUR" shares="30,798,785">
+      <icb icb1="1000" icb2="1700" icb3="1770" icb4="1775" />
+    </stock>
+  </instrument>
+  <!-- ============================================= index xams ============================================= -->
+  <instrument foundInSearch="true" mic="XAMS" isin="NL0000000107" symbol="AEX" name="AEX-INDEX" type="index" file="xams/index/AEX.h5:/XAMS_AEX_NL0000000107" description="The best-known index of Euronext Amsterdam, the AEX (Price) index, is made up of the 25 most traded companies in the Netherlands measured over the previous calender year." mep="AMS" vendor="Euronext">
+    <index kind="price" family="AEX" calcFreq="15s" baseDate="1983-01-03" baseLevel="45.378" weighting="float market cap" capFactor="0.15" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="false" mic="XAMS" isin="QS0011230248" symbol="AMX3L" name="AMX X3 LEVERAGE NR" type="index" file="xams/index/AMX3L.h5:/XAMS_AMX3L_QS0011230248" description="The AMX X3 Leverage NR index tracks the performance of a strategy that has a multiple (3x) exposure to an underlying AMX NR index with the support of short-term financing. Suspended if the underlying index is less than 85% of close of previous day." mep="AMS" vendor="Euronext">
+    <index kind="net return" family="AEX" calcFreq="15s" baseDate="2008-12-31" baseLevel="1000" weighting="" capFactor="" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="-isin(FR0013362985)-mic(XPAR)-nam(AEX X7 Short GR)" mic="XAMS" isin="QS0011230230" symbol="AEX7S" name="AEX X7 SHORT GR" type="index" file="xams/index/AEX7S.h5:/XAMS_AEX7S_QS0011230230" description="The AEX X7 Short or Bear GR index tracks the performance of a strategy which reverses a multiple (-x7) exposure to the underlying index by combining a short position on the underlying AEX GR index and exposure to a risk-free money-market instrument, (the EONIA or other rate). The latter exposure consists of the money invested in the index plus the multiple (-x7) short positions. Suspended if the underlying index is greater than 112% of close of previous day." mep="AMS" vendor="Euronext">
+    <index kind="gross return" family="AEX" calcFreq="15s" baseDate="2008-12-31" baseLevel="1000" weighting="" capFactor="" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="true" mic="XAMS" isin="NL0000245710" symbol="E100" name="FTSE EURO TOP 100" type="index" file="xams/index/E100.h5:/XAMS_E100_NL0000245710" description="The FTSE Eurotop 100 index tracks the performance of 100 leading securities in euro zone countries, Sweden, Switzerland and the UK that are listed on the nine most important European exchanges." mep="AMS" vendor="Euronext">
+    <index family="FTSE" calcFreq="15s" kind="" baseDate="" baseLevel="" weighting="" capFactor="" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="false" mic="XAMS" isin="NL0010420964" symbol="null" name="SBM RIGHT" type="stock" file="xams/stock/null.h5:/XAMS_null_NL0010420964" description="" mep="AMS" vendor="Euronext">
+    <stock cfi="" compartment="" tradingMode="continuous" currency="EUR" shares="0">
+      <icb icb1="1" icb2="500" icb3="570" icb4="573" />
+    </stock>
+  </instrument>
+  <instrument foundInSearch="-mic(VPXB)-sym()-nam(CONTINENT. LAND CY)" mic="TNLA" isin="NL0000121622" symbol="null" name="NWE NED AM HYP BK" type="stock" file="tnla/stock/null.h5:/TNLA_null_NL0000121622" description="" mep="AMS" vendor="Euronext">
+    <stock cfi="EDSFB" compartment="" tradingMode="double call auction" currency="EUR" shares="40,000">
+      <icb icb1="8000" icb2="8300" icb3="8350" icb4="8355" />
+    </stock>
+  </instrument>
+  <!-- 20190726_214318 -->
+  <instrument foundInSearch="-typ()" mic="XAMS" isin="IE00BYPC1H27" symbol="CNYB" name="IS CHN BND USD ACC" type="etf" file="xams/etf/CNYB.h5:/XAMS_CNYB_IE00BYPC1H27" description="ISHARES CHINA CNY BOND UCITS ETF - (USD) DIST" mep="AMS" vendor="Euronext">
+    <etf cfi="CEOMS" tradingMode="continuous" ter="0.35%" launchDate="29/07/2019" issuer="iShares IV plc." fraction="" dividendFrequency="distribution" indexFamily="" expositionType="physical" currency="USD">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0ICNYB4" symbol="ICNYB" name="ISHARES CNYB INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="BBG Barclays CH Treasury + PBI" />
+    </etf>
+  </instrument>
+  <!-- 20190729_221153 -->
+  <!-- 20190730_214353 -->
+  <!-- 20190731_214108 this looks like dead for some time, moved it to delisted but it pops up again. file is not created yet. -->
+  <instrument foundInSearch="true" mic="ALXP" isin="FR0010326090" symbol="ALVIA" name="VIALIFE" type="stock" file="alxp/stock/ALVIA.h5:/ALXP_ALVIA_FR0010326090" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUFN" compartment="" tradingMode="double call auction" currency="EUR" shares="400,000">
+      <icb icb1="5000" icb2="5300" icb3="5370" icb4="5379" />
+    </stock>
+  </instrument>
+  <!-- 20190801_214607 -->
+  <instrument foundInSearch="true" mic="XPAR" isin="FR0013426004" symbol="CLA" name="CLARANOVA" type="stock" file="xpar/stock/CLA.h5:/XPAR_CLA_FR0013426004" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUFN" compartment="B" tradingMode="continuous" currency="EUR" shares="39,442,878">
+      <icb icb1="9000" icb2="9500" icb3="9530" icb4="9537" />
+    </stock>
+  </instrument>
+  <!-- 20190802_214848 -->
+  <instrument foundInSearch="true" mic="XMLI" isin="ES0105417002" symbol="MLIPO" name="IPOSA PROPERTIES" type="stock" file="xmli/stock/MLIPO.h5:/XMLI_MLIPO_ES0105417002" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUF" compartment="" tradingMode="double call auction" currency="EUR" shares="4,260,000">
+      <icb icb1="8000" icb2="8600" icb3="8630" icb4="8633" />
+    </stock>
+  </instrument>
+  <instrument foundInSearch="false" mic="XMLI" isin="FR0012767044" symbol="U1" name="ANAX BO EM 2020 U1" type="fund" file="xmli/fund/U1.h5:/XMLI_U1_FR0012767044" description="" mep="PAR" vendor="Euronext">
+    <fund cfi="CIOS" tradingMode="" currency="EUR" issuer="" shares="159,203" />
+  </instrument>
+  <!-- 20190805_214419 -->
+  <!-- 20190806_215041 -->
+  <!-- 20190807_214428 -->
+  <instrument foundInSearch="-sym(MLM24)" mic="ENXL" isin="PTMUS0AM0018" symbol="null" name="MULTI 24" type="stock" file="enxl/stock/null.h5:/ENXL_null_PTMUS0AM0018" description="" mep="LIS" vendor="Euronext">
+    <stock cfi="ESVUF" compartment="" tradingMode="double call auction" currency="EUR" shares="44,919,000">
+      <icb icb1="8000" icb2="8600" icb3="8630" icb4="8637" />
+    </stock>
+  </instrument>
+  <instrument foundInSearch="-mic(XPAR)-sym(GOLD)" mic="XAMS" isin="FR0013416716" symbol="null" name="AMUNDI PHYS GOLD" type="etf" file="xams/etf/null.h5:/XAMS_null_FR0013416716" description="AMUNDI PHYSICAL GOLD ETC" mep="AMS" vendor="Euronext">
+    <etf cfi="DEMMRC" tradingMode="continuous" ter="0.19%" launchDate="28/05/2019" issuer="Amundi Physical Metal Plc" fraction="" dividendFrequency="capitalisation" indexFamily="" expositionType="physical" currency="USD">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0I2GOL7" symbol="I2GOL" name="AMUNDI 2GOLD INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="LBMA Gold Price PM USD" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-sym(MLGML)" mic="XMLI" isin="FR0013371507" symbol="null" name="GOUR MEDICAL" type="stock" file="xmli/stock/null.h5:/XMLI_null_FR0013371507" description="" mep="PAR" vendor="Euronext">
+    <stock cfi="ESVUFN" compartment="" tradingMode="double call auction" currency="EUR" shares="3,096,170">
+      <icb icb1="5000" icb2="5300" icb3="5370" icb4="5377" />
+    </stock>
+  </instrument>
+  <instrument foundInSearch="-sym(TUR)-typ()" mic="XPAR" isin="LU1900067601" symbol="null" name="LYXOR MSCI TURKEY" type="etf" file="xpar/etf/null.h5:/XPAR_null_LU1900067601" description="LYXOR MSCI TURKEY UCITS ETF - ACC" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.45%" launchDate="15/03/2019" issuer="MULTI UNITS LUXEMBOURG" fraction="" dividendFrequency="capitalisation" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0INTUR2" symbol="INTUR" name="LYXOR TUR INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="MSCI Turkey NTR index" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-isin(LU1900067601)-sym(TUR)-typ()" mic="XPAR" isin="FR0010326256" symbol="null" name="LYXOR MSCI TURKEY" type="etf" file="xpar/etf/null.h5:/XPAR_null_FR0010326256" description="LYXOR MSCI TURKEY UCITS ETF" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.65%" launchDate="29 AUG 2006" issuer="LYXOR INTERNATIONAL AM" fraction="" dividendFrequency="" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="QS0011043971" symbol="INTUR" name="LYXOR TUR INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="Dow Jones Turkey Titans 20" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-sym(AFS)-typ()" mic="XPAR" isin="LU1900067270" symbol="null" name="LYXOR MSCI SOUTH A" type="etf" file="xpar/etf/null.h5:/XPAR_null_LU1900067270" description="LYXOR MSCI SOUTH AFRICA UCITS ETF - ACC" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.45%" launchDate="15/03/2019" issuer="MULTI UNITS LUXEMBOURG" fraction="" dividendFrequency="capitalisation" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0INAFS1" symbol="INAFS" name="LYXOR AFS INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="MSCI South Africa NTR index" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-sym(RIO)-typ()" mic="XPAR" isin="LU1900066207" symbol="null" name="LYXOR MSCI BRAZIL" type="etf" file="xpar/etf/null.h5:/XPAR_null_LU1900066207" description="LYXOR MSCI BRAZIL UCITS ETF - ACC" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.65%" launchDate="15/03/2019" issuer="MULTI UNITS LUXEMBOURG" fraction="" dividendFrequency="capitalisation" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0INRIO8" symbol="INRIO" name="LYXOR RIO INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="MSCI Brazil NTR USD Index" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-isin(LU1900067270)-sym(AFS)-typ()" mic="XPAR" isin="FR0010464446" symbol="null" name="LYXOR MSCI SOUTH A" type="etf" file="xpar/etf/null.h5:/XPAR_null_FR0010464446" description="LYXOR MSCI SOUTH AFRICA UCITS ETF" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.65%" launchDate="12 JUN 2007" issuer="LYXOR INTERNATIONAL AM" fraction="" dividendFrequency="" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="QS0011079298" symbol="INAFS" name="LYXOR AFS INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="FTSE JSE Top 40 NET TRI" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-sym(RUS)-typ()" mic="XPAR" isin="LU1923627092" symbol="null" name="LYXOR ETF RUSSIA" type="etf" file="xpar/etf/null.h5:/XPAR_null_LU1923627092" description="LYXOR MSCI RUSSIA UCITS ETF - ACC" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.65%" launchDate="15/03/2019" issuer="MULTI UNITS LUXEMBOURG" fraction="" dividendFrequency="capitalisation" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0INRUS4" symbol="INRUS" name="LYXOR RUS INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="MSCI Rus IMI Select GDR NTR US" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-isin(LU1900067437)-sym(THA)-typ()" mic="XPAR" isin="FR0011067529" symbol="null" name="LYXOR ETF THAILAND" type="etf" file="xpar/etf/null.h5:/XPAR_null_FR0011067529" description="LYXOR THAILAND (SET50 NET TR) UCITS ETF - ACC" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.45%" launchDate="15 JUL 2011" issuer="LYXOR INTERNATIONAL AM" fraction="" dividendFrequency="" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="QS0011221817" symbol="INTHA" name="LYXOR THA INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="SET 50" />
+    </etf>
+  </instrument>
+  <instrument foundInSearch="-sym(TWN)-typ()" mic="XPAR" isin="LU1900066033" symbol="null" name="MULTI LY TAIWAN" type="etf" file="xpar/etf/null.h5:/XPAR_null_LU1900066033" description="LYXOR MSCI TAIWAN UCITS ETF - ACC" mep="PAR" vendor="Euronext">
+    <etf cfi="CEOJEU" tradingMode="continuous" ter="0.45%" launchDate="22/02/2019" issuer="MULTI UNITS LUXEMBOURG" fraction="" dividendFrequency="capitalisation" indexFamily="" expositionType="synthetic" currency="EUR">
+      <inav vendor="Euronext" mep="" mic="" isin="NSCFR0INTWN7" symbol="INTWN" name="LYXOR TWN INAV" />
+      <underlying vendor="Euronext" mep="" mic="" isin="" symbol="" name="MSCI Daily NTR  EM Taiwan USD" />
+    </etf>
+  </instrument>
+</instruments>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<instruments>
+  <instrument foundInSearch="true" mic="XMSM" isin="IE0003290289" symbol="EG7" name="FBD HOLDINGS PLC" type="stock" file="xmsm/stock/EG7.h5:/XMSM_EG7_IE0003290289" description="" mep="DUB" vendor="Euronext">
+    <stock cfi="ESVUFR" compartment="B" tradingMode="fixing" currency="EUR" shares="34,862,464">
+      <icb icb1="8000" icb2="8500" icb3="8530" icb4="8532" />
+    </stock>
+  </instrument>
+</instruments>

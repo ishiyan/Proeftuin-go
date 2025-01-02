@@ -1,0 +1,8 @@
+{
+    "downloads": "./downloads/euronext-new/",
+    "repository": "./repository/euronext-new/",
+    "repositoryGzipped": true,
+    "retryDelayMinutes": [1,1,1,2,2,3,4,5,10,15,20,30,30,60,60],
+    "xmlInstruments": "repository/euronext/euronext_new.xml",
+    "concurrency": 4
+}

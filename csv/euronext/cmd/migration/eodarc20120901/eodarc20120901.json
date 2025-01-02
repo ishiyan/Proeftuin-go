@@ -1,0 +1,5 @@
+{
+    "inputs": "d:/input_20120901/",
+    "downloads": "./downloads/euronext-delisted-new/",
+    "xmlInstruments": "euronext-delisted.xml"
+}
