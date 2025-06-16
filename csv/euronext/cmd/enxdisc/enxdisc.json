@@ -1,0 +1,14 @@
+{
+    "downloadRetries": 12,
+    "downloadTimeoutSec": 180,
+    "downloadPauseBeforeRetrySec": 3,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
+    "zipDownloadedFolder": true,
+    "deleteDownloadedFolder": true,
+    "enrichDiscoveredInstruments": true,
+    "gzipBackupXmlInstruments": true,
+    "downloadsFolder": "./downloads/euronext/instruments/",
+    "repositoryFolder": "./repository/euronext/",
+    "xmlInstrumentsFile": "./repository/euronext/euronext.xml",
+    "xmlInstrumentsFileOther": "./repository/euronext/euronext_other.xml"
+}
