@@ -12,6 +12,7 @@ import (
 
 	"euronext/euronext"
 	"euronext/euronext/discovery"
+	"euronext/euronext/enrichment"
 )
 
 const configFileName = "enxdisc.json"
@@ -125,9 +126,7 @@ func main() {
 				continue
 			}
 
-			//if err := discovery.EnrichInstrumentInfo(ai); err != nil {
-			//	log.Printf("cannot enrich instrument %s-%s-%s: %s\n", ai.Mic, ai.Symbol, ai.Isin, err)
-			//}
+			enrichment.EnrichInstrument(xmlIns, cfg.DownloadRetries, cfg.DownloadTimeoutSec, cfg.DownloadPauseBeforeRetrySec, cfg.UserAgent)
 
 			if contains(discovery.KnownEuronextMics, ai.Mic) {
 				newInstruments = append(newInstruments, *xmlIns)

@@ -82,6 +82,7 @@ type XmlEtv struct {
 	Currency          string `xml:"currency,attr" json:"currency"`
 	DividendFrequency string `xml:"dividendFrequency,attr" json:"dividendFrequency"`
 	ExpenseRatio      string `xml:"expenseRatio,attr" json:"expenseRatio"`
+	LaunchDate        string `xml:"launchDate,attr" json:"launchDate"`
 	Issuer            string `xml:"issuer,attr" json:"issuer"`
 	Shares            string `xml:"shares,attr" json:"shares"`
 	TradingMode       string `xml:"tradingMode,attr" json:"tradingMode"`
@@ -108,6 +109,7 @@ type XmlEtf struct {
 	Mer               string        `xml:"mer,attr" json:"mer"`
 	Ter               string        `xml:"ter,attr" json:"ter"`
 	TradingMode       string        `xml:"tradingMode,attr" json:"tradingMode"`
+	Shares            string        `xml:"shares,attr" json:"shares"`
 	Inav              XmlInav       `xml:"inav" json:"inav"`
 	Underlying        XmlUnderlying `xml:"underlying" json:"underlying"`
 }
@@ -226,6 +228,7 @@ func NewXmlEtv(mic, isin, mnemonic, mep string) *XmlInstrument {
 			AllInFees:         "",
 			ExpenseRatio:      "",
 			DividendFrequency: "",
+			LaunchDate:        "",
 			Issuer:            "",
 			Shares:            "",
 			TradingMode:       "",
@@ -255,6 +258,7 @@ func NewXmlEtf(mic, isin, mnemonic, mep string) *XmlInstrument {
 			Issuer:            "",
 			IndexFamily:       "",
 			TradingMode:       "",
+			Shares:            "",
 			Inav: XmlInav{
 				Currency: "",
 				Isin:     "",
