@@ -1,0 +1,27 @@
+{
+    "rows": [],
+    "count": null,
+    "date": null,
+    "countFiltered": null,
+    "startdate": null,
+    "tradeTypeList": null,
+    "timeZone": null,
+    "sliderTimeFilter": {
+        "Time": {
+            "start": null,
+            "end": null,
+            "startMinutes": 0,
+            "endMinutes": 0
+        }
+    },
+    "sliderFilters": {
+        "Price": {
+            "min": null,
+            "max": null
+        },
+        "Shares": {
+            "min": null,
+            "max": null
+        }
+    }
+}

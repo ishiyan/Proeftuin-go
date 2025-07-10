@@ -1,0 +1,43 @@
+{
+    "rows": [
+        {
+            "tradeId": "1OQ6DAH0G",
+            "time": "15:10:26",
+            "price": "4.773",
+            "volume": "42",
+            "type": "Auction"
+        }
+    ],
+    "count": 1,
+    "date": "05\/04\/2023",
+    "countFiltered": 1,
+    "startdate": "05\/04\/2023",
+    "tradeTypeList": [
+        {
+            "code": "00H",
+            "idNXT": "00H",
+            "label": "Auction"
+        }
+    ],
+    "timeZone": "CET",
+    "sliderTimeFilter": {
+        "Time": {
+            "start": "15:10",
+            "end": "15:10",
+            "startMinutes": 910,
+            "endMinutes": 910
+        }
+    },
+    "sliderFilters": {
+        "Price": {
+            "min": "4.773",
+            "minLimit": "4.77",
+            "max": "4.773",
+            "maxLimit": 4.7800000000000002
+        },
+        "Shares": {
+            "min": 42,
+            "max": 42
+        }
+    }
+}

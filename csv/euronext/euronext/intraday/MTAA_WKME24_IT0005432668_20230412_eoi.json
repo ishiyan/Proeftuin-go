@@ -1,0 +1,342 @@
+{
+    "rows": [
+        {
+            "tradeId": "1JGRCOLHW",
+            "time": "17:35:20",
+            "price": "0.50",
+            "volume": "25,000",
+            "type": "Auction"
+        },
+        {
+            "tradeId": "1JGRCOLHV",
+            "time": "17:35:20",
+            "price": "0.50",
+            "volume": "20,000",
+            "type": "Auction"
+        },
+        {
+            "tradeId": "1JGRCOLHU",
+            "time": "17:35:20",
+            "price": "0.50",
+            "volume": "4,000",
+            "type": "Auction"
+        },
+        {
+            "tradeId": "1JGRCOKX2",
+            "time": "17:29:00",
+            "price": "0.498",
+            "volume": "21,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOKX1",
+            "time": "17:29:00",
+            "price": "0.4976",
+            "volume": "4,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOKX0",
+            "time": "17:29:00",
+            "price": "0.4975",
+            "volume": "22,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOKWZ",
+            "time": "17:29:00",
+            "price": "0.4975",
+            "volume": "3,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOIZS",
+            "time": "16:42:15",
+            "price": "0.4912",
+            "volume": "1,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOEL4",
+            "time": "15:24:31",
+            "price": "0.498",
+            "volume": "25,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOEL3",
+            "time": "15:24:31",
+            "price": "0.4979",
+            "volume": "20,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCOEL2",
+            "time": "15:24:31",
+            "price": "0.4979",
+            "volume": "5,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCODTD",
+            "time": "15:04:12",
+            "price": "0.4906",
+            "volume": "6,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCODTC",
+            "time": "15:04:12",
+            "price": "0.4906",
+            "volume": "1,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO99J",
+            "time": "11:57:55",
+            "price": "0.4999",
+            "volume": "5,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97J",
+            "time": "11:56:23",
+            "price": "0.5031",
+            "volume": "50,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97I",
+            "time": "11:56:23",
+            "price": "0.5032",
+            "volume": "2,500",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97H",
+            "time": "11:56:23",
+            "price": "0.5033",
+            "volume": "8,122",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97G",
+            "time": "11:56:23",
+            "price": "0.5051",
+            "volume": "2,055",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97F",
+            "time": "11:56:23",
+            "price": "0.506",
+            "volume": "10,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97E",
+            "time": "11:56:23",
+            "price": "0.5062",
+            "volume": "2,500",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97D",
+            "time": "11:56:23",
+            "price": "0.5063",
+            "volume": "47,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97C",
+            "time": "11:56:23",
+            "price": "0.5063",
+            "volume": "3,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97B",
+            "time": "11:56:23",
+            "price": "0.5064",
+            "volume": "6,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO97A",
+            "time": "11:56:23",
+            "price": "0.5064",
+            "volume": "4,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO979",
+            "time": "11:56:23",
+            "price": "0.51",
+            "volume": "3,500",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO978",
+            "time": "11:56:23",
+            "price": "0.51",
+            "volume": "800",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO977",
+            "time": "11:56:23",
+            "price": "0.51",
+            "volume": "3,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO976",
+            "time": "11:56:23",
+            "price": "0.515",
+            "volume": "1,044",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO853",
+            "time": "11:23:12",
+            "price": "0.515",
+            "volume": "18",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO7T6",
+            "time": "11:14:33",
+            "price": "0.515",
+            "volume": "938",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO7E7",
+            "time": "11:00:21",
+            "price": "0.519",
+            "volume": "1,839",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO7E6",
+            "time": "11:00:21",
+            "price": "0.519",
+            "volume": "3,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO7E5",
+            "time": "11:00:21",
+            "price": "0.5189",
+            "volume": "3,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO7E4",
+            "time": "11:00:21",
+            "price": "0.515",
+            "volume": "161",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO6NE",
+            "time": "10:39:22",
+            "price": "0.515",
+            "volume": "7,039",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO53A",
+            "time": "09:59:46",
+            "price": "0.51",
+            "volume": "3,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO3I9",
+            "time": "09:23:20",
+            "price": "0.51",
+            "volume": "37,500",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO3I8",
+            "time": "09:23:20",
+            "price": "0.51",
+            "volume": "2,900",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO29I",
+            "time": "09:09:24",
+            "price": "0.5195",
+            "volume": "2,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO28O",
+            "time": "09:09:18",
+            "price": "0.51",
+            "volume": "100",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO28K",
+            "time": "09:09:18",
+            "price": "0.51",
+            "volume": "7,900",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO28J",
+            "time": "09:09:18",
+            "price": "0.5099",
+            "volume": "2,100",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1JGRCO1ES",
+            "time": "09:00:49",
+            "price": "0.5062",
+            "volume": "1",
+            "type": "Auction"
+        }
+    ],
+    "count": 43,
+    "date": "11\/04\/2023",
+    "countFiltered": 43,
+    "startdate": "11\/04\/2023",
+    "tradeTypeList": [
+        {
+            "code": "00",
+            "idNXT": "240:0",
+            "label": "Exchange Continuous"
+        },
+        {
+            "code": "00H",
+            "idNXT": "00H",
+            "label": "Auction"
+        }
+    ],
+    "timeZone": "CET",
+    "sliderTimeFilter": {
+        "Time": {
+            "start": "09:00",
+            "end": "17:35",
+            "startMinutes": 540,
+            "endMinutes": 1055
+        }
+    },
+    "sliderFilters": {
+        "Price": {
+            "min": "0.4906",
+            "minLimit": "0.49",
+            "max": "0.5195",
+            "maxLimit": 0.52000000000000002
+        },
+        "Shares": {
+            "min": 1,
+            "max": 50000
+        }
+    }
+}

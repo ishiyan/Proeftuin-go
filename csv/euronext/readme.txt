@@ -20,3 +20,9 @@ https://live.euronext.com/en/ajax/getNoticePublicData/FR0010220475-XPAR?pageSize
 
 Company press releases
 https://live.euronext.com/en/listview/company-press-release/073411
+
+isin codes
+https://www.euronext.com/en/post-trade/euronext-securities/porto/documentation/statistics/isin-codes
+lseg data library
+https://github.com/LSEG-API-Samples/Example.DataLibrary.Python/tree/lseg-data-examples
+https://github.com/LSEG-API-Samples

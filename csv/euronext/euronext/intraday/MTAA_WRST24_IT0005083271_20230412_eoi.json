@@ -1,0 +1,62 @@
+{
+    "rows": [
+        {
+            "tradeId": "1U9GHRNVQ",
+            "time": "17:09:41",
+            "price": "0.0041",
+            "volume": "10,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1U9GHRKAH",
+            "time": "16:24:15",
+            "price": "0.0028",
+            "volume": "1,600",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1U9GHQYVN",
+            "time": "09:17:53",
+            "price": "0.0026",
+            "volume": "1,128",
+            "type": "Auction"
+        }
+    ],
+    "count": 3,
+    "date": "11\/04\/2023",
+    "countFiltered": 3,
+    "startdate": "11\/04\/2023",
+    "tradeTypeList": [
+        {
+            "code": "00",
+            "idNXT": "240:0",
+            "label": "Exchange Continuous"
+        },
+        {
+            "code": "00H",
+            "idNXT": "00H",
+            "label": "Auction"
+        }
+    ],
+    "timeZone": "CET",
+    "sliderTimeFilter": {
+        "Time": {
+            "start": "09:17",
+            "end": "17:09",
+            "startMinutes": 557,
+            "endMinutes": 1029
+        }
+    },
+    "sliderFilters": {
+        "Price": {
+            "min": "0.0026",
+            "minLimit": "0.00",
+            "max": "0.0041",
+            "maxLimit": 0.01
+        },
+        "Shares": {
+            "min": 1128,
+            "max": 10000
+        }
+    }
+}

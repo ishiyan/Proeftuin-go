@@ -1,0 +1,33 @@
+{
+    "rows": [],
+    "count": 1,
+    "date": "10\/07\/2019",
+    "countFiltered": 0,
+    "startdate": "10\/07\/2019",
+    "tradeTypeList": [
+        {
+            "code": "00H",
+            "idNXT": "00H",
+            "label": "Auction"
+        }
+    ],
+    "timeZone": "UTC",
+    "sliderTimeFilter": {
+        "Time": {
+            "start": "17:30",
+            "end": "17:30",
+            "startMinutes": 1050,
+            "endMinutes": 1050
+        }
+    },
+    "sliderFilters": {
+        "Price": {
+            "min": "0.1235",
+            "max": "0.1235"
+        },
+        "Shares": {
+            "min": 6,
+            "max": 6
+        }
+    }
+}

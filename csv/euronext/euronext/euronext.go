@@ -104,11 +104,12 @@ func EnsureDirectoryExists(directory string) error {
 func SessionDate() (time.Time, error) {
 	today := time.Now().UTC().Add(time.Hour * 1)
 	dow := today.Weekday()
-	if dow == time.Saturday {
+	switch dow {
+	case time.Saturday:
 		return today.AddDate(0, 0, -1), nil
-	} else if dow == time.Sunday {
+	case time.Sunday:
 		return today.AddDate(0, 0, -2), nil
-	} else {
+	default:
 		if today.Hour() < 19 {
 			return today.AddDate(0, 0, -1), nil
 		}
