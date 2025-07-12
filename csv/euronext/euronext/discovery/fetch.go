@@ -170,6 +170,7 @@ func downloadPost(
 	pauseBeforeRetry time.Duration,
 	bodyKeyValueMap map[string]string,
 	referer string,
+	verbose bool,
 	userAgent string,
 ) bool {
 	// Prepare POST data
@@ -198,7 +199,12 @@ func downloadPost(
 			}
 		}
 
-		req, err := http.NewRequest("POST", uri, bytes.NewBufferString(postData.Encode()))
+		pd := postData.Encode()
+		if verbose {
+			log.Printf("%s POST body: %s\n", uri, pd)
+		}
+
+		req, err := http.NewRequest("POST", uri, bytes.NewBufferString(pd))
 		if err != nil {
 			log.Printf("failed to create request: %v\n", err)
 			retries--
@@ -212,7 +218,12 @@ func downloadPost(
 		req.Header.Set("Referer", referer)
 		req.Header.Set("Accept", "application/json, text/javascript, */*")
 
-		client := &http.Client{Timeout: timeout}
+		// Create HTTP client with timeout and proxy settings
+		transport := &http.Transport{
+			Proxy: http.ProxyFromEnvironment, // Uses system proxy settings
+		}
+		client := &http.Client{Timeout: timeout, Transport: transport}
+
 		resp, err := client.Do(req)
 		if err != nil {
 			if retries > 1 {
@@ -293,7 +304,7 @@ func retrieveTotalRecords(filename string) int {
 
 // parseJSON parses a JSON string and updates the instrumentInfoMap.
 // Returns true if parsing was successful, false otherwise.
-func parseJSON(s, typ string) bool {
+func parseJSON(s, typ string, verbose bool) bool {
 	if strings.Contains(s, "\"aaData\": []") {
 		return false
 	}
@@ -359,9 +370,11 @@ func parseJSON(s, typ string) bool {
 	}
 	ii.Key = strings.ToUpper(fmt.Sprintf("%s_%s_%s", ii.Mic, ii.Symbol, ii.Isin))
 	if v, exists := instrumentInfoMap[ii.Key]; exists {
-		log.Printf("duplicate isin, skipping (2):\n")
-		log.Printf("(1)(%s) mep=%s, mic=%s, symbol=%s, isin=%s\n", v.Key, v.Mep, v.Mic, v.Symbol, v.Isin)
-		log.Printf("(2)(%s) mep=%s, mic=%s, symbol=%s, isin=%s\n", ii.Key, ii.Mep, ii.Mic, ii.Symbol, ii.Isin)
+		if verbose {
+			log.Printf("duplicate isin, skipping (2):\n")
+			log.Printf("(1)(%s) mep=%s, mic=%s, symbol=%s, isin=%s\n", v.Key, v.Mep, v.Mic, v.Symbol, v.Isin)
+			log.Printf("(2)(%s) mep=%s, mic=%s, symbol=%s, isin=%s\n", ii.Key, ii.Mep, ii.Mic, ii.Symbol, ii.Isin)
+		}
 		if !strings.EqualFold(v.Symbol, ii.Symbol) || v.Key != ii.Key || !strings.EqualFold(v.Mep, ii.Mep) || !strings.EqualFold(v.Isin, ii.Isin) {
 			instrumentInfoMap[ii.Key] = ii
 		}
@@ -373,7 +386,7 @@ func parseJSON(s, typ string) bool {
 
 // parseFile reads the file at filename, parses its content, and calls parseJSON for each record.
 // Returns the number of records parsed.
-func parseFile(filename, typ string) int {
+func parseFile(filename, typ string, verbose bool) int {
 	contentBytes, err := os.ReadFile(filename)
 	if err != nil {
 		log.Printf("error reading file %s: %v", filename, err)
@@ -384,14 +397,16 @@ func parseFile(filename, typ string) int {
 
 	i := strings.Index(content, "[[")
 	if i < 0 {
-		log.Printf("no data section found in file %s\n", filename)
+		if verbose {
+			log.Printf("no data section found in file %s\n", filename)
+		}
 		return 0
 	}
 	content = content[i+2:]
 	for {
 		i = strings.Index(content, "],[")
 		if i >= 0 {
-			if parseJSON(content[:i], typ) {
+			if parseJSON(content[:i], typ, verbose) {
 				totalRecords++
 			}
 			content = content[i+3:]
@@ -401,7 +416,7 @@ func parseFile(filename, typ string) int {
 	}
 	i = strings.Index(content, "]]")
 	if i >= 0 {
-		if parseJSON(content[:i], typ) {
+		if parseJSON(content[:i], typ, verbose) {
 			totalRecords++
 		}
 	}
@@ -414,6 +429,7 @@ func downloadAndParse(
 	downloadRetries int,
 	downloadTimeout time.Duration,
 	downloadPauseBeforeRetry time.Duration,
+	verbose bool,
 	userAgent string,
 ) bool {
 	bodyMap["start"] = "0"
@@ -421,12 +437,13 @@ func downloadAndParse(
 	filename := filepath.Join(folderPath, category.FileName+".json")
 
 	if !downloadPost(category.Uri, filename, 0, true, downloadRetries,
-		downloadTimeout, downloadPauseBeforeRetry, bodyMap, category.Referer, userAgent) {
+		downloadTimeout, downloadPauseBeforeRetry, bodyMap, category.Referer,
+		verbose, userAgent) {
 		return false
 	}
 
 	totalRecords := retrieveTotalRecords(filename)
-	parsedRecords := parseFile(filename, category.Type)
+	parsedRecords := parseFile(filename, category.Type, verbose)
 	totalParsed := parsedRecords
 	log.Printf("%s: total records = %d, parsed records = %d, total parsed = %d\n", category.FileName, totalRecords, parsedRecords, totalParsed)
 	page := 0
@@ -436,10 +453,11 @@ func downloadAndParse(
 		bodyMap["iDisplayStart"] = keyNew
 		filename = filepath.Join(folderPath, fmt.Sprintf("%s.%d.json", category.FileName, page+1))
 		if !downloadPost(category.Uri, filename, 0, true, downloadRetries,
-			downloadTimeout, downloadPauseBeforeRetry, bodyMap, category.Referer, userAgent) {
+			downloadTimeout, downloadPauseBeforeRetry, bodyMap, category.Referer,
+			verbose, userAgent) {
 			return false
 		}
-		parsedRecords = parseFile(filename, category.Type)
+		parsedRecords = parseFile(filename, category.Type, verbose)
 		totalParsed += parsedRecords
 		log.Printf("%s: total records = %d, parsed records = %d, total parsed = %d\n", category.FileName, totalRecords, parsedRecords, totalParsed)
 		if parsedRecords == 0 {
@@ -515,6 +533,7 @@ func Fetch(
 	downloadPauseBeforeRetrySec int,
 	zipDownloadPath bool,
 	deleteDownloadPath bool,
+	verbose bool,
 	userAgent string,
 ) map[string]*InstrumentInfo {
 	sep := string(os.PathSeparator)
@@ -532,11 +551,12 @@ func Fetch(
 		}
 	}
 
-	log.Printf("downloading to %s: %v\n", folderPath, now)
+	log.Printf("downloading to %s\n", folderPath)
 	downloadTimeout := time.Duration(downloadTimeoutSec) * time.Second
 	downloadPauseBeforeRetry := time.Duration(downloadPauseBeforeRetrySec) * time.Second
 	for _, category := range categories {
-		if !downloadAndParse(category, folderPath, downloadRetries, downloadTimeout, downloadPauseBeforeRetry, userAgent) {
+		if !downloadAndParse(category, folderPath, downloadRetries, downloadTimeout,
+			downloadPauseBeforeRetry, verbose, userAgent) {
 			continue
 		}
 	}

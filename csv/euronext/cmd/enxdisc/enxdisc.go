@@ -21,6 +21,7 @@ type config struct {
 	DownloadRetries             int    `json:"downloadRetries"`
 	DownloadTimeoutSec          int    `json:"downloadTimeoutSec"`
 	DownloadPauseBeforeRetrySec int    `json:"downloadPauseBeforeRetrySec"`
+	VerboseDownload             bool   `json:"verboseDownload"`
 	UserAgent                   string `json:"userAgent"`
 	ZipDownloadedFolder         bool   `json:"zipDownloadedFolder"`
 	DeleteDownloadedFolder      bool   `json:"deleteDownloadedFolder"`
@@ -48,6 +49,17 @@ func main() {
 		log.Panicf("cannot read configuration file %s: %s", configFileName, err)
 	}
 
+	log.Println("download folder:", cfg.DownloadsFolder)
+	log.Println("repository folder:", cfg.RepositoryFolder)
+	log.Println("download retries:", cfg.DownloadRetries)
+	log.Println("download timeout seconds:", cfg.DownloadTimeoutSec)
+	log.Println("download dause before retries seconds:", cfg.DownloadPauseBeforeRetrySec)
+	log.Println("verbose download:", cfg.VerboseDownload)
+	log.Println("delete download folder:", cfg.DeleteDownloadedFolder)
+	log.Println("zip download folder:", cfg.ZipDownloadedFolder)
+	log.Println("enrich discovered instruments:", cfg.EnrichDiscoveredInstruments)
+	log.Println("gzip backup xml instruments:", cfg.GzipBackupXmlInstruments)
+
 	err = ensureDirectoryExists(cfg.RepositoryFolder)
 	if err != nil {
 		log.Panicf("cannot create repository directory %s: %s", cfg.RepositoryFolder, err)
@@ -58,7 +70,7 @@ func main() {
 		log.Panicf("cannot create downloads directory %s: %s", cfg.DownloadsFolder, err)
 	}
 
-	log.Println("xml file: " + cfg.XmlInstrumntsFile)
+	log.Println("xml instruments file: " + cfg.XmlInstrumntsFile)
 	if err := backupXmlFile(cfg.XmlInstrumntsFile, now, cfg.GzipBackupXmlInstruments); err != nil {
 		log.Panicf("cannot backup xml file: %s", err)
 	}
@@ -68,7 +80,7 @@ func main() {
 		log.Panicf("cannot read instruments: %s", err)
 	}
 
-	log.Println("xml file: " + cfg.XmlInstrumntsFileOther)
+	log.Println("xml instruments file: " + cfg.XmlInstrumntsFileOther)
 	if err := backupXmlFile(cfg.XmlInstrumntsFileOther, now, cfg.GzipBackupXmlInstruments); err != nil {
 		log.Panicf("cannot backup xml file: %s", err)
 	}
@@ -83,6 +95,7 @@ func main() {
 	instruments.Instrument = append(instruments.Instrument, instrumentsOther.Instrument...)
 	log.Printf("total instruments: %d\n", len(instruments.Instrument))
 
+	log.Println("=======================================")
 	actualInstrumentsMap := discovery.Fetch(
 		cfg.DownloadsFolder,
 		now,
@@ -91,9 +104,11 @@ func main() {
 		cfg.DownloadPauseBeforeRetrySec,
 		cfg.ZipDownloadedFolder,
 		cfg.DeleteDownloadedFolder,
+		cfg.VerboseDownload,
 		cfg.UserAgent)
 
 	log.Printf("fetched %d actual instruments\n", len(actualInstrumentsMap))
+	log.Println("=======================================")
 
 	newInstruments := make([]euronext.XmlInstrument, 0)
 	newInstrumentsOther := make([]euronext.XmlInstrument, 0)
@@ -126,7 +141,8 @@ func main() {
 				continue
 			}
 
-			enrichment.EnrichInstrument(xmlIns, cfg.DownloadRetries, cfg.DownloadTimeoutSec, cfg.DownloadPauseBeforeRetrySec, cfg.UserAgent)
+			enrichment.EnrichInstrument(xmlIns, cfg.DownloadRetries, cfg.DownloadTimeoutSec, cfg.DownloadPauseBeforeRetrySec,
+				cfg.VerboseDownload, cfg.UserAgent)
 
 			if contains(discovery.KnownEuronextMics, ai.Mic) {
 				newInstruments = append(newInstruments, *xmlIns)
@@ -136,6 +152,7 @@ func main() {
 		}
 	}
 
+	log.Println("=======================================")
 	log.Printf("adding %d new instruments to %s\n", len(newInstruments), cfg.XmlInstrumntsFile)
 	if err := appendToXmlInstrumentsFile(cfg.XmlInstrumntsFile, now, newInstruments); err != nil {
 		log.Printf("cannot append new instruments to xml file %s: %s", cfg.XmlInstrumntsFile, err)

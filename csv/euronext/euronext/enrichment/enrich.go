@@ -20,10 +20,16 @@ func downloadTextString(
 	timeout time.Duration,
 	pauseBeforeRetry time.Duration,
 	referer string,
+	verbose bool,
 	userAgent string,
 ) string {
-	client := &http.Client{
-		Timeout: timeout,
+	// Create HTTP client with timeout and proxy settings
+	transport := &http.Transport{
+		Proxy: http.ProxyFromEnvironment, // Uses system proxy settings
+	}
+	client := http.Client{Timeout: timeout, Transport: transport}
+	if verbose {
+		log.Println(url)
 	}
 
 	var lastErr error
@@ -113,6 +119,7 @@ func EnrichStockInstrument(
 	retries int,
 	timeoutSec int,
 	pauseBeforeRetrySec int,
+	verbose bool,
 	userAgent string,
 ) {
 	// <instrument vendor="Euronext" mep="AMS" isin="NL0000336543" symbol="BALNE" name="BALLAST NEDAM" type="stock" mic="XAMS" file="euronext/ams/stocks/eurls/loc/BALNE.xml" description="Ballast Nedam specializes in the ... sector.">
@@ -162,7 +169,7 @@ func EnrichStockInstrument(
 
 	// CFI block
 	uri := fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/%s-%s/fs_cfi_block", isin, mic)
-	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no CFI block fetched")
 	} else {
@@ -175,7 +182,7 @@ func EnrichStockInstrument(
 
 	// ICB block
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/%s-%s/fs_icb_block", isin, mic)
-	str = downloadTextString("icb_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("icb_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no ICB block fetched")
 	} else {
@@ -230,7 +237,7 @@ func EnrichStockInstrument(
 
 	// Trading info block
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/%s-%s/fs_tradinginfo_block", isin, mic)
-	str = downloadTextString("tradinginfo_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("tradinginfo_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no tradinginfo block fetched")
 	} else {
@@ -270,7 +277,7 @@ func EnrichStockInstrument(
 
 	// Trading info pea block
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/%s-%s/fs_tradinginfo_pea_block", isin, mic)
-	str = downloadTextString("tradinginfo_pea_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("tradinginfo_pea_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no tradinginfo_pea block fetched")
 	} else {
@@ -291,7 +298,7 @@ func EnrichStockInstrument(
 	// Name (if missing)
 	if instrument.Name == "" {
 		uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getDetailedQuote/%s-%s", isin, mic)
-		str = downloadTextString("detailed quote", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+		str = downloadTextString("detailed quote", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 		if str == "" {
 			log.Println("no detailed quote fetched")
 		} else {
@@ -311,6 +318,7 @@ func EnrichEtvInstrument(
 	retries int,
 	timeoutSec int,
 	pauseBeforeRetrySec int,
+	verbose bool,
 	userAgent string,
 ) {
 	// <instrument vendor="Euronext" mep="PAR" mic="XPAR" isin="GB00B15KXP72" symbol="COFFP" name="ETFS COFFEE" type="etv" file="etf/COFFP.xml" description="">
@@ -349,7 +357,7 @@ func EnrichEtvInstrument(
 
 	// --- CFI block ---
 	uri := fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_cfi_block", isin, mic)
-	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no CFI block fetched")
 	} else {
@@ -362,7 +370,7 @@ func EnrichEtvInstrument(
 
 	// --- General Info block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_generalinfo_block", isin, mic)
-	str = downloadTextString("generalinfo_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("generalinfo_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no generalinfo block fetched")
 	} else {
@@ -415,7 +423,7 @@ func EnrichEtvInstrument(
 
 	// --- Trading Info ETFs block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_tradinginfo_etfs_block", isin, mic)
-	str = downloadTextString("tradinginfo_etfs_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("tradinginfo_etfs_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no tradinginfo_etfs block fetched")
 	} else {
@@ -462,7 +470,7 @@ func EnrichEtvInstrument(
 
 	// --- Fees Segmentation block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_feessegmentation_block", isin, mic)
-	str = downloadTextString("feessegmentation_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("feessegmentation_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no feessegmentation block fetched")
 	} else {
@@ -491,7 +499,7 @@ func EnrichEtvInstrument(
 	// --- Name (if missing) ---
 	if instrument.Name == "" {
 		uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getDetailedQuote/%s-%s", isin, mic)
-		str = downloadTextString("detailed quote", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+		str = downloadTextString("detailed quote", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 		if str == "" {
 			log.Println("no detailed quote fetched")
 		} else {
@@ -511,6 +519,7 @@ func EnrichEtfInstrument(
 	retries int,
 	timeoutSec int,
 	pauseBeforeRetrySec int,
+	verbose bool,
 	userAgent string,
 ) {
 	// <instrument vendor="Euronext" mep="PAR" mic="XPAR" isin="FR0010754135" symbol="C13" name="AMUNDI ETF EMTS1-3" type="etf" file="etf/C13.xml" description="Amundi ETF Govt Bond EuroMTS Broad 1-3">
@@ -587,7 +596,7 @@ func EnrichEtfInstrument(
 
 	// --- CFI block ---
 	uri := fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_cfi_block", isin, mic)
-	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no CFI block fetched")
 	} else {
@@ -600,7 +609,7 @@ func EnrichEtfInstrument(
 
 	// --- General Info block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_generalinfo_block", isin, mic)
-	str = downloadTextString("generalinfo_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("generalinfo_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no generalinfo block fetched")
 	} else {
@@ -654,7 +663,7 @@ func EnrichEtfInstrument(
 
 	// --- Trading Info ETFs block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_tradinginfo_etfs_block", isin, mic)
-	str = downloadTextString("tradinginfo_etfs_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("tradinginfo_etfs_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no tradinginfo_etfs block fetched")
 	} else {
@@ -736,7 +745,7 @@ func EnrichEtfInstrument(
 
 	// --- Fees Segmentation block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/%s-%s/fs_feessegmentation_block", isin, mic)
-	str = downloadTextString("feessegmentation_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("feessegmentation_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no feessegmentation block fetched")
 	} else {
@@ -751,7 +760,7 @@ func EnrichEtfInstrument(
 	// --- Name (if missing) ---
 	if instrument.Name == "" {
 		uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getDetailedQuote/%s-%s", isin, mic)
-		str = downloadTextString("detailed quote", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+		str = downloadTextString("detailed quote", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 		if str == "" {
 			log.Println("no detailed quote fetched")
 		} else {
@@ -770,6 +779,7 @@ func EnrichFundInstrument(
 	retries int,
 	timeoutSec int,
 	pauseBeforeRetrySec int,
+	verbose bool,
 	userAgent string,
 ) {
 	// <instrument vendor="Euronext" mep="AMS" mic="XAMS" isin="NL0006259996" symbol="AWAF" name="ACH WERELD AANDFD3" type="fund" file="fund/AWAF.xml" description="">
@@ -801,7 +811,7 @@ func EnrichFundInstrument(
 
 	// --- CFI block ---
 	uri := fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/%s-%s/fs_cfi_block", isin, mic)
-	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str := downloadTextString("cfi_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no CFI block fetched")
 	} else {
@@ -814,7 +824,7 @@ func EnrichFundInstrument(
 
 	// --- General Info block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/%s-%s/fs_issuerinfo_block", isin, mic)
-	str = downloadTextString("issuerinfo_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("issuerinfo_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no issuerinfo block fetched")
 	} else {
@@ -851,7 +861,7 @@ func EnrichFundInstrument(
 
 	// --- Trading Info ETFs block ---
 	uri = fmt.Sprintf("https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/%s-%s/fs_tradinginfo_funds_block", isin, mic)
-	str = downloadTextString("tradinginfo_funds_block", uri, retries, timeout, pauseBeforeRetry, referer, userAgent)
+	str = downloadTextString("tradinginfo_funds_block", uri, retries, timeout, pauseBeforeRetry, referer, verbose, userAgent)
 	if str == "" {
 		log.Println("no tradinginfo_funds block fetched")
 	} else {
@@ -962,6 +972,7 @@ func EnrichInstrument(
 	retries int,
 	timeoutSec int,
 	pauseBeforeRetrySec int,
+	verbose bool,
 	userAgent string,
 ) {
 	if instrument == nil {
@@ -970,13 +981,13 @@ func EnrichInstrument(
 
 	switch instrument.Type {
 	case "stock":
-		EnrichStockInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, userAgent)
+		EnrichStockInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, verbose, userAgent)
 	case "etv":
-		EnrichEtvInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, userAgent)
+		EnrichEtvInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, verbose, userAgent)
 	case "etf":
-		EnrichEtfInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, userAgent)
+		EnrichEtfInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, verbose, userAgent)
 	case "fund":
-		EnrichFundInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, userAgent)
+		EnrichFundInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, verbose, userAgent)
 	case "inav":
 		EnrichInavInstrument(instrument, retries, timeoutSec, pauseBeforeRetrySec, userAgent)
 	case "index":

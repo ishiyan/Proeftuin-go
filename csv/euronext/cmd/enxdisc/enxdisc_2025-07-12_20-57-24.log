@@ -1,0 +1,1714 @@
+2025/07/12 20:57:24 download folder: ./downloads/euronext/instruments/
+2025/07/12 20:57:24 repository folder: ./repository/euronext/
+2025/07/12 20:57:24 download retries: 12
+2025/07/12 20:57:24 download timeout seconds: 180
+2025/07/12 20:57:24 download dause before retries seconds: 3
+2025/07/12 20:57:24 verbose download: true
+2025/07/12 20:57:24 delete download folder: true
+2025/07/12 20:57:24 zip download folder: true
+2025/07/12 20:57:24 enrich discovered instruments: true
+2025/07/12 20:57:24 gzip backup xml instruments: true
+2025/07/12 20:57:24 xml instruments file: ./repository/euronext/euronext.xml
+2025/07/12 20:57:25 xml instruments file: ./repository/euronext/euronext_other.xml
+2025/07/12 20:57:25 found 21182 instruments in ./repository/euronext/euronext.xml
+2025/07/12 20:57:25 found 0 instruments in ./repository/euronext/euronext_other.xml
+2025/07/12 20:57:25 total instruments: 21182
+2025/07/12 20:57:25 =======================================
+2025/07/12 20:57:25 downloading to downloads/euronext/instruments/2025/20250712/
+2025/07/12 20:57:25 https://live.euronext.com/en/pd/data/stocks?mics=XAMS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:26 stocks_XAMS: total records = 137, parsed records = 137, total parsed = 137
+2025/07/12 20:57:26 https://live.euronext.com/en/pd/data/stocks?mics=ALXA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:26 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_ALXA.json
+2025/07/12 20:57:26 stocks_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:26 https://live.euronext.com/en/pd/data/stocks?mics=TNLA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:26 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_TNLA.json
+2025/07/12 20:57:26 stocks_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:26 https://live.euronext.com/en/pd/data/stocks?mics=XBRU POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XBRU_AED_BE0003851681) mep=BRU, mic=XBRU, symbol=AED, isin=BE0003851681
+2025/07/12 20:57:28 (2)(XBRU_AED_BE0003851681) mep=BRU, mic=XBRU, symbol=AED, isin=BE0003851681
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XAMS_AD_NL0011794037) mep=AMS, mic=XAMS, symbol=AD, isin=NL0011794037
+2025/07/12 20:57:28 (2)(XAMS_AD_NL0011794037) mep=AMS, mic=XAMS, symbol=AD, isin=NL0011794037
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XAMS_APAM_LU0569974404) mep=AMS, mic=XAMS, symbol=APAM, isin=LU0569974404
+2025/07/12 20:57:28 (2)(XAMS_APAM_LU0569974404) mep=AMS, mic=XAMS, symbol=APAM, isin=LU0569974404
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XAMS_AVTX_NL0015002IE0) mep=AMS, mic=XAMS, symbol=AVTX, isin=NL0015002IE0
+2025/07/12 20:57:28 (2)(XAMS_AVTX_NL0015002IE0) mep=AMS, mic=XAMS, symbol=AVTX, isin=NL0015002IE0
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XAMS_ECMPA_NL0015000K93) mep=AMS, mic=XAMS, symbol=ECMPA, isin=NL0015000K93
+2025/07/12 20:57:28 (2)(XAMS_ECMPA_NL0015000K93) mep=AMS, mic=XAMS, symbol=ECMPA, isin=NL0015000K93
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XPAR_ENX_NL0006294274) mep=PAR, mic=XPAR, symbol=ENX, isin=NL0006294274
+2025/07/12 20:57:28 (2)(XPAR_ENX_NL0006294274) mep=PAR, mic=XPAR, symbol=ENX, isin=NL0006294274
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XBRU_FAGR_BE0003874915) mep=BRU, mic=XBRU, symbol=FAGR, isin=BE0003874915
+2025/07/12 20:57:28 (2)(XBRU_FAGR_BE0003874915) mep=BRU, mic=XBRU, symbol=FAGR, isin=BE0003874915
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XAMS_GLPG_BE0003818359) mep=AMS, mic=XAMS, symbol=GLPG, isin=BE0003818359
+2025/07/12 20:57:28 (2)(XAMS_GLPG_BE0003818359) mep=AMS, mic=XAMS, symbol=GLPG, isin=BE0003818359
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XAMS_INGA_NL0011821202) mep=AMS, mic=XAMS, symbol=INGA, isin=NL0011821202
+2025/07/12 20:57:28 (2)(XAMS_INGA_NL0011821202) mep=AMS, mic=XAMS, symbol=INGA, isin=NL0011821202
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XBRU_ONWD_NL0015000HT4) mep=BRU, mic=XBRU, symbol=ONWD, isin=NL0015000HT4
+2025/07/12 20:57:28 (2)(XBRU_ONWD_NL0015000HT4) mep=BRU, mic=XBRU, symbol=ONWD, isin=NL0015000HT4
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XBRU_RET_BE0003720340) mep=BRU, mic=XBRU, symbol=RET, isin=BE0003720340
+2025/07/12 20:57:28 (2)(XBRU_RET_BE0003720340) mep=BRU, mic=XBRU, symbol=RET, isin=BE0003720340
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XPAR_SGO_FR0000125007) mep=PAR, mic=XPAR, symbol=SGO, isin=FR0000125007
+2025/07/12 20:57:28 (2)(XPAR_SGO_FR0000125007) mep=PAR, mic=XPAR, symbol=SGO, isin=FR0000125007
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XBRU_VASTB_BE0003754687) mep=BRU, mic=XBRU, symbol=VASTB, isin=BE0003754687
+2025/07/12 20:57:28 (2)(XBRU_VASTB_BE0003754687) mep=BRU, mic=XBRU, symbol=VASTB, isin=BE0003754687
+2025/07/12 20:57:28 duplicate isin, skipping (2):
+2025/07/12 20:57:28 (1)(XBRU_WDP_BE0974349814) mep=BRU, mic=XBRU, symbol=WDP, isin=BE0974349814
+2025/07/12 20:57:28 (2)(XBRU_WDP_BE0974349814) mep=BRU, mic=XBRU, symbol=WDP, isin=BE0974349814
+2025/07/12 20:57:28 stocks_XBRU: total records = 122, parsed records = 122, total parsed = 122
+2025/07/12 20:57:28 https://live.euronext.com/en/pd/data/stocks?mics=ALXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:28 stocks_ALXB: total records = 6, parsed records = 6, total parsed = 6
+2025/07/12 20:57:28 https://live.euronext.com/en/pd/data/stocks?mics=ENXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:28 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_ENXB.json
+2025/07/12 20:57:28 stocks_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:28 https://live.euronext.com/en/pd/data/stocks?mics=MLXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:28 stocks_MLXB: total records = 8, parsed records = 8, total parsed = 8
+2025/07/12 20:57:28 https://live.euronext.com/en/pd/data/stocks?mics=TNLB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:29 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_TNLB.json
+2025/07/12 20:57:29 stocks_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:29 https://live.euronext.com/en/pd/data/stocks?mics=XPAR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_ABO_BE0974278104) mep=BRU, mic=XBRU, symbol=ABO, isin=BE0974278104
+2025/07/12 20:57:30 (2)(XBRU_ABO_BE0974278104) mep=BRU, mic=XBRU, symbol=ABO, isin=BE0974278104
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XPAR_AF_FR001400J770) mep=PAR, mic=XPAR, symbol=AF, isin=FR001400J770
+2025/07/12 20:57:30 (2)(XPAR_AF_FR001400J770) mep=PAR, mic=XPAR, symbol=AF, isin=FR001400J770
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XAMS_APAM_LU0569974404) mep=AMS, mic=XAMS, symbol=APAM, isin=LU0569974404
+2025/07/12 20:57:30 (2)(XAMS_APAM_LU0569974404) mep=AMS, mic=XAMS, symbol=APAM, isin=LU0569974404
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XAMS_MT_LU1598757687) mep=AMS, mic=XAMS, symbol=MT, isin=LU1598757687
+2025/07/12 20:57:30 (2)(XAMS_MT_LU1598757687) mep=AMS, mic=XAMS, symbol=MT, isin=LU1598757687
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_BIOS_BE0974280126) mep=BRU, mic=XBRU, symbol=BIOS, isin=BE0974280126
+2025/07/12 20:57:30 (2)(XBRU_BIOS_BE0974280126) mep=BRU, mic=XBRU, symbol=BIOS, isin=BE0974280126
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_CYAD_BE0974260896) mep=BRU, mic=XBRU, symbol=CYAD, isin=BE0974260896
+2025/07/12 20:57:30 (2)(XBRU_CYAD_BE0974260896) mep=BRU, mic=XBRU, symbol=CYAD, isin=BE0974260896
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XPAR_ENGI_FR0010208488) mep=PAR, mic=XPAR, symbol=ENGI, isin=FR0010208488
+2025/07/12 20:57:30 (2)(XPAR_ENGI_FR0010208488) mep=PAR, mic=XPAR, symbol=ENGI, isin=FR0010208488
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XPAR_ENX_NL0006294274) mep=PAR, mic=XPAR, symbol=ENX, isin=NL0006294274
+2025/07/12 20:57:30 (2)(XPAR_ENX_NL0006294274) mep=PAR, mic=XPAR, symbol=ENX, isin=NL0006294274
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_MONT_BE0003853703) mep=BRU, mic=XBRU, symbol=MONT, isin=BE0003853703
+2025/07/12 20:57:30 (2)(XBRU_MONT_BE0003853703) mep=BRU, mic=XBRU, symbol=MONT, isin=BE0003853703
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_ONWD_NL0015000HT4) mep=BRU, mic=XBRU, symbol=ONWD, isin=NL0015000HT4
+2025/07/12 20:57:30 (2)(XBRU_ONWD_NL0015000HT4) mep=BRU, mic=XBRU, symbol=ONWD, isin=NL0015000HT4
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XPAR_SGO_FR0000125007) mep=PAR, mic=XPAR, symbol=SGO, isin=FR0000125007
+2025/07/12 20:57:30 (2)(XPAR_SGO_FR0000125007) mep=PAR, mic=XPAR, symbol=SGO, isin=FR0000125007
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_SOLB_BE0003470755) mep=BRU, mic=XBRU, symbol=SOLB, isin=BE0003470755
+2025/07/12 20:57:30 (2)(XBRU_SOLB_BE0003470755) mep=BRU, mic=XBRU, symbol=SOLB, isin=BE0003470755
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XBRU_TITC_BE0974338700) mep=BRU, mic=XBRU, symbol=TITC, isin=BE0974338700
+2025/07/12 20:57:30 (2)(XBRU_TITC_BE0974338700) mep=BRU, mic=XBRU, symbol=TITC, isin=BE0974338700
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XPAR_TTE_FR0000120271) mep=PAR, mic=XPAR, symbol=TTE, isin=FR0000120271
+2025/07/12 20:57:30 (2)(XPAR_TTE_FR0000120271) mep=PAR, mic=XPAR, symbol=TTE, isin=FR0000120271
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XPAR_VRAP_FR0000062796) mep=PAR, mic=XPAR, symbol=VRAP, isin=FR0000062796
+2025/07/12 20:57:30 (2)(XPAR_VRAP_FR0000062796) mep=PAR, mic=XPAR, symbol=VRAP, isin=FR0000062796
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XAMS_YOUNW_LU2999660207) mep=AMS, mic=XAMS, symbol=YOUNW, isin=LU2999660207
+2025/07/12 20:57:30 (2)(XAMS_YOUNW_LU2999660207) mep=AMS, mic=XAMS, symbol=YOUNW, isin=LU2999660207
+2025/07/12 20:57:30 duplicate isin, skipping (2):
+2025/07/12 20:57:30 (1)(XAMS_YOUNI_LU2999653251) mep=AMS, mic=XAMS, symbol=YOUNI, isin=LU2999653251
+2025/07/12 20:57:30 (2)(XAMS_YOUNI_LU2999653251) mep=AMS, mic=XAMS, symbol=YOUNI, isin=LU2999653251
+2025/07/12 20:57:30 stocks_XPAR: total records = 367, parsed records = 367, total parsed = 367
+2025/07/12 20:57:30 https://live.euronext.com/en/pd/data/stocks?mics=ALXP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:31 duplicate isin, skipping (2):
+2025/07/12 20:57:31 (1)(ALXB_ALEMS_BE0974497290) mep=BRU, mic=ALXB, symbol=ALEMS, isin=BE0974497290
+2025/07/12 20:57:31 (2)(ALXB_ALEMS_BE0974497290) mep=BRU, mic=ALXB, symbol=ALEMS, isin=BE0974497290
+2025/07/12 20:57:31 duplicate isin, skipping (2):
+2025/07/12 20:57:31 (1)(ALXP_ALLAM_BE0974334667) mep=PAR, mic=ALXP, symbol=ALLAM, isin=BE0974334667
+2025/07/12 20:57:31 (2)(ALXP_ALLAM_BE0974334667) mep=PAR, mic=ALXP, symbol=ALLAM, isin=BE0974334667
+2025/07/12 20:57:31 stocks_ALXP: total records = 280, parsed records = 280, total parsed = 280
+2025/07/12 20:57:31 https://live.euronext.com/en/pd/data/stocks?mics=XMLI POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:32 stocks_XMLI: total records = 152, parsed records = 152, total parsed = 152
+2025/07/12 20:57:32 https://live.euronext.com/en/pd/data/stocks?mics=XLIS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:32 stocks_XLIS: total records = 34, parsed records = 34, total parsed = 34
+2025/07/12 20:57:32 https://live.euronext.com/en/pd/data/stocks?mics=ALXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:33 stocks_ALXL: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:57:33 https://live.euronext.com/en/pd/data/stocks?mics=ENXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:33 stocks_ENXL: total records = 12, parsed records = 12, total parsed = 12
+2025/07/12 20:57:33 https://live.euronext.com/en/pd/data/stocks?mics=XDUB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:34 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XDUB.json
+2025/07/12 20:57:34 stocks_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:34 https://live.euronext.com/en/pd/data/stocks?mics=XMSM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:35 stocks_XMSM: total records = 16, parsed records = 16, total parsed = 16
+2025/07/12 20:57:35 https://live.euronext.com/en/pd/data/stocks?mics=XESM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:35 stocks_XESM: total records = 11, parsed records = 11, total parsed = 11
+2025/07/12 20:57:35 https://live.euronext.com/en/pd/data/stocks?mics=XACD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:35 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XACD.json
+2025/07/12 20:57:35 stocks_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:35 https://live.euronext.com/en/pd/data/stocks?mics=XOSL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:36 stocks_XOSL: total records = 211, parsed records = 211, total parsed = 211
+2025/07/12 20:57:36 https://live.euronext.com/en/pd/data/stocks?mics=XOAS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:36 stocks_XOAS: total records = 14, parsed records = 14, total parsed = 14
+2025/07/12 20:57:36 https://live.euronext.com/en/pd/data/stocks?mics=MERK POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:36 stocks_MERK: total records = 90, parsed records = 90, total parsed = 90
+2025/07/12 20:57:36 https://live.euronext.com/en/pd/data/stocks?mics=VPXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:37 stocks_VPXB: total records = 90, parsed records = 90, total parsed = 90
+2025/07/12 20:57:37 https://live.euronext.com/en/pd/data/stocks?mics=MTAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:37 stocks_MTAA: total records = 210, parsed records = 210, total parsed = 210
+2025/07/12 20:57:37 https://live.euronext.com/en/pd/data/stocks?mics=MTAH POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:38 stocks_MTAH: total records = 599, parsed records = 599, total parsed = 599
+2025/07/12 20:57:38 https://live.euronext.com/en/pd/data/stocks?mics=EXGM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:39 stocks_EXGM: total records = 256, parsed records = 256, total parsed = 256
+2025/07/12 20:57:39 https://live.euronext.com/en/pd/data/stocks?mics=BGEM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:40 stocks_BGEM: total records = 1043, parsed records = 1043, total parsed = 1043
+2025/07/12 20:57:40 https://live.euronext.com/en/pd/data/stocks?mics=ETLX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:41 stocks_ETLX: total records = 432, parsed records = 432, total parsed = 432
+2025/07/12 20:57:41 https://live.euronext.com/en/pd/data/stocks?mics=ETFP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:41 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_ETFP.json
+2025/07/12 20:57:41 stocks_ETFP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:41 https://live.euronext.com/en/pd/data/stocks?mics=ATFX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:42 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_ATFX.json
+2025/07/12 20:57:42 stocks_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:42 https://live.euronext.com/en/pd/data/stocks?mics=MIVX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:42 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_MIVX.json
+2025/07/12 20:57:42 stocks_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:42 https://live.euronext.com/en/pd/data/stocks?mics=XHFT POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:42 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XHFT.json
+2025/07/12 20:57:42 stocks_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:42 https://live.euronext.com/en/pd/data/stocks?mics=XLDN POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:42 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XLDN.json
+2025/07/12 20:57:42 stocks_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:42 https://live.euronext.com/en/pd/data/stocks?mics=XLIF POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:42 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XLIF.json
+2025/07/12 20:57:42 stocks_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:42 https://live.euronext.com/en/pd/data/stocks?mics=XLON POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:43 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XLON.json
+2025/07/12 20:57:43 stocks_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:43 https://live.euronext.com/en/pd/data/stocks?mics=XETR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:43 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XETR.json
+2025/07/12 20:57:43 stocks_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:43 https://live.euronext.com/en/pd/data/stocks?mics=XMCE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:43 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XMCE.json
+2025/07/12 20:57:43 stocks_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:43 https://live.euronext.com/en/pd/data/stocks?mics=XVTX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:43 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XVTX.json
+2025/07/12 20:57:43 stocks_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:43 https://live.euronext.com/en/pd/data/stocks?mics=FRAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:43 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_FRAA.json
+2025/07/12 20:57:43 stocks_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:43 https://live.euronext.com/en/pd/data/stocks?mics=XCSE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:44 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XCSE.json
+2025/07/12 20:57:44 stocks_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:44 https://live.euronext.com/en/pd/data/stocks?mics=XSTO POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:44 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XSTO.json
+2025/07/12 20:57:44 stocks_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:44 https://live.euronext.com/en/pd/data/stocks?mics=XHEL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:44 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XHEL.json
+2025/07/12 20:57:44 stocks_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:44 https://live.euronext.com/en/pd/data/stocks?mics=XMAD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:44 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XMAD.json
+2025/07/12 20:57:44 stocks_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:44 https://live.euronext.com/en/pd/data/stocks?mics=XIST POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:44 no data section found in file downloads/euronext/instruments/2025/20250712/stocks_XIST.json
+2025/07/12 20:57:44 stocks_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:44 https://live.euronext.com/en/pd/data/index?mics=XAMS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:45 indices_XAMS: total records = 134, parsed records = 134, total parsed = 134
+2025/07/12 20:57:45 https://live.euronext.com/en/pd/data/index?mics=ALXA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:45 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ALXA.json
+2025/07/12 20:57:45 indices_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:45 https://live.euronext.com/en/pd/data/index?mics=TNLA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:45 no data section found in file downloads/euronext/instruments/2025/20250712/indices_TNLA.json
+2025/07/12 20:57:45 indices_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:45 https://live.euronext.com/en/pd/data/index?mics=XBRU POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:46 indices_XBRU: total records = 43, parsed records = 43, total parsed = 43
+2025/07/12 20:57:46 https://live.euronext.com/en/pd/data/index?mics=ALXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:46 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ALXB.json
+2025/07/12 20:57:46 indices_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:46 https://live.euronext.com/en/pd/data/index?mics=ENXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:46 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ENXB.json
+2025/07/12 20:57:46 indices_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:46 https://live.euronext.com/en/pd/data/index?mics=MLXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:46 no data section found in file downloads/euronext/instruments/2025/20250712/indices_MLXB.json
+2025/07/12 20:57:46 indices_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:46 https://live.euronext.com/en/pd/data/index?mics=TNLB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:47 no data section found in file downloads/euronext/instruments/2025/20250712/indices_TNLB.json
+2025/07/12 20:57:47 indices_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:47 https://live.euronext.com/en/pd/data/index?mics=XPAR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:47 indices_XPAR: total records = 100, parsed records = 100, total parsed = 100
+2025/07/12 20:57:47 https://live.euronext.com/en/pd/data/index?mics=ALXP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:47 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ALXP.json
+2025/07/12 20:57:47 indices_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:47 https://live.euronext.com/en/pd/data/index?mics=XMLI POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:47 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XMLI.json
+2025/07/12 20:57:47 indices_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:47 https://live.euronext.com/en/pd/data/index?mics=XLIS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:48 indices_XLIS: total records = 31, parsed records = 31, total parsed = 31
+2025/07/12 20:57:48 https://live.euronext.com/en/pd/data/index?mics=ALXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:48 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ALXL.json
+2025/07/12 20:57:48 indices_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:48 https://live.euronext.com/en/pd/data/index?mics=ENXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:48 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ENXL.json
+2025/07/12 20:57:48 indices_ENXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:48 https://live.euronext.com/en/pd/data/index?mics=XDUB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:48 indices_XDUB: total records = 10, parsed records = 10, total parsed = 10
+2025/07/12 20:57:48 https://live.euronext.com/en/pd/data/index?mics=XMSM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:49 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XMSM.json
+2025/07/12 20:57:49 indices_XMSM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:49 https://live.euronext.com/en/pd/data/index?mics=XESM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:49 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XESM.json
+2025/07/12 20:57:49 indices_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:49 https://live.euronext.com/en/pd/data/index?mics=XACD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:49 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XACD.json
+2025/07/12 20:57:49 indices_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:49 https://live.euronext.com/en/pd/data/index?mics=XOSL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:49 indices_XOSL: total records = 77, parsed records = 77, total parsed = 77
+2025/07/12 20:57:49 https://live.euronext.com/en/pd/data/index?mics=XOAS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:50 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XOAS.json
+2025/07/12 20:57:50 indices_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:50 https://live.euronext.com/en/pd/data/index?mics=MERK POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:50 no data section found in file downloads/euronext/instruments/2025/20250712/indices_MERK.json
+2025/07/12 20:57:50 indices_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:50 https://live.euronext.com/en/pd/data/index?mics=VPXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:50 no data section found in file downloads/euronext/instruments/2025/20250712/indices_VPXB.json
+2025/07/12 20:57:50 indices_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:50 https://live.euronext.com/en/pd/data/index?mics=MTAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:50 no data section found in file downloads/euronext/instruments/2025/20250712/indices_MTAA.json
+2025/07/12 20:57:50 indices_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:50 https://live.euronext.com/en/pd/data/index?mics=MTAH POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:50 no data section found in file downloads/euronext/instruments/2025/20250712/indices_MTAH.json
+2025/07/12 20:57:50 indices_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:50 https://live.euronext.com/en/pd/data/index?mics=EXGM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:51 no data section found in file downloads/euronext/instruments/2025/20250712/indices_EXGM.json
+2025/07/12 20:57:51 indices_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:51 https://live.euronext.com/en/pd/data/index?mics=BGEM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:51 no data section found in file downloads/euronext/instruments/2025/20250712/indices_BGEM.json
+2025/07/12 20:57:51 indices_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:51 https://live.euronext.com/en/pd/data/index?mics=ETLX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:51 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ETLX.json
+2025/07/12 20:57:51 indices_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:51 https://live.euronext.com/en/pd/data/index?mics=ETFP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:51 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ETFP.json
+2025/07/12 20:57:51 indices_ETFP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:51 https://live.euronext.com/en/pd/data/index?mics=ATFX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:52 no data section found in file downloads/euronext/instruments/2025/20250712/indices_ATFX.json
+2025/07/12 20:57:52 indices_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:52 https://live.euronext.com/en/pd/data/index?mics=MIVX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:52 no data section found in file downloads/euronext/instruments/2025/20250712/indices_MIVX.json
+2025/07/12 20:57:52 indices_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:52 https://live.euronext.com/en/pd/data/index?mics=XHFT POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:52 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XHFT.json
+2025/07/12 20:57:52 indices_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:52 https://live.euronext.com/en/pd/data/index?mics=XLDN POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:52 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XLDN.json
+2025/07/12 20:57:52 indices_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:52 https://live.euronext.com/en/pd/data/index?mics=XLIF POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:52 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XLIF.json
+2025/07/12 20:57:52 indices_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:52 https://live.euronext.com/en/pd/data/index?mics=XLON POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:53 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XLON.json
+2025/07/12 20:57:53 indices_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:53 https://live.euronext.com/en/pd/data/index?mics=XETR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:53 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XETR.json
+2025/07/12 20:57:53 indices_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:53 https://live.euronext.com/en/pd/data/index?mics=XMCE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:53 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XMCE.json
+2025/07/12 20:57:53 indices_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:53 https://live.euronext.com/en/pd/data/index?mics=XVTX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:53 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XVTX.json
+2025/07/12 20:57:53 indices_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:53 https://live.euronext.com/en/pd/data/index?mics=FRAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:53 no data section found in file downloads/euronext/instruments/2025/20250712/indices_FRAA.json
+2025/07/12 20:57:53 indices_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:53 https://live.euronext.com/en/pd/data/index?mics=XCSE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:53 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XCSE.json
+2025/07/12 20:57:53 indices_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:53 https://live.euronext.com/en/pd/data/index?mics=XSTO POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:54 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XSTO.json
+2025/07/12 20:57:54 indices_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:54 https://live.euronext.com/en/pd/data/index?mics=XHEL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:54 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XHEL.json
+2025/07/12 20:57:54 indices_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:54 https://live.euronext.com/en/pd/data/index?mics=XMAD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:54 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XMAD.json
+2025/07/12 20:57:54 indices_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:54 https://live.euronext.com/en/pd/data/index?mics=XIST POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:54 no data section found in file downloads/euronext/instruments/2025/20250712/indices_XIST.json
+2025/07/12 20:57:54 indices_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:54 https://live.euronext.com/en/pd/data/etv?mics=XAMS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:55 etvs_XAMS: total records = 169, parsed records = 169, total parsed = 169
+2025/07/12 20:57:55 https://live.euronext.com/en/pd/data/etv?mics=ALXA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:55 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ALXA.json
+2025/07/12 20:57:55 etvs_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:55 https://live.euronext.com/en/pd/data/etv?mics=TNLA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:55 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_TNLA.json
+2025/07/12 20:57:55 etvs_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:55 https://live.euronext.com/en/pd/data/etv?mics=XBRU POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:55 etvs_XBRU: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:57:55 https://live.euronext.com/en/pd/data/etv?mics=ALXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:56 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ALXB.json
+2025/07/12 20:57:56 etvs_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:56 https://live.euronext.com/en/pd/data/etv?mics=ENXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:56 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ENXB.json
+2025/07/12 20:57:56 etvs_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:56 https://live.euronext.com/en/pd/data/etv?mics=MLXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:56 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_MLXB.json
+2025/07/12 20:57:56 etvs_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:56 https://live.euronext.com/en/pd/data/etv?mics=TNLB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:56 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_TNLB.json
+2025/07/12 20:57:56 etvs_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:56 https://live.euronext.com/en/pd/data/etv?mics=XPAR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:57 duplicate isin, skipping (2):
+2025/07/12 20:57:57 (1)(XPAR_GBS_GB00B00FHZ82) mep=PAR, mic=XPAR, symbol=GBS, isin=GB00B00FHZ82
+2025/07/12 20:57:57 (2)(XPAR_GBS_GB00B00FHZ82) mep=PAR, mic=XPAR, symbol=GBS, isin=GB00B00FHZ82
+2025/07/12 20:57:57 duplicate isin, skipping (2):
+2025/07/12 20:57:57 (1)(XAMS_PHAU_JE00B1VS3770) mep=AMS, mic=XAMS, symbol=PHAU, isin=JE00B1VS3770
+2025/07/12 20:57:57 (2)(XAMS_PHAU_JE00B1VS3770) mep=AMS, mic=XAMS, symbol=PHAU, isin=JE00B1VS3770
+2025/07/12 20:57:57 duplicate isin, skipping (2):
+2025/07/12 20:57:57 (1)(XAMS_PHAG_JE00B1VS3333) mep=AMS, mic=XAMS, symbol=PHAG, isin=JE00B1VS3333
+2025/07/12 20:57:57 (2)(XAMS_PHAG_JE00B1VS3333) mep=AMS, mic=XAMS, symbol=PHAG, isin=JE00B1VS3333
+2025/07/12 20:57:57 duplicate isin, skipping (2):
+2025/07/12 20:57:57 (1)(XAMS_PHPT_JE00B1VS2W53) mep=AMS, mic=XAMS, symbol=PHPT, isin=JE00B1VS2W53
+2025/07/12 20:57:57 (2)(XAMS_PHPT_JE00B1VS2W53) mep=AMS, mic=XAMS, symbol=PHPT, isin=JE00B1VS2W53
+2025/07/12 20:57:57 duplicate isin, skipping (2):
+2025/07/12 20:57:57 (1)(XAMS_PHPD_JE00B1VS3002) mep=AMS, mic=XAMS, symbol=PHPD, isin=JE00B1VS3002
+2025/07/12 20:57:57 (2)(XAMS_PHPD_JE00B1VS3002) mep=AMS, mic=XAMS, symbol=PHPD, isin=JE00B1VS3002
+2025/07/12 20:57:57 duplicate isin, skipping (2):
+2025/07/12 20:57:57 (1)(XAMS_PHPM_JE00B1VS3W29) mep=AMS, mic=XAMS, symbol=PHPM, isin=JE00B1VS3W29
+2025/07/12 20:57:57 (2)(XAMS_PHPM_JE00B1VS3W29) mep=AMS, mic=XAMS, symbol=PHPM, isin=JE00B1VS3W29
+2025/07/12 20:57:57 etvs_XPAR: total records = 124, parsed records = 124, total parsed = 124
+2025/07/12 20:57:57 https://live.euronext.com/en/pd/data/etv?mics=ALXP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:57 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ALXP.json
+2025/07/12 20:57:57 etvs_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:57 https://live.euronext.com/en/pd/data/etv?mics=XMLI POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:57 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XMLI.json
+2025/07/12 20:57:57 etvs_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:57 https://live.euronext.com/en/pd/data/etv?mics=XLIS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:57 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XLIS.json
+2025/07/12 20:57:57 etvs_XLIS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:57 https://live.euronext.com/en/pd/data/etv?mics=ALXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:57 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ALXL.json
+2025/07/12 20:57:57 etvs_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:57 https://live.euronext.com/en/pd/data/etv?mics=ENXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:58 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ENXL.json
+2025/07/12 20:57:58 etvs_ENXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:58 https://live.euronext.com/en/pd/data/etv?mics=XDUB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:58 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XDUB.json
+2025/07/12 20:57:58 etvs_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:58 https://live.euronext.com/en/pd/data/etv?mics=XMSM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:58 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XMSM.json
+2025/07/12 20:57:58 etvs_XMSM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:58 https://live.euronext.com/en/pd/data/etv?mics=XESM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:58 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XESM.json
+2025/07/12 20:57:58 etvs_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:58 https://live.euronext.com/en/pd/data/etv?mics=XACD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:58 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XACD.json
+2025/07/12 20:57:58 etvs_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:58 https://live.euronext.com/en/pd/data/etv?mics=XOSL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:59 etvs_XOSL: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:57:59 https://live.euronext.com/en/pd/data/etv?mics=XOAS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:59 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XOAS.json
+2025/07/12 20:57:59 etvs_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:59 https://live.euronext.com/en/pd/data/etv?mics=MERK POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:59 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_MERK.json
+2025/07/12 20:57:59 etvs_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:59 https://live.euronext.com/en/pd/data/etv?mics=VPXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:57:59 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_VPXB.json
+2025/07/12 20:57:59 etvs_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:57:59 https://live.euronext.com/en/pd/data/etv?mics=MTAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:00 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_MTAA.json
+2025/07/12 20:58:00 etvs_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:00 https://live.euronext.com/en/pd/data/etv?mics=MTAH POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:00 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_MTAH.json
+2025/07/12 20:58:00 etvs_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:00 https://live.euronext.com/en/pd/data/etv?mics=EXGM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:00 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_EXGM.json
+2025/07/12 20:58:00 etvs_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:00 https://live.euronext.com/en/pd/data/etv?mics=BGEM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:00 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_BGEM.json
+2025/07/12 20:58:00 etvs_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:00 https://live.euronext.com/en/pd/data/etv?mics=ETLX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:01 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ETLX.json
+2025/07/12 20:58:01 etvs_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:01 https://live.euronext.com/en/pd/data/etv?mics=ETFP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:01 etvs_ETFP: total records = 343, parsed records = 343, total parsed = 343
+2025/07/12 20:58:01 https://live.euronext.com/en/pd/data/etv?mics=ATFX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:01 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_ATFX.json
+2025/07/12 20:58:01 etvs_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:01 https://live.euronext.com/en/pd/data/etv?mics=MIVX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:01 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_MIVX.json
+2025/07/12 20:58:01 etvs_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:01 https://live.euronext.com/en/pd/data/etv?mics=XHFT POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:02 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XHFT.json
+2025/07/12 20:58:02 etvs_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:02 https://live.euronext.com/en/pd/data/etv?mics=XLDN POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:02 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XLDN.json
+2025/07/12 20:58:02 etvs_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:02 https://live.euronext.com/en/pd/data/etv?mics=XLIF POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:02 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XLIF.json
+2025/07/12 20:58:02 etvs_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:02 https://live.euronext.com/en/pd/data/etv?mics=XLON POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:02 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XLON.json
+2025/07/12 20:58:02 etvs_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:02 https://live.euronext.com/en/pd/data/etv?mics=XETR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:03 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XETR.json
+2025/07/12 20:58:03 etvs_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:03 https://live.euronext.com/en/pd/data/etv?mics=XMCE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:03 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XMCE.json
+2025/07/12 20:58:03 etvs_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:03 https://live.euronext.com/en/pd/data/etv?mics=XVTX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:03 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XVTX.json
+2025/07/12 20:58:03 etvs_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:03 https://live.euronext.com/en/pd/data/etv?mics=FRAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:03 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_FRAA.json
+2025/07/12 20:58:03 etvs_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:03 https://live.euronext.com/en/pd/data/etv?mics=XCSE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:03 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XCSE.json
+2025/07/12 20:58:03 etvs_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:03 https://live.euronext.com/en/pd/data/etv?mics=XSTO POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:04 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XSTO.json
+2025/07/12 20:58:04 etvs_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:04 https://live.euronext.com/en/pd/data/etv?mics=XHEL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:04 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XHEL.json
+2025/07/12 20:58:04 etvs_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:04 https://live.euronext.com/en/pd/data/etv?mics=XMAD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:04 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XMAD.json
+2025/07/12 20:58:04 etvs_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:04 https://live.euronext.com/en/pd/data/etv?mics=XIST POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:04 no data section found in file downloads/euronext/instruments/2025/20250712/etvs_XIST.json
+2025/07/12 20:58:04 etvs_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:04 https://live.euronext.com/en/pd/data/track?mics=XAMS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:05 etfs_XAMS: total records = 511, parsed records = 511, total parsed = 511
+2025/07/12 20:58:05 https://live.euronext.com/en/pd/data/track?mics=ALXA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:06 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ALXA.json
+2025/07/12 20:58:06 etfs_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:06 https://live.euronext.com/en/pd/data/track?mics=TNLA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:06 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_TNLA.json
+2025/07/12 20:58:06 etfs_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:06 https://live.euronext.com/en/pd/data/track?mics=XBRU POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TEET_NL0010731816) mep=AMS, mic=XAMS, symbol=TEET, isin=NL0010731816
+2025/07/12 20:58:06 (2)(XAMS_TEET_NL0010731816) mep=AMS, mic=XAMS, symbol=TEET, isin=NL0010731816
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TDT_NL0009272749) mep=AMS, mic=XAMS, symbol=TDT, isin=NL0009272749
+2025/07/12 20:58:06 (2)(XAMS_TDT_NL0009272749) mep=AMS, mic=XAMS, symbol=TDT, isin=NL0009272749
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TMX_NL0009272756) mep=AMS, mic=XAMS, symbol=TMX, isin=NL0009272756
+2025/07/12 20:58:06 (2)(XAMS_TMX_NL0009272756) mep=AMS, mic=XAMS, symbol=TMX, isin=NL0009272756
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_NTM_NL0009272772) mep=AMS, mic=XAMS, symbol=NTM, isin=NL0009272772
+2025/07/12 20:58:06 (2)(XAMS_NTM_NL0009272772) mep=AMS, mic=XAMS, symbol=NTM, isin=NL0009272772
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_DTM_NL0009272764) mep=AMS, mic=XAMS, symbol=DTM, isin=NL0009272764
+2025/07/12 20:58:06 (2)(XAMS_DTM_NL0009272764) mep=AMS, mic=XAMS, symbol=DTM, isin=NL0009272764
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TCBT_NL0009690247) mep=AMS, mic=XAMS, symbol=TCBT, isin=NL0009690247
+2025/07/12 20:58:06 (2)(XAMS_TCBT_NL0009690247) mep=AMS, mic=XAMS, symbol=TCBT, isin=NL0009690247
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TSWE_NL0010408704) mep=AMS, mic=XAMS, symbol=TSWE, isin=NL0010408704
+2025/07/12 20:58:06 (2)(XAMS_TSWE_NL0010408704) mep=AMS, mic=XAMS, symbol=TSWE, isin=NL0010408704
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TAT_NL0010273801) mep=AMS, mic=XAMS, symbol=TAT, isin=NL0010273801
+2025/07/12 20:58:06 (2)(XAMS_TAT_NL0010273801) mep=AMS, mic=XAMS, symbol=TAT, isin=NL0010273801
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TGBT_NL0009690254) mep=AMS, mic=XAMS, symbol=TGBT, isin=NL0009690254
+2025/07/12 20:58:06 (2)(XAMS_TGBT_NL0009690254) mep=AMS, mic=XAMS, symbol=TGBT, isin=NL0009690254
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TOF_NL0009272780) mep=AMS, mic=XAMS, symbol=TOF, isin=NL0009272780
+2025/07/12 20:58:06 (2)(XAMS_TOF_NL0009272780) mep=AMS, mic=XAMS, symbol=TOF, isin=NL0009272780
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TDIV_NL0011683594) mep=AMS, mic=XAMS, symbol=TDIV, isin=NL0011683594
+2025/07/12 20:58:06 (2)(XAMS_TDIV_NL0011683594) mep=AMS, mic=XAMS, symbol=TDIV, isin=NL0011683594
+2025/07/12 20:58:06 duplicate isin, skipping (2):
+2025/07/12 20:58:06 (1)(XAMS_TRET_NL0009690239) mep=AMS, mic=XAMS, symbol=TRET, isin=NL0009690239
+2025/07/12 20:58:06 (2)(XAMS_TRET_NL0009690239) mep=AMS, mic=XAMS, symbol=TRET, isin=NL0009690239
+2025/07/12 20:58:06 etfs_XBRU: total records = 14, parsed records = 14, total parsed = 14
+2025/07/12 20:58:06 https://live.euronext.com/en/pd/data/track?mics=ALXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:06 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ALXB.json
+2025/07/12 20:58:06 etfs_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:06 https://live.euronext.com/en/pd/data/track?mics=ENXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:07 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ENXB.json
+2025/07/12 20:58:07 etfs_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:07 https://live.euronext.com/en/pd/data/track?mics=MLXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:07 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_MLXB.json
+2025/07/12 20:58:07 etfs_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:07 https://live.euronext.com/en/pd/data/track?mics=TNLB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:07 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_TNLB.json
+2025/07/12 20:58:07 etfs_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:07 https://live.euronext.com/en/pd/data/track?mics=XPAR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XPAR_EEE_LU0192223062) mep=PAR, mic=XPAR, symbol=EEE, isin=LU0192223062
+2025/07/12 20:58:09 (2)(XPAR_EEE_LU0192223062) mep=PAR, mic=XPAR, symbol=EEE, isin=LU0192223062
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XPAR_IQEC_LU1603790731) mep=PAR, mic=XPAR, symbol=IQEC, isin=LU1603790731
+2025/07/12 20:58:09 (2)(XPAR_IQEC_LU1603790731) mep=PAR, mic=XPAR, symbol=IQEC, isin=LU1603790731
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XPAR_IQEE_LU1603795458) mep=PAR, mic=XPAR, symbol=IQEE, isin=LU1603795458
+2025/07/12 20:58:09 (2)(XPAR_IQEE_LU1603795458) mep=PAR, mic=XPAR, symbol=IQEE, isin=LU1603795458
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XPAR_IQJP_LU1603797587) mep=PAR, mic=XPAR, symbol=IQJP, isin=LU1603797587
+2025/07/12 20:58:09 (2)(XPAR_IQJP_LU1603797587) mep=PAR, mic=XPAR, symbol=IQJP, isin=LU1603797587
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_CASH_IE00BHBFDF83) mep=AMS, mic=XAMS, symbol=CASH, isin=IE00BHBFDF83
+2025/07/12 20:58:09 (2)(XAMS_CASH_IE00BHBFDF83) mep=AMS, mic=XAMS, symbol=CASH, isin=IE00BHBFDF83
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3GF_IE00BNDS1P30) mep=AMS, mic=XAMS, symbol=V3GF, isin=IE00BNDS1P30
+2025/07/12 20:58:09 (2)(XAMS_V3GF_IE00BNDS1P30) mep=AMS, mic=XAMS, symbol=V3GF, isin=IE00BNDS1P30
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3GE_IE00BNDS1Q47) mep=AMS, mic=XAMS, symbol=V3GE, isin=IE00BNDS1Q47
+2025/07/12 20:58:09 (2)(XAMS_V3GE_IE00BNDS1Q47) mep=AMS, mic=XAMS, symbol=V3GE, isin=IE00BNDS1Q47
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3PA_IE000GOJO2A3) mep=AMS, mic=XAMS, symbol=V3PA, isin=IE000GOJO2A3
+2025/07/12 20:58:09 (2)(XAMS_V3PA_IE000GOJO2A3) mep=AMS, mic=XAMS, symbol=V3PA, isin=IE000GOJO2A3
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3PL_IE0008T6IUX0) mep=AMS, mic=XAMS, symbol=V3PL, isin=IE0008T6IUX0
+2025/07/12 20:58:09 (2)(XAMS_V3PL_IE0008T6IUX0) mep=AMS, mic=XAMS, symbol=V3PL, isin=IE0008T6IUX0
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3EA_IE000QUOSE01) mep=AMS, mic=XAMS, symbol=V3EA, isin=IE000QUOSE01
+2025/07/12 20:58:09 (2)(XAMS_V3EA_IE000QUOSE01) mep=AMS, mic=XAMS, symbol=V3EA, isin=IE000QUOSE01
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3EL_IE000NRGX9M3) mep=AMS, mic=XAMS, symbol=V3EL, isin=IE000NRGX9M3
+2025/07/12 20:58:09 (2)(XAMS_V3EL_IE000NRGX9M3) mep=AMS, mic=XAMS, symbol=V3EL, isin=IE000NRGX9M3
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3RE_IE000QADMYA3) mep=AMS, mic=XAMS, symbol=V3RE, isin=IE000QADMYA3
+2025/07/12 20:58:09 (2)(XAMS_V3RE_IE000QADMYA3) mep=AMS, mic=XAMS, symbol=V3RE, isin=IE000QADMYA3
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3RF_IE000F37PGZ3) mep=AMS, mic=XAMS, symbol=V3RF, isin=IE000F37PGZ3
+2025/07/12 20:58:09 (2)(XAMS_V3RF_IE000F37PGZ3) mep=AMS, mic=XAMS, symbol=V3RF, isin=IE000F37PGZ3
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3MA_IE000KPJJWM6) mep=AMS, mic=XAMS, symbol=V3MA, isin=IE000KPJJWM6
+2025/07/12 20:58:09 (2)(XAMS_V3MA_IE000KPJJWM6) mep=AMS, mic=XAMS, symbol=V3MA, isin=IE000KPJJWM6
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3ML_IE0001VXZTV7) mep=AMS, mic=XAMS, symbol=V3ML, isin=IE0001VXZTV7
+2025/07/12 20:58:09 (2)(XAMS_V3ML_IE0001VXZTV7) mep=AMS, mic=XAMS, symbol=V3ML, isin=IE0001VXZTV7
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3AA_IE00BNG8L278) mep=AMS, mic=XAMS, symbol=V3AA, isin=IE00BNG8L278
+2025/07/12 20:58:09 (2)(XAMS_V3AA_IE00BNG8L278) mep=AMS, mic=XAMS, symbol=V3AA, isin=IE00BNG8L278
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3AL_IE00BNG8L385) mep=AMS, mic=XAMS, symbol=V3AL, isin=IE00BNG8L385
+2025/07/12 20:58:09 (2)(XAMS_V3AL_IE00BNG8L385) mep=AMS, mic=XAMS, symbol=V3AL, isin=IE00BNG8L385
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3NA_IE000O58J820) mep=AMS, mic=XAMS, symbol=V3NA, isin=IE000O58J820
+2025/07/12 20:58:09 (2)(XAMS_V3NA_IE000O58J820) mep=AMS, mic=XAMS, symbol=V3NA, isin=IE000O58J820
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3NL_IE000L2ZNB07) mep=AMS, mic=XAMS, symbol=V3NL, isin=IE000L2ZNB07
+2025/07/12 20:58:09 (2)(XAMS_V3NL_IE000L2ZNB07) mep=AMS, mic=XAMS, symbol=V3NL, isin=IE000L2ZNB07
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3SE_IE000EKJRSZ3) mep=AMS, mic=XAMS, symbol=V3SE, isin=IE000EKJRSZ3
+2025/07/12 20:58:09 (2)(XAMS_V3SE_IE000EKJRSZ3) mep=AMS, mic=XAMS, symbol=V3SE, isin=IE000EKJRSZ3
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3SU_IE000RO1O3N4) mep=AMS, mic=XAMS, symbol=V3SU, isin=IE000RO1O3N4
+2025/07/12 20:58:09 (2)(XAMS_V3SU_IE000RO1O3N4) mep=AMS, mic=XAMS, symbol=V3SU, isin=IE000RO1O3N4
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_V3SD_IE000JQV8511) mep=AMS, mic=XAMS, symbol=V3SD, isin=IE000JQV8511
+2025/07/12 20:58:09 (2)(XAMS_V3SD_IE000JQV8511) mep=AMS, mic=XAMS, symbol=V3SD, isin=IE000JQV8511
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VECP_IE00BZ163G84) mep=AMS, mic=XAMS, symbol=VECP, isin=IE00BZ163G84
+2025/07/12 20:58:09 (2)(XAMS_VECP_IE00BZ163G84) mep=AMS, mic=XAMS, symbol=VECP, isin=IE00BZ163G84
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VETY_IE00BZ163H91) mep=AMS, mic=XAMS, symbol=VETY, isin=IE00BZ163H91
+2025/07/12 20:58:09 (2)(XAMS_VETY_IE00BZ163H91) mep=AMS, mic=XAMS, symbol=VETY, isin=IE00BZ163H91
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VAPX_IE00B9F5YL18) mep=AMS, mic=XAMS, symbol=VAPX, isin=IE00B9F5YL18
+2025/07/12 20:58:09 (2)(XAMS_VAPX_IE00B9F5YL18) mep=AMS, mic=XAMS, symbol=VAPX, isin=IE00B9F5YL18
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VWRL_IE00B3RBWM25) mep=AMS, mic=XAMS, symbol=VWRL, isin=IE00B3RBWM25
+2025/07/12 20:58:09 (2)(XAMS_VWRL_IE00B3RBWM25) mep=AMS, mic=XAMS, symbol=VWRL, isin=IE00B3RBWM25
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VERX_IE00BKX55S42) mep=AMS, mic=XAMS, symbol=VERX, isin=IE00BKX55S42
+2025/07/12 20:58:09 (2)(XAMS_VERX_IE00BKX55S42) mep=AMS, mic=XAMS, symbol=VERX, isin=IE00BKX55S42
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VEVE_IE00BKX55T58) mep=AMS, mic=XAMS, symbol=VEVE, isin=IE00BKX55T58
+2025/07/12 20:58:09 (2)(XAMS_VEVE_IE00BKX55T58) mep=AMS, mic=XAMS, symbol=VEVE, isin=IE00BKX55T58
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VFEM_IE00B3VVMM84) mep=AMS, mic=XAMS, symbol=VFEM, isin=IE00B3VVMM84
+2025/07/12 20:58:09 (2)(XAMS_VFEM_IE00B3VVMM84) mep=AMS, mic=XAMS, symbol=VFEM, isin=IE00B3VVMM84
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VEUR_IE00B945VV12) mep=AMS, mic=XAMS, symbol=VEUR, isin=IE00B945VV12
+2025/07/12 20:58:09 (2)(XAMS_VEUR_IE00B945VV12) mep=AMS, mic=XAMS, symbol=VEUR, isin=IE00B945VV12
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VHYL_IE00B8GKDB10) mep=AMS, mic=XAMS, symbol=VHYL, isin=IE00B8GKDB10
+2025/07/12 20:58:09 (2)(XAMS_VHYL_IE00B8GKDB10) mep=AMS, mic=XAMS, symbol=VHYL, isin=IE00B8GKDB10
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VJPN_IE00B95PGT31) mep=AMS, mic=XAMS, symbol=VJPN, isin=IE00B95PGT31
+2025/07/12 20:58:09 (2)(XAMS_VJPN_IE00B95PGT31) mep=AMS, mic=XAMS, symbol=VJPN, isin=IE00B95PGT31
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VNRT_IE00BKX55R35) mep=AMS, mic=XAMS, symbol=VNRT, isin=IE00BKX55R35
+2025/07/12 20:58:09 (2)(XAMS_VNRT_IE00BKX55R35) mep=AMS, mic=XAMS, symbol=VNRT, isin=IE00BKX55R35
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VUSA_IE00B3XXRP09) mep=AMS, mic=XAMS, symbol=VUSA, isin=IE00B3XXRP09
+2025/07/12 20:58:09 (2)(XAMS_VUSA_IE00B3XXRP09) mep=AMS, mic=XAMS, symbol=VUSA, isin=IE00B3XXRP09
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VUCP_IE00BZ163K21) mep=AMS, mic=XAMS, symbol=VUCP, isin=IE00BZ163K21
+2025/07/12 20:58:09 (2)(XAMS_VUCP_IE00BZ163K21) mep=AMS, mic=XAMS, symbol=VUCP, isin=IE00BZ163K21
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VEMT_IE00BZ163L38) mep=AMS, mic=XAMS, symbol=VEMT, isin=IE00BZ163L38
+2025/07/12 20:58:09 (2)(XAMS_VEMT_IE00BZ163L38) mep=AMS, mic=XAMS, symbol=VEMT, isin=IE00BZ163L38
+2025/07/12 20:58:09 duplicate isin, skipping (2):
+2025/07/12 20:58:09 (1)(XAMS_VUTY_IE00BZ163M45) mep=AMS, mic=XAMS, symbol=VUTY, isin=IE00BZ163M45
+2025/07/12 20:58:09 (2)(XAMS_VUTY_IE00BZ163M45) mep=AMS, mic=XAMS, symbol=VUTY, isin=IE00BZ163M45
+2025/07/12 20:58:09 etfs_XPAR: total records = 682, parsed records = 682, total parsed = 682
+2025/07/12 20:58:09 https://live.euronext.com/en/pd/data/track?mics=ALXP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:09 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ALXP.json
+2025/07/12 20:58:09 etfs_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:09 https://live.euronext.com/en/pd/data/track?mics=XMLI POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:09 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XMLI.json
+2025/07/12 20:58:09 etfs_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:09 https://live.euronext.com/en/pd/data/track?mics=XLIS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:10 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XLIS.json
+2025/07/12 20:58:10 etfs_XLIS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:10 https://live.euronext.com/en/pd/data/track?mics=ALXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:10 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ALXL.json
+2025/07/12 20:58:10 etfs_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:10 https://live.euronext.com/en/pd/data/track?mics=ENXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:10 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ENXL.json
+2025/07/12 20:58:10 etfs_ENXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:10 https://live.euronext.com/en/pd/data/track?mics=XDUB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:11 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XDUB.json
+2025/07/12 20:58:11 etfs_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:11 https://live.euronext.com/en/pd/data/track?mics=XMSM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:11 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XMSM.json
+2025/07/12 20:58:11 etfs_XMSM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:11 https://live.euronext.com/en/pd/data/track?mics=XESM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:11 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XESM.json
+2025/07/12 20:58:11 etfs_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:11 https://live.euronext.com/en/pd/data/track?mics=XACD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:11 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XACD.json
+2025/07/12 20:58:11 etfs_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:11 https://live.euronext.com/en/pd/data/track?mics=XOSL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:12 etfs_XOSL: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:58:12 https://live.euronext.com/en/pd/data/track?mics=XOAS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:12 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XOAS.json
+2025/07/12 20:58:12 etfs_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:12 https://live.euronext.com/en/pd/data/track?mics=MERK POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:12 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_MERK.json
+2025/07/12 20:58:12 etfs_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:12 https://live.euronext.com/en/pd/data/track?mics=VPXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:12 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_VPXB.json
+2025/07/12 20:58:12 etfs_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:12 https://live.euronext.com/en/pd/data/track?mics=MTAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:12 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_MTAA.json
+2025/07/12 20:58:12 etfs_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:12 https://live.euronext.com/en/pd/data/track?mics=MTAH POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:13 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_MTAH.json
+2025/07/12 20:58:13 etfs_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:13 https://live.euronext.com/en/pd/data/track?mics=EXGM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:13 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_EXGM.json
+2025/07/12 20:58:13 etfs_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:13 https://live.euronext.com/en/pd/data/track?mics=BGEM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:13 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_BGEM.json
+2025/07/12 20:58:13 etfs_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:13 https://live.euronext.com/en/pd/data/track?mics=ETLX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:13 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ETLX.json
+2025/07/12 20:58:13 etfs_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:13 https://live.euronext.com/en/pd/data/track?mics=ETFP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:15 etfs_ETFP: total records = 1778, parsed records = 1778, total parsed = 1778
+2025/07/12 20:58:15 https://live.euronext.com/en/pd/data/track?mics=ATFX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:16 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_ATFX.json
+2025/07/12 20:58:16 etfs_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:16 https://live.euronext.com/en/pd/data/track?mics=MIVX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:16 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_MIVX.json
+2025/07/12 20:58:16 etfs_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:16 https://live.euronext.com/en/pd/data/track?mics=XHFT POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:16 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XHFT.json
+2025/07/12 20:58:16 etfs_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:16 https://live.euronext.com/en/pd/data/track?mics=XLDN POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:16 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XLDN.json
+2025/07/12 20:58:16 etfs_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:16 https://live.euronext.com/en/pd/data/track?mics=XLIF POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:17 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XLIF.json
+2025/07/12 20:58:17 etfs_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:17 https://live.euronext.com/en/pd/data/track?mics=XLON POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:17 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XLON.json
+2025/07/12 20:58:17 etfs_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:17 https://live.euronext.com/en/pd/data/track?mics=XETR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:18 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XETR.json
+2025/07/12 20:58:18 etfs_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:18 https://live.euronext.com/en/pd/data/track?mics=XMCE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:18 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XMCE.json
+2025/07/12 20:58:18 etfs_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:18 https://live.euronext.com/en/pd/data/track?mics=XVTX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:18 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XVTX.json
+2025/07/12 20:58:18 etfs_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:18 https://live.euronext.com/en/pd/data/track?mics=FRAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:18 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_FRAA.json
+2025/07/12 20:58:18 etfs_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:18 https://live.euronext.com/en/pd/data/track?mics=XCSE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:18 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XCSE.json
+2025/07/12 20:58:18 etfs_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:18 https://live.euronext.com/en/pd/data/track?mics=XSTO POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:19 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XSTO.json
+2025/07/12 20:58:19 etfs_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:19 https://live.euronext.com/en/pd/data/track?mics=XHEL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:19 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XHEL.json
+2025/07/12 20:58:19 etfs_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:19 https://live.euronext.com/en/pd/data/track?mics=XMAD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:19 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XMAD.json
+2025/07/12 20:58:19 etfs_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:19 https://live.euronext.com/en/pd/data/track?mics=XIST POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:19 no data section found in file downloads/euronext/instruments/2025/20250712/etfs_XIST.json
+2025/07/12 20:58:19 etfs_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:19 https://live.euronext.com/en/pd/data/funds?mics=XAMS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:19 funds_XAMS: total records = 94, parsed records = 94, total parsed = 94
+2025/07/12 20:58:19 https://live.euronext.com/en/pd/data/funds?mics=ALXA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:20 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ALXA.json
+2025/07/12 20:58:20 funds_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:20 https://live.euronext.com/en/pd/data/funds?mics=TNLA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:20 no data section found in file downloads/euronext/instruments/2025/20250712/funds_TNLA.json
+2025/07/12 20:58:20 funds_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:20 https://live.euronext.com/en/pd/data/funds?mics=XBRU POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:20 funds_XBRU: total records = 2, parsed records = 2, total parsed = 2
+2025/07/12 20:58:20 https://live.euronext.com/en/pd/data/funds?mics=ALXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:21 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ALXB.json
+2025/07/12 20:58:21 funds_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:21 https://live.euronext.com/en/pd/data/funds?mics=ENXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:21 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ENXB.json
+2025/07/12 20:58:21 funds_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:21 https://live.euronext.com/en/pd/data/funds?mics=MLXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:21 no data section found in file downloads/euronext/instruments/2025/20250712/funds_MLXB.json
+2025/07/12 20:58:21 funds_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:21 https://live.euronext.com/en/pd/data/funds?mics=TNLB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:21 no data section found in file downloads/euronext/instruments/2025/20250712/funds_TNLB.json
+2025/07/12 20:58:21 funds_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:21 https://live.euronext.com/en/pd/data/funds?mics=XPAR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:22 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XPAR.json
+2025/07/12 20:58:22 funds_XPAR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:22 https://live.euronext.com/en/pd/data/funds?mics=ALXP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:22 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ALXP.json
+2025/07/12 20:58:22 funds_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:22 https://live.euronext.com/en/pd/data/funds?mics=XMLI POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:22 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XMLI.json
+2025/07/12 20:58:22 funds_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:22 https://live.euronext.com/en/pd/data/funds?mics=XLIS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:22 funds_XLIS: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:58:22 https://live.euronext.com/en/pd/data/funds?mics=ALXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:23 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ALXL.json
+2025/07/12 20:58:23 funds_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:23 https://live.euronext.com/en/pd/data/funds?mics=ENXL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:23 funds_ENXL: total records = 3, parsed records = 3, total parsed = 3
+2025/07/12 20:58:23 https://live.euronext.com/en/pd/data/funds?mics=XDUB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:23 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XDUB.json
+2025/07/12 20:58:23 funds_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:23 https://live.euronext.com/en/pd/data/funds?mics=XMSM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:24 funds_XMSM: total records = 1257, parsed records = 1257, total parsed = 1257
+2025/07/12 20:58:24 https://live.euronext.com/en/pd/data/funds?mics=XESM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:24 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XESM.json
+2025/07/12 20:58:24 funds_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:24 https://live.euronext.com/en/pd/data/funds?mics=XACD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:24 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XACD.json
+2025/07/12 20:58:24 funds_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:24 https://live.euronext.com/en/pd/data/funds?mics=XOSL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:24 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XOSL.json
+2025/07/12 20:58:24 funds_XOSL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:24 https://live.euronext.com/en/pd/data/funds?mics=XOAS POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:24 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XOAS.json
+2025/07/12 20:58:24 funds_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:24 https://live.euronext.com/en/pd/data/funds?mics=MERK POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:25 no data section found in file downloads/euronext/instruments/2025/20250712/funds_MERK.json
+2025/07/12 20:58:25 funds_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:25 https://live.euronext.com/en/pd/data/funds?mics=VPXB POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:25 no data section found in file downloads/euronext/instruments/2025/20250712/funds_VPXB.json
+2025/07/12 20:58:25 funds_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:25 https://live.euronext.com/en/pd/data/funds?mics=MTAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:25 no data section found in file downloads/euronext/instruments/2025/20250712/funds_MTAA.json
+2025/07/12 20:58:25 funds_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:25 https://live.euronext.com/en/pd/data/funds?mics=MTAH POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:25 no data section found in file downloads/euronext/instruments/2025/20250712/funds_MTAH.json
+2025/07/12 20:58:25 funds_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:25 https://live.euronext.com/en/pd/data/funds?mics=EXGM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:25 no data section found in file downloads/euronext/instruments/2025/20250712/funds_EXGM.json
+2025/07/12 20:58:25 funds_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:25 https://live.euronext.com/en/pd/data/funds?mics=BGEM POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:26 no data section found in file downloads/euronext/instruments/2025/20250712/funds_BGEM.json
+2025/07/12 20:58:26 funds_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:26 https://live.euronext.com/en/pd/data/funds?mics=ETLX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:26 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ETLX.json
+2025/07/12 20:58:26 funds_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:26 https://live.euronext.com/en/pd/data/funds?mics=ETFP POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:26 no data section found in file downloads/euronext/instruments/2025/20250712/funds_ETFP.json
+2025/07/12 20:58:26 funds_ETFP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:26 https://live.euronext.com/en/pd/data/funds?mics=ATFX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:26 funds_ATFX: total records = 71, parsed records = 71, total parsed = 71
+2025/07/12 20:58:26 https://live.euronext.com/en/pd/data/funds?mics=MIVX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:26 funds_MIVX: total records = 6, parsed records = 6, total parsed = 6
+2025/07/12 20:58:26 https://live.euronext.com/en/pd/data/funds?mics=XHFT POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:27 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XHFT.json
+2025/07/12 20:58:27 funds_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:27 https://live.euronext.com/en/pd/data/funds?mics=XLDN POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:27 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XLDN.json
+2025/07/12 20:58:27 funds_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:27 https://live.euronext.com/en/pd/data/funds?mics=XLIF POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:27 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XLIF.json
+2025/07/12 20:58:27 funds_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:27 https://live.euronext.com/en/pd/data/funds?mics=XLON POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:27 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XLON.json
+2025/07/12 20:58:27 funds_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:27 https://live.euronext.com/en/pd/data/funds?mics=XETR POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:28 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XETR.json
+2025/07/12 20:58:28 funds_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:28 https://live.euronext.com/en/pd/data/funds?mics=XMCE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:28 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XMCE.json
+2025/07/12 20:58:28 funds_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:28 https://live.euronext.com/en/pd/data/funds?mics=XVTX POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:28 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XVTX.json
+2025/07/12 20:58:28 funds_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:28 https://live.euronext.com/en/pd/data/funds?mics=FRAA POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:28 no data section found in file downloads/euronext/instruments/2025/20250712/funds_FRAA.json
+2025/07/12 20:58:28 funds_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:28 https://live.euronext.com/en/pd/data/funds?mics=XCSE POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:28 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XCSE.json
+2025/07/12 20:58:28 funds_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:28 https://live.euronext.com/en/pd/data/funds?mics=XSTO POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:28 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XSTO.json
+2025/07/12 20:58:28 funds_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:28 https://live.euronext.com/en/pd/data/funds?mics=XHEL POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:29 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XHEL.json
+2025/07/12 20:58:29 funds_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:29 https://live.euronext.com/en/pd/data/funds?mics=XMAD POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:29 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XMAD.json
+2025/07/12 20:58:29 funds_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:29 https://live.euronext.com/en/pd/data/funds?mics=XIST POST body: iDisplayLength=10000&iDisplayStart=0&length=10000&start=0
+2025/07/12 20:58:29 no data section found in file downloads/euronext/instruments/2025/20250712/funds_XIST.json
+2025/07/12 20:58:29 funds_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:58:29 zipping folder downloads/euronext/instruments/2025/20250712/ to downloads/euronext/instruments/2025/20250712edi.zip
+2025/07/12 20:58:29 zipped folder downloads/euronext/instruments/2025/20250712/ to downloads/euronext/instruments/2025/20250712edi.zip
+2025/07/12 20:58:29 deleted folder downloads/euronext/instruments/2025/20250712/
+2025/07/12 20:58:29 fetched 9456 actual instruments
+2025/07/12 20:58:29 =======================================
+2025/07/12 20:58:29 discovered stock: "VPXB_NULL_BE0036367895":
+2025/07/12 20:58:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036367895-VPXB/fs_cfi_block
+2025/07/12 20:58:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036367895-VPXB/fs_icb_block
+2025/07/12 20:58:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036367895-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036367895-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getDetailedQuote/BE0036367895-VPXB
+2025/07/12 20:58:30 discovered etf: "XPAR_EBBU_LU3046359165":
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3046359165-XPAR/fs_cfi_block
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3046359165-XPAR/fs_generalinfo_block
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3046359165-XPAR/fs_tradinginfo_etfs_block
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3046359165-XPAR/fs_feessegmentation_block
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getDetailedQuote/LU3046359165-XPAR
+2025/07/12 20:58:30 discovered stock: "VPXB_NULL_LU0006047129":
+2025/07/12 20:58:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006047129-VPXB/fs_cfi_block
+2025/07/12 20:58:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006047129-VPXB/fs_icb_block
+2025/07/12 20:58:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006047129-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006047129-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:31 https://live.euronext.com/en/ajax/getDetailedQuote/LU0006047129-VPXB
+2025/07/12 20:58:31 discovered stock: "VPXB_NULL_LU0097891112":
+2025/07/12 20:58:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0097891112-VPXB/fs_cfi_block
+2025/07/12 20:58:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0097891112-VPXB/fs_icb_block
+2025/07/12 20:58:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0097891112-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0097891112-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:32 https://live.euronext.com/en/ajax/getDetailedQuote/LU0097891112-VPXB
+2025/07/12 20:58:33 discovered fund: "XMSM_NULL_IE000OBK3UE0":
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000OBK3UE0-XMSM/fs_cfi_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000OBK3UE0-XMSM/fs_issuerinfo_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000OBK3UE0-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:58:33 discovered fund: "XMSM_NULL_IE000FRZCBI5":
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000FRZCBI5-XMSM/fs_cfi_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000FRZCBI5-XMSM/fs_issuerinfo_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000FRZCBI5-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:58:33 discovered stock: "VPXB_NULL_NL0000121622":
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000121622-VPXB/fs_cfi_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000121622-VPXB/fs_icb_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000121622-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000121622-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:33 https://live.euronext.com/en/ajax/getDetailedQuote/NL0000121622-VPXB
+2025/07/12 20:58:34 discovered stock: "VPXB_NULL_BE0099395676":
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099395676-VPXB/fs_cfi_block
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099395676-VPXB/fs_icb_block
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099395676-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099395676-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getDetailedQuote/BE0099395676-VPXB
+2025/07/12 20:58:34 discovered etf: "XAMS_IGBD_IE000I0U8OO3":
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000I0U8OO3-XAMS/fs_cfi_block
+2025/07/12 20:58:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000I0U8OO3-XAMS/fs_generalinfo_block
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000I0U8OO3-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000I0U8OO3-XAMS/fs_feessegmentation_block
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getDetailedQuote/IE000I0U8OO3-XAMS
+2025/07/12 20:58:35 discovered fund: "XAMS_KGPFN_NL0012044739":
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0012044739-XAMS/fs_cfi_block
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0012044739-XAMS/fs_issuerinfo_block
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0012044739-XAMS/fs_tradinginfo_funds_block
+2025/07/12 20:58:35 discovered stock: "VPXB_NULL_NL0000009645":
+2025/07/12 20:58:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000009645-VPXB/fs_cfi_block
+2025/07/12 20:58:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000009645-VPXB/fs_icb_block
+2025/07/12 20:58:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000009645-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000009645-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:36 https://live.euronext.com/en/ajax/getDetailedQuote/NL0000009645-VPXB
+2025/07/12 20:58:36 discovered fund: "XMSM_NULL_IE000ELHT1P5":
+2025/07/12 20:58:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000ELHT1P5-XMSM/fs_cfi_block
+2025/07/12 20:58:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000ELHT1P5-XMSM/fs_issuerinfo_block
+2025/07/12 20:58:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000ELHT1P5-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:58:37 discovered stock: "VPXB_NULL_BE0010610377":
+2025/07/12 20:58:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010610377-VPXB/fs_cfi_block
+2025/07/12 20:58:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010610377-VPXB/fs_icb_block
+2025/07/12 20:58:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010610377-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010610377-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:38 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010610377-VPXB
+2025/07/12 20:58:38 discovered stock: "VPXB_NULL_CG000A0BKQF7":
+2025/07/12 20:58:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CG000A0BKQF7-VPXB/fs_cfi_block
+2025/07/12 20:58:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CG000A0BKQF7-VPXB/fs_icb_block
+2025/07/12 20:58:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CG000A0BKQF7-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CG000A0BKQF7-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:39 https://live.euronext.com/en/ajax/getDetailedQuote/CG000A0BKQF7-VPXB
+2025/07/12 20:58:39 discovered fund: "XMSM_NULL_IE000MIXAK02":
+2025/07/12 20:58:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000MIXAK02-XMSM/fs_cfi_block
+2025/07/12 20:58:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000MIXAK02-XMSM/fs_issuerinfo_block
+2025/07/12 20:58:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000MIXAK02-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:58:40 discovered stock: "VPXB_NULL_BE0034169251":
+2025/07/12 20:58:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0034169251-VPXB/fs_cfi_block
+2025/07/12 20:58:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0034169251-VPXB/fs_icb_block
+2025/07/12 20:58:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0034169251-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0034169251-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:40 https://live.euronext.com/en/ajax/getDetailedQuote/BE0034169251-VPXB
+2025/07/12 20:58:40 discovered stock: "VPXB_NULL_LU0006040975":
+2025/07/12 20:58:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006040975-VPXB/fs_cfi_block
+2025/07/12 20:58:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006040975-VPXB/fs_icb_block
+2025/07/12 20:58:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006040975-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006040975-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:41 https://live.euronext.com/en/ajax/getDetailedQuote/LU0006040975-VPXB
+2025/07/12 20:58:41 discovered stock: "VPXB_NULL_BE0003527356":
+2025/07/12 20:58:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003527356-VPXB/fs_cfi_block
+2025/07/12 20:58:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003527356-VPXB/fs_icb_block
+2025/07/12 20:58:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003527356-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003527356-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:42 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003527356-VPXB
+2025/07/12 20:58:42 discovered fund: "XAMS_AGHY_NL0000685576":
+2025/07/12 20:58:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0000685576-XAMS/fs_cfi_block
+2025/07/12 20:58:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0000685576-XAMS/fs_issuerinfo_block
+2025/07/12 20:58:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0000685576-XAMS/fs_tradinginfo_funds_block
+2025/07/12 20:58:43 discovered etv: "XAMS_SARKK_XS3107205695":
+2025/07/12 20:58:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107205695-XAMS/fs_cfi_block
+2025/07/12 20:58:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107205695-XAMS/fs_generalinfo_block
+2025/07/12 20:58:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107205695-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 20:58:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107205695-XAMS/fs_feessegmentation_block
+2025/07/12 20:58:44 https://live.euronext.com/en/ajax/getDetailedQuote/XS3107205695-XAMS
+2025/07/12 20:58:44 discovered stock: "VPXB_NULL_BE0157892739":
+2025/07/12 20:58:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0157892739-VPXB/fs_cfi_block
+2025/07/12 20:58:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0157892739-VPXB/fs_icb_block
+2025/07/12 20:58:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0157892739-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0157892739-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:45 https://live.euronext.com/en/ajax/getDetailedQuote/BE0157892739-VPXB
+2025/07/12 20:58:45 discovered stock: "VPXB_NULL_BE0107958945":
+2025/07/12 20:58:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0107958945-VPXB/fs_cfi_block
+2025/07/12 20:58:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0107958945-VPXB/fs_icb_block
+2025/07/12 20:58:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0107958945-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0107958945-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:46 https://live.euronext.com/en/ajax/getDetailedQuote/BE0107958945-VPXB
+2025/07/12 20:58:46 discovered etf: "ETFP_HQIW_IE000KL4O2Z8":
+2025/07/12 20:58:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KL4O2Z8-ETFP/fs_cfi_block
+2025/07/12 20:58:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KL4O2Z8-ETFP/fs_generalinfo_block
+2025/07/12 20:58:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KL4O2Z8-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:58:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KL4O2Z8-ETFP/fs_feessegmentation_block
+2025/07/12 20:58:47 https://live.euronext.com/en/ajax/getDetailedQuote/IE000KL4O2Z8-ETFP
+2025/07/12 20:58:47 discovered etf: "ETFP_YIAUH_LU2976313655":
+2025/07/12 20:58:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976313655-ETFP/fs_cfi_block
+2025/07/12 20:58:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976313655-ETFP/fs_generalinfo_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976313655-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976313655-ETFP/fs_feessegmentation_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getDetailedQuote/LU2976313655-ETFP
+2025/07/12 20:58:48 discovered etf: "XPAR_FLUSA_IE000E02WFD5":
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-XPAR/fs_cfi_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-XPAR/fs_generalinfo_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-XPAR/fs_tradinginfo_etfs_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-XPAR/fs_feessegmentation_block
+2025/07/12 20:58:48 https://live.euronext.com/en/ajax/getDetailedQuote/IE000E02WFD5-XPAR
+2025/07/12 20:58:49 discovered stock: "VPXB_NULL_BE0946377455":
+2025/07/12 20:58:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0946377455-VPXB/fs_cfi_block
+2025/07/12 20:58:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0946377455-VPXB/fs_icb_block
+2025/07/12 20:58:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0946377455-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0946377455-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:50 https://live.euronext.com/en/ajax/getDetailedQuote/BE0946377455-VPXB
+2025/07/12 20:58:50 discovered etv: "XPAR_XDCN_CH1464217285":
+2025/07/12 20:58:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XPAR/fs_cfi_block
+2025/07/12 20:58:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XPAR/fs_generalinfo_block
+2025/07/12 20:58:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XPAR/fs_tradinginfo_etfs_block
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XPAR/fs_feessegmentation_block
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getDetailedQuote/CH1464217285-XPAR
+2025/07/12 20:58:51 discovered stock: "VPXB_NULL_BE0011606630":
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011606630-VPXB/fs_cfi_block
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011606630-VPXB/fs_icb_block
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011606630-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011606630-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:51 https://live.euronext.com/en/ajax/getDetailedQuote/BE0011606630-VPXB
+2025/07/12 20:58:52 discovered etf: "ETFP_SPQA_IE000E6TPCH9":
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E6TPCH9-ETFP/fs_cfi_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E6TPCH9-ETFP/fs_generalinfo_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E6TPCH9-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E6TPCH9-ETFP/fs_feessegmentation_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getDetailedQuote/IE000E6TPCH9-ETFP
+2025/07/12 20:58:52 discovered stock: "VPXB_NULL_BE0026342551":
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0026342551-VPXB/fs_cfi_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0026342551-VPXB/fs_icb_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0026342551-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0026342551-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:53 https://live.euronext.com/en/ajax/getDetailedQuote/BE0026342551-VPXB
+2025/07/12 20:58:53 discovered stock: "VPXB_NULL_LU0092281103":
+2025/07/12 20:58:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281103-VPXB/fs_cfi_block
+2025/07/12 20:58:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281103-VPXB/fs_icb_block
+2025/07/12 20:58:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281103-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281103-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:54 https://live.euronext.com/en/ajax/getDetailedQuote/LU0092281103-VPXB
+2025/07/12 20:58:54 discovered fund: "XMSM_NULL_IE000K5F6EL4":
+2025/07/12 20:58:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000K5F6EL4-XMSM/fs_cfi_block
+2025/07/12 20:58:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000K5F6EL4-XMSM/fs_issuerinfo_block
+2025/07/12 20:58:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000K5F6EL4-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:58:54 discovered stock: "VPXB_NULL_BE0003783975":
+2025/07/12 20:58:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003783975-VPXB/fs_cfi_block
+2025/07/12 20:58:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003783975-VPXB/fs_icb_block
+2025/07/12 20:58:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003783975-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003783975-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:55 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003783975-VPXB
+2025/07/12 20:58:55 discovered stock: "ALXP_SIGBS_FR0014010IB4":
+2025/07/12 20:58:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010IB4-ALXP/fs_cfi_block
+2025/07/12 20:58:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010IB4-ALXP/fs_icb_block
+2025/07/12 20:58:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010IB4-ALXP/fs_tradinginfo_block
+2025/07/12 20:58:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010IB4-ALXP/fs_tradinginfo_pea_block
+2025/07/12 20:58:56 https://live.euronext.com/en/ajax/getDetailedQuote/FR0014010IB4-ALXP
+2025/07/12 20:58:56 discovered stock: "VPXB_NULL_BE0003640514":
+2025/07/12 20:58:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003640514-VPXB/fs_cfi_block
+2025/07/12 20:58:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003640514-VPXB/fs_icb_block
+2025/07/12 20:58:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003640514-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003640514-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:57 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003640514-VPXB
+2025/07/12 20:58:57 discovered etf: "ETFP_FLUSA_IE000E02WFD5":
+2025/07/12 20:58:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-ETFP/fs_cfi_block
+2025/07/12 20:58:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-ETFP/fs_generalinfo_block
+2025/07/12 20:58:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:58:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000E02WFD5-ETFP/fs_feessegmentation_block
+2025/07/12 20:58:58 https://live.euronext.com/en/ajax/getDetailedQuote/IE000E02WFD5-ETFP
+2025/07/12 20:58:58 discovered stock: "VPXB_NULL_BE0156880313":
+2025/07/12 20:58:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156880313-VPXB/fs_cfi_block
+2025/07/12 20:58:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156880313-VPXB/fs_icb_block
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156880313-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156880313-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getDetailedQuote/BE0156880313-VPXB
+2025/07/12 20:58:59 discovered stock: "VPXB_NULL_BE0172505399":
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0172505399-VPXB/fs_cfi_block
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0172505399-VPXB/fs_icb_block
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0172505399-VPXB/fs_tradinginfo_block
+2025/07/12 20:58:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0172505399-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:00 https://live.euronext.com/en/ajax/getDetailedQuote/BE0172505399-VPXB
+2025/07/12 20:59:00 discovered stock: "VPXB_NULL_BE0941244536":
+2025/07/12 20:59:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941244536-VPXB/fs_cfi_block
+2025/07/12 20:59:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941244536-VPXB/fs_icb_block
+2025/07/12 20:59:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941244536-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941244536-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:00 https://live.euronext.com/en/ajax/getDetailedQuote/BE0941244536-VPXB
+2025/07/12 20:59:01 discovered stock: "ALXP_ALSAF_FR001400ZU25":
+2025/07/12 20:59:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR001400ZU25-ALXP/fs_cfi_block
+2025/07/12 20:59:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR001400ZU25-ALXP/fs_icb_block
+2025/07/12 20:59:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR001400ZU25-ALXP/fs_tradinginfo_block
+2025/07/12 20:59:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR001400ZU25-ALXP/fs_tradinginfo_pea_block
+2025/07/12 20:59:02 https://live.euronext.com/en/ajax/getDetailedQuote/FR001400ZU25-ALXP
+2025/07/12 20:59:02 discovered etf: "ETFP_YIPUH_LU2976314620":
+2025/07/12 20:59:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314620-ETFP/fs_cfi_block
+2025/07/12 20:59:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314620-ETFP/fs_generalinfo_block
+2025/07/12 20:59:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314620-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314620-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getDetailedQuote/LU2976314620-ETFP
+2025/07/12 20:59:03 discovered fund: "ENXL_MLBGF_PTBLWDIM0019":
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/PTBLWDIM0019-ENXL/fs_cfi_block
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/PTBLWDIM0019-ENXL/fs_issuerinfo_block
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/PTBLWDIM0019-ENXL/fs_tradinginfo_funds_block
+2025/07/12 20:59:03 discovered stock: "VPXB_NULL_BE0010342609":
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010342609-VPXB/fs_cfi_block
+2025/07/12 20:59:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010342609-VPXB/fs_icb_block
+2025/07/12 20:59:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010342609-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010342609-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:04 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010342609-VPXB
+2025/07/12 20:59:04 discovered etf: "XAMS_JGBD_IE00056AT4A2":
+2025/07/12 20:59:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE00056AT4A2-XAMS/fs_cfi_block
+2025/07/12 20:59:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE00056AT4A2-XAMS/fs_generalinfo_block
+2025/07/12 20:59:05 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE00056AT4A2-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 20:59:05 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE00056AT4A2-XAMS/fs_feessegmentation_block
+2025/07/12 20:59:05 https://live.euronext.com/en/ajax/getDetailedQuote/IE00056AT4A2-XAMS
+2025/07/12 20:59:05 discovered fund: "XAMS_AVIAW_NL0011309349":
+2025/07/12 20:59:05 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0011309349-XAMS/fs_cfi_block
+2025/07/12 20:59:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0011309349-XAMS/fs_issuerinfo_block
+2025/07/12 20:59:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0011309349-XAMS/fs_tradinginfo_funds_block
+2025/07/12 20:59:06 discovered stock: "VPXB_NULL_QX0000022625":
+2025/07/12 20:59:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/QX0000022625-VPXB/fs_cfi_block
+2025/07/12 20:59:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/QX0000022625-VPXB/fs_icb_block
+2025/07/12 20:59:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/QX0000022625-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/QX0000022625-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:07 https://live.euronext.com/en/ajax/getDetailedQuote/QX0000022625-VPXB
+2025/07/12 20:59:07 discovered stock: "VPXB_NULL_BE0024644065":
+2025/07/12 20:59:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024644065-VPXB/fs_cfi_block
+2025/07/12 20:59:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024644065-VPXB/fs_icb_block
+2025/07/12 20:59:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024644065-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024644065-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:08 https://live.euronext.com/en/ajax/getDetailedQuote/BE0024644065-VPXB
+2025/07/12 20:59:08 discovered stock: "VPXB_NULL_BE0003222214":
+2025/07/12 20:59:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003222214-VPXB/fs_cfi_block
+2025/07/12 20:59:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003222214-VPXB/fs_icb_block
+2025/07/12 20:59:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003222214-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003222214-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:09 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003222214-VPXB
+2025/07/12 20:59:09 discovered stock: "VPXB_NULL_BE0046318490":
+2025/07/12 20:59:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0046318490-VPXB/fs_cfi_block
+2025/07/12 20:59:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0046318490-VPXB/fs_icb_block
+2025/07/12 20:59:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0046318490-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0046318490-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:10 https://live.euronext.com/en/ajax/getDetailedQuote/BE0046318490-VPXB
+2025/07/12 20:59:10 discovered etf: "XAMS_H2O_IE000Q8F0M81":
+2025/07/12 20:59:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000Q8F0M81-XAMS/fs_cfi_block
+2025/07/12 20:59:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000Q8F0M81-XAMS/fs_generalinfo_block
+2025/07/12 20:59:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000Q8F0M81-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 20:59:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000Q8F0M81-XAMS/fs_feessegmentation_block
+2025/07/12 20:59:11 https://live.euronext.com/en/ajax/getDetailedQuote/IE000Q8F0M81-XAMS
+2025/07/12 20:59:11 discovered stock: "XBRU_ENRGY_BE0974499312":
+2025/07/12 20:59:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0974499312-XBRU/fs_cfi_block
+2025/07/12 20:59:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0974499312-XBRU/fs_icb_block
+2025/07/12 20:59:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0974499312-XBRU/fs_tradinginfo_block
+2025/07/12 20:59:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0974499312-XBRU/fs_tradinginfo_pea_block
+2025/07/12 20:59:12 https://live.euronext.com/en/ajax/getDetailedQuote/BE0974499312-XBRU
+2025/07/12 20:59:12 discovered etv: "ETFP_S3CO_XS3107206156":
+2025/07/12 20:59:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107206156-ETFP/fs_cfi_block
+2025/07/12 20:59:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107206156-ETFP/fs_generalinfo_block
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107206156-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/XS3107206156-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getDetailedQuote/XS3107206156-ETFP
+2025/07/12 20:59:13 discovered stock: "VPXB_NULL_BE0024915838":
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024915838-VPXB/fs_cfi_block
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024915838-VPXB/fs_icb_block
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024915838-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0024915838-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:14 https://live.euronext.com/en/ajax/getDetailedQuote/BE0024915838-VPXB
+2025/07/12 20:59:14 discovered stock: "VPXB_NULL_BE0941243520":
+2025/07/12 20:59:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941243520-VPXB/fs_cfi_block
+2025/07/12 20:59:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941243520-VPXB/fs_icb_block
+2025/07/12 20:59:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941243520-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0941243520-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:15 https://live.euronext.com/en/ajax/getDetailedQuote/BE0941243520-VPXB
+2025/07/12 20:59:15 discovered etf: "XPAR_CASHE_LU3025345516":
+2025/07/12 20:59:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3025345516-XPAR/fs_cfi_block
+2025/07/12 20:59:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3025345516-XPAR/fs_generalinfo_block
+2025/07/12 20:59:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3025345516-XPAR/fs_tradinginfo_etfs_block
+2025/07/12 20:59:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU3025345516-XPAR/fs_feessegmentation_block
+2025/07/12 20:59:16 https://live.euronext.com/en/ajax/getDetailedQuote/LU3025345516-XPAR
+2025/07/12 20:59:16 discovered fund: "XMSM_NULL_LU3028243718":
+2025/07/12 20:59:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/LU3028243718-XMSM/fs_cfi_block
+2025/07/12 20:59:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/LU3028243718-XMSM/fs_issuerinfo_block
+2025/07/12 20:59:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/LU3028243718-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:59:16 discovered stock: "VPXB_NULL_BE0011238830":
+2025/07/12 20:59:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011238830-VPXB/fs_cfi_block
+2025/07/12 20:59:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011238830-VPXB/fs_icb_block
+2025/07/12 20:59:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011238830-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011238830-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:17 https://live.euronext.com/en/ajax/getDetailedQuote/BE0011238830-VPXB
+2025/07/12 20:59:17 discovered etf: "XPAR_CAPU_LU1079841273":
+2025/07/12 20:59:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU1079841273-XPAR/fs_cfi_block
+2025/07/12 20:59:18 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU1079841273-XPAR/fs_generalinfo_block
+2025/07/12 20:59:18 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU1079841273-XPAR/fs_tradinginfo_etfs_block
+2025/07/12 20:59:18 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU1079841273-XPAR/fs_feessegmentation_block
+2025/07/12 20:59:18 https://live.euronext.com/en/ajax/getDetailedQuote/LU1079841273-XPAR
+2025/07/12 20:59:19 discovered etf: "ETFP_SPQD_IE000SNCKVM9":
+2025/07/12 20:59:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000SNCKVM9-ETFP/fs_cfi_block
+2025/07/12 20:59:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000SNCKVM9-ETFP/fs_generalinfo_block
+2025/07/12 20:59:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000SNCKVM9-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000SNCKVM9-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:19 https://live.euronext.com/en/ajax/getDetailedQuote/IE000SNCKVM9-ETFP
+2025/07/12 20:59:20 discovered stock: "VPXB_NULL_BE0099150162":
+2025/07/12 20:59:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099150162-VPXB/fs_cfi_block
+2025/07/12 20:59:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099150162-VPXB/fs_icb_block
+2025/07/12 20:59:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099150162-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099150162-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:21 https://live.euronext.com/en/ajax/getDetailedQuote/BE0099150162-VPXB
+2025/07/12 20:59:21 discovered etf: "ETFP_FEPI_IE000HF69TA9":
+2025/07/12 20:59:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000HF69TA9-ETFP/fs_cfi_block
+2025/07/12 20:59:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000HF69TA9-ETFP/fs_generalinfo_block
+2025/07/12 20:59:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000HF69TA9-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000HF69TA9-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:22 https://live.euronext.com/en/ajax/getDetailedQuote/IE000HF69TA9-ETFP
+2025/07/12 20:59:22 discovered stock: "VPXB_NULL_BE0010621481":
+2025/07/12 20:59:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010621481-VPXB/fs_cfi_block
+2025/07/12 20:59:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010621481-VPXB/fs_icb_block
+2025/07/12 20:59:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010621481-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010621481-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:23 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010621481-VPXB
+2025/07/12 20:59:23 discovered stock: "VPXB_NULL_BE0051300847":
+2025/07/12 20:59:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0051300847-VPXB/fs_cfi_block
+2025/07/12 20:59:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0051300847-VPXB/fs_icb_block
+2025/07/12 20:59:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0051300847-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0051300847-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:24 https://live.euronext.com/en/ajax/getDetailedQuote/BE0051300847-VPXB
+2025/07/12 20:59:24 discovered fund: "XMSM_NULL_IE000ONYHPZ2":
+2025/07/12 20:59:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000ONYHPZ2-XMSM/fs_cfi_block
+2025/07/12 20:59:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000ONYHPZ2-XMSM/fs_issuerinfo_block
+2025/07/12 20:59:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000ONYHPZ2-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:59:25 discovered etf: "ETFP_YIUUH_LU2976311444":
+2025/07/12 20:59:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976311444-ETFP/fs_cfi_block
+2025/07/12 20:59:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976311444-ETFP/fs_generalinfo_block
+2025/07/12 20:59:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976311444-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976311444-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:25 https://live.euronext.com/en/ajax/getDetailedQuote/LU2976311444-ETFP
+2025/07/12 20:59:26 discovered stock: "VPXB_NULL_BE0021556221":
+2025/07/12 20:59:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0021556221-VPXB/fs_cfi_block
+2025/07/12 20:59:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0021556221-VPXB/fs_icb_block
+2025/07/12 20:59:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0021556221-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0021556221-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:26 https://live.euronext.com/en/ajax/getDetailedQuote/BE0021556221-VPXB
+2025/07/12 20:59:27 discovered fund: "XMSM_NULL_IE000IR87HP7":
+2025/07/12 20:59:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000IR87HP7-XMSM/fs_cfi_block
+2025/07/12 20:59:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000IR87HP7-XMSM/fs_issuerinfo_block
+2025/07/12 20:59:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000IR87HP7-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:59:27 discovered etf: "ETFP_HQWA_IE000ZURGSV2":
+2025/07/12 20:59:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000ZURGSV2-ETFP/fs_cfi_block
+2025/07/12 20:59:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000ZURGSV2-ETFP/fs_generalinfo_block
+2025/07/12 20:59:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000ZURGSV2-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000ZURGSV2-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:28 https://live.euronext.com/en/ajax/getDetailedQuote/IE000ZURGSV2-ETFP
+2025/07/12 20:59:28 discovered stock: "VPXB_NULL_BE0049482129":
+2025/07/12 20:59:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049482129-VPXB/fs_cfi_block
+2025/07/12 20:59:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049482129-VPXB/fs_icb_block
+2025/07/12 20:59:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049482129-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049482129-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:29 https://live.euronext.com/en/ajax/getDetailedQuote/BE0049482129-VPXB
+2025/07/12 20:59:29 discovered stock: "VPXB_NULL_BE0013068706":
+2025/07/12 20:59:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0013068706-VPXB/fs_cfi_block
+2025/07/12 20:59:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0013068706-VPXB/fs_icb_block
+2025/07/12 20:59:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0013068706-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0013068706-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:30 https://live.euronext.com/en/ajax/getDetailedQuote/BE0013068706-VPXB
+2025/07/12 20:59:30 discovered stock: "VPXB_NULL_BE0049483135":
+2025/07/12 20:59:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049483135-VPXB/fs_cfi_block
+2025/07/12 20:59:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049483135-VPXB/fs_icb_block
+2025/07/12 20:59:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049483135-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0049483135-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:31 https://live.euronext.com/en/ajax/getDetailedQuote/BE0049483135-VPXB
+2025/07/12 20:59:31 discovered stock: "VPXB_NULL_BE0020918638":
+2025/07/12 20:59:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020918638-VPXB/fs_cfi_block
+2025/07/12 20:59:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020918638-VPXB/fs_icb_block
+2025/07/12 20:59:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020918638-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020918638-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:32 https://live.euronext.com/en/ajax/getDetailedQuote/BE0020918638-VPXB
+2025/07/12 20:59:32 discovered etf: "ETFP_MJUN_IE000CO3P697":
+2025/07/12 20:59:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CO3P697-ETFP/fs_cfi_block
+2025/07/12 20:59:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CO3P697-ETFP/fs_generalinfo_block
+2025/07/12 20:59:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CO3P697-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CO3P697-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:32 https://live.euronext.com/en/ajax/getDetailedQuote/IE000CO3P697-ETFP
+2025/07/12 20:59:33 discovered etf: "ETFP_CEGI_IE0008BA4TY1":
+2025/07/12 20:59:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008BA4TY1-ETFP/fs_cfi_block
+2025/07/12 20:59:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008BA4TY1-ETFP/fs_generalinfo_block
+2025/07/12 20:59:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008BA4TY1-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008BA4TY1-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:34 https://live.euronext.com/en/ajax/getDetailedQuote/IE0008BA4TY1-ETFP
+2025/07/12 20:59:34 discovered stock: "VPXB_NULL_BE0010026350":
+2025/07/12 20:59:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010026350-VPXB/fs_cfi_block
+2025/07/12 20:59:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010026350-VPXB/fs_icb_block
+2025/07/12 20:59:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010026350-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010026350-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:34 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010026350-VPXB
+2025/07/12 20:59:35 discovered stock: "VPXB_NULL_BE6264882406":
+2025/07/12 20:59:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6264882406-VPXB/fs_cfi_block
+2025/07/12 20:59:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6264882406-VPXB/fs_icb_block
+2025/07/12 20:59:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6264882406-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6264882406-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:36 https://live.euronext.com/en/ajax/getDetailedQuote/BE6264882406-VPXB
+2025/07/12 20:59:36 discovered stock: "VPXB_NULL_BE0012544319":
+2025/07/12 20:59:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0012544319-VPXB/fs_cfi_block
+2025/07/12 20:59:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0012544319-VPXB/fs_icb_block
+2025/07/12 20:59:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0012544319-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0012544319-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:37 https://live.euronext.com/en/ajax/getDetailedQuote/BE0012544319-VPXB
+2025/07/12 20:59:37 discovered fund: "XMSM_NULL_IE000U6ABUJ7":
+2025/07/12 20:59:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000U6ABUJ7-XMSM/fs_cfi_block
+2025/07/12 20:59:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000U6ABUJ7-XMSM/fs_issuerinfo_block
+2025/07/12 20:59:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000U6ABUJ7-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:59:38 discovered stock: "VPXB_NULL_BE0036061746":
+2025/07/12 20:59:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036061746-VPXB/fs_cfi_block
+2025/07/12 20:59:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036061746-VPXB/fs_icb_block
+2025/07/12 20:59:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036061746-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0036061746-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:38 https://live.euronext.com/en/ajax/getDetailedQuote/BE0036061746-VPXB
+2025/07/12 20:59:39 discovered stock: "VPXB_NULL_NSCEX0000018":
+2025/07/12 20:59:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NSCEX0000018-VPXB/fs_cfi_block
+2025/07/12 20:59:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NSCEX0000018-VPXB/fs_icb_block
+2025/07/12 20:59:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NSCEX0000018-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NSCEX0000018-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:39 https://live.euronext.com/en/ajax/getDetailedQuote/NSCEX0000018-VPXB
+2025/07/12 20:59:40 discovered stock: "VPXB_NULL_BE0099887748":
+2025/07/12 20:59:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099887748-VPXB/fs_cfi_block
+2025/07/12 20:59:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099887748-VPXB/fs_icb_block
+2025/07/12 20:59:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099887748-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0099887748-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:40 https://live.euronext.com/en/ajax/getDetailedQuote/BE0099887748-VPXB
+2025/07/12 20:59:41 discovered etf: "ETFP_GQEM_IE000KEFZYE7":
+2025/07/12 20:59:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KEFZYE7-ETFP/fs_cfi_block
+2025/07/12 20:59:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KEFZYE7-ETFP/fs_generalinfo_block
+2025/07/12 20:59:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KEFZYE7-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 20:59:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000KEFZYE7-ETFP/fs_feessegmentation_block
+2025/07/12 20:59:41 https://live.euronext.com/en/ajax/getDetailedQuote/IE000KEFZYE7-ETFP
+2025/07/12 20:59:42 discovered fund: "XMSM_NULL_IE000YIQZ0H6":
+2025/07/12 20:59:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000YIQZ0H6-XMSM/fs_cfi_block
+2025/07/12 20:59:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000YIQZ0H6-XMSM/fs_issuerinfo_block
+2025/07/12 20:59:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000YIQZ0H6-XMSM/fs_tradinginfo_funds_block
+2025/07/12 20:59:42 discovered etv: "XAMS_VRTC_SE0024738389":
+2025/07/12 20:59:42 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XAMS/fs_cfi_block
+2025/07/12 20:59:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XAMS/fs_generalinfo_block
+2025/07/12 20:59:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 20:59:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XAMS/fs_feessegmentation_block
+2025/07/12 20:59:43 https://live.euronext.com/en/ajax/getDetailedQuote/SE0024738389-XAMS
+2025/07/12 20:59:43 discovered stock: "VPXB_NULL_BE0057677594":
+2025/07/12 20:59:43 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0057677594-VPXB/fs_cfi_block
+2025/07/12 20:59:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0057677594-VPXB/fs_icb_block
+2025/07/12 20:59:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0057677594-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0057677594-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:44 https://live.euronext.com/en/ajax/getDetailedQuote/BE0057677594-VPXB
+2025/07/12 20:59:44 discovered stock: "VPXB_NULL_BE0947790037":
+2025/07/12 20:59:44 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0947790037-VPXB/fs_cfi_block
+2025/07/12 20:59:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0947790037-VPXB/fs_icb_block
+2025/07/12 20:59:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0947790037-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0947790037-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:45 https://live.euronext.com/en/ajax/getDetailedQuote/BE0947790037-VPXB
+2025/07/12 20:59:45 discovered stock: "VPXB_NULL_BE0010012210":
+2025/07/12 20:59:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010012210-VPXB/fs_cfi_block
+2025/07/12 20:59:45 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010012210-VPXB/fs_icb_block
+2025/07/12 20:59:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010012210-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010012210-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:46 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010012210-VPXB
+2025/07/12 20:59:46 found 2 duplicate matches for XAMS-ASCX-NL0000249142:
+2025/07/12 20:59:46   0: XAMS-ASCX-NL0000249142
+2025/07/12 20:59:46   1: XAMS-ASCX-NL0000249142
+2025/07/12 20:59:46 discovered stock: "VPXB_NULL_BE6303070104":
+2025/07/12 20:59:46 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6303070104-VPXB/fs_cfi_block
+2025/07/12 20:59:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6303070104-VPXB/fs_icb_block
+2025/07/12 20:59:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6303070104-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6303070104-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:47 https://live.euronext.com/en/ajax/getDetailedQuote/BE6303070104-VPXB
+2025/07/12 20:59:47 discovered etf: "XAMS_RDVY_IE000K5F6EL4":
+2025/07/12 20:59:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000K5F6EL4-XAMS/fs_cfi_block
+2025/07/12 20:59:47 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000K5F6EL4-XAMS/fs_generalinfo_block
+2025/07/12 20:59:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000K5F6EL4-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 20:59:48 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000K5F6EL4-XAMS/fs_feessegmentation_block
+2025/07/12 20:59:48 https://live.euronext.com/en/ajax/getDetailedQuote/IE000K5F6EL4-XAMS
+2025/07/12 20:59:49 discovered stock: "VPXB_NULL_LU0110790085":
+2025/07/12 20:59:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0110790085-VPXB/fs_cfi_block
+2025/07/12 20:59:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0110790085-VPXB/fs_icb_block
+2025/07/12 20:59:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0110790085-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:49 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0110790085-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:49 https://live.euronext.com/en/ajax/getDetailedQuote/LU0110790085-VPXB
+2025/07/12 20:59:50 discovered stock: "MERK_EAM_NO0013601245":
+2025/07/12 20:59:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013601245-MERK/fs_cfi_block
+2025/07/12 20:59:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013601245-MERK/fs_icb_block
+2025/07/12 20:59:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013601245-MERK/fs_tradinginfo_block
+2025/07/12 20:59:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013601245-MERK/fs_tradinginfo_pea_block
+2025/07/12 20:59:50 https://live.euronext.com/en/ajax/getDetailedQuote/NO0013601245-MERK
+2025/07/12 20:59:50 discovered stock: "VPXB_NULL_BE0942448938":
+2025/07/12 20:59:50 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0942448938-VPXB/fs_cfi_block
+2025/07/12 20:59:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0942448938-VPXB/fs_icb_block
+2025/07/12 20:59:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0942448938-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:51 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0942448938-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:51 https://live.euronext.com/en/ajax/getDetailedQuote/BE0942448938-VPXB
+2025/07/12 20:59:52 discovered stock: "VPXB_NULL_BE0035966762":
+2025/07/12 20:59:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0035966762-VPXB/fs_cfi_block
+2025/07/12 20:59:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0035966762-VPXB/fs_icb_block
+2025/07/12 20:59:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0035966762-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0035966762-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:52 https://live.euronext.com/en/ajax/getDetailedQuote/BE0035966762-VPXB
+2025/07/12 20:59:52 discovered stock: "VPXB_NULL_BE0944264663":
+2025/07/12 20:59:52 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0944264663-VPXB/fs_cfi_block
+2025/07/12 20:59:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0944264663-VPXB/fs_icb_block
+2025/07/12 20:59:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0944264663-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0944264663-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:53 https://live.euronext.com/en/ajax/getDetailedQuote/BE0944264663-VPXB
+2025/07/12 20:59:53 discovered stock: "VPXB_NULL_BE0010381029":
+2025/07/12 20:59:53 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010381029-VPXB/fs_cfi_block
+2025/07/12 20:59:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010381029-VPXB/fs_icb_block
+2025/07/12 20:59:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010381029-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010381029-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:54 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010381029-VPXB
+2025/07/12 20:59:54 discovered fund: "XAMS_TMIF_NL0011327432":
+2025/07/12 20:59:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0011327432-XAMS/fs_cfi_block
+2025/07/12 20:59:54 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0011327432-XAMS/fs_issuerinfo_block
+2025/07/12 20:59:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/NL0011327432-XAMS/fs_tradinginfo_funds_block
+2025/07/12 20:59:55 discovered stock: "VPXB_NULL_BE6265912038":
+2025/07/12 20:59:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6265912038-VPXB/fs_cfi_block
+2025/07/12 20:59:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6265912038-VPXB/fs_icb_block
+2025/07/12 20:59:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6265912038-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:55 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE6265912038-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:56 https://live.euronext.com/en/ajax/getDetailedQuote/BE6265912038-VPXB
+2025/07/12 20:59:56 discovered stock: "VPXB_NULL_BE0945331669":
+2025/07/12 20:59:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945331669-VPXB/fs_cfi_block
+2025/07/12 20:59:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945331669-VPXB/fs_icb_block
+2025/07/12 20:59:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945331669-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:56 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945331669-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:57 https://live.euronext.com/en/ajax/getDetailedQuote/BE0945331669-VPXB
+2025/07/12 20:59:57 discovered stock: "VPXB_NULL_BE0011844108":
+2025/07/12 20:59:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011844108-VPXB/fs_cfi_block
+2025/07/12 20:59:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011844108-VPXB/fs_icb_block
+2025/07/12 20:59:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011844108-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:57 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011844108-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:58 https://live.euronext.com/en/ajax/getDetailedQuote/BE0011844108-VPXB
+2025/07/12 20:59:58 discovered stock: "VPXB_NULL_BE0015460372":
+2025/07/12 20:59:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0015460372-VPXB/fs_cfi_block
+2025/07/12 20:59:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0015460372-VPXB/fs_icb_block
+2025/07/12 20:59:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0015460372-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:58 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0015460372-VPXB/fs_tradinginfo_pea_block
+2025/07/12 20:59:59 https://live.euronext.com/en/ajax/getDetailedQuote/BE0015460372-VPXB
+2025/07/12 20:59:59 discovered stock: "VPXB_NULL_BE0010566900":
+2025/07/12 20:59:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010566900-VPXB/fs_cfi_block
+2025/07/12 20:59:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010566900-VPXB/fs_icb_block
+2025/07/12 20:59:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010566900-VPXB/fs_tradinginfo_block
+2025/07/12 20:59:59 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0010566900-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:00 https://live.euronext.com/en/ajax/getDetailedQuote/BE0010566900-VPXB
+2025/07/12 21:00:00 discovered stock: "MERK_COSH_NO0013597419":
+2025/07/12 21:00:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013597419-MERK/fs_cfi_block
+2025/07/12 21:00:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013597419-MERK/fs_icb_block
+2025/07/12 21:00:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013597419-MERK/fs_tradinginfo_block
+2025/07/12 21:00:00 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013597419-MERK/fs_tradinginfo_pea_block
+2025/07/12 21:00:01 https://live.euronext.com/en/ajax/getDetailedQuote/NO0013597419-MERK
+2025/07/12 21:00:01 discovered stock: "VPXB_NULL_BE0020932779":
+2025/07/12 21:00:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020932779-VPXB/fs_cfi_block
+2025/07/12 21:00:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020932779-VPXB/fs_icb_block
+2025/07/12 21:00:01 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020932779-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0020932779-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:02 https://live.euronext.com/en/ajax/getDetailedQuote/BE0020932779-VPXB
+2025/07/12 21:00:02 discovered stock: "VPXB_NULL_BE0156881329":
+2025/07/12 21:00:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156881329-VPXB/fs_cfi_block
+2025/07/12 21:00:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156881329-VPXB/fs_icb_block
+2025/07/12 21:00:02 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156881329-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0156881329-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:03 https://live.euronext.com/en/ajax/getDetailedQuote/BE0156881329-VPXB
+2025/07/12 21:00:03 discovered etf: "ETFP_HQUS_IE0008JXFQK8":
+2025/07/12 21:00:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008JXFQK8-ETFP/fs_cfi_block
+2025/07/12 21:00:03 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008JXFQK8-ETFP/fs_generalinfo_block
+2025/07/12 21:00:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008JXFQK8-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0008JXFQK8-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:04 https://live.euronext.com/en/ajax/getDetailedQuote/IE0008JXFQK8-ETFP
+2025/07/12 21:00:04 discovered stock: "VPXB_NULL_BE0101614551":
+2025/07/12 21:00:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0101614551-VPXB/fs_cfi_block
+2025/07/12 21:00:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0101614551-VPXB/fs_icb_block
+2025/07/12 21:00:04 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0101614551-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:05 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0101614551-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:05 https://live.euronext.com/en/ajax/getDetailedQuote/BE0101614551-VPXB
+2025/07/12 21:00:05 discovered etv: "XPAR_VRTC_SE0024738389":
+2025/07/12 21:00:05 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XPAR/fs_cfi_block
+2025/07/12 21:00:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XPAR/fs_generalinfo_block
+2025/07/12 21:00:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XPAR/fs_tradinginfo_etfs_block
+2025/07/12 21:00:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/SE0024738389-XPAR/fs_feessegmentation_block
+2025/07/12 21:00:06 https://live.euronext.com/en/ajax/getDetailedQuote/SE0024738389-XPAR
+2025/07/12 21:00:06 discovered stock: "VPXB_NULL_BE0162868054":
+2025/07/12 21:00:06 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0162868054-VPXB/fs_cfi_block
+2025/07/12 21:00:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0162868054-VPXB/fs_icb_block
+2025/07/12 21:00:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0162868054-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0162868054-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:07 https://live.euronext.com/en/ajax/getDetailedQuote/BE0162868054-VPXB
+2025/07/12 21:00:07 discovered etf: "XAMS_SP4S_IE000H444PH5":
+2025/07/12 21:00:07 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000H444PH5-XAMS/fs_cfi_block
+2025/07/12 21:00:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000H444PH5-XAMS/fs_generalinfo_block
+2025/07/12 21:00:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000H444PH5-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 21:00:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000H444PH5-XAMS/fs_feessegmentation_block
+2025/07/12 21:00:08 https://live.euronext.com/en/ajax/getDetailedQuote/IE000H444PH5-XAMS
+2025/07/12 21:00:08 discovered stock: "VPXB_NULL_BE0945246784":
+2025/07/12 21:00:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945246784-VPXB/fs_cfi_block
+2025/07/12 21:00:08 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945246784-VPXB/fs_icb_block
+2025/07/12 21:00:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945246784-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0945246784-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:09 https://live.euronext.com/en/ajax/getDetailedQuote/BE0945246784-VPXB
+2025/07/12 21:00:09 discovered stock: "VPXB_NULL_LU0092281442":
+2025/07/12 21:00:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281442-VPXB/fs_cfi_block
+2025/07/12 21:00:09 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281442-VPXB/fs_icb_block
+2025/07/12 21:00:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281442-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0092281442-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:10 https://live.euronext.com/en/ajax/getDetailedQuote/LU0092281442-VPXB
+2025/07/12 21:00:10 discovered etf: "ETFP_ACTEQ_IE000CB2BST9":
+2025/07/12 21:00:10 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CB2BST9-ETFP/fs_cfi_block
+2025/07/12 21:00:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CB2BST9-ETFP/fs_generalinfo_block
+2025/07/12 21:00:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CB2BST9-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000CB2BST9-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:11 https://live.euronext.com/en/ajax/getDetailedQuote/IE000CB2BST9-ETFP
+2025/07/12 21:00:11 discovered fund: "XMSM_NULL_IE000HF69TA9":
+2025/07/12 21:00:11 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000HF69TA9-XMSM/fs_cfi_block
+2025/07/12 21:00:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000HF69TA9-XMSM/fs_issuerinfo_block
+2025/07/12 21:00:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000HF69TA9-XMSM/fs_tradinginfo_funds_block
+2025/07/12 21:00:12 discovered fund: "XMSM_NULL_IE0008BA4TY1":
+2025/07/12 21:00:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE0008BA4TY1-XMSM/fs_cfi_block
+2025/07/12 21:00:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE0008BA4TY1-XMSM/fs_issuerinfo_block
+2025/07/12 21:00:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE0008BA4TY1-XMSM/fs_tradinginfo_funds_block
+2025/07/12 21:00:12 discovered stock: "VPXB_NULL_BE0022780820":
+2025/07/12 21:00:12 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0022780820-VPXB/fs_cfi_block
+2025/07/12 21:00:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0022780820-VPXB/fs_icb_block
+2025/07/12 21:00:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0022780820-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:13 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0022780820-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:13 https://live.euronext.com/en/ajax/getDetailedQuote/BE0022780820-VPXB
+2025/07/12 21:00:14 discovered stock: "VPXB_NULL_NL0000288652":
+2025/07/12 21:00:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000288652-VPXB/fs_cfi_block
+2025/07/12 21:00:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000288652-VPXB/fs_icb_block
+2025/07/12 21:00:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000288652-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:14 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NL0000288652-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:14 https://live.euronext.com/en/ajax/getDetailedQuote/NL0000288652-VPXB
+2025/07/12 21:00:15 discovered fund: "XMSM_NULL_IE000Q8F0M81":
+2025/07/12 21:00:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000Q8F0M81-XMSM/fs_cfi_block
+2025/07/12 21:00:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000Q8F0M81-XMSM/fs_issuerinfo_block
+2025/07/12 21:00:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000Q8F0M81-XMSM/fs_tradinginfo_funds_block
+2025/07/12 21:00:15 discovered stock: "XPAR_FSDV_FR0000031973":
+2025/07/12 21:00:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0000031973-XPAR/fs_cfi_block
+2025/07/12 21:00:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0000031973-XPAR/fs_icb_block
+2025/07/12 21:00:15 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0000031973-XPAR/fs_tradinginfo_block
+2025/07/12 21:00:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0000031973-XPAR/fs_tradinginfo_pea_block
+2025/07/12 21:00:16 https://live.euronext.com/en/ajax/getDetailedQuote/FR0000031973-XPAR
+2025/07/12 21:00:16 discovered stock: "VPXB_NULL_BE0011395465":
+2025/07/12 21:00:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011395465-VPXB/fs_cfi_block
+2025/07/12 21:00:16 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011395465-VPXB/fs_icb_block
+2025/07/12 21:00:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011395465-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0011395465-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:17 https://live.euronext.com/en/ajax/getDetailedQuote/BE0011395465-VPXB
+2025/07/12 21:00:17 discovered etf: "ETFP_ACT20_IE0009RE6PA1":
+2025/07/12 21:00:17 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RE6PA1-ETFP/fs_cfi_block
+2025/07/12 21:00:18 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RE6PA1-ETFP/fs_generalinfo_block
+2025/07/12 21:00:18 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RE6PA1-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:18 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RE6PA1-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:18 https://live.euronext.com/en/ajax/getDetailedQuote/IE0009RE6PA1-ETFP
+2025/07/12 21:00:19 discovered stock: "ALXP_BLUDS_FR0014010S08":
+2025/07/12 21:00:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010S08-ALXP/fs_cfi_block
+2025/07/12 21:00:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010S08-ALXP/fs_icb_block
+2025/07/12 21:00:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010S08-ALXP/fs_tradinginfo_block
+2025/07/12 21:00:19 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010S08-ALXP/fs_tradinginfo_pea_block
+2025/07/12 21:00:19 https://live.euronext.com/en/ajax/getDetailedQuote/FR0014010S08-ALXP
+2025/07/12 21:00:20 discovered stock: "VPXB_NULL_BE0014799556":
+2025/07/12 21:00:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014799556-VPXB/fs_cfi_block
+2025/07/12 21:00:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014799556-VPXB/fs_icb_block
+2025/07/12 21:00:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014799556-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:20 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014799556-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:20 https://live.euronext.com/en/ajax/getDetailedQuote/BE0014799556-VPXB
+2025/07/12 21:00:21 discovered stock: "VPXB_NULL_BE0038785821":
+2025/07/12 21:00:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0038785821-VPXB/fs_cfi_block
+2025/07/12 21:00:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0038785821-VPXB/fs_icb_block
+2025/07/12 21:00:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0038785821-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:21 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0038785821-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:21 https://live.euronext.com/en/ajax/getDetailedQuote/BE0038785821-VPXB
+2025/07/12 21:00:22 discovered stock: "XOSL_IDEX_NO0013536078":
+2025/07/12 21:00:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013536078-XOSL/fs_cfi_block
+2025/07/12 21:00:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013536078-XOSL/fs_icb_block
+2025/07/12 21:00:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013536078-XOSL/fs_tradinginfo_block
+2025/07/12 21:00:22 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/NO0013536078-XOSL/fs_tradinginfo_pea_block
+2025/07/12 21:00:22 https://live.euronext.com/en/ajax/getDetailedQuote/NO0013536078-XOSL
+2025/07/12 21:00:23 discovered etf: "ETFP_RMBS_IE000TD32PU3":
+2025/07/12 21:00:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000TD32PU3-ETFP/fs_cfi_block
+2025/07/12 21:00:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000TD32PU3-ETFP/fs_generalinfo_block
+2025/07/12 21:00:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000TD32PU3-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:23 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000TD32PU3-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:23 https://live.euronext.com/en/ajax/getDetailedQuote/IE000TD32PU3-ETFP
+2025/07/12 21:00:24 discovered etf: "XAMS_AIRR_IE000U6ABUJ7":
+2025/07/12 21:00:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000U6ABUJ7-XAMS/fs_cfi_block
+2025/07/12 21:00:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000U6ABUJ7-XAMS/fs_generalinfo_block
+2025/07/12 21:00:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000U6ABUJ7-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 21:00:24 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000U6ABUJ7-XAMS/fs_feessegmentation_block
+2025/07/12 21:00:24 https://live.euronext.com/en/ajax/getDetailedQuote/IE000U6ABUJ7-XAMS
+2025/07/12 21:00:25 discovered stock: "VPXB_NULL_BE0003279784":
+2025/07/12 21:00:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003279784-VPXB/fs_cfi_block
+2025/07/12 21:00:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003279784-VPXB/fs_icb_block
+2025/07/12 21:00:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003279784-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:25 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003279784-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:25 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003279784-VPXB
+2025/07/12 21:00:26 discovered stock: "VPXB_NULL_BE0003706208":
+2025/07/12 21:00:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003706208-VPXB/fs_cfi_block
+2025/07/12 21:00:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003706208-VPXB/fs_icb_block
+2025/07/12 21:00:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003706208-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:26 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003706208-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:26 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003706208-VPXB
+2025/07/12 21:00:27 discovered etf: "ETFP_FEGI_IE000OBK3UE0":
+2025/07/12 21:00:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000OBK3UE0-ETFP/fs_cfi_block
+2025/07/12 21:00:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000OBK3UE0-ETFP/fs_generalinfo_block
+2025/07/12 21:00:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000OBK3UE0-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:27 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE000OBK3UE0-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:27 https://live.euronext.com/en/ajax/getDetailedQuote/IE000OBK3UE0-ETFP
+2025/07/12 21:00:28 discovered stock: "XOSL_SWON_CH0496451508":
+2025/07/12 21:00:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CH0496451508-XOSL/fs_cfi_block
+2025/07/12 21:00:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CH0496451508-XOSL/fs_icb_block
+2025/07/12 21:00:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CH0496451508-XOSL/fs_tradinginfo_block
+2025/07/12 21:00:28 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/CH0496451508-XOSL/fs_tradinginfo_pea_block
+2025/07/12 21:00:28 https://live.euronext.com/en/ajax/getDetailedQuote/CH0496451508-XOSL
+2025/07/12 21:00:29 discovered stock: "ALXP_ALSEM_FR0014010H01":
+2025/07/12 21:00:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010H01-ALXP/fs_cfi_block
+2025/07/12 21:00:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010H01-ALXP/fs_icb_block
+2025/07/12 21:00:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010H01-ALXP/fs_tradinginfo_block
+2025/07/12 21:00:29 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR0014010H01-ALXP/fs_tradinginfo_pea_block
+2025/07/12 21:00:29 https://live.euronext.com/en/ajax/getDetailedQuote/FR0014010H01-ALXP
+2025/07/12 21:00:30 discovered stock: "VPXB_NULL_BE0126745638":
+2025/07/12 21:00:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0126745638-VPXB/fs_cfi_block
+2025/07/12 21:00:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0126745638-VPXB/fs_icb_block
+2025/07/12 21:00:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0126745638-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:30 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0126745638-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:30 https://live.euronext.com/en/ajax/getDetailedQuote/BE0126745638-VPXB
+2025/07/12 21:00:31 discovered stock: "VPXB_NULL_LU0006067663":
+2025/07/12 21:00:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006067663-VPXB/fs_cfi_block
+2025/07/12 21:00:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006067663-VPXB/fs_icb_block
+2025/07/12 21:00:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006067663-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:31 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/LU0006067663-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:31 https://live.euronext.com/en/ajax/getDetailedQuote/LU0006067663-VPXB
+2025/07/12 21:00:32 discovered etf: "ETFP_ACT60_IE0009RW4WA0":
+2025/07/12 21:00:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RW4WA0-ETFP/fs_cfi_block
+2025/07/12 21:00:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RW4WA0-ETFP/fs_generalinfo_block
+2025/07/12 21:00:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RW4WA0-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:32 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/IE0009RW4WA0-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:32 https://live.euronext.com/en/ajax/getDetailedQuote/IE0009RW4WA0-ETFP
+2025/07/12 21:00:33 discovered stock: "ALXP_ALDDS_FR00140110T8":
+2025/07/12 21:00:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR00140110T8-ALXP/fs_cfi_block
+2025/07/12 21:00:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR00140110T8-ALXP/fs_icb_block
+2025/07/12 21:00:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR00140110T8-ALXP/fs_tradinginfo_block
+2025/07/12 21:00:33 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/FR00140110T8-ALXP/fs_tradinginfo_pea_block
+2025/07/12 21:00:33 https://live.euronext.com/en/ajax/getDetailedQuote/FR00140110T8-ALXP
+2025/07/12 21:00:34 discovered etf: "ETFP_YIJUH_LU2976314208":
+2025/07/12 21:00:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314208-ETFP/fs_cfi_block
+2025/07/12 21:00:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314208-ETFP/fs_generalinfo_block
+2025/07/12 21:00:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314208-ETFP/fs_tradinginfo_etfs_block
+2025/07/12 21:00:34 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/LU2976314208-ETFP/fs_feessegmentation_block
+2025/07/12 21:00:34 https://live.euronext.com/en/ajax/getDetailedQuote/LU2976314208-ETFP
+2025/07/12 21:00:35 discovered stock: "VPXB_NULL_BE0014199377":
+2025/07/12 21:00:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014199377-VPXB/fs_cfi_block
+2025/07/12 21:00:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014199377-VPXB/fs_icb_block
+2025/07/12 21:00:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014199377-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:35 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0014199377-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:35 https://live.euronext.com/en/ajax/getDetailedQuote/BE0014199377-VPXB
+2025/07/12 21:00:36 discovered stock: "VPXB_NULL_BE0017609521":
+2025/07/12 21:00:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0017609521-VPXB/fs_cfi_block
+2025/07/12 21:00:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0017609521-VPXB/fs_icb_block
+2025/07/12 21:00:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0017609521-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:36 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0017609521-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:36 https://live.euronext.com/en/ajax/getDetailedQuote/BE0017609521-VPXB
+2025/07/12 21:00:37 discovered stock: "VPXB_NULL_BE0003660710":
+2025/07/12 21:00:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003660710-VPXB/fs_cfi_block
+2025/07/12 21:00:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003660710-VPXB/fs_icb_block
+2025/07/12 21:00:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003660710-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:37 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0003660710-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:37 https://live.euronext.com/en/ajax/getDetailedQuote/BE0003660710-VPXB
+2025/07/12 21:00:38 discovered etv: "XAMS_XDCN_CH1464217285":
+2025/07/12 21:00:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XAMS/fs_cfi_block
+2025/07/12 21:00:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XAMS/fs_generalinfo_block
+2025/07/12 21:00:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XAMS/fs_tradinginfo_etfs_block
+2025/07/12 21:00:38 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/TRACK/CH1464217285-XAMS/fs_feessegmentation_block
+2025/07/12 21:00:38 https://live.euronext.com/en/ajax/getDetailedQuote/CH1464217285-XAMS
+2025/07/12 21:00:39 discovered stock: "EXGM_HIKAA_IT0005646838":
+2025/07/12 21:00:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/IT0005646838-EXGM/fs_cfi_block
+2025/07/12 21:00:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/IT0005646838-EXGM/fs_icb_block
+2025/07/12 21:00:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/IT0005646838-EXGM/fs_tradinginfo_block
+2025/07/12 21:00:39 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/IT0005646838-EXGM/fs_tradinginfo_pea_block
+2025/07/12 21:00:39 https://live.euronext.com/en/ajax/getDetailedQuote/IT0005646838-EXGM
+2025/07/12 21:00:40 discovered stock: "VPXB_NULL_BE0027840017":
+2025/07/12 21:00:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0027840017-VPXB/fs_cfi_block
+2025/07/12 21:00:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0027840017-VPXB/fs_icb_block
+2025/07/12 21:00:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0027840017-VPXB/fs_tradinginfo_block
+2025/07/12 21:00:40 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/STOCK/BE0027840017-VPXB/fs_tradinginfo_pea_block
+2025/07/12 21:00:41 https://live.euronext.com/en/ajax/getDetailedQuote/BE0027840017-VPXB
+2025/07/12 21:00:41 discovered fund: "XMSM_NULL_IE000JUB0QM2":
+2025/07/12 21:00:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000JUB0QM2-XMSM/fs_cfi_block
+2025/07/12 21:00:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000JUB0QM2-XMSM/fs_issuerinfo_block
+2025/07/12 21:00:41 https://live.euronext.com/en/ajax/getFactsheetInfoBlock/FUNDS/IE000JUB0QM2-XMSM/fs_tradinginfo_funds_block
+2025/07/12 21:00:42 =======================================
+2025/07/12 21:00:42 adding 143 new instruments to ./repository/euronext/euronext.xml
+2025/07/12 21:00:42 adding 0 new instruments to ./repository/euronext/euronext_other.xml
+2025/07/12 21:00:42 finished

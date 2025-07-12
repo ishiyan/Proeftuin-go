@@ -1,0 +1,387 @@
+2025/07/12 20:50:53 download folder: ./downloads/euronext/instruments/
+2025/07/12 20:50:53 repository folder: ./repository/euronext/
+2025/07/12 20:50:53 download retries: 12
+2025/07/12 20:50:53 download timeout seconds: 180
+2025/07/12 20:50:53 download dause before retries seconds: 3
+2025/07/12 20:50:53 verbose download: false
+2025/07/12 20:50:53 delete download folder: true
+2025/07/12 20:50:53 zip download folder: true
+2025/07/12 20:50:53 enrich discovered instruments: true
+2025/07/12 20:50:53 gzip backup xml instruments: true
+2025/07/12 20:50:53 xml instruments file: ./repository/euronext/euronext.xml
+2025/07/12 20:50:54 xml instruments file: ./repository/euronext/euronext_other.xml
+2025/07/12 20:50:54 found 21182 instruments in ./repository/euronext/euronext.xml
+2025/07/12 20:50:54 found 0 instruments in ./repository/euronext/euronext_other.xml
+2025/07/12 20:50:54 total instruments: 21182
+2025/07/12 20:50:54 =======================================
+2025/07/12 20:50:54 downloading to downloads/euronext/instruments/2025/20250712/
+2025/07/12 20:50:55 stocks_XAMS: total records = 137, parsed records = 137, total parsed = 137
+2025/07/12 20:50:55 stocks_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:50:55 stocks_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:50:57 stocks_XBRU: total records = 122, parsed records = 122, total parsed = 122
+2025/07/12 20:50:57 stocks_ALXB: total records = 6, parsed records = 6, total parsed = 6
+2025/07/12 20:50:57 stocks_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:50:58 stocks_MLXB: total records = 8, parsed records = 8, total parsed = 8
+2025/07/12 20:50:58 stocks_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:00 stocks_XPAR: total records = 367, parsed records = 367, total parsed = 367
+2025/07/12 20:51:01 stocks_ALXP: total records = 280, parsed records = 280, total parsed = 280
+2025/07/12 20:51:02 stocks_XMLI: total records = 152, parsed records = 152, total parsed = 152
+2025/07/12 20:51:02 stocks_XLIS: total records = 34, parsed records = 34, total parsed = 34
+2025/07/12 20:51:02 stocks_ALXL: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:51:03 stocks_ENXL: total records = 12, parsed records = 12, total parsed = 12
+2025/07/12 20:51:04 stocks_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:05 stocks_XMSM: total records = 16, parsed records = 16, total parsed = 16
+2025/07/12 20:51:05 stocks_XESM: total records = 11, parsed records = 11, total parsed = 11
+2025/07/12 20:51:05 stocks_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:06 stocks_XOSL: total records = 211, parsed records = 211, total parsed = 211
+2025/07/12 20:51:06 stocks_XOAS: total records = 14, parsed records = 14, total parsed = 14
+2025/07/12 20:51:07 stocks_MERK: total records = 90, parsed records = 90, total parsed = 90
+2025/07/12 20:51:07 stocks_VPXB: total records = 90, parsed records = 90, total parsed = 90
+2025/07/12 20:51:07 stocks_MTAA: total records = 210, parsed records = 210, total parsed = 210
+2025/07/12 20:51:08 stocks_MTAH: total records = 599, parsed records = 599, total parsed = 599
+2025/07/12 20:51:09 stocks_EXGM: total records = 256, parsed records = 256, total parsed = 256
+2025/07/12 20:51:10 stocks_BGEM: total records = 1043, parsed records = 1043, total parsed = 1043
+2025/07/12 20:51:11 stocks_ETLX: total records = 432, parsed records = 432, total parsed = 432
+2025/07/12 20:51:11 stocks_ETFP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:12 stocks_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:12 stocks_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:12 stocks_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:12 stocks_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:12 stocks_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:13 stocks_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:13 stocks_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:13 stocks_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:13 stocks_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:14 stocks_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:14 stocks_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:14 stocks_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:14 stocks_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:14 stocks_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:14 stocks_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:15 indices_XAMS: total records = 134, parsed records = 134, total parsed = 134
+2025/07/12 20:51:15 indices_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:15 indices_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:16 indices_XBRU: total records = 43, parsed records = 43, total parsed = 43
+2025/07/12 20:51:16 indices_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:16 indices_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:16 indices_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:16 indices_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:17 indices_XPAR: total records = 100, parsed records = 100, total parsed = 100
+2025/07/12 20:51:17 indices_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:17 indices_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:17 indices_XLIS: total records = 31, parsed records = 31, total parsed = 31
+2025/07/12 20:51:18 indices_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:18 indices_ENXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:18 indices_XDUB: total records = 10, parsed records = 10, total parsed = 10
+2025/07/12 20:51:18 indices_XMSM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:18 indices_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:19 indices_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:19 indices_XOSL: total records = 77, parsed records = 77, total parsed = 77
+2025/07/12 20:51:19 indices_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:19 indices_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:19 indices_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:20 indices_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:20 indices_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:20 indices_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:20 indices_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:20 indices_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:21 indices_ETFP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:21 indices_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:21 indices_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:21 indices_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:21 indices_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:22 indices_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:22 indices_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:22 indices_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:22 indices_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:22 indices_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:22 indices_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:23 indices_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:23 indices_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:23 indices_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:23 indices_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:23 indices_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:24 etvs_XAMS: total records = 169, parsed records = 169, total parsed = 169
+2025/07/12 20:51:24 etvs_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:24 etvs_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:24 etvs_XBRU: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:51:25 etvs_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:25 etvs_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:25 etvs_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:25 etvs_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:26 etvs_XPAR: total records = 124, parsed records = 124, total parsed = 124
+2025/07/12 20:51:26 etvs_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:26 etvs_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:27 etvs_XLIS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:27 etvs_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:27 etvs_ENXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:27 etvs_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:27 etvs_XMSM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:28 etvs_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:28 etvs_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:28 etvs_XOSL: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:51:28 etvs_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:28 etvs_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:29 etvs_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:29 etvs_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:29 etvs_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:29 etvs_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:29 etvs_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:30 etvs_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:30 etvs_ETFP: total records = 343, parsed records = 343, total parsed = 343
+2025/07/12 20:51:30 etvs_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:31 etvs_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:31 etvs_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:31 etvs_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:31 etvs_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:32 etvs_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:32 etvs_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:32 etvs_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:32 etvs_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:32 etvs_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:33 etvs_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:33 etvs_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:33 etvs_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:33 etvs_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:33 etvs_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:34 etfs_XAMS: total records = 511, parsed records = 511, total parsed = 511
+2025/07/12 20:51:34 etfs_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:35 etfs_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:35 etfs_XBRU: total records = 14, parsed records = 14, total parsed = 14
+2025/07/12 20:51:35 etfs_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:36 etfs_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:36 etfs_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:36 etfs_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:37 etfs_XPAR: total records = 682, parsed records = 682, total parsed = 682
+2025/07/12 20:51:38 etfs_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:38 etfs_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:38 etfs_XLIS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:38 etfs_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:39 etfs_ENXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:39 etfs_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:39 etfs_XMSM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:39 etfs_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:40 etfs_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:40 etfs_XOSL: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:51:40 etfs_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:40 etfs_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:41 etfs_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:41 etfs_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:41 etfs_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:41 etfs_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:42 etfs_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:42 etfs_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:44 etfs_ETFP: total records = 1778, parsed records = 1778, total parsed = 1778
+2025/07/12 20:51:44 etfs_ATFX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:44 etfs_MIVX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:45 etfs_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:45 etfs_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:45 etfs_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:45 etfs_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:46 etfs_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:46 etfs_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:46 etfs_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:46 etfs_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:46 etfs_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:47 etfs_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:47 etfs_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:47 etfs_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:47 etfs_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:48 funds_XAMS: total records = 94, parsed records = 94, total parsed = 94
+2025/07/12 20:51:48 funds_ALXA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:48 funds_TNLA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:48 funds_XBRU: total records = 2, parsed records = 2, total parsed = 2
+2025/07/12 20:51:49 funds_ALXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:49 funds_ENXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:49 funds_MLXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:49 funds_TNLB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:50 funds_XPAR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:50 funds_ALXP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:50 funds_XMLI: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:50 funds_XLIS: total records = 1, parsed records = 1, total parsed = 1
+2025/07/12 20:51:51 funds_ALXL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:51 funds_ENXL: total records = 3, parsed records = 3, total parsed = 3
+2025/07/12 20:51:51 funds_XDUB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:52 funds_XMSM: total records = 1257, parsed records = 1257, total parsed = 1257
+2025/07/12 20:51:52 funds_XESM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:52 funds_XACD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:52 funds_XOSL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:53 funds_XOAS: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:53 funds_MERK: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:53 funds_VPXB: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:53 funds_MTAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:53 funds_MTAH: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:53 funds_EXGM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:54 funds_BGEM: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:54 funds_ETLX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:54 funds_ETFP: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:54 funds_ATFX: total records = 71, parsed records = 71, total parsed = 71
+2025/07/12 20:51:55 funds_MIVX: total records = 6, parsed records = 6, total parsed = 6
+2025/07/12 20:51:55 funds_XHFT: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:55 funds_XLDN: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:55 funds_XLIF: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:55 funds_XLON: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:56 funds_XETR: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:56 funds_XMCE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:56 funds_XVTX: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:56 funds_FRAA: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:56 funds_XCSE: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:56 funds_XSTO: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:57 funds_XHEL: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:57 funds_XMAD: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:57 funds_XIST: total records = 0, parsed records = 0, total parsed = 0
+2025/07/12 20:51:57 zipping folder downloads/euronext/instruments/2025/20250712/ to downloads/euronext/instruments/2025/20250712edi.zip
+2025/07/12 20:51:57 zipped folder downloads/euronext/instruments/2025/20250712/ to downloads/euronext/instruments/2025/20250712edi.zip
+2025/07/12 20:51:57 deleted folder downloads/euronext/instruments/2025/20250712/
+2025/07/12 20:51:57 fetched 9456 actual instruments
+2025/07/12 20:51:57 =======================================
+2025/07/12 20:51:57 discovered fund: "XMSM_NULL_IE000HF69TA9":
+2025/07/12 20:51:58 discovered stock: "MERK_EAM_NO0013601245":
+2025/07/12 20:51:59 discovered stock: "VPXB_NULL_LU0092281103":
+2025/07/12 20:52:00 discovered stock: "VPXB_NULL_BE0036061746":
+2025/07/12 20:52:01 discovered stock: "VPXB_NULL_LU0006040975":
+2025/07/12 20:52:02 discovered fund: "ENXL_MLBGF_PTBLWDIM0019":
+2025/07/12 20:52:03 discovered fund: "XMSM_NULL_IE000K5F6EL4":
+2025/07/12 20:52:03 discovered stock: "VPXB_NULL_BE0012544319":
+2025/07/12 20:52:04 discovered stock: "VPXB_NULL_BE0099887748":
+2025/07/12 20:52:06 discovered etf: "ETFP_YIJUH_LU2976314208":
+2025/07/12 20:52:07 discovered stock: "VPXB_NULL_BE0014799556":
+2025/07/12 20:52:07 discovered stock: "VPXB_NULL_BE0101614551":
+2025/07/12 20:52:08 discovered stock: "VPXB_NULL_QX0000022625":
+2025/07/12 20:52:09 discovered stock: "VPXB_NULL_BE6265912038":
+2025/07/12 20:52:10 discovered stock: "VPXB_NULL_BE0107958945":
+2025/07/12 20:52:11 discovered stock: "VPXB_NULL_BE0157892739":
+2025/07/12 20:52:12 discovered stock: "VPXB_NULL_BE0024644065":
+2025/07/12 20:52:13 discovered etv: "XPAR_XDCN_CH1464217285":
+2025/07/12 20:52:14 discovered etf: "XAMS_RDVY_IE000K5F6EL4":
+2025/07/12 20:52:15 discovered fund: "XAMS_AVIAW_NL0011309349":
+2025/07/12 20:52:15 discovered fund: "XMSM_NULL_IE000Q8F0M81":
+2025/07/12 20:52:16 discovered stock: "VPXB_NULL_BE0014199377":
+2025/07/12 20:52:17 discovered fund: "XAMS_TMIF_NL0011327432":
+2025/07/12 20:52:18 discovered etf: "XAMS_H2O_IE000Q8F0M81":
+2025/07/12 20:52:19 discovered etf: "ETFP_HQIW_IE000KL4O2Z8":
+2025/07/12 20:52:20 discovered fund: "XAMS_AGHY_NL0000685576":
+2025/07/12 20:52:20 discovered stock: "ALXP_ALSAF_FR001400ZU25":
+2025/07/12 20:52:21 discovered fund: "XMSM_NULL_IE0008BA4TY1":
+2025/07/12 20:52:22 discovered stock: "XBRU_ENRGY_BE0974499312":
+2025/07/12 20:52:23 discovered etf: "ETFP_FLUSA_IE000E02WFD5":
+2025/07/12 20:52:24 discovered etf: "ETFP_HQUS_IE0008JXFQK8":
+2025/07/12 20:52:25 discovered etf: "ETFP_GQEM_IE000KEFZYE7":
+2025/07/12 20:52:26 discovered etv: "XAMS_SARKK_XS3107205695":
+2025/07/12 20:52:27 discovered stock: "VPXB_NULL_BE0011844108":
+2025/07/12 20:52:28 discovered stock: "VPXB_NULL_BE0017609521":
+2025/07/12 20:52:29 discovered stock: "VPXB_NULL_LU0097891112":
+2025/07/12 20:52:30 discovered stock: "VPXB_NULL_BE0051300847":
+2025/07/12 20:52:31 discovered stock: "VPXB_NULL_BE0034169251":
+2025/07/12 20:52:32 discovered etf: "ETFP_SPQD_IE000SNCKVM9":
+2025/07/12 20:52:33 discovered stock: "VPXB_NULL_LU0110790085":
+2025/07/12 20:52:34 discovered stock: "VPXB_NULL_BE0003706208":
+2025/07/12 20:52:35 discovered stock: "VPXB_NULL_BE0049483135":
+2025/07/12 20:52:36 discovered stock: "VPXB_NULL_BE0010381029":
+2025/07/12 20:52:37 discovered stock: "VPXB_NULL_BE0003660710":
+2025/07/12 20:52:38 discovered stock: "VPXB_NULL_BE0003783975":
+2025/07/12 20:52:39 discovered etf: "ETFP_MJUN_IE000CO3P697":
+2025/07/12 20:52:40 discovered stock: "VPXB_NULL_BE0941244536":
+2025/07/12 20:52:41 discovered stock: "VPXB_NULL_LU0006047129":
+2025/07/12 20:52:43 discovered stock: "VPXB_NULL_BE0035966762":
+2025/07/12 20:52:44 discovered stock: "VPXB_NULL_BE0026342551":
+2025/07/12 20:52:45 discovered stock: "VPXB_NULL_BE0013068706":
+2025/07/12 20:52:46 discovered stock: "VPXB_NULL_BE0003222214":
+2025/07/12 20:52:47 discovered fund: "XMSM_NULL_LU3028243718":
+2025/07/12 20:52:47 discovered stock: "VPXB_NULL_BE0942448938":
+2025/07/12 20:52:48 discovered etf: "XAMS_IGBD_IE000I0U8OO3":
+2025/07/12 20:52:49 discovered stock: "VPXB_NULL_BE0020918638":
+2025/07/12 20:52:50 discovered stock: "VPXB_NULL_BE0156881329":
+2025/07/12 20:52:51 discovered stock: "VPXB_NULL_BE0003527356":
+2025/07/12 20:52:53 discovered stock: "VPXB_NULL_BE0946377455":
+2025/07/12 20:52:54 discovered fund: "XMSM_NULL_IE000ONYHPZ2":
+2025/07/12 20:52:54 discovered stock: "ALXP_SIGBS_FR0014010IB4":
+2025/07/12 20:52:55 discovered stock: "MERK_COSH_NO0013597419":
+2025/07/12 20:52:56 discovered stock: "ALXP_ALSEM_FR0014010H01":
+2025/07/12 20:52:57 discovered stock: "VPXB_NULL_BE0020932779":
+2025/07/12 20:52:58 discovered stock: "VPXB_NULL_BE0003279784":
+2025/07/12 20:52:59 discovered stock: "VPXB_NULL_BE0027840017":
+2025/07/12 20:53:01 discovered stock: "VPXB_NULL_BE0172505399":
+2025/07/12 20:53:02 discovered stock: "VPXB_NULL_BE0046318490":
+2025/07/12 20:53:03 discovered stock: "VPXB_NULL_BE0162868054":
+2025/07/12 20:53:04 discovered stock: "VPXB_NULL_BE0036367895":
+2025/07/12 20:53:05 discovered etf: "ETFP_FEPI_IE000HF69TA9":
+2025/07/12 20:53:06 discovered fund: "XMSM_NULL_IE000ELHT1P5":
+2025/07/12 20:53:07 discovered stock: "VPXB_NULL_BE0010610377":
+2025/07/12 20:53:08 discovered stock: "VPXB_NULL_BE6264882406":
+2025/07/12 20:53:09 discovered etf: "ETFP_FEGI_IE000OBK3UE0":
+2025/07/12 20:53:10 discovered stock: "VPXB_NULL_NL0000009645":
+2025/07/12 20:53:11 discovered etf: "XAMS_SP4S_IE000H444PH5":
+2025/07/12 20:53:12 discovered etf: "ETFP_ACTEQ_IE000CB2BST9":
+2025/07/12 20:53:13 discovered stock: "ALXP_BLUDS_FR0014010S08":
+2025/07/12 20:53:14 discovered etf: "ETFP_HQWA_IE000ZURGSV2":
+2025/07/12 20:53:15 discovered fund: "XMSM_NULL_IE000FRZCBI5":
+2025/07/12 20:53:16 discovered etv: "XAMS_XDCN_CH1464217285":
+2025/07/12 20:53:17 discovered etv: "ETFP_S3CO_XS3107206156":
+2025/07/12 20:53:18 discovered stock: "VPXB_NULL_BE0126745638":
+2025/07/12 20:53:19 discovered stock: "VPXB_NULL_BE0099150162":
+2025/07/12 20:53:20 discovered etv: "XAMS_VRTC_SE0024738389":
+2025/07/12 20:53:21 discovered stock: "VPXB_NULL_BE0049482129":
+2025/07/12 20:53:22 discovered stock: "VPXB_NULL_BE0945331669":
+2025/07/12 20:53:23 discovered stock: "XOSL_IDEX_NO0013536078":
+2025/07/12 20:53:24 discovered stock: "VPXB_NULL_BE0021556221":
+2025/07/12 20:53:25 discovered stock: "XPAR_FSDV_FR0000031973":
+2025/07/12 20:53:26 discovered etf: "ETFP_ACT20_IE0009RE6PA1":
+2025/07/12 20:53:27 discovered stock: "VPXB_NULL_NL0000288652":
+2025/07/12 20:53:28 discovered fund: "XMSM_NULL_IE000MIXAK02":
+2025/07/12 20:53:29 discovered etf: "ETFP_YIAUH_LU2976313655":
+2025/07/12 20:53:30 discovered stock: "VPXB_NULL_LU0006067663":
+2025/07/12 20:53:31 discovered stock: "VPXB_NULL_BE0945246784":
+2025/07/12 20:53:32 discovered stock: "XOSL_SWON_CH0496451508":
+2025/07/12 20:53:33 discovered stock: "VPXB_NULL_BE0003640514":
+2025/07/12 20:53:34 discovered stock: "VPXB_NULL_BE0010026350":
+2025/07/12 20:53:35 discovered fund: "XMSM_NULL_IE000JUB0QM2":
+2025/07/12 20:53:36 discovered stock: "VPXB_NULL_CG000A0BKQF7":
+2025/07/12 20:53:37 discovered stock: "VPXB_NULL_NL0000121622":
+2025/07/12 20:53:38 discovered stock: "VPXB_NULL_BE0010566900":
+2025/07/12 20:53:39 discovered stock: "VPXB_NULL_BE0011238830":
+2025/07/12 20:53:40 discovered stock: "VPXB_NULL_BE0010012210":
+2025/07/12 20:53:41 discovered stock: "VPXB_NULL_BE0947790037":
+2025/07/12 20:53:42 discovered etf: "XAMS_JGBD_IE00056AT4A2":
+2025/07/12 20:53:43 discovered etf: "ETFP_ACT60_IE0009RW4WA0":
+2025/07/12 20:53:44 discovered stock: "VPXB_NULL_BE0022780820":
+2025/07/12 20:53:45 discovered stock: "VPXB_NULL_BE0015460372":
+2025/07/12 20:53:46 discovered etf: "ETFP_YIUUH_LU2976311444":
+2025/07/12 20:53:47 discovered fund: "XMSM_NULL_IE000U6ABUJ7":
+2025/07/12 20:53:48 discovered etf: "XPAR_CAPU_LU1079841273":
+2025/07/12 20:53:49 discovered stock: "EXGM_HIKAA_IT0005646838":
+2025/07/12 20:53:50 discovered etf: "XPAR_EBBU_LU3046359165":
+2025/07/12 20:53:51 discovered stock: "VPXB_NULL_NSCEX0000018":
+2025/07/12 20:53:52 discovered etf: "XPAR_CASHE_LU3025345516":
+2025/07/12 20:53:53 discovered stock: "VPXB_NULL_BE6303070104":
+2025/07/12 20:53:54 discovered stock: "VPXB_NULL_BE0010342609":
+2025/07/12 20:53:55 discovered etv: "XPAR_VRTC_SE0024738389":
+2025/07/12 20:53:56 discovered stock: "VPXB_NULL_BE0944264663":
+2025/07/12 20:53:57 discovered etf: "XAMS_AIRR_IE000U6ABUJ7":
+2025/07/12 20:53:58 discovered etf: "ETFP_CEGI_IE0008BA4TY1":
+2025/07/12 20:53:59 discovered stock: "VPXB_NULL_BE0057677594":
+2025/07/12 20:54:00 discovered stock: "VPXB_NULL_BE0010621481":
+2025/07/12 20:54:01 discovered etf: "ETFP_YIPUH_LU2976314620":
+2025/07/12 20:54:03 discovered fund: "XMSM_NULL_IE000YIQZ0H6":
+2025/07/12 20:54:04 discovered stock: "VPXB_NULL_LU0092281442":
+2025/07/12 20:54:05 discovered stock: "VPXB_NULL_BE0011606630":
+2025/07/12 20:54:07 discovered etf: "XPAR_FLUSA_IE000E02WFD5":
+2025/07/12 20:54:08 discovered fund: "XAMS_KGPFN_NL0012044739":
+2025/07/12 20:54:08 discovered etf: "ETFP_RMBS_IE000TD32PU3":
+2025/07/12 20:54:09 discovered etf: "ETFP_SPQA_IE000E6TPCH9":
+2025/07/12 20:54:10 discovered fund: "XMSM_NULL_IE000OBK3UE0":
+2025/07/12 20:54:11 discovered stock: "ALXP_ALDDS_FR00140110T8":
+2025/07/12 20:54:12 discovered fund: "XMSM_NULL_IE000IR87HP7":
+2025/07/12 20:54:13 discovered stock: "VPXB_NULL_BE0011395465":
+2025/07/12 20:54:14 discovered stock: "VPXB_NULL_BE0941243520":
+2025/07/12 20:54:15 found 2 duplicate matches for XAMS-ASCX-NL0000249142:
+2025/07/12 20:54:15   0: XAMS-ASCX-NL0000249142
+2025/07/12 20:54:15   1: XAMS-ASCX-NL0000249142
+2025/07/12 20:54:15 discovered stock: "VPXB_NULL_BE0024915838":
+2025/07/12 20:54:16 discovered stock: "VPXB_NULL_BE0099395676":
+2025/07/12 20:54:17 discovered stock: "VPXB_NULL_BE0038785821":
+2025/07/12 20:54:19 discovered stock: "VPXB_NULL_BE0156880313":
+2025/07/12 20:54:20 =======================================
+2025/07/12 20:54:20 adding 143 new instruments to ./repository/euronext/euronext.xml
+2025/07/12 20:54:20 adding 0 new instruments to ./repository/euronext/euronext_other.xml
+2025/07/12 20:54:20 finished
