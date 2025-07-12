@@ -26,3 +26,6 @@ https://www.euronext.com/en/post-trade/euronext-securities/porto/documentation/s
 lseg data library
 https://github.com/LSEG-API-Samples/Example.DataLibrary.Python/tree/lseg-data-examples
 https://github.com/LSEG-API-Samples
+
+intraday
+https://live.euronext.com/en/ajax/getIntradayPriceFilteredData/NL0000000107-XAMS

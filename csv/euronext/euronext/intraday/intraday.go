@@ -1,25 +1,62 @@
 package intraday
 
 import (
+	"bytes"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
+	"net/url"
 	"strings"
 	"time"
 )
 
-func get(
+func getLastWorkingDay(startDateDaysBack int) string {
+	date := time.Now()
+
+	// Go back to the most recent weekday (Monday-Friday)
+	for date.Weekday() == time.Saturday || date.Weekday() == time.Sunday {
+		date = date.AddDate(0, 0, -1)
+	}
+
+	// Go back additional days as specified
+	date = date.AddDate(0, 0, -startDateDaysBack)
+
+	return date.Format("2006-01-02")
+}
+
+func post(
 	uri string,
 	timeout time.Duration,
 	referer string,
 	userAgent string,
+	startDateDaysBack int,
+	verbose bool,
 ) ([]byte, error) {
-	req, err := http.NewRequest("GET", uri, nil)
+	bodyMap := map[string]string{
+		// "startTime": "08:00",
+		// "endTime":   "20:00",
+		"nbitems":  "900000",
+		"timezone": "CET",
+		"date":     getLastWorkingDay(startDateDaysBack),
+	}
+
+	// Prepare POST data
+	postData := url.Values{}
+	for key, value := range bodyMap {
+		postData.Set(key, value)
+	}
+
+	pd := postData.Encode()
+	if verbose {
+		log.Printf("%s POST body: %s\n", uri, pd)
+	}
+	req, err := http.NewRequest("POST", uri, bytes.NewBufferString(pd))
 	if err != nil {
 		return nil, fmt.Errorf("cannot create request: %w", err)
 	}
 
+	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	req.Header.Set("User-Agent", userAgent)
 	req.Header.Set("Referer", referer)
 	req.Header.Set("Accept-Language", "en-us,en;q=0.5")
@@ -27,7 +64,12 @@ func get(
 	req.Header.Set("X-Requested-With", "XMLHttpRequest")
 	req.Header.Set("Accept", "application/json, text/javascript, */*")
 
-	httpClient := http.Client{Timeout: timeout}
+	// Create HTTP client with timeout and proxy settings
+	transport := &http.Transport{
+		Proxy: http.ProxyFromEnvironment, // Uses system proxy settings
+	}
+	httpClient := http.Client{Timeout: timeout, Transport: transport}
+
 	resp, err := httpClient.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("download failed %s: %w", uri, err)
@@ -42,20 +84,22 @@ func get(
 	return contents, nil
 }
 
-func getWithRetries(
+func postWithRetries(
 	uri string,
 	label string,
 	timeout time.Duration,
 	pauseBeforeRetry []time.Duration,
 	referer string,
 	userAgent string,
+	startDateDaysBack int,
+	verbose bool,
 ) ([]byte, error) {
 	var contents []byte
 	var err error
 	retriesMax := len(pauseBeforeRetry)
 	retries := retriesMax
 	for retries > 0 {
-		contents, err = get(uri, timeout, referer, userAgent)
+		contents, err = post(uri, timeout, referer, userAgent, startDateDaysBack, verbose)
 		if err != nil {
 			if retries > 1 {
 				log.Printf("%s: download failed, retrying (%d of %d left): %v\n", label, retries, retriesMax, err)
@@ -110,8 +154,8 @@ func getReferer(isin string, mic string, typ string) string {
 	}
 }
 
-// GetIntradayData retrieves intraday data for a given instrument identified by its MIC and ISIN.
-func GetIntradayData(
+// FetchIntradayData retrieves intraday data for a given instrument identified by its MIC and ISIN.
+func FetchIntradayData(
 	isin string,
 	mic string,
 	mnemonic string,
@@ -119,11 +163,14 @@ func GetIntradayData(
 	timeout time.Duration,
 	pauseBeforeRetry []time.Duration,
 	userAgent string,
+	startDateDaysBack int,
+	verbose bool,
 ) ([]byte, error) {
 	uri := getURI(isin, mic)
 	ref := getReferer(isin, mic, typ)
 	label := fmt.Sprintf("%s-%s-%s-%s", mic, typ, mnemonic, isin)
-	if bs, err := getWithRetries(uri, label, timeout, pauseBeforeRetry, ref, userAgent); err != nil {
+	if bs, err := postWithRetries(uri, label, timeout, pauseBeforeRetry, ref, userAgent,
+		startDateDaysBack, verbose); err != nil {
 		return nil, err
 	} else {
 		return bs, nil

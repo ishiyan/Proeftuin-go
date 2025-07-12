@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<instruments>
+  <instrument foundInSearch="-isin()-mic()-typ()" mic="XAMS" isin="NL0000000107" symbol="AEX" name="AEX-INDEX" type="index" file="xams/index/AEX.h5:/XAMS_AEX_NL0000000107" description="The best-known index of Euronext Amsterdam, the AEX (Price) index, is made up of the 25 most traded companies in the Netherlands measured over the previous calender year." mep="AMS" vendor="Euronext">
+    <index kind="price" family="AEX" calcFreq="15s" baseDate="1983-01-03" baseLevel="45.378" weighting="float market cap" capFactor="0.15" currency="EUR" />
+  </instrument>
+  <instrument file="mtaa/stock/STLAM.h5:/MTAA_STLAM_NL00150001Q9" isin="NL00150001Q9" mic="MTAA" mep="MIL" name="STELLANTIS" symbol="STLAM" type="stock" description="" vendor="Euronext">
+    <stock cfi="" compartment="" tradingMode="" currency="EUR" shares="">
+      <icb icb1="" icb2="" icb3="" icb4="" />
+    </stock>
+  </instrument>
+</instruments>

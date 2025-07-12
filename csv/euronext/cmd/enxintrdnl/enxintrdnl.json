@@ -1,0 +1,12 @@
+{
+    "downloadRetryDelaySeconds": [60,60,60,60,120,120,180,180,240,240,300,300],
+    "downloadTimeoutSeconds": 180,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
+    "verboseDownload": true,
+    "zipDownloadedFolder": true,
+    "deleteDownloadedFolder": true,
+    "downloadsFolder": "./downloads/euronext/",
+    "xmlInstrumentsFile": "./repository/euronext/euronext.xml",
+    "concurrency": 4,
+    "startDateDaysBack": 0
+}
