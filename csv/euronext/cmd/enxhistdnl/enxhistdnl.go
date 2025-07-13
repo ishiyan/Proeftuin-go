@@ -48,7 +48,7 @@ type statistics struct {
 func main() {
 	now := time.Now()
 	t := now.Format("2006-01-02_15-04-05")
-	logFileName := fmt.Sprintf("enxintrdnl_%s.log", t)
+	logFileName := fmt.Sprintf("enxhistdnl_%s.log", t)
 	logFile, err := os.Create(logFileName)
 	if err != nil {
 		log.Panicf("cannot create log file '%s': %s\n", logFileName, err)
