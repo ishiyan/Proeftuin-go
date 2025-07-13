@@ -5,7 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
+	"os"
+	"path/filepath"
 	"strconv"
 	"time"
 )
@@ -126,60 +129,125 @@ const (
 	volumePreRef = "https://data.ecb.europa.eu/data/datasets/MMSR/MMSR.B.U2._X._Z.S12._Z.U.BO.TT.D76.MA._Z._Z.EUR._Z"
 	transPre     = "https://data.ecb.europa.eu/data-detail-api/MMSR.B.U2._X._Z.S12._Z.U.BO.NT.D76.MA._Z._Z.EUR._Z"
 	transPreRef  = "https://data.ecb.europa.eu/data/datasets/MMSR/MMSR.B.U2._X._Z.S12._Z.U.BO.NT.D76.MA._Z._Z.EUR._Z"
-
-	userAgent  = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
-	timeoutSec = 60
-	retriesMax = 5
-	sleepSec   = 5
 )
 
 var gets = [6]string{rateAct, volumeAct, transAct, ratePre, volumePre, transPre}
 var refs = [6]string{rateActRef, volumeActRef, transActRef, ratePreRef, volumePreRef, transPreRef}
+var labs = [6]string{"rate act", "volume act", "trans act", "rate pre", "volume pre", "trans pre"}
+var nams = [6]string{"EST.B.EU000A2X2A25.WT", "EST.B.EU000A2X2A25.TT", "EST.B.EU000A2X2A25.NT",
+	"MMSR.B.U2._X._Z.S12._Z.U.BO.WT.D76.MA._Z._Z.EUR._Z",
+	"MMSR.B.U2._X._Z.S12._Z.U.BO.TT.D76.MA._Z._Z.EUR._Z",
+	"MMSR.B.U2._X._Z.S12._Z.U.BO.NT.D76.MA._Z._Z.EUR._Z"}
 
 type estrSeries []struct {
 	Date  string `json:"PERIOD"`
 	Value string `json:"OBS"`
 }
 
-func fetch(what What) (*estrSeries, error) {
-	req, err := http.NewRequest("GET", gets[what], nil)
+func get(
+	uri string,
+	timeout time.Duration,
+	referer string,
+	userAgent string,
+	verbose bool,
+) ([]byte, error) {
+	if verbose {
+		log.Println(uri)
+	}
+
+	req, err := http.NewRequest("GET", uri, nil)
 	if err != nil {
 		return nil, fmt.Errorf("cannot create request: %w", err)
 	}
 
 	req.Header.Set("User-Agent", userAgent)
-	req.Header.Set("Referer", refs[what])
-	httpClient := http.Client{Timeout: time.Duration(timeoutSec) * time.Second}
+	req.Header.Set("Referer", referer)
+	req.Header.Set("Accept", "application/json, text/javascript, */*")
+	req.Header.Set("Accept-Language", "en-US,en;q=0.5")
+	req.Header.Set("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7")
 
-	var resp *http.Response
-	retries := retriesMax
-	for retries > 0 {
-		resp, err = httpClient.Do(req)
-		if err != nil {
-			retries -= 1
-			if retries < 1 {
-				err := fmt.Errorf("cannot do request after retries %d: %w", retriesMax, err)
-				return nil, err
-			} else {
-				time.Sleep(sleepSec * time.Second)
-			}
-		} else {
-			break
-		}
+	// Create HTTP client with timeout and proxy settings
+	transport := &http.Transport{
+		Proxy: http.ProxyFromEnvironment, // Uses system proxy settings
+	}
+	httpClient := http.Client{Timeout: timeout, Transport: transport}
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("download failed %s: %w", uri, err)
 	}
 	defer resp.Body.Close()
 
-	jsn, err := io.ReadAll(resp.Body)
+	contents, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return nil, fmt.Errorf("cannot read response body: %w", err)
+		return nil, fmt.Errorf("cannot read response body %s: %w", uri, err)
 	}
 
-	ct := estrSeries{}
-	if err = json.Unmarshal(jsn, &ct); err != nil {
-		return nil, fmt.Errorf("cannot unmarshal content: %w", err)
+	return contents, nil
+}
+
+func getWithRetries(
+	uri string,
+	label string,
+	timeout time.Duration,
+	pauseBeforeRetry []time.Duration,
+	referer string,
+	userAgent string,
+	verbose bool,
+) ([]byte, error) {
+	var contents []byte
+	var err error
+	retriesMax := len(pauseBeforeRetry)
+	retries := retriesMax
+	for retries > 0 {
+		contents, err = get(uri, timeout, referer, userAgent, verbose)
+		if err != nil {
+			if retries > 1 {
+				log.Printf("%s: download failed, retrying (%d of %d left): %v\n", label, retries, retriesMax, err)
+			} else {
+				return nil, fmt.Errorf("%s: download failed, giving up (%d of %d left): %v", label, retries, retriesMax, err)
+			}
+			retries--
+			continue
+		}
+		break
 	}
 
-	return &ct, nil
+	return contents, nil
+}
+
+func fetch(
+	what What,
+	writeToFile bool,
+	downloadFolder string,
+	timeout time.Duration,
+	pauseBeforeRetry []time.Duration,
+	userAgent string,
+	verbose bool,
+) (*estrSeries, error) {
+	if bs, err := getWithRetries(gets[what], labs[what], timeout, pauseBeforeRetry, refs[what],
+		userAgent, verbose); err != nil {
+		return nil, err
+	} else {
+		if writeToFile {
+			if _, err := os.Stat(downloadFolder); os.IsNotExist(err) {
+				if err = os.MkdirAll(downloadFolder, os.ModePerm); err != nil {
+					log.Printf("cannot create directory '%s': %s\n", downloadFolder, err)
+				}
+			}
+			file := filepath.Join(downloadFolder,
+				nams[what]+".json")
+			if err := os.WriteFile(file, bs, 0644); err != nil {
+				log.Printf("cannot write to file %s: %s\n", file, err)
+			}
+		}
+
+		var series estrSeries
+		if err := json.Unmarshal(bs, &series); err != nil {
+			return nil, fmt.Errorf("cannot unmarshal response: %w", err)
+		}
+		return &series, nil
+	}
 }
 
 type Point struct {
@@ -187,8 +255,16 @@ type Point struct {
 	Value float64
 }
 
-func Fetch(what What) ([]Point, error) {
-	series, err := fetch(what)
+func Fetch(
+	what What,
+	writeToFile bool,
+	downloadFolder string,
+	timeout time.Duration,
+	pauseBeforeRetry []time.Duration,
+	userAgent string,
+	verbose bool,
+) ([]Point, error) {
+	series, err := fetch(what, writeToFile, downloadFolder, timeout, pauseBeforeRetry, userAgent, verbose)
 	if err != nil {
 		return nil, fmt.Errorf("cannot fetch data: %w", err)
 	}

@@ -51,10 +51,6 @@ func get(
 	}
 
 	return contents, nil
-
-	/*if contents[0] == '<' {
-		goto repeat
-	}*/
 }
 
 func getWithRetries(

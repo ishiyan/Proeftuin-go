@@ -40,7 +40,7 @@ func WhatMnemonic(what What) string {
 	}
 }
 
-func filepath(repository string, what What) string {
+func filePath(repository string, what What) string {
 	return repository + "estr." + WhatMnemonic(what) + ".csv"
 }
 
@@ -53,19 +53,19 @@ func ReadCSV(repository string, what What) ([]Point, error) {
 	}
 
 	series := make([]Point, 0)
-	filePath := filepath(repository, what)
+	file := filePath(repository, what)
 
-	if _, err = os.Stat(filePath); os.IsNotExist(err) {
-		if f, err = os.Create(filePath); err != nil {
-			return nil, fmt.Errorf("cannot create file '%s': %w", filePath, err)
+	if _, err = os.Stat(file); os.IsNotExist(err) {
+		if f, err = os.Create(file); err != nil {
+			return nil, fmt.Errorf("cannot create file '%s': %w", file, err)
 		} else {
 			f.Close()
 			return series, nil
 		}
 	}
 
-	if f, err = os.Open(filePath); err != nil {
-		return nil, fmt.Errorf("cannot open file '%s': %w", filePath, err)
+	if f, err = os.Open(file); err != nil {
+		return nil, fmt.Errorf("cannot open file '%s': %w", file, err)
 	}
 	defer f.Close()
 
@@ -118,15 +118,15 @@ func ReadCSV(repository string, what What) ([]Point, error) {
 }
 
 func WriteCSV(repository string, what What, points []Point) error {
-	filePath := filepath(repository, what)
-	backPath := filePath + ".bak"
+	file := filePath(repository, what)
+	backPath := file + ".bak"
 
-	if err := os.Rename(filePath, backPath); err != nil {
-		return fmt.Errorf("cannot rename file '%s' to  '%s': %w", filePath, backPath, err)
+	if err := os.Rename(file, backPath); err != nil {
+		return fmt.Errorf("cannot rename file '%s' to  '%s': %w", file, backPath, err)
 	}
 
-	if fout, err := os.Create(filePath); err != nil {
-		return fmt.Errorf("cannot create file '%s': %w", filePath, err)
+	if fout, err := os.Create(file); err != nil {
+		return fmt.Errorf("cannot create file '%s': %w", file, err)
 	} else {
 		defer fout.Close()
 
