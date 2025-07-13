@@ -1,0 +1,32 @@
+2025/07/13 16:56:22 xml instruments file: ./repository/euronext/euronext.xml
+2025/07/13 16:56:22 download folder: ./downloads/euronext/
+2025/07/13 16:56:22 download retry delay seconds: [60 60 60 60 120 120 180 180 240 240 300 300]
+2025/07/13 16:56:22 download timeout seconds: 180
+2025/07/13 16:56:22 download concurrency: 4
+2025/07/13 16:56:22 verbose download: true
+2025/07/13 16:56:22 zip download folder: true
+2025/07/13 16:56:22 delete download folder: true
+2025/07/13 16:56:22 trading session date: 2025-07-11
+2025/07/13 16:56:22 xml instruments file: ./repository/euronext/euronext.xml
+2025/07/13 16:56:22  2 instruments read from ./repository/euronext/euronext.xml
+2025/07/13 16:56:22 =======================================
+2025/07/13 16:56:22 downloading to ./downloads/euronext/endofday/2025/20250711/
+2025/07/13 16:56:22 https://live.euronext.com/en/ajax/AwlHistoricalPrice/getFullDownloadAjax/NL00150001Q9-MTAA?format=csv&decimal_separator=.&date_form=d%2Fm%2FY&op=&&adjusted=N&base100=&startdate=2000-01-01&enddate=2034-12-31
+2025/07/13 16:56:22 https://live.euronext.com/en/ajax/AwlHistoricalPrice/getFullDownloadAjax/NL0000000107-XAMS?format=csv&decimal_separator=.&date_form=d%2Fm%2FY&op=&&adjusted=N&base100=&startdate=2000-01-01&enddate=2034-12-31
+2025/07/13 16:56:22 (2 of 2) mtaa_stlam_nl00150001q9 stock unadj: downloading ... saving 509 bytes ... done
+2025/07/13 16:56:22 https://live.euronext.com/en/ajax/AwlHistoricalPrice/getFullDownloadAjax/NL00150001Q9-MTAA?format=csv&decimal_separator=.&date_form=d%2Fm%2FY&op=&&adjusted=Y&base100=&startdate=2000-01-01&enddate=2034-12-31
+2025/07/13 16:56:22 (1 of 2) xams_aex_nl0000000107 index unadj: downloading ... saving 31693 bytes ... done
+2025/07/13 16:56:22 https://live.euronext.com/en/ajax/AwlHistoricalPrice/getFullDownloadAjax/NL0000000107-XAMS?format=csv&decimal_separator=.&date_form=d%2Fm%2FY&op=&&adjusted=Y&base100=&startdate=2000-01-01&enddate=2034-12-31
+2025/07/13 16:56:23 (2 of 2) mtaa_stlam_nl00150001q9 stock adj: downloading ... saving 509 bytes ... done
+2025/07/13 16:56:23 (1 of 2) xams_aex_nl0000000107 index adj: downloading ... saving 31693 bytes ... done
+2025/07/13 16:56:23 processed
+2025/07/13 16:56:23 =======================================
+2025/07/13 16:56:23 instruments with download errors: 0 from 2
+2025/07/13 16:56:23 mep;mic;type;mnemonic;isin;adj;error
+2025/07/13 16:56:23 =======================================
+2025/07/13 16:56:23 instruments with file save errors: 0 from 2
+2025/07/13 16:56:23 mep;mic;type;mnemonic;isin;adj;error
+2025/07/13 16:56:23 =======================================
+2025/07/13 16:56:23 archiving from ./downloads/euronext/endofday/2025/20250711 to ./downloads/euronext/endofday/2025/20250711enx_eod.2.zip ... done
+2025/07/13 16:56:23 deleting folder ./downloads/euronext/endofday/2025/20250711 ... done
+2025/07/13 16:56:23 finished

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<instruments>
+  <instrument foundInSearch="-isin()-mic()-typ()" mic="XAMS" isin="NL0000000107" symbol="AEX" name="AEX-INDEX" type="index" file="xams/index/AEX.h5:/XAMS_AEX_NL0000000107" description="The best-known index of Euronext Amsterdam, the AEX (Price) index, is made up of the 25 most traded companies in the Netherlands measured over the previous calender year." mep="AMS" vendor="Euronext">
+    <index kind="price" family="AEX" calcFreq="15s" baseDate="1983-01-03" baseLevel="45.378" weighting="float market cap" capFactor="0.15" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="true" mic="XAMS" isin="QS0011211156" symbol="AEXNR" name="AEX NR" type="index" file="xams/index/AEXNR.h5:/XAMS_AEXNR_QS0011211156" description="" mep="AMS" vendor="Euronext">
+    <index kind="net return" family="AEX" calcFreq="15s" baseDate="1983-01-03" baseLevel="45.378" weighting="float market cap" capFactor="0.15" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="true" mic="XAMS" isin="QS0011131990" symbol="AEXGR" name="AEX GR" type="index" file="xams/index/AEXGR.h5:/XAMS_AEXGR_QS0011131990" description="" mep="AMS" vendor="Euronext">
+    <index kind="gross return" family="" calcFreq="" baseDate="" baseLevel="" weighting="" capFactor="" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="-isin()-mic()-typ()" mic="XAMS" isin="NL0000249274" symbol="AMX" name="AMX-INDEX" type="index" file="xams/index/AMX.h5:/XAMS_AMX_NL0000249274" description="The Amsterdam Midkap index is a weighted index based on the prices of shares of 25 medium-sized companies listed on Euronext Amsterdam." mep="AMS" vendor="Euronext">
+    <index kind="price" family="AMX" calcFreq="15s" baseDate="1983-01-03" baseLevel="45.378" weighting="float market cap" capFactor="0.15" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="true" mic="XAMS" isin="NL0000249142" symbol="ASCX" name="ASCX-INDEX" type="index" file="xams/index/ASCX.h5:/XAMS_ASCX_NL0000249142" description="The Amsterdam Small Cap Index is made up of the 25 most traded small caps. It was launched on Wednesday 2 March 2005." mep="AMS" vendor="Euronext">
+    <index kind="price" family="ASCX" calcFreq="15s" baseDate="2004-12-31" baseLevel="400" weighting="float market cap" capFactor="0.15" currency="EUR" />
+  </instrument>
+  <instrument foundInSearch="true" mic="XAMS" isin="NL0000249100" symbol="AAX" name="AEX ALL-SHARE" type="index" file="xams/index/AAX.h5:/XAMS_AAX_NL0000249100" description="The Amsterdam Exchanges All-Share index contains all the shares listed on Euronext Amsterdam market." mep="AMS" vendor="Euronext">
+    <index kind="price" family="AAX" calcFreq="15s" weighting="full market cap" capFactor="no" baseDate="1952-12-31" baseLevel="13.20" currency="EUR" />
+  </instrument>
+  <instrument mic="ETLX" isin="FR0000121485" symbol="4KER" name="KERING" type="stock" file="etlx/stock/4KER.h5:/ETLX_4KER_FR0000121485" description="" mep="MIL" vendor="Euronext">
+    <stock cfi="ESVUFM" compartment="" tradingMode="continuous" currency="EUR" shares="123,420,778">
+      <icb icb1="40" icb2="4020" icb3="402040" icb4="40204020" />
+    </stock>
+  </instrument>
+  <instrument mic="BGEM" isin="US87612E1064" symbol="1TGT" name="TARGET" type="stock" file="bgem/stock/1TGT.h5:/BGEM_1TGT_US87612E1064" description="" mep="MIL" vendor="Euronext">
+    <stock cfi="ESVUFM" compartment="" tradingMode="continuous" currency="EUR" shares="454,365,901">
+      <icb icb1="" icb2="" icb3="" icb4="" />
+    </stock>
+  </instrument>
+  <instrument mic="MTAH" isin="NL0010801007" symbol="2IMCD" name="IMCD" type="stock" file="mtah/stock/2IMCD.h5:/MTAH_2IMCD_NL0010801007" description="" mep="MIL" vendor="Euronext">
+    <stock cfi="ESVUFN" compartment="" tradingMode="continuous" currency="EUR" shares="59,107,999">
+      <icb icb1="55" icb2="5520" icb3="552010" icb4="55201020" />
+    </stock>
+  </instrument>
+  <instrument mic="MTAH" isin="FR0000120073" symbol="2AI" name="AIR LIQUIDE" type="stock" file="mtah/stock/2AI.h5:/MTAH_2AI_FR0000120073" description="" mep="MIL" vendor="Euronext">
+    <stock cfi="ESVUFN" compartment="" tradingMode="continuous" currency="EUR" shares="578,466,642">
+      <icb icb1="55" icb2="5520" icb3="552010" icb4="55201020" />
+    </stock>
+  </instrument>
+  <instrument mic="BGEM" isin="US46625H1005" symbol="1JPM" name="J.P. MORGAN CHASE &amp; CO." type="stock" file="bgem/stock/1JPM.h5:/BGEM_1JPM_US46625H1005" description="" mep="MIL" vendor="Euronext">
+    <stock cfi="ESVUFM" compartment="" tradingMode="continuous" currency="EUR" shares="2,779,094,488">
+      <icb icb1="" icb2="" icb3="" icb4="" />
+    </stock>
+  </instrument>
+  <instrument file="xpar/etv/NGASP.h5:/XPAR_NGASP_JE00BN7KB334" isin="JE00BN7KB334" mic="XPAR" mep="PAR" name="WT NATURAL GAS" symbol="NGASP" type="etv" description="" vendor="Euronext">
+    <etv cfi="" tradingMode="" allInFees="" expenseRatio="" dividendFrequency="" currency="EUR" issuer="" shares="" />
+  </instrument>
+  <instrument file="xpar/etv/WEATP.h5:/XPAR_WEATP_JE00BN7KB664" isin="JE00BN7KB664" mic="XPAR" mep="PAR" name="WT WHEAT" symbol="WEATP" type="etv" description="" vendor="Euronext">
+    <etv cfi="" tradingMode="" allInFees="" expenseRatio="" dividendFrequency="" currency="EUR" issuer="" shares="" />
+  </instrument>
+</instruments>
