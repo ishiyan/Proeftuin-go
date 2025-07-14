@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	estr "estr/estr"
+	estr "ecb/internal/estr"
 )
 
 const configFileName = "estr.json"

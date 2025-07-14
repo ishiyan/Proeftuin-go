@@ -1,6 +1,6 @@
 {
   "actual": true,
-  "pre": true,
+  "pre": false,
   "repositoryFolder": "./repository/ecb/estr/",
   "downloadsFolder": "./downloads/ecb/estr/",
   "zipDownloadedFolder": true,

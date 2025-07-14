@@ -1,0 +1,20 @@
+2025/07/14 18:28:26 downloading to ./downloads/ecb/estr/2025/20250714/
+2025/07/14 18:28:26 actual: true
+2025/07/14 18:28:26 pre: false
+2025/07/14 18:28:26 repository folder: ./repository/ecb/estr/
+2025/07/14 18:28:26 download folder: ./downloads/ecb/estr/
+2025/07/14 18:28:26 download retry delay seconds: [60 60 60 60 120 120 180 180 240 240 300 300]
+2025/07/14 18:28:26 download timeout seconds: 180
+2025/07/14 18:28:26 verbose download: true
+2025/07/14 18:28:26 zip download folder: true
+2025/07/14 18:28:26 delete download folder: true
+2025/07/14 18:28:26 =======================================
+2025/07/14 18:28:26 Updating actual series...
+2025/07/14 18:28:26 https://data.ecb.europa.eu/data-detail-api/EST.B.EU000A2X2A25.WT
+2025/07/14 18:28:27 https://data.ecb.europa.eu/data-detail-api/EST.B.EU000A2X2A25.TT
+2025/07/14 18:28:27 https://data.ecb.europa.eu/data-detail-api/EST.B.EU000A2X2A25.NT
+2025/07/14 18:28:27 processed
+2025/07/14 18:28:27 =======================================
+2025/07/14 18:28:27 archiving from ./downloads/ecb/estr/2025/20250714 to ./downloads/ecb/estr/2025/20250714estr.zip ... done
+2025/07/14 18:28:27 deleting folder ./downloads/ecb/estr/2025/20250714 ... done
+2025/07/14 18:28:27 finished
