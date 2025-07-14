@@ -1,0 +1,7 @@
+Total Solar Irradiance (TSI)
+https://www.sidc.be/observations/space-based-timelines/tsi
+data
+https://www.sidc.be/users/stevend/ROB_TSI_composite_latest.txt
+explanation
+https://www.mdpi.com/2072-4292/14/5/1072
+http://iopscience.iop.org/article/10.3847/0004-637X/830/1/25
