@@ -11,14 +11,15 @@ import (
 	"strings"
 	"time"
 
-	estr "ecb/internal/estr"
+	"ecb/internal/eurofxref"
 )
 
 const configFileName = "eurofxref.json"
 
 type config struct {
-	Actual                      bool   `json:"actual"`
-	Pre                         bool   `json:"pre"`
+	LastDay                     bool   `json:"lastDay"`
+	Last90DayHistory            bool   `json:"last90DayHistory"`
+	FullHistory                 bool   `json:"fullHistory"`
 	RepositoryFolder            string `json:"repositoryFolder"`
 	DownloadsFolder             string `json:"downloadsFolder"`
 	ZipDownloadedFolder         bool   `json:"zipDownloadedFolder"`
@@ -72,53 +73,49 @@ func readConfig(fileName string) (*config, error) {
 	return &conf, nil
 }
 
-func downloadSeries(what estr.What, startDate time.Time, cfg *config, downloadPath string) ([]estr.Point, error) {
-	if pts, err := estr.Fetch(what, true, downloadPath, cfg.DownloadTimeoutDuration,
+func updateSeries(repository string, what eurofxref.What, cfg *config, downloadPath string) error {
+	if psm, err := eurofxref.Fetch(what, true, downloadPath, cfg.DownloadTimeoutDuration,
 		cfg.DownloadRetryDelayDurations, cfg.UserAgent, cfg.VerboseDownload); err != nil {
-		return nil, fmt.Errorf("cannot download: %w", err)
+		return fmt.Errorf("cannot download: %w", err)
 	} else {
-		flt := make([]estr.Point, 0)
-		for _, p := range pts {
-			if p.Date.Before(startDate) {
+		for currency, pts2 := range psm {
+			if len(pts2) == 0 {
+				continue // Skip empty series
+			}
+
+			log.Printf("Updating %s series for currency %s\n", eurofxref.WhatMnemonic(what), currency)
+
+			pts1, err := eurofxref.ReadCSV(repository, currency)
+			if err != nil {
+				log.Println("cannot read csv file, skipping: %w", err)
 				continue
 			}
-			flt = append(flt, p)
+
+			date := time.Date(1900, 1, 1, 0, 0, 0, 0, &time.Location{})
+			if len(pts1) > 0 {
+				date = pts1[len(pts1)-1].Date.Add(24 * time.Hour)
+			}
+
+			for _, p := range pts2 {
+				if p.Date.Before(date) {
+					continue
+				}
+				pts1 = append(pts1, p)
+			}
+
+			if err = eurofxref.WriteCSV(repository, currency, pts1); err != nil {
+				log.Println("cannot write csv file, skipping: %w", err)
+				continue
+			}
 		}
-
-		return flt, nil
+		return nil
 	}
-}
-
-func updateSeries(repository string, what estr.What, cfg *config, downloadPath string) error {
-	s1, err := estr.ReadCSV(repository, what)
-	if err != nil {
-		return fmt.Errorf("cannot read csv file: %w", err)
-	}
-
-	date := time.Date(1900, 1, 1, 0, 0, 0, 0, &time.Location{})
-	if len(s1) > 0 {
-		date = s1[len(s1)-1].Date.Add(24 * time.Hour)
-	}
-
-	s2, err := downloadSeries(what, date, cfg, downloadPath)
-	if err != nil {
-		return err
-	}
-
-	if len(s2) > 0 {
-		s1 = append(s1, s2...) // s2[1:len(s2)]...
-		if err = estr.WriteCSV(repository, what, s1); err != nil {
-			return fmt.Errorf("cannot write csv file: %w", err)
-		}
-	}
-
-	return nil
 }
 
 func main() {
 	now := time.Now()
 	t := now.Format("2006-01-02_15-04-05")
-	logFileName := fmt.Sprintf("estr_%s.log", t)
+	logFileName := fmt.Sprintf("eurofxref_%s.log", t)
 	logFile, err := os.Create(logFileName)
 	if err != nil {
 		log.Panicf("cannot create log file '%s': %s\n", logFileName, err)
@@ -135,8 +132,9 @@ func main() {
 	downloadPath := cfg.DownloadsFolder + now.Format("2006") + "/" + downloadName + "/"
 	log.Println("downloading to " + downloadPath)
 
-	log.Println("actual:", cfg.Actual)
-	log.Println("pre:", cfg.Pre)
+	log.Println("full history:", cfg.FullHistory)
+	log.Println("last 90 day history:", cfg.Last90DayHistory)
+	log.Println("last day:", cfg.LastDay)
 	log.Println("repository folder:", cfg.RepositoryFolder)
 	log.Println("download folder:", cfg.DownloadsFolder)
 	log.Println("download retry delay seconds:", cfg.DownloadRetryDelaySeconds)
@@ -146,21 +144,24 @@ func main() {
 	log.Println("delete download folder:", cfg.DeleteDownloadedFolder)
 	log.Println("=======================================")
 
-	if cfg.Pre {
-		log.Println("Updating pre-series...")
-		for _, w := range []estr.What{estr.EstrRatePre, estr.EstrVolumePre, estr.EstrTransactionsPre} {
-			if err = updateSeries(cfg.RepositoryFolder, w, cfg, downloadPath); err != nil {
-				log.Printf("%s: %s\n", estr.WhatMnemonic(w), err)
-			}
+	if cfg.FullHistory {
+		log.Println("Updating full history...")
+		if err = updateSeries(cfg.RepositoryFolder, eurofxref.EurFxRefFull, cfg, downloadPath); err != nil {
+			log.Printf("%s: %s\n", eurofxref.WhatMnemonic(eurofxref.EurFxRefFull), err)
 		}
 	}
 
-	if cfg.Actual {
-		log.Println("Updating actual series...")
-		for _, w := range []estr.What{estr.EstrRateAct, estr.EstrVolumeAct, estr.EstrTransactionsAct} {
-			if err = updateSeries(cfg.RepositoryFolder, w, cfg, downloadPath); err != nil {
-				log.Printf("%s: %s\n", estr.WhatMnemonic(w), err)
-			}
+	if cfg.Last90DayHistory {
+		log.Println("Updating last 90 days history...")
+		if err = updateSeries(cfg.RepositoryFolder, eurofxref.EurFxRef90, cfg, downloadPath); err != nil {
+			log.Printf("%s: %s\n", eurofxref.WhatMnemonic(eurofxref.EurFxRef90), err)
+		}
+	}
+
+	if cfg.LastDay {
+		log.Println("Updating last day...")
+		if err = updateSeries(cfg.RepositoryFolder, eurofxref.EurFxRefLast, cfg, downloadPath); err != nil {
+			log.Printf("%s: %s\n", eurofxref.WhatMnemonic(eurofxref.EurFxRefLast), err)
 		}
 	}
 	log.Println("processed")
@@ -214,7 +215,7 @@ func archive(downloadFolder string, zipDownloadedFolder, deleteDownloadedFolder 
 	downloadFolder = strings.TrimSuffix(downloadFolder, "/")
 
 	if zipDownloadedFolder {
-		file := fmt.Sprintf("%sestr", downloadFolder)
+		file := fmt.Sprintf("%seurofxref", downloadFolder)
 		fz := file + ".zip"
 		counter := 0
 	again:

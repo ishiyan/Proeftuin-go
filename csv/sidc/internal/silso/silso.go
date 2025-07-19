@@ -14,10 +14,10 @@ import (
 )
 
 // Landing page.
-// https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_short-term_rate/html/index.en.html
+// https://www.sidc.be/SILSO/home
 
 // Actual data page.
-// https://data.ecb.europa.eu/data/data-categories/financial-markets-and-interest-rates/euro-money-market/euro-short-term-rate
+// https://www.sidc.be/SILSO/datafiles
 //
 // Actual GET URL: Volume-weighted trimmed mean rate, percent.
 // https://data.ecb.europa.eu/data-detail-api/EST.B.EU000A2X2A25.WT

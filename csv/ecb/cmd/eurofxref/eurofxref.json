@@ -1,6 +1,7 @@
 {
-  "actual": true,
-  "pre": false,
+  "lastDay": true,
+  "last90DayHistory": true,
+  "fullHistory": true,
   "repositoryFolder": "./repository/ecb/eurofxref/",
   "downloadsFolder": "./downloads/ecb/eurofxref/",
   "zipDownloadedFolder": true,

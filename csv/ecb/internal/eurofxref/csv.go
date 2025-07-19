@@ -23,28 +23,22 @@ func ensureDirectoryExists(directory string) error {
 
 func WhatMnemonic(what What) string {
 	switch what {
-	case EstrRateAct:
-		return "rate"
-	case EstrVolumeAct:
-		return "volume"
-	case EstrTransactionsAct:
-		return "transactions"
-	case EstrRatePre:
-		return "rate.pre"
-	case EstrVolumePre:
-		return "volume.pre"
-	case EstrTransactionsPre:
-		return "transactions.pre"
+	case EurFxRefLast:
+		return "last rates"
+	case EurFxRef90:
+		return "90d rates"
+	case EurFxRefFull:
+		return "full rates"
 	default:
 		return "unknown"
 	}
 }
 
-func filePath(repository string, what What) string {
-	return repository + "estr." + WhatMnemonic(what) + ".csv"
+func filePath(repository, currency string) string {
+	return repository + "eurfxref." + currency + ".csv"
 }
 
-func ReadCSV(repository string, what What) ([]Point, error) {
+func ReadCSV(repository, currency string) ([]Point, error) {
 	var f *os.File
 	var err error
 
@@ -53,7 +47,7 @@ func ReadCSV(repository string, what What) ([]Point, error) {
 	}
 
 	series := make([]Point, 0)
-	file := filePath(repository, what)
+	file := filePath(repository, currency)
 
 	if _, err = os.Stat(file); os.IsNotExist(err) {
 		if f, err = os.Create(file); err != nil {
@@ -117,8 +111,8 @@ func ReadCSV(repository string, what What) ([]Point, error) {
 	return series, nil
 }
 
-func WriteCSV(repository string, what What, points []Point) error {
-	file := filePath(repository, what)
+func WriteCSV(repository, currency string, points []Point) error {
+	file := filePath(repository, currency)
 	backPath := file + ".bak"
 
 	if err := os.Rename(file, backPath); err != nil {

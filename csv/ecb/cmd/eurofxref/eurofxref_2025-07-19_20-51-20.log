@@ -1,0 +1,124 @@
+2025/07/19 20:51:20 downloading to ./downloads/ecb/eurofxref/2025/20250719/
+2025/07/19 20:51:20 full history: true
+2025/07/19 20:51:20 last 90 day history: true
+2025/07/19 20:51:20 last day: true
+2025/07/19 20:51:20 repository folder: ./repository/ecb/eurofxref/
+2025/07/19 20:51:20 download folder: ./downloads/ecb/eurofxref/
+2025/07/19 20:51:20 download retry delay seconds: [60 60 60 60 120 120 180 180 240 240 300 300]
+2025/07/19 20:51:20 download timeout seconds: 180
+2025/07/19 20:51:20 verbose download: true
+2025/07/19 20:51:20 zip download folder: true
+2025/07/19 20:51:20 delete download folder: true
+2025/07/19 20:51:20 =======================================
+2025/07/19 20:51:20 Updating full history...
+2025/07/19 20:51:20 http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml
+2025/07/19 20:51:21 Updating full rates series for currency CYP
+2025/07/19 20:51:21 Updating full rates series for currency EEK
+2025/07/19 20:51:21 Updating full rates series for currency LTL
+2025/07/19 20:51:21 Updating full rates series for currency PLN
+2025/07/19 20:51:21 Updating full rates series for currency TRY
+2025/07/19 20:51:21 Updating full rates series for currency THB
+2025/07/19 20:51:21 Updating full rates series for currency DKK
+2025/07/19 20:51:21 Updating full rates series for currency ROL
+2025/07/19 20:51:21 Updating full rates series for currency AUD
+2025/07/19 20:51:21 Updating full rates series for currency CNY
+2025/07/19 20:51:21 Updating full rates series for currency HUF
+2025/07/19 20:51:21 Updating full rates series for currency SKK
+2025/07/19 20:51:21 Updating full rates series for currency RUB
+2025/07/19 20:51:21 Updating full rates series for currency SIT
+2025/07/19 20:51:21 Updating full rates series for currency BRL
+2025/07/19 20:51:21 Updating full rates series for currency ISK
+2025/07/19 20:51:21 Updating full rates series for currency SEK
+2025/07/19 20:51:21 Updating full rates series for currency JPY
+2025/07/19 20:51:21 Updating full rates series for currency CZK
+2025/07/19 20:51:21 Updating full rates series for currency GBP
+2025/07/19 20:51:21 Updating full rates series for currency HRK
+2025/07/19 20:51:21 Updating full rates series for currency IDR
+2025/07/19 20:51:21 Updating full rates series for currency PHP
+2025/07/19 20:51:21 Updating full rates series for currency USD
+2025/07/19 20:51:21 Updating full rates series for currency MTL
+2025/07/19 20:51:21 Updating full rates series for currency CHF
+2025/07/19 20:51:21 Updating full rates series for currency NOK
+2025/07/19 20:51:21 Updating full rates series for currency TRL
+2025/07/19 20:51:21 Updating full rates series for currency CAD
+2025/07/19 20:51:21 Updating full rates series for currency HKD
+2025/07/19 20:51:21 Updating full rates series for currency RON
+2025/07/19 20:51:21 Updating full rates series for currency NZD
+2025/07/19 20:51:21 Updating full rates series for currency SGD
+2025/07/19 20:51:21 Updating full rates series for currency MYR
+2025/07/19 20:51:21 Updating full rates series for currency MXN
+2025/07/19 20:51:21 Updating full rates series for currency ILS
+2025/07/19 20:51:21 Updating full rates series for currency LVL
+2025/07/19 20:51:21 Updating full rates series for currency ZAR
+2025/07/19 20:51:21 Updating full rates series for currency BGN
+2025/07/19 20:51:21 Updating full rates series for currency INR
+2025/07/19 20:51:21 Updating full rates series for currency KRW
+2025/07/19 20:51:21 Updating last 90 days history...
+2025/07/19 20:51:21 http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml
+2025/07/19 20:51:21 Updating 90d rates series for currency USD
+2025/07/19 20:51:21 Updating 90d rates series for currency JPY
+2025/07/19 20:51:21 Updating 90d rates series for currency HUF
+2025/07/19 20:51:21 Updating 90d rates series for currency BRL
+2025/07/19 20:51:21 Updating 90d rates series for currency HKD
+2025/07/19 20:51:21 Updating 90d rates series for currency MXN
+2025/07/19 20:51:21 Updating 90d rates series for currency PHP
+2025/07/19 20:51:22 Updating 90d rates series for currency CHF
+2025/07/19 20:51:22 Updating 90d rates series for currency NOK
+2025/07/19 20:51:22 Updating 90d rates series for currency PLN
+2025/07/19 20:51:22 Updating 90d rates series for currency SGD
+2025/07/19 20:51:22 Updating 90d rates series for currency CNY
+2025/07/19 20:51:22 Updating 90d rates series for currency INR
+2025/07/19 20:51:22 Updating 90d rates series for currency CZK
+2025/07/19 20:51:22 Updating 90d rates series for currency RON
+2025/07/19 20:51:22 Updating 90d rates series for currency TRY
+2025/07/19 20:51:22 Updating 90d rates series for currency DKK
+2025/07/19 20:51:22 Updating 90d rates series for currency GBP
+2025/07/19 20:51:22 Updating 90d rates series for currency CAD
+2025/07/19 20:51:22 Updating 90d rates series for currency ZAR
+2025/07/19 20:51:22 Updating 90d rates series for currency BGN
+2025/07/19 20:51:22 Updating 90d rates series for currency KRW
+2025/07/19 20:51:22 Updating 90d rates series for currency MYR
+2025/07/19 20:51:22 Updating 90d rates series for currency SEK
+2025/07/19 20:51:22 Updating 90d rates series for currency ISK
+2025/07/19 20:51:22 Updating 90d rates series for currency AUD
+2025/07/19 20:51:22 Updating 90d rates series for currency IDR
+2025/07/19 20:51:22 Updating 90d rates series for currency ILS
+2025/07/19 20:51:22 Updating 90d rates series for currency NZD
+2025/07/19 20:51:22 Updating 90d rates series for currency THB
+2025/07/19 20:51:22 Updating last day...
+2025/07/19 20:51:22 https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml
+2025/07/19 20:51:22 Updating last rates series for currency USD
+2025/07/19 20:51:22 Updating last rates series for currency JPY
+2025/07/19 20:51:22 Updating last rates series for currency GBP
+2025/07/19 20:51:22 Updating last rates series for currency RON
+2025/07/19 20:51:22 Updating last rates series for currency THB
+2025/07/19 20:51:22 Updating last rates series for currency HUF
+2025/07/19 20:51:22 Updating last rates series for currency PLN
+2025/07/19 20:51:22 Updating last rates series for currency CHF
+2025/07/19 20:51:22 Updating last rates series for currency ISK
+2025/07/19 20:51:22 Updating last rates series for currency CAD
+2025/07/19 20:51:22 Updating last rates series for currency INR
+2025/07/19 20:51:22 Updating last rates series for currency MYR
+2025/07/19 20:51:22 Updating last rates series for currency BRL
+2025/07/19 20:51:22 Updating last rates series for currency MXN
+2025/07/19 20:51:22 Updating last rates series for currency CZK
+2025/07/19 20:51:22 Updating last rates series for currency CNY
+2025/07/19 20:51:22 Updating last rates series for currency ILS
+2025/07/19 20:51:22 Updating last rates series for currency SGD
+2025/07/19 20:51:22 Updating last rates series for currency DKK
+2025/07/19 20:51:22 Updating last rates series for currency HKD
+2025/07/19 20:51:22 Updating last rates series for currency NZD
+2025/07/19 20:51:22 Updating last rates series for currency PHP
+2025/07/19 20:51:22 Updating last rates series for currency NOK
+2025/07/19 20:51:22 Updating last rates series for currency TRY
+2025/07/19 20:51:22 Updating last rates series for currency AUD
+2025/07/19 20:51:22 Updating last rates series for currency IDR
+2025/07/19 20:51:22 Updating last rates series for currency KRW
+2025/07/19 20:51:22 Updating last rates series for currency ZAR
+2025/07/19 20:51:22 Updating last rates series for currency BGN
+2025/07/19 20:51:22 Updating last rates series for currency SEK
+2025/07/19 20:51:22 processed
+2025/07/19 20:51:22 =======================================
+2025/07/19 20:51:23 archiving from ./downloads/ecb/eurofxref/2025/20250719 to ./downloads/ecb/eurofxref/2025/20250719eurofxref.zip ... done
+2025/07/19 20:51:23 deleting folder ./downloads/ecb/eurofxref/2025/20250719 ... done
+2025/07/19 20:51:23 finished
