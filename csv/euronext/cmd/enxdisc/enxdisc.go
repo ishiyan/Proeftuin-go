@@ -244,9 +244,20 @@ func matchIsinMicMnemonic(existing *euronext.XmlInstruments, discovered *discove
 	return matched
 }
 
+func fixAmpersand(s string) string {
+	s = strings.ReplaceAll(s, "&AMP;", "&amp;")
+	s = strings.ReplaceAll(s, "&Amp;", "&amp;")
+	return s
+}
+
 func appendToXmlInstrumentsFile(filePath string, now time.Time, instruments []euronext.XmlInstrument) error {
 	lines := now.Format("  <!-- 20060102_150405 -->") + "\n"
 	for _, ins := range instruments {
+		ins.Name = fixAmpersand(ins.Name)
+		if ins.Description != nil {
+			s := fixAmpersand(*ins.Description)
+			ins.Description = &s
+		}
 		lines += euronext.XmlInstrumentToXmlString(&ins)
 	}
 	lines += "</instruments>\n"
