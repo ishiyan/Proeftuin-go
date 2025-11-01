@@ -52,9 +52,9 @@ type CategoryInfo struct {
 
 func createKnownMicToMepMapping() map[string]string {
 	return map[string]string{
-		"XAMS": "AMS", "ALXA": "AMS", "TNLA": "AMS",
+		"XAMS": "AMS", "ALXA": "AMS", "TNLA": "AMS", "XAMC": "AMS",
 		"XBRU": "BRU", "ALXB": "BRU", "ENXB": "BRU", "MLXB": "BRU", "TNLB": "BRU",
-		"XPAR": "PAR", "ALXP": "PAR", "XMLI": "PAR",
+		"XPAR": "PAR", "ALXP": "PAR", "XMLI": "PAR", "XPMC": "PAR",
 		"XLIS": "LIS", "ALXL": "LIS", "ENXL": "LIS",
 		"XDUB": "DUB", "XMSM": "DUB", "XESM": "DUB", "XACD": "DUB",
 		"XOSL": "OSL", "XOAS": "OSL", "MERK": "OSL", "VPXB": "OSL",
@@ -67,9 +67,9 @@ func createKnownMicToMepMapping() map[string]string {
 
 func createKnownEuronextMics() []string {
 	return []string{
-		"XAMS", "ALXA", "TNLA",
+		"XAMS", "ALXA", "TNLA", "XAMC",
 		"XBRU", "ALXB", "ENXB", "MLXB", "TNLB",
-		"XPAR", "ALXP", "XMLI",
+		"XPAR", "ALXP", "XMLI", "XPMC",
 		"XLIS", "ALXL", "ENXL",
 		"XDUB", "XMSM", "XESM", "XACD",
 		"XOSL", "XOAS", "MERK", "VPXB",
