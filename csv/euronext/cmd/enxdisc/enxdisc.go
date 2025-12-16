@@ -251,6 +251,10 @@ func appendToXmlInstrumentsFile(filePath string, now time.Time, instruments []eu
 	}
 	lines = strings.ReplaceAll(lines, "&AMP;", "&amp;")
 	lines = strings.ReplaceAll(lines, "&Amp;", "&amp;")
+	lines = strings.ReplaceAll(lines, "& ", "&amp; ")
+	lines = strings.ReplaceAll(lines, "&G", "&amp;G")
+	lines = strings.ReplaceAll(lines, "&L", "&amp;L")
+	lines = strings.ReplaceAll(lines, "&P", "&amp;P")
 	lines += "</instruments>\n"
 
 	// Read the entire file into memory
