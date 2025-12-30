@@ -106,6 +106,11 @@ func (i *index) downloadSeries(startDate time.Time) ([]mscsv.Point, error) {
 		return nil, fmt.Errorf("cannot donload: %w", err)
 	} else {
 		series := make([]mscsv.Point, 0)
+		secs := msts.TimeSeries.Security
+		if len(secs) == 0 {
+			fmt.Println("no data downloaded in time series")
+			return series, nil
+		}
 		for _, p := range msts.TimeSeries.Security[0].HistoryDetail {
 			series = append(series, mscsv.Point{
 				Date:  p.EndDate.Time,
