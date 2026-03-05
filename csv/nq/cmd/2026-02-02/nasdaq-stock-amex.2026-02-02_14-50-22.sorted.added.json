@@ -1,0 +1,59 @@
+{
+  "updated": "2026-02-02_14-50-22",
+  "symbols": [
+    {
+      "mnemonic": "EGG",
+      "name": "Enigmatig Limited Class A Ordinary Shares",
+      "company": "Enigmatig Limited Class A Ordinary Shares",
+      "companyUrl": "",
+      "description": "Enigmatig is an international business enabler dedicated to helping small and medium-sized enterprises (SMEs) achieve their international ambitions. Since 2010, we have connected businesses with the expertise, infrastructure, and regulatory support needed to succeed in cross-border markets. With deep capabilities in FX brokerage consultancy, licensing, RegTech, FinTech, and corporate services, Enigmatig delivers tailored solutions across the full business lifecycle - from company incorporation to ongoing compliance. Our experienced team specializes in navigating complex regulatory environments across global financial hubs and key offshore centers, including London, Cyprus, and Belize. Headquartered in Singapore with a strategic presence in Hong Kong, Shanghai, London, and a representative desk in Bangkok, Enigmatig supports a diverse and growing international client base.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Class A Ordinary Shares",
+      "assetClass": "STOCKS",
+      "industry": "Professional Services",
+      "sector": "Consumer Discretionary",
+      "region": "",
+      "expenseRatio": ""
+    },
+    {
+      "mnemonic": "GCDT",
+      "name": "Green Circle Decarbonize Technology Limited Ordinary Shares",
+      "company": "Green Circle Decarbonize Technology Limited Ordinary Shares",
+      "companyUrl": "",
+      "description": "Green Circle Decarbonize Technology Limited is a Cayman Islands holding company operating through its Hong Kong subsidiary, Boca International Limited. The Company is a provider of advanced energy saving solutions supported by proprietary phase change thermal energy storage materials and thermal engineering services.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Ordinary Shares",
+      "assetClass": "STOCKS",
+      "industry": "Industrial Machinery/Components",
+      "sector": "Industrials",
+      "region": "",
+      "expenseRatio": ""
+    },
+    {
+      "mnemonic": "MINE",
+      "name": "Mayfair Gold Corp. Common Shares",
+      "company": "Mayfair Gold Corp. Common Shares",
+      "companyUrl": "",
+      "description": "Mayfair Gold is a Canadian gold development stage company focused on advancing the 100% controlled Fenn-Gib Project in the Timmins region of Northern Ontario. The Company's pre-feasibility study outlines the potential to develop Fenn-Gib into a new Canadian gold producer for initial development capital of $450 million, with a base case payback period of 2.7 years and cumulative free cash flow of $896 million over the first six years of production based on a US$3,100 /oz gold price. The Company is advancing permitting activities, detailed engineering and stakeholder engagement with the goal of starting construction in 2028 with initial production in 2030.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Common Shares",
+      "assetClass": "STOCKS",
+      "industry": "Oil \u0026 Gas Production",
+      "sector": "Energy",
+      "region": "",
+      "expenseRatio": ""
+    }
+  ]
+}

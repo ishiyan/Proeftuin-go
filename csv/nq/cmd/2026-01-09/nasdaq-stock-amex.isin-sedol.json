@@ -1,0 +1,1452 @@
+[
+  {
+    "mnemonic": "IMO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CET",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BMNR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EQX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CANF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NGD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UEC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BTG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ORLA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SIM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UUUU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SEB",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ARMN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DNN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PRK",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TGB",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NHC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SVM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VZLA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "USAS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CNL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SLSR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IAUX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SLI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NBY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NAK",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SCCD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SCCG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SCCE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SCCF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TMP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UAMY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ASM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TMQ",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AEF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GROY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MTA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IDR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NFGC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GAU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NEWP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ITRG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "URG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "WRN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ISOU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FLYX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "REPX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CMCL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UMAC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BHB",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EXOD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "THM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OBE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VKI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LCTX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DVS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ARMP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BRBS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CTGO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LXFR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VENU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ELLO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "HYLN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ELA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EVI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "RLGT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BKTI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CIX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PLG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TII",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLDG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TRX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VGZ",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FTF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ELMD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "STXS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "USBC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OZ",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CATX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SMJF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GENC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AREN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LUD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "REI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LODE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MPTI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "INFU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NEN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SLND",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "STRW",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CMT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MRT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "COE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ACU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PLX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "KULR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GTE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TGEN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GORO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "JMG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CITR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ESP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PMI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LGCY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GRO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EPM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TCGL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GPUS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FURY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "WWR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OPTT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "INTT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CTM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "POAS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "XTNT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LPA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FSP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PZG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BURU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FSI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MHH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PTHS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AGIG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLV",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IOR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CEV",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MCRP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UAVS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ZONE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DIT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DDC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MPU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NSRX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "XPL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TRT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "WYY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MAIA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BDL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CVU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GNS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OSTX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BRIA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OTH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IBO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PED",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OPHC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SACH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NRXS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CVM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "INDO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AXIL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "APT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ZDGE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ATNM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VNRX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "KNRX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BHM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MGLD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "COHN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "INUV",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ATCH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TOON",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MYO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "INLX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "RGNT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ACCS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SIF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LGL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VNTG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NTIP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CCEL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PTN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IGC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SER",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "RYDE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NNVC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CHOW",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LSF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TOPS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PLAG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LGPS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "RVP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AUST",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MLSS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "JOB",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MXC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "APUS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "KAPA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MYND",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EONR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ROLR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BATL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CKX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BGI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TOPP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TMDE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AIRI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PMNT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MMA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MWG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BRN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "YCBD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AMS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CVR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SRXH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AEON",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IHT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UUU",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TOVX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AWX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MSN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DSS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AMBO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CLDI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AMZE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "TPET",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MITQ",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CPHI",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SYNX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NCL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BQ",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "HCWC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SOAR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "MTNB",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GBR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ITP",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AIM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OGEN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PHGE",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VTAK",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "AZTR",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DXF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PW",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PAPL",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SBEV",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SGN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BCV",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BCV^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "BUDA",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CIK",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CLM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "CRF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "DHY",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EAD",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ECF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ECF^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EIM",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ERC",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "ERH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "EVV",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FAX",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FCO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "FJET",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GGN",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GGN^B",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLQ",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLU^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GLU^B",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GPUS^D",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GRAF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "GRF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "IAF",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "LEGT",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NBH",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NHS",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NML",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "NRO",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "OPP^C",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^B",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^C",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^D",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^E",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^G",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^H",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PCG^I",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PHXE^",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "PW^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "RCG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "REED",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "SACH^A",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "UTG",
+    "ISIN": "",
+    "SEDOL": ""
+  },
+  {
+    "mnemonic": "VFL",
+    "ISIN": "",
+    "SEDOL": ""
+  }
+]

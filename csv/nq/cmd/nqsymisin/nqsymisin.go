@@ -11,6 +11,8 @@ import (
 	"nq/nyse"
 )
 
+const configFileName = "nqsymisin.json"
+
 type symbols struct {
 	Updated string                `json:"updated"`
 	Symbols []nasdaq.NasdaqSymbol `json:"symbols"`
@@ -20,6 +22,10 @@ type IsinSedolSymbol struct {
 	Mnemonic string `json:"mnemonic"`
 	ISIN     string `json:"ISIN"`
 	SEDOL    string `json:"SEDOL"`
+}
+
+type config struct {
+	UrlPrefix string `json:"urlPrefix"`
 }
 
 func main() {
@@ -47,6 +53,11 @@ func main() {
 		symbolsFileName = "nasdaq-etf.json"
 		isinSedolFileName = "nasdaq-etf.isin-sedol.json"
 	}
+
+	//cfg, err := readConfig(configFileName)
+	//if err != nil {
+	//	panic(fmt.Sprintf("cannot read configuration: %s", err))
+	//}
 
 	fmt.Println("reading " + symbolsFileName)
 
@@ -117,4 +128,23 @@ func readSymbols(fileName string) (*symbols, error) {
 	}
 
 	return &s, nil
+}
+
+func readConfig(fileName string) (*config, error) {
+	var conf config
+
+	f, err := os.Open(fileName)
+	if err != nil {
+		return &conf, fmt.Errorf("cannot open '%s' file: %w", fileName, err)
+	}
+	defer f.Close()
+
+	decoder := json.NewDecoder(f)
+
+	err = decoder.Decode(&conf)
+	if err != nil {
+		return &conf, fmt.Errorf("cannot decode '%s' file: %w", fileName, err)
+	}
+
+	return &conf, nil
 }

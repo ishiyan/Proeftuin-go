@@ -1,0 +1,7 @@
+=======================================
+2026-02-02_15-22-04
+=======================================
+reading nasdaq-etf.json
+retrieved 4433 symbols
+cannot do request, retries (5 of 5): Get "https://api.nasdaq.com/api/quote/MSMR/info?assetclass=etf": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+finished: 2026-02-02_16-31-00

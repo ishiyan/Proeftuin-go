@@ -1,0 +1,35 @@
+https://api.nasdaq.com/api/quote/NVDA/realtime-trades?limit=99999999&fromTime=09:30
+from end of February 2026 this returns no data, see queries-realtime-trades-*.json
+
+https://api.nasdaq.com/api/screener/stocks?tableonly=true&exchange=nasdaq&limit=10000
+list of all active stocks, see queries-screener-*.json
+
+https://api.nasdaq.com/api/quote/NVDA/info?assetclass=stocks
+stock info, see queries-info-*.json
+
+https://api.nasdaq.com/api/quote/NVDA/summary?assetclass=stocks
+stock summary, see queries-info-*.json
+
+https://www.nyse.com/api/nyseservice/v1/quotes?symbol=NVDA
+info including eod price history, see queries-nyseservice-*.json
+
+https://api.nasdaq.com/api/market-info
+market info, see queries-market-info-*.json
+
+https://charting.nasdaq.com/data/charting/historical?symbol=NVDA&date=2000-01-01~2026-03-04&
+denied
+
+https://api.nasdaq.com/api/quote/NVDA/chart?assetclass=stocks&charttype=rs
+1-min intraday (no ohlc), see queries-charttype-rs-*.json
+
+https://www.nasdaq.com/api/news/topic/articlebysymbol?q=NVDA|STOCKS&offset=0&limit=99&fallback=true
+news, see queries-news-*.json
+
+https://www.sec.gov/files/company_tickers.json
+all tickers, see queries-secgov-tickers-*.json
+
+https://data.sec.gov/submissions/CIK0000843006.json
+uses CJK from the response above, see queries-secgov-submissions-*.json
+
+
+https://github.com/Nasdaq/NasdaqCloudDataService-REST-API/blob/main/restapi/bars.md

@@ -1,0 +1,23 @@
+{
+  "updated": "2026-02-02_15-22-04",
+  "symbols": [
+    {
+      "mnemonic": "CUSD",
+      "name": "CrossingBridge Ultra-Short Duration ETF",
+      "company": "",
+      "companyUrl": "",
+      "description": "",
+      "currency": "USD",
+      "mic": "XNGM",
+      "exchange": "NASDAQ-GM",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "",
+      "assetClass": "ETF",
+      "industry": "",
+      "sector": "",
+      "region": "",
+      "expenseRatio": "N/A"
+    }
+  ]
+}

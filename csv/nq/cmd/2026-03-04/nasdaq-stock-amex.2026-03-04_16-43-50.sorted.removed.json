@@ -1,0 +1,59 @@
+{
+  "updated": "2026-03-04_16-43-50",
+  "symbols": [
+    {
+      "mnemonic": "ARMN",
+      "name": "Aris Mining Corporation Common Shares",
+      "company": "Aris Mining Corporation Common Shares",
+      "companyUrl": "",
+      "description": "Founded in September 2022, Aris Mining was established with a vision to build a leading South America -focused gold mining company. The Company's strategy combines current production and cashflow generation with transformational growth driven by expansions of its operating assets, exploration, and development projects. Aris Mining intends to unlock value through scale, diversification and execution. The Company is listed on the TSX (ARIS) and the NYSE-American (ARMN) and is led by an experienced team with a strong track record of value creation, operational excellence, financial discipline and good corporate governance in the gold mining industry. Aris Mining operates two underground gold mines in Colombia : Segovia and Marmato, which together produced 256,503 ounces of gold in 2025.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Common Shares",
+      "assetClass": "STOCKS",
+      "industry": "N/A",
+      "sector": "N/A",
+      "region": "",
+      "expenseRatio": ""
+    },
+    {
+      "mnemonic": "EGG",
+      "name": "Enigmatig Limited Class A Ordinary Shares",
+      "company": "Enigmatig Limited Class A Ordinary Shares",
+      "companyUrl": "",
+      "description": "Enigmatig is an international business enabler dedicated to helping small and medium-sized enterprises (SMEs) achieve their international ambitions. Since 2010, we have connected businesses with the expertise, infrastructure, and regulatory support needed to succeed in cross-border markets. With deep capabilities in FX brokerage consultancy, licensing, RegTech, FinTech, and corporate services, Enigmatig delivers tailored solutions across the full business lifecycle - from company incorporation to ongoing compliance. Our experienced team specializes in navigating complex regulatory environments across global financial hubs and key offshore centers, including London, Cyprus, and Belize. Headquartered in Singapore with a strategic presence in Hong Kong, Shanghai, London, and a representative desk in Bangkok, Enigmatig supports a diverse and growing international client base.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Class A Ordinary Shares",
+      "assetClass": "STOCKS",
+      "industry": "Professional Services",
+      "sector": "Consumer Discretionary",
+      "region": "",
+      "expenseRatio": ""
+    },
+    {
+      "mnemonic": "TCGL",
+      "name": "TechCreate Group Ltd. Class A Ordinary Shares",
+      "company": "TechCreate Group Ltd. Class A Ordinary Shares",
+      "companyUrl": "",
+      "description": "TechCreate Group Ltd. is a Singapore -based payment software solutions provider. Founded in 2015, the Company delivers digital payment and infrastructure solutions to financial institutions, telecommunications, deposit insurance, and enterprises. TechCreate's offerings include real-time payment systems, digital banking platforms, API management, cybersecurity, and cloud computing. Its proprietary Artificial Intelligence Real-Time Engine (AI-RTE) is designed to enable fast, secure, and efficient payment processing.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Class A Ordinary Shares",
+      "assetClass": "STOCKS",
+      "industry": "EDP Services",
+      "sector": "Technology",
+      "region": "",
+      "expenseRatio": ""
+    }
+  ]
+}

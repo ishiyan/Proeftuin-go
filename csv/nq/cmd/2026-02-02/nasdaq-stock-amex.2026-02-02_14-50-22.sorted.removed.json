@@ -1,0 +1,23 @@
+{
+  "updated": "2026-02-02_14-50-22",
+  "symbols": [
+    {
+      "mnemonic": "JMG",
+      "name": "JM Group Limited Ordinary Shares",
+      "company": "JM Group Limited Ordinary Shares",
+      "companyUrl": "",
+      "description": "JM Group is a Hong Kong-headquartered sourcing solutions provider. Aimed to promote better lifestyle choices for consumers, we globally source and wholesale a wide array of products that can be broadly classified into eight 8 major categories: i sports and outdoor recreation products, ii toys and games, iii seasonable decor and party supplies, iv electronics, v home and tools, vi school, office and art supplies, vii clothing, shoes and accessories, vii personal care products, and viii others. Our customers range from retailers, distributors to wholesalers across regions, including Australia, Hong Kong, Mexico and the United States.",
+      "currency": "USD",
+      "mic": "AMXO",
+      "exchange": "AMEX",
+      "isListed": false,
+      "isNasdaq100": false,
+      "stockType": "Ordinary Shares",
+      "assetClass": "STOCKS",
+      "industry": "Industrial Specialties",
+      "sector": "Consumer Discretionary",
+      "region": "",
+      "expenseRatio": ""
+    }
+  ]
+}
