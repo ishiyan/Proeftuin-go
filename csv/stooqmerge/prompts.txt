@@ -1,0 +1,165 @@
+In the 'd:/stooq.com-db-h' folder I have the list of weekly subfolders in format 'YYYY-MM-DD', e.g.
+d:/stooq.com-db-h/2025-12-27/
+
+In every weekly subfolder, I have 3 zip files for US securities.
+- '5_us_txt.zip'
+- 'h_us_txt.zip'
+- 'd_us_txt.zip'
+zip files containing 5-min, hourly and daily historical stock data respectively.
+
+Every such zip file has the following structure
+
+--------------
+'5_us_txt.zip'
+data/5 min/us/nasdaq etfs/*.us.txt
+data/5 min/us/nasdaq stocks/1/*.us.txt
+data/5 min/us/nasdaq stocks/2/*.us.txt
+data/5 min/us/nasdaq stocks/3/*.us.txt
+data/5 min/us/nyse stocks/1/*.us.txt
+data/5 min/us/nyse stocks/2/*.us.txt
+data/5 min/us/nyse etfs/1/*.us.txt
+data/5 min/us/nyse etfs/2/*.us.txt
+data/5 min/us/nysemkt stocks/*.us.txt
+data/5 min/us/nysemkt etfs/*.us.txt
+
+every *.us.txt file is a CSV file starting with:
+<TICKER>,<PER>,<DATE>,<TIME>,<OPEN>,<HIGH>,<LOW>,<CLOSE>,<VOL>,<OPENINT>
+ZYXIQ.US,5,20250731,153000,2.57,2.57,2.401,2.415,3317,0
+ZYXIQ.US,5,20250731,153500,2.4022,2.4022,2.4022,2.4022,659,0
+
+--------------
+'h_us_txt.zip'
+data/hourly/us/nasdaq etfs/*.us.txt
+data/hourly/us/nasdaq stocks/1/*.us.txt
+data/hourly/us/nasdaq stocks/2/*.us.txt
+data/hourly/us/nasdaq stocks/3/*.us.txt
+data/hourly/us/nyse stocks/1/*.us.txt
+data/hourly/us/nyse stocks/2/*.us.txt
+data/hourly/us/nyse etfs/1/*.us.txt
+data/hourly/us/nyse etfs/2/*.us.txt
+data/hourly/us/nysemkt stocks/*.us.txt
+data/hourly/us/nysemkt etfs/*.us.txt
+
+every *.us.txt file is a CSV file starting with:
+<TICKER>,<PER>,<DATE>,<TIME>,<OPEN>,<HIGH>,<LOW>,<CLOSE>,<VOL>,<OPENINT>
+ZNB.US,60,20240411,160000,572.5,572.5,534.5,561,2.2416,0
+ZNB.US,60,20240411,170000,560,570,560,570,2.04,0
+
+--------------
+'h_us_txt.zip'
+data/daily/us/nasdaq etfs/*.us.txt
+data/daily/us/nasdaq stocks/1/*.us.txt
+data/daily/us/nasdaq stocks/2/*.us.txt
+data/daily/us/nasdaq stocks/3/*.us.txt
+data/daily/us/nyse stocks/1/*.us.txt
+data/daily/us/nyse stocks/2/*.us.txt
+data/daily/us/nyse etfs/1/*.us.txt
+data/daily/us/nyse etfs/2/*.us.txt
+data/daily/us/nysemkt stocks/*.us.txt
+data/daily/us/nysemkt etfs/*.us.txt
+
+every *.us.txt file is a CSV file starting with:
+<TICKER>,<PER>,<DATE>,<TIME>,<OPEN>,<HIGH>,<LOW>,<CLOSE>,<VOL>,<OPENINT>
+XRX.US,D,19770103,000000,25.5203,25.7959,25.5203,25.5793,165195.74519846,0
+XRX.US,D,19770104,000000,25.5793,25.6848,25.1972,25.2524,139287.69436089,0
+
+--------------
+In all three zip files, we name folders like 'nasdaq etfs', 'nasdaq stocks', etc., leaf folders.
+If the number of *.us.txt files is less than 2000, they are residing in the leaf folder.
+If the number of *.us.txt files is greater than 2000, they are residing in the nect '1', '2', etc. sub-folders, so each subfolder contains not greater than 2000 files.
+
+--------------
+In this directory ('stooqmerge'), you will create a Golang command line application, stooqmerge.go, which does the following.
+
+- it has a JSON configuration file, stookmerge.json, which has the following parameters
+  - the path to 'YYYY-MM-DD' folder where input data is located
+  - the path to the repository folder ('stook') where merged data will be stored
+- application reads each *.us.txt file from all three zip files. For every file
+  - it forms a merged file path, e.g.  input file 'data/daily/us/nasdaq stocks/1/goog.us.txt' goes to '{repository folder}/us/nasdaq stocks/goog.1d.csv'
+    For 5 minutes it will be 'goog.5m.csv', for hourly data it will be 'goog.1h.csv'
+  - the format of the merged CSV file rows is '<DATETIME>;<OPEN>;<HIGH>;<LOW>;<CLOSE>;<VOLUME>'
+    - fields are separated with semicolon
+    - no header line is needed
+    - DATETIME format is 'YYYY-MM-DD' (date only) for daily data and 'YYYY-MM-DD hh:mm:ss' for houly and 5 minutes
+    - rows are sorted by increasing date-time field
+  - if the merged file dows not exist, application will create it filling it with data read from the input file (converting to the format described above)
+  - if the merged file exists, application reads it to memory and prepends/appends new rows to it
+    - if input data contains records with datetime before the first record of the merged data, application prepends them
+    - if input data contains records with datetime after the last record of the merged data, application appends them
+    - for all rows with the same datetime in both input and merged data, application compares values (open, high, low, close, volume)
+      if at least on value pair is different, it logs both records
+  - after all input rows have been processed, application writes the updated merged file and logs the file name
+
+Now, you are an expert Golang developer.
+Write the stooqmerge.go application.
+Use only Golang standard library and follow the best practices.
+ 
+===============================================================================================
+
+When the "merged" and "input" lines are different, we log the difference as, for instance,
+
+DIFF d:\stooq\us\nasdaq etfs\aadr_1d.csv at 2024-01-05: merged=[54.865;54.865;54.865;54.865;224] input=[54.865;55.01;54.865;55.01;224]
+
+In our usage, "input" always has a more recent data, so we consider it more recent or corrected.
+There may be two different situations:
+- If the "volume" in both records is the same, we consider the "input" more correct, and replace "merged" record with the "input" one.
+  in the "DIFF" logging text append ", corrected"
+- If the "volume" is different, we consider this situation as an adjustment of data after a stock split. For instance,
+
+  DIFF d:\stooq\us\nasdaq etfs\ctec_1d.csv at 2020-10-30: merged=[15.279;15.279;14.9013;15.0802;50101.941134757] input=[74.52;74.52;72.677;73.5495;10272.6]
+  DIFF d:\stooq\us\nasdaq etfs\ctec_1d.csv at 2020-11-02: merged=[15.269;15.372;15.2291;15.372;15962.45082572] input=[74.4705;74.973;74.2755;74.973;3272.84]
+  ...
+  DIFF d:\stooq\us\nasdaq etfs\ctec_1d.csv at 2024-01-04: merged=[10.13;10.3;10.13;10.21;18798] input=[49.7574;50.5925;49.7574;50.15;3827.05]
+  DIFF d:\stooq\us\nasdaq etfs\ctec_1d.csv at 2024-01-05: merged=[10.06;10.28;10.05;10.07;11417] input=[49.4134;50.4935;49.3642;49.6592;2324.36]
+
+  In this case:
+  - replace the merged record with the input one
+    in the "DIFF" logging text append ", updated"
+  - on the input record with the earliest date when this appears (2020-10-30 in the example above),
+    calculate an adjustment_ratio ar = volume_input / volume_merged = 10272.6 / 50101.941134757 = 0.205033972
+  - for all "merged" records that have date less than the earliest date mentioned above, adjust values as follows:
+    - volume_merged = volume_merged * adjustment_ratio
+    - open_merged = open_merged / adjustment_ratio
+    - high_merged = high_merged / adjustment_ratio
+    - low_merged = low_merged / adjustment_ratio
+    - close_merged = close_merged / adjustment_ratio
+    in the "DIFF" logging text append ", adjusted with ratio " + adjustment_ratio
+    
+===============================================================================================
+
+On lines 331-338, we check if only volume stays the same to detect the "correction" case.
+
+Now we should add additional check if only volume is diffewrent, and if at least one of prices (open, high, low, close) stays the same.
+This will mean that the only volume has been corrected.
+
+===============================================================================================
+
+When we write CSV, we do not compress it. Use Go standard library GZ compression/decompression when reading/writing CSV files.
+The file names should be like ^_1d.csv.gz, *_1h.csv.gz, ^_5m.csv.gz
+
+===============================================================================================
+
+Now we process entries in the timeframeInfo slixe. Make a single required command line argument which specifies the country to process.
+If np argument is given, print help message stating something like "please specify a country to process"
+
+===============================================================================================
+
+Now we specify an input folder in the stookmerge.json file like
+
+"input_folder": "d:/stooq.com-db-h/2025-12-27"
+
+Instead, we want to specify the date part of the input folder as a command line argumant.
+We should always specify two arguments: country and date.
+The help message should be also adjusted.
+
+===============================================================================================
+
+In data for the country "world", different leaf folders have different file sufficies, e.g.
+
+1mfry.b.txt
+alice.v.txt
+audcad.txt
+
+How to change code to support multiple patterns, like "", ".b", ".v"?
+
+
