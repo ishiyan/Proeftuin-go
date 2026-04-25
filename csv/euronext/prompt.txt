@@ -1,0 +1,568 @@
+When in browser I enter the URL
+https://live.euronext.com/en/ajax/getIntradayPriceFilteredData/FR0003500008-XPAR
+before April the 2nd I was getting a JSON response like
+
+```json
+{
+    "rows": [
+        {
+            "tradeId": "1U9GHRNVQ",
+            "time": "17:09:41",
+            "price": "0.0041",
+            "volume": "10,000",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1U9GHRKAH",
+            "time": "16:24:15",
+            "price": "0.0028",
+            "volume": "1,600",
+            "type": "Exchange Continuous"
+        },
+        {
+            "tradeId": "1U9GHQYVN",
+            "time": "09:17:53",
+            "price": "0.0026",
+            "volume": "1,128",
+            "type": "Auction"
+        }
+    ],
+    "count": 3,
+    "date": "11\/04\/2023",
+    "countFiltered": 3,
+    "startdate": "11\/04\/2023",
+    "tradeTypeList": [
+        {
+            "code": "00",
+            "idNXT": "240:0",
+            "label": "Exchange Continuous"
+        },
+        {
+            "code": "00H",
+            "idNXT": "00H",
+            "label": "Auction"
+        }
+    ],
+    "timeZone": "CET",
+    "sliderTimeFilter": {
+        "Time": {
+            "start": "09:17",
+            "end": "17:09",
+            "startMinutes": 557,
+            "endMinutes": 1029
+        }
+    },
+    "sliderFilters": {
+        "Price": {
+            "min": "0.0026",
+            "minLimit": "0.00",
+            "max": "0.0041",
+            "maxLimit": 0.01
+        },
+        "Shares": {
+            "min": 1128,
+            "max": 10000
+        }
+    }
+}
+```
+
+After April 2nd, I'm getting different one:
+
+```
+{"ct":"Mu8gp2W9o19xmRB4NXqVthw9FP3FmoM6WCaejh1s+beUUqblP\/3mZ1snSfjCCjTjNyjVkIos3x++zb1duHcxRrDsg5G5GwnfvKIVxP7bEKWdPOVPKqfwmrNQR09Kmfs4u58L\/hi+e5e5k5PLsjz6HS4Tn4jBhDvIQTlXlZdtj5bxenJLyF80i81VSWALpEfmGOR57h7XNQJUQAvWCwM2cigLv5UOFY2FxRCjuyRqCQYZSRat8saiAHBz+v3pLjFdx8sAHbYKgVsZK7AYNzVzXaGH4NpDvASA5khDYqQx7rxXQdvGr0YVehCrz42\/A18cbhjWsLTr5JbMZtREYSEU802e8QyXYH9ej89wlzG04wtwnjc9YZtwQgZMffGLoIey3UPp8tEXHYL8gRMzmQVCgaY+mEvZvve5zbMxSICh\/XO22VVQ3vjotGZWMCr+kTCVWz2VGfCS3cxWpmbwv1Dx0ziy4iCaqvsA03FhmgnLDzKUu6t0nZVBK21sd1pe1PYouUSMy5R4t40lMdbKds+VnxwXn0Xdnv6MUqRcCp4Wi5k4Wr4YczHiOniymNbHUBhsV26yXXnP9AgTw1chgHjYtTswurY0TdJQTmp8sN2qmdIL4XIyxMZtPocb0gz1S533fXSmd7t2brSE3q8a5WZKcXpkYnST8M5mfDhTBi80JHbuC0RzFUV9kzkV6jLqdPQ1Ly5Bplv7ljVlGW2MxlF1ucjniAv39oC8v0iu7kxRDzKfltuI\/50WCrs7hqMOXTaCa7U8pZ5qWKu8mcIvJ9iq\/kPyJvDl\/CZj0tIuDvSVN93CtsQyT84E4QHsB1YuxS1qA2G2SzdY55xsUHNPClLmp5+7R48Pasd3f6zl8ugN+6wkgFrc71XlegbadMeFJOw3FLRVF+x3Btd78VWMcwjseTXq1HB355Pzo55BBdFnq68Fr\/z0YI4uaAgixDawa+hEdslPl\/RahgtLwThgaqGeaFbnE3TL5GkcdqQrNuJotaJov8VdJhttbaxosfKR1inXB5u0+J8tNDVgCThh8BkT5fqyPCf3Q0QDdh8lTsxuaQcCGidy\/VwN4\/ArYoobNRuPt9ffczToFvLWjun9SkL6WoRG4nqwJpnI1IF5hYcYvkYlUkG29TNfXdmP5XGwXW4At39XgEK\/EWENWS\/pG0daob2buAW4cjLfsiOxVHl0mHohy9dxnS0azsHkQJsegDYhNGJ8ni\/SyQ84Df1ZTv\/So4Fojx8wjH5UyYbo2T79OaxVvRNIE8m39hxmapRv4AuOorR9Ftx6IsXuwSyiKlhCQOoDk+kLS90XanJtVzIDwP+AbBQm0BQMTQjCvG0cgYnhWha2\/jjomTL0HFFE35ixtG4sLoPg1ResTni1+tiamisxi6\/aX0oaqolXlBU0feIPzKpCmLygFEv5mmnJoB1IYdazsWKONsR27VtDw67qIJBRd3GACYjI+400eNntTUvSX9m7+pGXPGUnOjTDETIEKspw3OFRwywFznnNd\/\/RpwqorQApg\/J5KhmD2HgK7FoP9SPOhHyFsVRYQ+oudh8AwqDaY\/l2vWZQdzITmZniCsX5+NfMoPFOwm9FJMHehhxlch74IAn86KXo8NKnRCN7OewAB\/7BOLbwPmA7djbhQlH5\/R2yZVsxa33dlJrcRjr1ang4pWbiAQ1QCW0PysVQvC07R3PSbmEsdvdLR+QtyHRDHouUOp3uYwesDUxTrbn8EXSl0cSkt8m4c9mJsMULp2Y0IdMdF56EsrZX1eWgpwSSgDrxnpc3GcmLB4rnprAjzajkStoXkEh\/xE+UckrbkvvhhUsQXot\/pO2ADyAi1rw7RHt0ERRekUCjjYw9tJQfSJRhhytIDImZKodnCtsnd57J7\/xaAdJZRVlT1L8qxFXA0P53Hk+FOL3\/Roz8mllSfyF3+Y2mlicLN+3Kkmo2Np+KmYvtP+ihMzkFlrzPu3NxKLXPOlU0RSFWL7Mj9qYIkSP8\/1RZDi\/oa\/eCyC9MV7z4EL4qPg86KaVjTyPcgxjjOIyVREL7TXDhM2NJQLh4Z6MAHV7fiTjhTtENASuuUt0q40rvJ4e6MzXGIi7r5Dp4q9X5y\/Lz79sas0y9+9a3OBusobMroLya4HBJkXYt6osQouyWfO7RzxuUkMYg71Xe+9o2qiAe+cH0+Fa+ZSEtTf0zuTQPmbEImwU\/8XpMXYfGr6K\/k3Md0+pqVlqLy7QFrIzDglU27q1rAudeejgh6haQm2g\/ETzG\/NzEeJbHXOb8dpcnJ79YVFy+zYqL2gIscZKUXn5Gwz0Ew+2rs2a+6dmB1QsKjRCON+T5EhyWWw==","iv":"d2eea11135f1f2ac464ef3caea6ec106","s":"80e049e02da1382b"}
+```
+
+In developer's tools in bropwser the Response tab shows JSON:
+
+```json
+{
+    "ct": "Mu8gp2W9o19xmRB4NXqVthw9FP3FmoM6WCaejh1s+beUUqblP\/3mZ1snSfjCCjTjNyjVkIos3x++zb1duHcxRrDsg5G5GwnfvKIVxP7bEKWdPOVPKqfwmrNQR09Kmfs4u58L\/hi+e5e5k5PLsjz6HS4Tn4jBhDvIQTlXlZdtj5bxenJLyF80i81VSWALpEfmGOR57h7XNQJUQAvWCwM2cigLv5UOFY2FxRCjuyRqCQYZSRat8saiAHBz+v3pLjFdx8sAHbYKgVsZK7AYNzVzXaGH4NpDvASA5khDYqQx7rxXQdvGr0YVehCrz42\/A18cbhjWsLTr5JbMZtREYSEU802e8QyXYH9ej89wlzG04wtwnjc9YZtwQgZMffGLoIey3UPp8tEXHYL8gRMzmQVCgaY+mEvZvve5zbMxSICh\/XO22VVQ3vjotGZWMCr+kTCVWz2VGfCS3cxWpmbwv1Dx0ziy4iCaqvsA03FhmgnLDzKUu6t0nZVBK21sd1pe1PYouUSMy5R4t40lMdbKds+VnxwXn0Xdnv6MUqRcCp4Wi5k4Wr4YczHiOniymNbHUBhsV26yXXnP9AgTw1chgHjYtTswurY0TdJQTmp8sN2qmdIL4XIyxMZtPocb0gz1S533fXSmd7t2brSE3q8a5WZKcXpkYnST8M5mfDhTBi80JHbuC0RzFUV9kzkV6jLqdPQ1Ly5Bplv7ljVlGW2MxlF1ucjniAv39oC8v0iu7kxRDzKfltuI\/50WCrs7hqMOXTaCa7U8pZ5qWKu8mcIvJ9iq\/kPyJvDl\/CZj0tIuDvSVN93CtsQyT84E4QHsB1YuxS1qA2G2SzdY55xsUHNPClLmp5+7R48Pasd3f6zl8ugN+6wkgFrc71XlegbadMeFJOw3FLRVF+x3Btd78VWMcwjseTXq1HB355Pzo55BBdFnq68Fr\/z0YI4uaAgixDawa+hEdslPl\/RahgtLwThgaqGeaFbnE3TL5GkcdqQrNuJotaJov8VdJhttbaxosfKR1inXB5u0+J8tNDVgCThh8BkT5fqyPCf3Q0QDdh8lTsxuaQcCGidy\/VwN4\/ArYoobNRuPt9ffczToFvLWjun9SkL6WoRG4nqwJpnI1IF5hYcYvkYlUkG29TNfXdmP5XGwXW4At39XgEK\/EWENWS\/pG0daob2buAW4cjLfsiOxVHl0mHohy9dxnS0azsHkQJsegDYhNGJ8ni\/SyQ84Df1ZTv\/So4Fojx8wjH5UyYbo2T79OaxVvRNIE8m39hxmapRv4AuOorR9Ftx6IsXuwSyiKlhCQOoDk+kLS90XanJtVzIDwP+AbBQm0BQMTQjCvG0cgYnhWha2\/jjomTL0HFFE35ixtG4sLoPg1ResTni1+tiamisxi6\/aX0oaqolXlBU0feIPzKpCmLygFEv5mmnJoB1IYdazsWKONsR27VtDw67qIJBRd3GACYjI+400eNntTUvSX9m7+pGXPGUnOjTDETIEKspw3OFRwywFznnNd\/\/RpwqorQApg\/J5KhmD2HgK7FoP9SPOhHyFsVRYQ+oudh8AwqDaY\/l2vWZQdzITmZniCsX5+NfMoPFOwm9FJMHehhxlch74IAn86KXo8NKnRCN7OewAB\/7BOLbwPmA7djbhQlH5\/R2yZVsxa33dlJrcRjr1ang4pWbiAQ1QCW0PysVQvC07R3PSbmEsdvdLR+QtyHRDHouUOp3uYwesDUxTrbn8EXSl0cSkt8m4c9mJsMULp2Y0IdMdF56EsrZX1eWgpwSSgDrxnpc3GcmLB4rnprAjzajkStoXkEh\/xE+UckrbkvvhhUsQXot\/pO2ADyAi1rw7RHt0ERRekUCjjYw9tJQfSJRhhytIDImZKodnCtsnd57J7\/xaAdJZRVlT1L8qxFXA0P53Hk+FOL3\/Roz8mllSfyF3+Y2mlicLN+3Kkmo2Np+KmYvtP+ihMzkFlrzPu3NxKLXPOlU0RSFWL7Mj9qYIkSP8\/1RZDi\/oa\/eCyC9MV7z4EL4qPg86KaVjTyPcgxjjOIyVREL7TXDhM2NJQLh4Z6MAHV7fiTjhTtENASuuUt0q40rvJ4e6MzXGIi7r5Dp4q9X5y\/Lz79sas0y9+9a3OBusobMroLya4HBJkXYt6osQouyWfO7RzxuUkMYg71Xe+9o2qiAe+cH0+Fa+ZSEtTf0zuTQPmbEImwU\/8XpMXYfGr6K\/k3Md0+pqVlqLy7QFrIzDglU27q1rAudeejgh6haQm2g\/ETzG\/NzEeJbHXOb8dpcnJ79YVFy+zYqL2gIscZKUXn5Gwz0Ew+2rs2a+6dmB1QsKjRCON+T5EhyWWw==",
+    "iv": "d2eea11135f1f2ac464ef3caea6ec106",
+    "s": "80e049e02da1382b"
+}
+```
+
+The Headers tab shows
+
+General:
+
+| name | value |
+| ---- | ----- |
+| Request URL | https://live.euronext.com/en/ajax/getIntradayPriceFilteredData/FR0003500008-XPAR |
+| Request Method | GET |
+| Status Code | 200 OK |
+| Remote Address | 18.239.83.28:443 |
+| Referrer Policy | strict-origin-when-cross-origin |
+
+Request headers:
+
+| name | value |
+| ---- | ----- |
+| :authority | live.euronext.com |
+| :method | GET |
+| :path | /en/ajax/getIntradayPriceFilteredData/FR0003500008-XPAR |
+| :scheme | https |
+| accept | text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 |
+| accept-encoding | gzip, deflate, br, zstd |
+| accept-language | en-US,en;q=0.9 |
+| cache-control | max-age=0 |
+| cookie | visid_incap_2691598=pkhSOk2nTVW3LRDG/kRREHM5c2kAAAAAQUIPAAAAAADoyaYtZXAFtWCIdkE9aIO/; incap_ses_128_2691598=LnnCMHdDukUNhQbNzb/GAVahgGkAAAAAWf58q0B8AVNTX2x2eeDEiw==; incap_ses_985_2691598=R/ObOf9TDl/1IZ4eeWyrDT48g2kAAAAAnfIk3oWmjpQTGzR63sjE1w== |
+| priority | u=0, i |
+| sec-ch-ua | "Brave";v="143", "Chromium";v="143", "Not A(Brand";v="24" |
+| sec-ch-ua-mobile | ?0 |
+| sec-ch-ua-platform | "Windows" |
+| sec-fetch-dest | document |
+| sec-fetch-mode | navigate |
+| sec-fetch-site | none |
+| sec-fetch-user | ?1 |
+| sec-gpc | 1 |
+| upgrade-insecure-requests | 1 |
+| user-agent | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 |
+
+Response headers:
+
+| name | value |
+| ---- | ----- |
+| access-control-allow-headers | X-Requested-With, Content-Type, Accept, Authorization |
+| access-control-allow-origin | * |
+| age | 33 |
+| alt-svc | h3=":443"; ma=86400 |
+| cache-control | s-maxage=300 |
+| content-encoding | br |
+| content-language | en |
+| content-security-policy | default-src 'self' *.euronext.com *.youtube.com *.doubleclick.net *.google.com fast.wistia.com; connect-src 'self' *.cookielaw.org *.google-analytics.com *.freshworks.com *.mapbox.com *.euronext.com *.onetrust.com *.doubleclick.net www.googleadservices.com *.googleapis.com *.g.doubleclick.net *.google.com *.google.fr ws: *.wistia.com *.companywebcast.com https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self' *.euronext.com maxcdn.icons8.com *.doubleclick.net *.google.com fonts.gstatic.com data:; frame-src 'self' *.euronext.com *.youtube.com *.doubleclick.net *.google.com fast.wistia.com *.neodatagroup.com *.wistia.net *.googleusercontent.com *.googletagmanager.com *.companywebcast.com; img-src 'self' *.cookielaw.org data: *.neodatagroup.com *.doubleclick.net *.google.fr *.ytimg.com *.euronext.com www.amcharts.com *.google-analytics.com www.googleadservices.com *.google.com *.globenewswire.com https://www.google-analytics.com https://www.googletagmanager.com; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.neodatagroup.com *.googleapis.com *.googletagmanager.com *.cookielaw.org *.google-analytics.com *.companywebcast.com api.mapbox.com cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://platform.twitter.com https://polyfill.io https://unpkg.com mdbootstrap.com platform.twitter.com stackpath.bootstrapcdn.com www.amcharts.com; script-src-elem 'self' 'unsafe-inline' *.neodatagroup.com *.googleapis.com *.googletagmanager.com *.cookielaw.org *.youtube.com *.google-analytics.com *.googleadservices.com *.wistia.net api.mapbox.com cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://platform.twitter.com https://polyfill.io https://unpkg.com mdbootstrap.com platform.twitter.com stackpath.bootstrapcdn.com www.amcharts.com; style-src 'self' 'unsafe-inline' *.euronext.com cdn.jsdelivr.net cdnjs.cloudflare.com fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com maxcdn.icons8.com mdbootstrap.com stackpath.bootstrapcdn.com use.fontawesome.com www.amcharts.com; style-src-attr 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline' *.cookielaw.org *.euronext.com cdn.jsdelivr.net cdnjs.cloudflare.com fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com maxcdn.icons8.com mdbootstrap.com stackpath.bootstrapcdn.com use.fontawesome.com www.amcharts.com; frame-ancestors 'self' *.euronext.com; report-uri https://live.euronext.com/en/report-uri/enforce |
+| content-type | application/json |
+| date | Fri, 24 Apr 2026 17:09:38 GMT |
+| referrer-policy | strict-origin-when-cross-origin |
+| server | CloudFront |
+| strict-transport-security | max-age=16070400; includeSubDomains |
+| vary | Accept-Encoding |
+| via | 1.1 ffde4ac468ae53bebcf62edbe5888ab6.cloudfront.net (CloudFront) |
+| x-amz-cf-id | DbEJzn8R0la-sRS-Z7Clet77pzqkfh9r_32eI_rng23aRHGaV53Liw== |
+| x-amz-cf-pop | AMS58-P5 |
+| x-cache | Hit from cloudfront |
+| x-commerce-core | 2 |
+| x-consumer-id | a318e59c-e2b6-40dc-91da-aeddef6fe3c6 |
+| x-content-type-options | nosniff |
+| x-content-type-options | nosniff |
+| x-frame-options | SAMEORIGIN |
+| x-xss-protection | 1; mode=block |
+
+Why am I getting so strange return JSON?
+What are the data fields 'cv', 'iv', 's' mean?
+Are values compressed?
+======================================================
+The data is **not compressed — it's encrypted**. Euronext added client-side encryption as an anti-scraping measure around April 2nd.
+
+The three fields are standard **CryptoJS AES encryption** output:
+
+| Field | Meaning | Details |
+|-------|---------|---------|
+| `ct` | **ciphertext** | The actual encrypted payload (base64-encoded). This contains your original JSON with `rows`, `count`, etc. |
+| `iv` | **initialization vector** | 16-byte hex string (128-bit IV) used for AES-CBC mode |
+| `s` | **salt** | 8-byte hex string (64-bit salt) used for key derivation |
+
+**How it works:** The Euronext website JavaScript includes a passphrase/key. When the browser receives this encrypted JSON, client-side JS calls something like `CryptoJS.AES.decrypt(response, passphrase)` to recover the original plaintext JSON. The salt (`s`) is used with the passphrase via OpenSSL's `EVP_BytesToKey` (PBKDF) to derive the actual AES key and IV.
+
+**Why you see it now:** When you visit the URL directly in the browser address bar, no page JavaScript runs, so you get the raw encrypted blob. When browsing the actual Euronext page, their JS decrypts it transparently before rendering.
+
+**To decrypt it** you'd need to:
+1. Find the decryption passphrase embedded in Euronext's JavaScript bundles (inspect their `.js` files loaded on the intraday price page)
+2. Use that passphrase with CryptoJS-compatible AES decryption (OpenSSL EVP_BytesToKey key derivation with the salt, then AES-CBC decrypt with the derived key and IV)
+
+This is a deliberate anti-scraping/anti-bot protection. The passphrase may rotate periodically, making automated access harder. Your existing Go code that fetches this endpoint will need to be updated to handle decryption if you want to continue using it.
+======================================================
+I found three files below. Am I correct that passphrase is "var kye = '24ayqVo7yJma';"?
+
+# 1
+https://live.euronext.com/modules/custom/ajax_secure/js/ajax-secure.js
+```js
+var ajax_secure_encrypt = function(valueToEncrypt, kye) {
+  // encrypt value
+  let encrypted = CryptoJSAesJson.encrypt(valueToEncrypt, kye)
+  //console.log('Encrypted:', encrypted)
+  return encrypted;
+};
+var ajax_secure_decrypt = function(valueToDecrypt, kye) {
+  if (typeof valueToDecrypt != 'string')
+    valueToDecrypt = JSON.stringify(valueToDecrypt);
+
+   // decrypt value
+  let decrypted = CryptoJSAesJson.decrypt(valueToDecrypt, kye)
+  //console.log('Decrypted:', decrypted)
+  return decrypted;
+};
+var ajax_secure_dataFilter = function (retData, type, wantString) {
+  if (drupalSettings.ajax_secure.kye != undefined) {
+    var kye = drupalSettings.ajax_secure.kye;
+  } else {
+    var kye = '24ayqVo7yJma';
+  }
+  var data = [];
+  var retData2 = '';
+  try
+  {
+    if (type === 'json') {
+      data = retData;
+      retData2 = JSON.stringify(retData);
+    } else {
+      data = JSON.parse(retData);
+      retData2 = retData;
+    }
+    if (data.ct && data.iv && data.s) {
+      try
+      {
+        var returnn = ajax_secure_decrypt(retData2, kye);
+        if (wantString===false) {
+          return returnn;
+        }
+        return JSON.stringify(returnn);
+      }
+      catch(err)
+      {
+        console.log(err);
+      }
+    }
+  }
+  catch(err)
+  {
+    //console.log('IS_NOT_JSON');
+  }
+  return retData;
+}
+
+jQuery.ajaxSetup({
+  dataFilter: function (retData, type) {
+    return ajax_secure_dataFilter(retData, type);
+  }
+});
+```
+# 2
+https://live.euronext.com/assets/js/optimized/js_U5U5I1wZVZLZ47f0TqDev_TpUEiZXDidNo__lORjpJI.fcB5bBRvl9lWZoJHnZ09mgY9BUqc7Yb_xYyIRuTqOBQ.js?tdz441
+```js
+/* Source and licensing information for the line(s) below can be found at https://live.euronext.com/modules/custom/ajax_secure/js/ajax-secure.js. */
+var ajax_secure_encrypt = function(valueToEncrypt, kye) {
+  // encrypt value
+  let encrypted = CryptoJSAesJson.encrypt(valueToEncrypt, kye)
+  //console.log('Encrypted:', encrypted)
+  return encrypted;
+};
+var ajax_secure_decrypt = function(valueToDecrypt, kye) {
+  if (typeof valueToDecrypt != 'string')
+    valueToDecrypt = JSON.stringify(valueToDecrypt);
+
+   // decrypt value
+  let decrypted = CryptoJSAesJson.decrypt(valueToDecrypt, kye)
+  //console.log('Decrypted:', decrypted)
+  return decrypted;
+};
+var ajax_secure_dataFilter = function (retData, type, wantString) {
+  if (drupalSettings.ajax_secure.kye != undefined) {
+    var kye = drupalSettings.ajax_secure.kye;
+  } else {
+    var kye = '24ayqVo7yJma';
+  }
+  var data = [];
+  var retData2 = '';
+  try
+  {
+    if (type === 'json') {
+      data = retData;
+      retData2 = JSON.stringify(retData);
+    } else {
+      data = JSON.parse(retData);
+      retData2 = retData;
+    }
+    if (data.ct && data.iv && data.s) {
+      try
+      {
+        var returnn = ajax_secure_decrypt(retData2, kye);
+        if (wantString===false) {
+          return returnn;
+        }
+        return JSON.stringify(returnn);
+      }
+      catch(err)
+      {
+        console.log(err);
+      }
+    }
+  }
+  catch(err)
+  {
+    //console.log('IS_NOT_JSON');
+  }
+  return retData;
+}
+
+jQuery.ajaxSetup({
+  dataFilter: function (retData, type) {
+    return ajax_secure_dataFilter(retData, type);
+  }
+});
+
+/* Source and licensing information for the above line(s) can be found at https://live.euronext.com/modules/custom/ajax_secure/js/ajax-secure.js. */
+```
+
+# 3
+https://live.euronext.com/assets/js/optimized/js_NMgJ9Y9qP9XHto8IrVafCDEid_jm5wh7gbMbuYvEE7s.uFn3hyeVIi-L5JO22DvH6S7XeF7a5sJVN3kqruXA6N0.js?tdz441
+```js
+/* Source and licensing information for the line(s) below can be found at https://live.euronext.com/modules/custom/ajax_secure/js/cryptojs-aes-format.js. */
+var CryptoJSAesJson = {
+    encrypt: function(value, password) {
+        if (password.match(/[^\x00-\x7F]/))
+            console.warn('CryptoJSAES: Your passphrase contains non ASCII characters - This is not supported. Hash your passphrase with MD5 or similar hashes to prevent those issues');
+        return CryptoJS.AES.encrypt(JSON.stringify(value), password, {
+            format: CryptoJSAesJson
+        }).toString()
+    },
+    decrypt: function(jsonStr, password) {
+        if (password.match(/[^\x00-\x7F]/))
+            console.warn('CryptoJSAES: Your passphrase contains non ASCII characters - This is not supported. Hash your passphrase with MD5 or similar hashes to prevent those issues');
+        return JSON.parse(CryptoJS.AES.decrypt(jsonStr, password, {
+            format: CryptoJSAesJson
+        }).toString(CryptoJS.enc.Utf8))
+    },
+    stringify: function(cipherParams) {
+        var j = {
+            ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)
+        };
+        if (cipherParams.iv)
+            j.iv = cipherParams.iv.toString();
+        if (cipherParams.salt)
+            j.s = cipherParams.salt.toString();
+        return JSON.stringify(j).replace(/\s/g, '')
+    },
+    parse: function(jsonStr) {
+        var j = JSON.parse(jsonStr)
+          , cipherParams = CryptoJS.lib.CipherParams.create({
+            ciphertext: CryptoJS.enc.Base64.parse(j.ct)
+        });
+        if (j.iv)
+            cipherParams.iv = CryptoJS.enc.Hex.parse(j.iv);
+        if (j.s)
+            cipherParams.salt = CryptoJS.enc.Hex.parse(j.s);
+        return cipherParams
+    }
+}
+/* Source and licensing information for the above line(s) can be found at https://live.euronext.com/modules/custom/ajax_secure/js/cryptojs-aes-format.js. */
+```
+===================================================
+Almost. `'24ayqVo7yJma'` is the **fallback** passphrase. Look at the logic:
+
+```js
+if (drupalSettings.ajax_secure.kye != undefined) {
+    var kye = drupalSettings.ajax_secure.kye;  // <- primary: from Drupal page settings
+} else {
+    var kye = '24ayqVo7yJma';                   // <- fallback only
+}
+```
+
+The code first checks `drupalSettings.ajax_secure.kye` — a value injected into the HTML by the Drupal backend (typically in a `<script>` tag containing `drupalSettings = {...}`). The hardcoded `'24ayqVo7yJma'` is only used if that Drupal setting is missing/undefined.
+
+**To find the actual key in use**, view the page source of any Euronext intraday page (e.g. `https://live.euronext.com/en/product/equities/FR0003500008-XPAR/intraday`) and search for `drupalSettings`. You'll find something like:
+
+```html
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+{"ajax_secure":{"kye":"someActualKey"}, ...}
+</script>
+```
+
+If that `kye` field exists, that's the real passphrase. If it's absent, then yes, `24ayqVo7yJma` is what gets used.
+
+You can quickly test: try decrypting your encrypted response with `24ayqVo7yJma`. If it produces valid JSON, that's the active key. If it produces garbage, you need to grab the key from `drupalSettings`.
+===================================================
+I see the following. Does " window.drupalSettings = {};" mean I can use fallback `24ayqVo7yJma`?
+Can you generate me a Go program to decrypt using a passphrase?
+
+https://live.euronext.com/assets/js/optimized/js_jpLqMr7rNF-FoMEPcujCxdcCjbsmWScOXT9a6N8T5lg.O0c8-sVHwDyAerLtyODDXKa6D2HrsM6daDGvIMHKReM.js?v=10.2.5
+```js
+/* Source and licensing information for the line(s) below can be found at https://live.euronext.com/core/misc/drupalSettingsLoader.js. */
+/**
+ * @file
+ * Parse inline JSON and initialize the drupalSettings global object.
+ */
+
+(function () {
+  // Use direct child elements to harden against XSS exploits when CSP is on.
+  const settingsElement = document.querySelector(
+    'head > script[type="application/json"][data-drupal-selector="drupal-settings-json"], body > script[type="application/json"][data-drupal-selector="drupal-settings-json"]',
+  );
+
+  /**
+   * Variable generated by Drupal with all the configuration created from PHP.
+   *
+   * @global
+   *
+   * @type {object}
+   */
+  window.drupalSettings = {};
+
+  if (settingsElement !== null) {
+    window.drupalSettings = JSON.parse(settingsElement.textContent);
+  }
+})();
+
+/* Source and licensing information for the above line(s) can be found at https://live.euronext.com/core/misc/drupalSettingsLoader.js. */
+```
+=========================================
+`window.drupalSettings = {};` is just the default initialization — the next line overwrites it from a `<script data-drupal-selector="drupal-settings-json">` tag if one exists in the page HTML. But if you load only the AJAX endpoint directly and the actual page doesn't inject an `ajax_secure.kye` value, then yes, the server-side and client-side both use `24ayqVo7yJma`.
+
+You can verify by trying to decrypt with it. Let me first look at your project structure to place the program appropriately. 
+
+Explore project structure
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/go.mod)
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxintr/enxintr.go#1-1), lines 1 to 500
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/euronext.go)
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/intraday/intraday.go)
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/intraday/jsonintraday.go)
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/intraday/intraday.go#1-1), lines 1 to 120
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/intraday/jsonintraday.go)
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/intraday/intraday.go#120-120), lines 120 to 179
+
+Now I have full context. Let me create:
+1. A reusable decryption library in the `intraday` package
+2. A standalone CLI tool for testing 
+
+Created 3 todos
+
+Created [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/euronext/intraday/decrypt.go)
+
+Starting: *Create standalone CLI decrypt tool* (2/3)
+
+Created [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxdecrypt/enxdecrypt.go)
+
+Starting: *Test compilation* (3/3)
+
+Execution complete: Build Go decrypt library and CLI tool
+
+Ran terminal command: go build ./euronext/intraday/ ; go build ./cmd/enxdecrypt/ ; echo "BUILD SUCCESS"
+
+Sent `R` to terminal
+
+Checked terminal output
+
+Sent `go build ./euronext/intraday/ ; go build ./cmd/enxdecrypt/ ; echo "BUILD SUCC...` to terminal
+
+Checked terminal output
+
+Checked terminal output
+
+Completed: *Test compilation* (3/3)
+
+Both files compile successfully. Here's what was created:
+
+**Library** — decrypt.go:
+- `IsEncryptedResponse(data)` — detects `ct`/`iv`/`s` encrypted responses
+- `DecryptResponse(data, passphrase)` — decrypts using CryptoJS-compatible AES (EVP_BytesToKey + AES-256-CBC + PKCS7)
+- `DefaultPassphrase` constant = `"24ayqVo7yJma"`
+
+**CLI tool** — enxdecrypt.go:
+```
+# From file:
+enxdecrypt encrypted.json
+
+# From stdin:
+cat encrypted.json | enxdecrypt
+
+# Fetch URL directly:
+enxdecrypt -url https://live.euronext.com/en/ajax/getIntradayPriceFilteredData/FR0003500008-XPAR
+
+# With custom passphrase:
+enxdecrypt -p "someOtherKey" encrypted.json
+```
+
+If the response is not encrypted, it passes through unchanged. The default passphrase is `24ayqVo7yJma`. You can override with `-p` if Euronext starts injecting a different key via `drupalSettings`.
+
+To integrate into your existing download pipeline, you'd call `intraday.DecryptResponse()` on the raw bytes returned by `FetchIntradayData()` before unmarshaling. Want me to wire that in?
+
+Made changes.
+=========================================
+It works. Can you update the "euronext/cmd/enxintrdnl/enxintrdnl.go" to use "euronext/euronext/intraday/decrypt.go" you created?
+=========================================
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxintrdnl/enxintrdnl.go#1-1), lines 1 to 100
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxintrdnl/enxintrdnl.go#100-100), lines 100 to 250
+
+Read [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxintrdnl/enxintrdnl.go#250-250), lines 250 to 336
+
+The download method fetches data and writes it directly. I need to add decryption between fetch and save: 
+
+Replacing 12 lines with 23 lines in [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxintrdnl/enxintrdnl.go)
+
+
+```
+
+```
+
+
+Execution complete: Verify enxintrdnl builds
+
+Ran terminal command: go build ./cmd/enxintrdnl/ ; echo "BUILD SUCCESS"
+
+Done. After `FetchIntradayData` returns, the code now checks if the response is encrypted (`ct`/`iv`/`s` fields) and decrypts it before saving. If decryption fails, it's logged as a download error. Unencrypted responses pass through unchanged, so it's backward-compatible.
+
+Made changes.
+=========================================
+In "enxdecryptzip/" folder I have a "20260423enx_eoi.zip" with the following list of files inside:
+```
+20260423\MTAA_STLAM_NL00150001Q9_20260423.json
+...
+20260423\XAMS_AEX_NL0000000107_20260423.json
+```
+Can you write a enxdecryptzip.go which gets the ZIP filename from the command arguments, parses the zip content, decrypts every JSON file inside and then re-creates the XIP file but with decrypted JSON files inside.
+=========================================
+Created [](file:///c%3A/Users/ivas/source/repos/Proeftuin-go-main/csv/euronext/cmd/enxdecryptzip/enxdecryptzip.go)
+
+Execution complete: Build enxdecryptzip
+
+Ran terminal command: go build ./cmd/enxdecryptzip/ ; if ($?) { echo "BUILD SUCCESS" }
+
+Builds cleanly. Created enxdecryptzip.go.
+
+Usage:
+```
+enxdecryptzip 20260423enx_eoi.zip
+enxdecryptzip -p "customKey" 20260423enx_eoi.zip
+```
+
+It reads the ZIP, decrypts every JSON file that has the `ct`/`iv`/`s` structure, leaves non-JSON and already-decrypted files untouched, preserves original entry names and timestamps, and overwrites the ZIP in-place with the decrypted contents.
+
+Made changes.
+=========================================
+Now in all 2 new apps:
+- cmd/enxdecrypt/enxdecrypt.go
+- cmd/enxdecryptzip/enxdecryptzip.go
+we need optionally (via command-line argument) to get the
+https://live.euronext.com/modules/custom/ajax_secure/js/ajax-secure.js
+and check for a default passkey
+```js
+  if (drupalSettings.ajax_secure.kye != undefined) {
+    var kye = drupalSettings.ajax_secure.kye;
+  } else {
+    var kye = '24ayqVo7yJma';
+  }
+```
+In case it is different, we should print it and use it
+In case download failed we should print it and continue with old passkey
+In case passkey is the same just continue.
+Probably we can put the common functionality in euronext/intraday/decrypt.go
+
+In cmd/enxintrdnl/enxintrdnl.go we should put the setting to check for a passkey in enxintrdnl.json and check for a passkey (and use it if it is different) at the very start of the app.
+Then we should log if passkey is the same or if it is different or we cannot get it.
+=========================================
+https://live.euronext.com/en/ajax/getIntradayPriceBlock/FR0003500008-XPAR
+https://live.euronext.com/en/ajax/AwlIntradayPrice/getFullDownloadAjax/FR0003500008-XPAR
+https://live.euronext.com/en/ajax/AwlIntradayPrice/getFullDownloadAjax/FR0003500008-XPAR?format=csv&decimal_separator=.&date_form=d/m/Y
+https://live.euronext.com/en/ajax/AwlIntradayPrice/getFullDownloadAjax/FR0003500008-XPAR?format=txt&decimal_separator=.&date_form=d/m/Y
+https://live.euronext.com/en/ajax/AwlIntradayPrice/getFullDownloadAjax/FR0003500008-XPAR?format=csv&decimal_separator=.&date_form=Y/m/d
+https://live.euronext.com/en/ajax/AwlIntradayPrice/getFullDownloadAjax/FR0003500008-XPAR?format=txt&decimal_separator=.&date_form=Y/m/d

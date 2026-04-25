@@ -19,6 +19,7 @@ import (
 const configFileName = "enxintrdnl.json"
 
 type config struct {
+	CheckPassphrase             bool   `json:"checkPassphrase"`
 	StartDateDaysBack           int    `json:"startDateDaysBack"`
 	XmlInstrumntsFile           string `json:"xmlInstrumentsFile"`
 	DownloadsFolder             string `json:"downloadsFolder"`
@@ -31,6 +32,7 @@ type config struct {
 	UserAgent                   string `json:"userAgent"`
 	DownloadRetryDelayDurations []time.Duration
 	DownloadTimeoutDuration     time.Duration
+	Passphrase                  string
 }
 
 type instrument struct {
@@ -60,6 +62,19 @@ func main() {
 	cfg, err := readConfig(configFileName)
 	if err != nil {
 		log.Panicf("cannot read configuration file %s: %s\n", configFileName, err)
+	}
+
+	cfg.Passphrase = intraday.DefaultPassphrase
+	if cfg.CheckPassphrase {
+		fetched, err := intraday.FetchPassphrase()
+		if err != nil {
+			log.Printf("warning: cannot fetch passphrase: %v (continuing with default)", err)
+		} else if fetched != intraday.DefaultPassphrase {
+			log.Printf("passphrase CHANGED: %s", fetched)
+			cfg.Passphrase = fetched
+		} else {
+			log.Println("passphrase unchanged")
+		}
 	}
 
 	log.Println("xml instruments file:", cfg.XmlInstrumntsFile)
@@ -241,6 +256,17 @@ func (s *instrument) download(
 			fmt.Sprintf("%s;%s;%s;%s;%s;%s", s.Mep, s.Mic, s.Type, s.Mnemonic, s.Isin, e))
 		log.Println(prefix + "failed: " + e)
 		return
+	}
+
+	if intraday.IsEncryptedResponse(bs) {
+		bs, err = intraday.DecryptResponse(bs, cfg.Passphrase)
+		if err != nil {
+			e := err.Error()
+			sta.DownloadErrors = append(sta.DownloadErrors,
+				fmt.Sprintf("%s;%s;%s;%s;%s;decrypt: %s", s.Mep, s.Mic, s.Type, s.Mnemonic, s.Isin, e))
+			log.Println(prefix + "decrypt failed: " + e)
+			return
+		}
 	}
 
 	prefix = fmt.Sprintf("%ssaving %d bytes ... ", prefix, len(bs))
