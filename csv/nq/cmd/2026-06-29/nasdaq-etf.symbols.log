@@ -1,0 +1,17 @@
+=======================================
+2026-06-29_06-48-39
+=======================================
+reading nasdaq-etf.json
+retrieved 4524 symbols
+cannot do request, retries (5 of 5): Get "https://api.nasdaq.com/api/quote/TOPC/info?assetclass=etf": read tcp [2a02:a453:8e60:0:fd3d:617f:10c4:5fed]:50643->[2a02:26f0:1180:18a::1b46]:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ORLG: unknown mic for exchange: '', setting to XXXX
+ORLG: empty exchange,
+ORR: empty expense ratio,
+OSCG: unknown mic for exchange: '', setting to XXXX
+OSCG: empty exchange,
+OTGL: empty expense ratio,
+PABD: empty expense ratio,
+PALU: unknown mic for exchange: '', setting to XXXX
+PALU: empty exchange,
+PATN: empty expense ratio,
+finished: 2026-06-29_13-10-40
